@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#indlude <dt-bindings/zmk/outputs.h>
 
 #define DEF     0
 #define EXT     1
@@ -25,15 +26,15 @@
             bindings = <
                 &kp Q   &kp W   &kp F   &kp P       &kp B               &kp J       &kp L       &kp U       &kp Y   &kp SQT
                 &kp A   &kp R   &kp S   &kp T       &kp G               &kp M       &kp N       &kp E       &kp E   &kp O
-                &kp Z   &kp X   &kp C   &kp D       &kp V               &kp K       &kp H       &kp KOMMA   &kp DOT &kp SLASH
+                &kp Z   &kp X   &kp C   &kp D       &kp V               &kp K       &kp H       &kp COMMA   &kp DOT &kp SLASH
                                         &mo EXT     &kp LSFT            &kp SPACE   &mo SYM1
             >;
         };
 
         extended_layer {
             bindings = <
-                &kp ESC     &bt BT_CLR  &LC(F)      &bt BT_NXT  &kp INS             &kp PAGE_UP &kp PAGE_DWON   &kp HOME    &kp END     &kp CAPS
-                &sk LALT    &sk LGUI    &sk LSHFT   &sk LCTRL   &sk RALT            &kp LEFT    &kp DOWN        &kp UP      &kp RIGTH   &kp DEL
+                &kp ESC     &bt BT_CLR  &LC(F)      &bt BT_NXT  &kp INS             &kp PAGE_UP &kp PAGE_DOWN   &kp HOME    &kp END     &kp CAPS
+                &sk LALT    &sk LGUI    &sk LSHFT   &sk LCTRL   &sk RALT            &kp LEFT    &kp DOWN        &kp UP      &kp RIGHT   &kp DEL
                 &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp TAB     &kp LC(V)           &kp RET     &kp BACKSPACE   &kp RSHFT   &kp RCTRL   &trans
                                                     &mo EXT     &trans              &kp RET     &mo FUNC
             >;
