@@ -33,7 +33,7 @@
 
         extended_layer {
             bindings = <
-                &kp ESC     &bt BT_CLR  &LC(F)      &bt BT_NXT  &kp INS             &kp PAGE_UP &kp PAGE_DOWN   &kp HOME    &kp END     &kp CAPS
+                &kp ESC     &bt BT_CLR  &kp LC(F)   &bt BT_NXT  &kp INS             &kp PAGE_UP &kp PAGE_DOWN   &kp HOME    &kp END     &kp CAPS
                 &sk LALT    &sk LGUI    &sk LSHFT   &sk LCTRL   &sk RALT            &kp LEFT    &kp DOWN        &kp UP      &kp RIGHT   &kp DEL
                 &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp TAB     &kp LC(V)           &kp RET     &kp BACKSPACE   &kp RSHFT   &kp RCTRL   &trans
                                                     &mo EXT     &trans              &kp RET     &mo FUNC
