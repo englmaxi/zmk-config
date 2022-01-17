@@ -45,7 +45,7 @@
                 &kp EXCL    &kp AT      &kp SEMI    &kp COLON   &kp UNDER           &kp EQUAL       &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_PLUS
                 &kp BSLH    &kp PIPE    &kp LBRC    &kp LPAR    &kp LBKT            &kp KP_MULTIPLY &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp KP_MINUS
                 &trans      &trans      &kp RBRC    &kp RPAR    &kp RBKT            &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_DIVIDE
-                                                    &FUNC       &mo SYM2            &trans          &mo SYM1
+                                                    &mo FUNC    &mo SYM2            &trans          &mo SYM1
             >;
         };
 
