@@ -15,8 +15,8 @@
 #define FUNC    4
 
 / {
-    combos {
-    };
+    // combos {
+    // };
 
     keymap {
         compatible = "zmk,keymap";
