@@ -62,7 +62,7 @@
             bindings = <
                 &out OUT_USB    &out OUT_BLE    &kp LC(LS(F))   &kp PSCRN   &trans              &kp F12     &kp F7  &kp F8  &kp F9  &kp LC(PLUS)
                 &sk LALT        &sk LGUI        &sk LSHFT       &sk LCTRL   &sk RALT            &kp F11     &kp F4  &kp F5  &kp F6  &kp LC(MINUS)
-                &kp LC(LS(Z))   &kp LC(LS(X))   &kp LC(LS(c))   &kp LS(TAB) &kp LC(LS(V))       &kp F10     &kp F1  &kp F2  &kp F3  &kp LC(NUMBER_0)
+                &kp LC(LS(Z))   &kp LC(LS(X))   &kp LC(LS(C))   &kp LS(TAB) &kp LC(LS(V))       &kp F10     &kp F1  &kp F2  &kp F3  &kp LC(NUMBER_0)
                                                                 &trans      &trans              &kp RET     &trans
             >;
         };
