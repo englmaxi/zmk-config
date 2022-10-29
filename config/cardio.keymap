@@ -53,7 +53,7 @@
             bindings = <
   &kp RA(Q)     &kp RA(P)   &kp RA(Y)  &kp RA(NUMBER_5)  &kp C_BRI_UP            &trans    &kp AMPS    &kp GRAVE         &kp TILDE      &kp RA(S)
  &kp C_MUTE  &kp C_VOL_DN    &kp C_PP      &kp C_VOL_UP  &kp C_BRI_DN            &trans  &kp DOLLAR  &kp PERCENT  &kp LS(NUMBER_6)      &kp UNDER
-      &none    &kp C_PREV  &kp C_STOP        &kp C_NEXT         &none  &kp RA(RS(SEMI))    &kp EXCL       &kp AT          &kp HASH  &kp KP_DIVIDE
+      &none    &kp C_PREV  &kp C_STOP        &kp C_NEXT         &kp KP_NUMLOCK  &kp RA(RS(SEMI))    &kp EXCL       &kp AT          &kp HASH  &kp KP_DIVIDE
                                                  &trans        &trans            &trans      &trans
             >;
         };
