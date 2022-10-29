@@ -1,0 +1,70 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+#define DEF     0
+#define EXT     1
+#define SYM1    2
+#define SYM2    3
+#define FUNC    4
+
+/ {
+    // combos {
+    // };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+  &kp Q   &kp W   &kp F   &kp P      &kp B      &kp J   &kp L      &kp U    &kp Y    &kp SQT
+  &kp A   &kp R   &kp S   &kp T      &kp G      &kp M   &kp N      &kp E    &kp I      &kp O
+  &kp Z   &kp X   &kp C   &kp D      &kp V      &kp K   &kp H  &kp COMMA  &kp DOT  &kp SLASH
+                          &mo 1  &kp LSHFT  &kp SPACE   &mo 2
+            >;
+        };
+
+        extended_layer {
+            bindings = <
+   &kp ESC  &bt BT_CLR  &kp LC(F)  &bt BT_NXT    &kp INS  &kp PAGE_UP  &kp PAGE_DOWN   &kp HOME    &kp END  &kp CAPS
+  &sk LALT    &sk LGUI  &sk LSHFT   &sk LCTRL   &sk RALT     &kp LEFT       &kp DOWN     &kp UP  &kp RIGHT   &kp DEL
+ &kp LC(Z)   &kp LC(X)  &kp LC(C)     &kp TAB  &kp LC(V)      &kp RET  &kp BACKSPACE  &kp RSHFT  &kp RCTRL    &trans
+                                        &mo 1     &trans      &kp RET          &mo 4
+            >;
+        };
+
+        symbols_layer1 {
+            bindings = <
+ &kp EXCL    &kp AT  &kp SEMI  &kp COLON  &kp UNDER        &kp EQUAL  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &kp KP_PLUS
+ &kp BSLH  &kp PIPE  &kp LBRC   &kp LPAR   &kp LBKT  &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp KP_MINUS
+    &none     &none  &kp RBRC   &kp RPAR   &kp RBKT  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE
+                                   &mo 4      &mo 3           &trans            &mo 2
+            >;
+        };
+
+        symbols_layer2 {
+            bindings = <
+  &kp RA(Q)     &kp RA(P)   &kp RA(Y)  &kp RA(NUMBER_5)  &kp C_BRI_UP            &trans    &kp AMPS    &kp GRAVE         &kp TILDE      &kp RA(S)
+ &kp C_MUTE  &kp C_VOL_DN    &kp C_PP      &kp C_VOL_UP  &kp C_BRI_DN            &trans  &kp DOLLAR  &kp PERCENT  &kp LS(NUMBER_6)      &kp UNDER
+      &none    &kp C_PREV  &kp C_STOP        &kp C_NEXT         &none  &kp RA(RS(SEMI))    &kp EXCL       &kp AT          &kp HASH  &kp KP_DIVIDE
+                                                 &trans        &trans            &trans      &trans
+            >;
+        };
+
+        function_layer {
+            bindings = <
+  &out OUT_USB   &out OUT_BLE  &kp LC(LS(F))    &kp PSCRN  &kp KP_NUMLOCK  &kp F12  &kp F7  &kp F8  &kp F9      &kp LC(PLUS)
+      &sk LALT       &sk LGUI      &sk LSHFT    &sk LCTRL        &sk RALT  &kp F11  &kp F4  &kp F5  &kp F6     &kp LC(MINUS)
+ &kp LC(LS(Z))  &kp LC(LS(X))  &kp LC(LS(C))  &kp LS(TAB)   &kp LC(LS(V))  &kp F10  &kp F1  &kp F2  &kp F3  &kp LC(NUMBER_0)
+                                                   &trans          &trans  &kp RET  &trans
+            >;
+        };
+    };
+};
