@@ -25,7 +25,26 @@
         caps_world_combo {
             bindings = <&caps_word>;
             key-positions = <31 32>;
-            layers = <0>;
+        };
+
+        tab_combo {
+            bindings = <&kp TAB>;
+            key-positions = <22 21>;
+        };
+
+        esc_combo {
+            bindings = <&kp ESC>;
+            key-positions = <1 2>;
+        };
+
+        enter_combo {
+            bindings = <&kp ENTER>;
+            key-positions = <27 28>;
+        };
+
+        bsp_combo {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 7>;
         };
     };
 
@@ -43,10 +62,10 @@
 
         extended_layer {
             bindings = <
-   &kp ESC  &kp K_BACK  &kp K_FIND  &kp K_FORWARD    &kp INS     &kp HOME  &kp PAGE_DOWN  &kp PG_UP    &kp END         &kp CAPS
-  &sk LALT    &sk LGUI   &sk LSHFT      &sk LCTRL   &sk RALT     &kp LEFT       &kp DOWN     &kp UP  &kp RIGHT          &kp DEL
- &kp LC(Z)   &kp LC(X)   &kp LC(C)       &kp LGUI  &kp LC(V)      &kp RET  &kp BACKSPACE  &kp RSHFT      &none  &kp PRINTSCREEN
-                                            &none      &none  &key_repeat          &mo 4
+   &kp ESC  &kp LA(LEFT)  &kp LC(F)  &kp LA(RIGHT)    &kp INS     &kp HOME  &kp PAGE_DOWN  &kp PG_UP    &kp END         &kp CAPS
+  &sk LALT      &sk LGUI  &sk LSHFT      &sk LCTRL   &sk RALT     &kp LEFT       &kp DOWN     &kp UP  &kp RIGHT          &kp DEL
+ &kp LC(Z)     &kp LC(X)  &kp LC(C)       &kp LGUI  &kp LC(V)      &kp RET  &kp BACKSPACE    &kp TAB      &none  &kp PRINTSCREEN
+                                            &trans      &none  &key_repeat          &mo 4
             >;
         };
 
@@ -71,7 +90,7 @@
         function_layer {
             bindings = <
  &kp C_STOP    &kp C_PREV       &kp C_PP    &kp C_NEXT   &kp C_BRI_UP  &kp F12  &kp F7  &kp F8  &kp F9      &kp LC(PLUS)
-   &sk LALT      &sk LGUI      &sk LSHFT     &sk LCTRL   &sk C_BRI_DN  &kp F11  &kp F4  &kp F5  &kp F6     &kp LC(MINUS)
+   &sk LALT      &sk LGUI      &sk LSHFT     &sk LCTRL   &kp C_BRI_DN  &kp F11  &kp F4  &kp F5  &kp F6     &kp LC(MINUS)
  &kp C_MUTE  &kp C_VOL_DN  &kp LC(LS(C))  &kp C_VOL_UP  &kp LC(LS(V))  &kp F10  &kp F1  &kp F2  &kp F3  &kp LC(NUMBER_0)
                                                 &trans          &none    &none  &trans
             >;
