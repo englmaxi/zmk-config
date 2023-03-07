@@ -48,51 +48,62 @@
         };
     };
 
+    behaviors {
+        td_bspc: td_bspc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "td_bspc";
+            #binding-cells = <0>;
+            bindings =
+                <&kp BSPC>,
+                <&kp LC(BSPC)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-  &kp Q   &kp W   &kp F   &kp P      &kp B      &kp J   &kp L      &kp U    &kp Y    &kp SQT
-  &kp A   &kp R   &kp S   &kp T      &kp G      &kp M   &kp N      &kp E    &kp I      &kp O
-  &kp Z   &kp X   &kp C   &kp D      &kp V      &kp K   &kp H  &kp COMMA  &kp DOT  &kp SLASH
-                          &mo 1  &kp LSHFT  &kp SPACE   &mo 2
+&kp Q  &kp W  &kp F  &kp P      &kp B      &kp J  &kp L      &kp U    &kp Y    &kp SQT
+&kp A  &kp R  &kp S  &kp T      &kp G      &kp M  &kp N      &kp E    &kp I      &kp O
+&kp Z  &kp X  &kp C  &kp D      &kp V      &kp K  &kp H  &kp COMMA  &kp DOT  &kp SLASH
+                     &mo 1  &kp LSHFT  &kp SPACE  &mo 2
             >;
         };
 
         extended_layer {
             bindings = <
-   &kp ESC  &kp LA(LEFT)  &kp LC(F)  &kp LA(RIGHT)    &kp INS     &kp HOME  &kp PAGE_DOWN  &kp PG_UP    &kp END         &kp CAPS
-  &sk LALT      &sk LGUI  &sk LSHFT      &sk LCTRL   &sk RALT     &kp LEFT       &kp DOWN     &kp UP  &kp RIGHT          &kp DEL
- &kp LC(Z)     &kp LC(X)  &kp LC(C)       &kp LGUI  &kp LC(V)      &kp RET  &kp BACKSPACE    &kp TAB      &none  &kp PRINTSCREEN
-                                            &trans      &none  &key_repeat          &mo 4
+  &kp ESC  &kp LA(LEFT)  &kp LC(F)  &kp LA(RIGHT)    &kp INS     &kp HOME  &kp PAGE_DOWN  &kp PG_UP    &kp END         &kp CAPS
+ &sk LALT      &sk LGUI  &sk LSHFT      &sk LCTRL   &sk RALT     &kp LEFT       &kp DOWN     &kp UP  &kp RIGHT          &kp DEL
+&kp LC(Z)     &kp LC(X)  &kp LC(C)       &kp LGUI  &kp LC(V)      &kp RET       &td_bspc    &kp TAB      &none  &kp PRINTSCREEN
+                                           &trans      &none  &key_repeat          &mo 4
             >;
         };
 
         symbols_layer1 {
             bindings = <
-  &kp EXCL     &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT     &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp PLUS
-  &kp SEMI  &kp COLON  &kp LBRC    &kp LPAR     &kp LBKT  &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
- &kp CARET   &kp AMPS  &kp RBRC    &kp RPAR     &kp RBKT  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDER
-                                      &mo 4        &mo 3         &none        &trans
+ &kp EXCL     &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT     &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp PLUS
+ &kp SEMI  &kp COLON  &kp LBRC    &kp LPAR     &kp LBKT  &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&kp CARET   &kp AMPS  &kp RBRC    &kp RPAR     &kp RBKT  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDER
+                                     &mo 4        &mo 3         &none        &trans
             >;
         };
 
         symbols_layer2 {
             bindings = <
- &kp RA(Q)           &kp RA(P)         &kp RA(Y)      &kp RA(S)  &kp RA(NUMBER_5)   &none   &none   &none  &out OUT_USB  &bt BT_SEL 0
-     &none           &kp TILDE     &kp BACKSLASH       &kp PIPE             &none   &none   &none   &none  &out OUT_BLE  &bt BT_SEL 1
- &kp GRAVE  &kp RA(APOSTROPHE)  &kp RA(RS(SEMI))  &kp RA(LS(S))             &none   &none   &none   &none    &bt BT_CLR  &bt BT_SEL 2
-                                                          &none            &trans   &none  &trans
+&kp RA(Q)           &kp RA(P)         &kp RA(Y)      &kp RA(S)  &kp RA(NUMBER_5)  &none   &none  &none  &out OUT_USB  &bt BT_SEL 0
+    &none           &kp TILDE     &kp BACKSLASH       &kp PIPE             &none  &none   &none  &none  &out OUT_BLE  &bt BT_SEL 1
+&kp GRAVE  &kp RA(APOSTROPHE)  &kp RA(RS(SEMI))  &kp RA(LS(S))             &none  &none   &none  &none    &bt BT_CLR  &bt BT_SEL 2
+                                                         &none            &trans  &none  &trans
             >;
         };
 
         function_layer {
             bindings = <
- &kp C_STOP    &kp C_PREV       &kp C_PP    &kp C_NEXT   &kp C_BRI_UP  &kp F12  &kp F7  &kp F8  &kp F9      &kp LC(PLUS)
-   &sk LALT      &sk LGUI      &sk LSHFT     &sk LCTRL   &kp C_BRI_DN  &kp F11  &kp F4  &kp F5  &kp F6     &kp LC(MINUS)
- &kp C_MUTE  &kp C_VOL_DN  &kp LC(LS(C))  &kp C_VOL_UP  &kp LC(LS(V))  &kp F10  &kp F1  &kp F2  &kp F3  &kp LC(NUMBER_0)
-                                                &trans          &none    &none  &trans
+&kp C_STOP    &kp C_PREV       &kp C_PP    &kp C_NEXT   &kp C_BRI_UP  &kp F12  &kp F7  &kp F8  &kp F9      &kp LC(PLUS)
+  &sk LALT      &sk LGUI      &sk LSHFT     &sk LCTRL   &kp C_BRI_DN  &kp F11  &kp F4  &kp F5  &kp F6     &kp LC(MINUS)
+&kp C_MUTE  &kp C_VOL_DN  &kp LC(LS(C))  &kp C_VOL_UP  &kp LC(LS(V))  &kp F10  &kp F1  &kp F2  &kp F3  &kp LC(NUMBER_0)
+                                               &trans          &none    &none  &trans
             >;
         };
     };
