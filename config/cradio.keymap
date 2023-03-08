@@ -42,9 +42,15 @@
             key-positions = <27 28>;
         };
 
-        bsp_combo {
+        bspc_combo {
             bindings = <&kp BACKSPACE>;
             key-positions = <8 7>;
+        };
+
+        tog_gaming_combo {
+            bindings = <&tog 5>;
+            key-positions = <32 33>;
+            layers = <5 0>;
         };
     };
 
@@ -115,6 +121,24 @@
 &sk LALT      &sk LGUI   &sk LSHFT     &sk LCTRL  &kp C_BRI_DN  &kp F11  &kp F4  &kp F5  &kp F6     &kp LC(MINUS)
    &none  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP         &none  &kp F10  &kp F1  &kp F2  &kp F3  &kp LC(NUMBER_0)
                                           &trans         &none    &none  &trans
+            >;
+        };
+
+        gaming {
+            bindings = <
+  &kp TAB  &kp Q  &kp W       &kp E      &kp R  &kp T  &kp Y  &kp U  &kp I    &kp O
+&kp LSHFT  &kp A  &kp S       &kp D      &kp F  &kp V  &kp H  &kp J  &kp K    &kp L
+&kp LCTRL  &kp Z  &kp X       &kp C      &kp G  &kp B  &kp N  &kp M  &kp P  &kp DOT
+                         &lt 6 LALT  &kp SPACE  &none  &none
+            >;
+        };
+
+        gaming_2 {
+            bindings = <
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &trans  &trans  &trans
+&kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans  &trans  &trans  &trans  &trans
+      &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                                                &trans        &trans  &trans  &trans
             >;
         };
     };
