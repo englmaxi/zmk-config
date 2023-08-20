@@ -116,10 +116,10 @@
 
         symbols_layer1 {
             bindings = <
-              &kp EXCL     &kp AT  &kp HASH  &mt RA(NUMBER_5) DOLLAR  &mt RA(LS(S)) PRCNT     &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp PLUS
-              &kp SEMI  &kp COLON  &kp LBRC                 &kp LPAR             &kp LBKT     &kp ASTRK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&mt RA(LS(SEMI)) CARET   &kp AMPS  &kp RBRC                 &kp RPAR             &kp RBKT  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-                                                         &lt 3 UNDER   &mt PIPE BACKSLASH         &none        &trans
+              &kp EXCL              &kp AT  &kp HASH  &mt RA(NUMBER_5) DOLLAR         &kp PERCENT     &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp PLUS
+              &kp SEMI           &kp COLON  &kp LBRC                 &kp LPAR            &kp LBKT     &kp ASTRK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&mt RA(LS(SEMI)) CARET  &mt RA(LS(S)) AMPS  &kp RBRC                 &kp RPAR            &kp RBKT  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+                                                                  &lt 3 UNDER  &mt PIPE BACKSLASH         &none        &trans
             >;
         };
 
