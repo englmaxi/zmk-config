@@ -98,9 +98,9 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp F            &kp P           &kp B      &kp J        &kp L      &kp U    &kp Y    &kp SQT
-&kp A  &kp R  &kp S            &kp T           &kp G      &kp M        &kp N      &kp E    &kp I      &kp O
-&kp Z  &kp X  &kp C            &kp D           &kp V      &kp K        &kp H  &kp COMMA  &kp DOT  &kp SLASH
+&kp Q  &kp W  &kp F            &kp P           &kp B      &kp J        &kp L      &kp U    &kp Y  &mt GRAVE SQT
+&kp A  &kp R  &kp S            &kp T           &kp G      &kp M        &kp N      &kp E    &kp I          &kp O
+&kp Z  &kp X  &kp C            &kp D           &kp V      &kp K        &kp H  &kp COMMA  &kp DOT      &kp SLASH
                      &lt 1 BACKSPACE  &sk LEFT_SHIFT  &kp SPACE  &lt 2 ENTER
             >;
         };
@@ -116,19 +116,19 @@
 
         symbols_layer1 {
             bindings = <
- &kp EXCL     &kp AT  &kp HASH  &mt RA(NUMBER_5) DOLLAR         &kp PERCENT     &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9        &kp PLUS
- &kp SEMI  &kp COLON  &kp LBRC                 &kp LPAR            &kp LBKT  &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6       &kp MINUS
-&kp CARET   &kp AMPS  &kp RBRC                 &kp RPAR            &kp RBKT  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDERSCORE
-                                                  &mo 4  &mt PIPE BACKSLASH         &none        &trans
+ &kp EXCL     &kp AT  &kp HASH  &mt RA(NUMBER_5) DOLLAR  &mt RA(LS(S)) PRCNT     &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9        &kp PLUS
+ &kp SEMI  &kp COLON  &kp LBRC                 &kp LPAR             &kp LBKT  &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6       &kp MINUS
+&kp CARET   &kp AMPS  &kp RBRC                 &kp RPAR             &kp RBKT  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDERSCORE
+                                                  &mo 4   &mt PIPE BACKSLASH         &none        &trans
             >;
         };
 
         symbols_layer2 {
             bindings = <
-             &none          &none             &none   &none  &none   &none  &none  &none  &out OUT_USB  &bt BT_SEL 0
-&kp RA(APOSTROPHE)  &kp RA(LS(S))             &none   &none  &none   &none  &none  &none  &out OUT_BLE  &bt BT_SEL 1
-         &kp GRAVE      &kp TILDE  &kp RA(RS(SEMI))   &none  &none   &none  &none  &none    &bt BT_CLR  &bt BT_SEL 2
-                                                     &trans  &none  &trans  &none
+&none      &none             &none   &none  &none   &none  &none  &none  &out OUT_USB  &bt BT_SEL 0
+&none      &none             &none   &none  &none   &none  &none  &none  &out OUT_BLE  &bt BT_SEL 1
+&none  &kp TILDE  &kp RA(RS(SEMI))   &none  &none   &none  &none  &none    &bt BT_CLR  &bt BT_SEL 2
+                                    &trans  &none  &trans  &none
             >;
         };
 
