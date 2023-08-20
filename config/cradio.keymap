@@ -81,19 +81,19 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp F  &kp P      &kp B      &kp J  &kp L      &kp U    &kp Y    &kp SQT
-&kp A  &kp R  &kp S  &kp T      &kp G      &kp M  &kp N      &kp E    &kp I      &kp O
-&kp Z  &kp X  &kp C  &kp D      &kp V      &kp K  &kp H  &kp COMMA  &kp DOT  &kp SLASH
-                     &mo 1  &kp LSHFT  &kp SPACE  &mo 2
+&kp Q  &kp W  &kp F            &kp P           &kp B      &kp J        &kp L      &kp U    &kp Y    &kp SQT
+&kp A  &kp R  &kp S            &kp T           &kp G      &kp M        &kp N      &kp E    &kp I      &kp O
+&kp Z  &kp X  &kp C            &kp D           &kp V      &kp K        &kp H  &kp COMMA  &kp DOT  &kp SLASH
+                     &lt 1 BACKSPACE  &sk LEFT_SHIFT  &kp SPACE  &lt 2 ENTER
             >;
         };
 
         extended_layer {
             bindings = <
-  &kp ESC  &kp LA(LEFT)  &kp LC(F)  &kp LA(RIGHT)    &kp INS     &kp HOME            &kp PAGE_DOWN  &kp PG_UP    &kp END         &kp CAPS
- &sk LALT      &sk LGUI  &sk LSHFT      &sk LCTRL   &sk RALT     &kp LEFT                 &kp DOWN     &kp UP  &kp RIGHT          &kp DEL
-&kp LC(Z)     &kp LC(X)  &kp LC(C)       &kp LGUI  &kp LC(V)      &kp RET  &hold_tab LC(BSPC) BSPC    &kp TAB      &none  &kp PRINTSCREEN
-                                           &trans      &none  &key_repeat                    &mo 4
+  &kp ESC  &kp LA(LEFT)  &kp LC(F)  &kp LA(RIGHT)    &kp INS     &kp HOME  &kp PAGE_DOWN  &kp PG_UP    &kp END         &kp CAPS
+ &sk LALT      &sk LGUI  &sk LSHFT      &sk LCTRL   &sk RALT     &kp LEFT       &kp DOWN     &kp UP  &kp RIGHT          &kp DEL
+&kp LC(Z)     &kp LC(X)  &kp LC(C)       &kp LGUI  &kp LC(V)      &kp RET  &kp BACKSPACE    &kp TAB      &none  &kp PRINTSCREEN
+                                           &trans      &none  &key_repeat          &mo 4
             >;
         };
 
@@ -108,10 +108,10 @@
 
         symbols_layer2 {
             bindings = <
-         &kp RA(Q)      &kp RA(P)         &kp RA(Y)  &kp RA(N5)  &kp RA(S)  &none   &none  &none  &out OUT_USB  &bt BT_SEL 0
-&kp RA(APOSTROPHE)  &kp RA(LS(S))     &kp BACKSLASH    &kp PIPE      &none  &none   &none  &none  &out OUT_BLE  &bt BT_SEL 1
-         &kp GRAVE      &kp TILDE  &kp RA(RS(SEMI))   &kp UNDER      &none  &none   &none  &none    &bt BT_CLR  &bt BT_SEL 2
-                                                          &none     &trans  &none  &trans
+             &none          &none             &none  &kp RA(N5)   &none  &none   &none  &none  &out OUT_USB  &bt BT_SEL 0
+&kp RA(APOSTROPHE)  &kp RA(LS(S))     &kp BACKSLASH    &kp PIPE   &none  &none   &none  &none  &out OUT_BLE  &bt BT_SEL 1
+         &kp GRAVE      &kp TILDE  &kp RA(RS(SEMI))   &kp UNDER   &none  &none   &none  &none    &bt BT_CLR  &bt BT_SEL 2
+                                                          &none  &trans  &none  &trans
             >;
         };
 
