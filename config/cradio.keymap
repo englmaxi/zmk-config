@@ -29,7 +29,7 @@
 
         tab_combo {
             bindings = <&kp TAB>;
-            key-positions = <22 21>;
+            key-positions = <11 12>;
         };
 
         esc_combo {
@@ -39,7 +39,7 @@
 
         enter_combo {
             bindings = <&kp ENTER>;
-            key-positions = <27 28>;
+            key-positions = <18 17>;
         };
 
         bspc_combo {
@@ -52,6 +52,16 @@
             key-positions = <32 33>;
             layers = <5 0>;
         };
+
+        minus_combo {
+            bindings = <&kp MINUS>;
+            key-positions = <6 3>;
+        };
+
+        under_combo {
+            bindings = <&kp UNDER>;
+            key-positions = <23 26>;
+        };
     };
 
     behaviors {
@@ -63,9 +73,9 @@
                 <&kp BSPC>,
                 <&kp LC(BSPC)>;
         };
-        hold_tab: new-behavior {
+        hold_tab: hold-tab {
             compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
+            label = "HOLD_TAB";
             bindings =
                 <&kp>,
                 <&kp>;
@@ -90,28 +100,28 @@
 
         extended_layer {
             bindings = <
-  &kp ESC  &kp LA(LEFT)  &kp LC(F)  &kp LA(RIGHT)    &kp INS     &kp HOME  &kp PAGE_DOWN  &kp PG_UP    &kp END         &kp CAPS
- &sk LALT      &sk LGUI  &sk LSHFT      &sk LCTRL   &sk RALT     &kp LEFT       &kp DOWN     &kp UP  &kp RIGHT          &kp DEL
-&kp LC(Z)     &kp LC(X)  &kp LC(C)       &kp LGUI  &kp LC(V)      &kp RET  &kp BACKSPACE    &kp TAB      &none  &kp PRINTSCREEN
-                                           &trans      &none  &key_repeat          &mo 4
+  &kp ESC  &kp LA(LEFT)  &kp LC(F)  &kp LA(RIGHT)    &kp INS  &kp HOME  &kp PAGE_DOWN  &kp PG_UP      &kp END         &kp CAPS
+ &sk LALT      &sk LGUI  &sk LSHFT      &sk LCTRL   &sk RALT  &kp LEFT       &kp DOWN     &kp UP    &kp RIGHT          &kp DEL
+&kp LC(Z)     &kp LC(X)  &kp LC(C)       &kp LGUI  &kp LC(V)   &kp RET  &kp BACKSPACE    &kp TAB  &key_repeat  &kp PRINTSCREEN
+                                           &trans      &none     &mo 3          &mo 4
             >;
         };
 
         symbols_layer1 {
             bindings = <
- &kp EXCL     &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT     &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9       &kp PLUS
- &kp SEMI  &kp COLON  &kp LBRC    &kp LPAR     &kp LBKT  &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp MINUS
-&kp CARET   &kp AMPS  &kp RBRC    &kp RPAR     &kp RBKT  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
-                                     &mo 4        &mo 3         &none        &trans
+ &kp EXCL     &kp AT  &kp HASH  &mt RA(NUMBER_5) DOLLAR         &kp PERCENT     &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9        &kp PLUS
+ &kp SEMI  &kp COLON  &kp LBRC                 &kp LPAR            &kp LBKT  &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6       &kp MINUS
+&kp CARET   &kp AMPS  &kp RBRC                 &kp RPAR            &kp RBKT  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDERSCORE
+                                                  &mo 4  &mt PIPE BACKSLASH         &none        &trans
             >;
         };
 
         symbols_layer2 {
             bindings = <
-             &none          &none             &none  &kp RA(N5)   &none  &none   &none  &none  &out OUT_USB  &bt BT_SEL 0
-&kp RA(APOSTROPHE)  &kp RA(LS(S))     &kp BACKSLASH    &kp PIPE   &none  &none   &none  &none  &out OUT_BLE  &bt BT_SEL 1
-         &kp GRAVE      &kp TILDE  &kp RA(RS(SEMI))   &kp UNDER   &none  &none   &none  &none    &bt BT_CLR  &bt BT_SEL 2
-                                                          &none  &trans  &none  &trans
+             &none          &none             &none   &none  &none   &none  &none  &none  &out OUT_USB  &bt BT_SEL 0
+&kp RA(APOSTROPHE)  &kp RA(LS(S))             &none   &none  &none   &none  &none  &none  &out OUT_BLE  &bt BT_SEL 1
+         &kp GRAVE      &kp TILDE  &kp RA(RS(SEMI))   &none  &none   &none  &none  &none    &bt BT_CLR  &bt BT_SEL 2
+                                                     &trans  &none  &trans  &none
             >;
         };
 
