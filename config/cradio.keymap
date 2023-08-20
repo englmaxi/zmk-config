@@ -25,26 +25,31 @@
         caps_world_combo {
             bindings = <&caps_word>;
             key-positions = <31 32>;
+            layers = <0>;
         };
 
         tab_combo {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
+            layers = <0>;
         };
 
         esc_combo {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
+            layers = <0>;
         };
 
         enter_combo {
             bindings = <&kp ENTER>;
             key-positions = <18 17>;
+            layers = <0>;
         };
 
         bspc_combo {
             bindings = <&kp BACKSPACE>;
             key-positions = <8 7>;
+            layers = <0>;
         };
 
         tog_gaming_combo {
@@ -56,11 +61,13 @@
         minus_combo {
             bindings = <&kp MINUS>;
             key-positions = <6 3>;
+            layers = <0>;
         };
 
         under_combo {
             bindings = <&kp UNDER>;
             key-positions = <23 26>;
+            layers = <0>;
         };
     };
 
