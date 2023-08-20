@@ -110,34 +110,34 @@
   &kp ESC  &kp LA(LEFT)  &kp LC(F)  &kp LA(RIGHT)    &kp INS  &kp HOME  &kp PAGE_DOWN  &kp PG_UP      &kp END         &kp CAPS
  &sk LALT      &sk LGUI  &sk LSHFT      &sk LCTRL   &sk RALT  &kp LEFT       &kp DOWN     &kp UP    &kp RIGHT          &kp DEL
 &kp LC(Z)     &kp LC(X)  &kp LC(C)       &kp LGUI  &kp LC(V)   &kp RET  &kp BACKSPACE    &kp TAB  &key_repeat  &kp PRINTSCREEN
-                                           &trans      &none     &mo 3          &mo 4
+                                           &trans      &none     &mo 4          &mo 3
             >;
         };
 
         symbols_layer1 {
             bindings = <
- &kp EXCL     &kp AT  &kp HASH  &mt RA(NUMBER_5) DOLLAR  &mt RA(LS(S)) PRCNT     &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9        &kp PLUS
- &kp SEMI  &kp COLON  &kp LBRC                 &kp LPAR             &kp LBKT  &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6       &kp MINUS
-&kp CARET   &kp AMPS  &kp RBRC                 &kp RPAR             &kp RBKT  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDERSCORE
-                                                  &mo 4   &mt PIPE BACKSLASH         &none        &trans
-            >;
-        };
-
-        symbols_layer2 {
-            bindings = <
-&none      &none             &none   &none  &none   &none  &none  &none  &out OUT_USB  &bt BT_SEL 0
-&none      &none             &none   &none  &none   &none  &none  &none  &out OUT_BLE  &bt BT_SEL 1
-&none  &kp TILDE  &kp RA(RS(SEMI))   &none  &none   &none  &none  &none    &bt BT_CLR  &bt BT_SEL 2
-                                    &trans  &none  &trans  &none
+              &kp EXCL     &kp AT  &kp HASH  &mt RA(NUMBER_5) DOLLAR  &mt RA(LS(S)) PRCNT  &mt TILDE EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9       &kp PLUS
+              &kp SEMI  &kp COLON  &kp LBRC                 &kp LPAR             &kp LBKT        &kp ASTRK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp MINUS
+&mt RA(LS(SEMI)) CARET   &kp AMPS  &kp RBRC                 &kp RPAR             &kp RBKT     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
+                                                         &lt 3 UNDER   &mt PIPE BACKSLASH            &none        &trans
             >;
         };
 
         function_layer {
             bindings = <
-   &none  &kp C_VOL_DN        &kp C_MUTE  &kp C_VOL_UP  &kp C_BRI_UP  &kp F12  &kp F7  &kp F8  &kp F9      &kp LC(PLUS)
-&sk LALT      &sk LGUI         &sk LSHFT     &sk LCTRL  &kp C_BRI_DN  &kp F11  &kp F4  &kp F5  &kp F6     &kp LC(MINUS)
-   &none    &kp C_PREV  &kp C_PLAY_PAUSE    &kp C_NEXT         &none  &kp F10  &kp F1  &kp F2  &kp F3  &kp LC(NUMBER_0)
-                                                &trans         &none    &none  &trans
+&kp LA(TAB)  &kp C_VOL_DN        &kp C_MUTE  &kp C_VOL_UP  &kp C_BRI_UP  &kp F12  &kp F7  &kp F8  &kp F9      &kp LC(PLUS)
+   &sk LALT      &sk LGUI         &sk LSHFT     &sk LCTRL  &kp C_BRI_DN  &kp F11  &kp F4  &kp F5  &kp F6     &kp LC(MINUS)
+&kp LC(TAB)    &kp C_PREV  &kp C_PLAY_PAUSE    &kp C_NEXT         &none  &kp F10  &kp F1  &kp F2  &kp F3  &kp LC(NUMBER_0)
+                                                   &trans         &none    &none  &trans
+            >;
+        };
+
+        hw_layer {
+            bindings = <
+&bootloader  &none  &none   &none  &none   &none  &none  &none  &out OUT_USB  &bt BT_SEL 0
+      &none  &none  &none   &none  &none   &none  &none  &none  &out OUT_BLE  &bt BT_SEL 1
+      &none  &none  &none   &none  &none   &none  &none  &none    &bt BT_CLR  &bt BT_SEL 2
+                           &trans  &none  &trans  &none
             >;
         };
 
