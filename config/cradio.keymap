@@ -104,7 +104,7 @@
             bindings = <
   &kp ESC  &kp LA(LEFT)  &kp LC(F)  &kp LA(RIGHT)    &kp INS  &kp HOME  &kp PAGE_DOWN  &kp PG_UP      &kp END         &kp CAPS
  &sk LALT      &sk LGUI  &sk LSHFT      &sk LCTRL   &sk RALT  &kp LEFT       &kp DOWN     &kp UP    &kp RIGHT          &kp DEL
-&kp LC(Z)     &kp LC(X)  &kp LC(C)       &kp LGUI  &kp LC(V)   &kp RET  &kp BACKSPACE    &kp TAB  &key_repeat  &kp PRINTSCREEN
+&kp LC(Z)     &kp LC(X)  &kp LC(C)        &kp TAB  &kp LC(V)   &kp RET  &kp BACKSPACE      &none  &key_repeat  &kp PRINTSCREEN
                                            &trans      &none     &mo 4          &mo 3
             >;
         };
