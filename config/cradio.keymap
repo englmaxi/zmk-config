@@ -75,7 +75,7 @@
                 <&kp LC(BSPC)>,
                 <&kp LC(LS(BSPC))>;
         };
-        tp: tap_preferred {
+        ht: hold-tap_tap-preferred {
             compatible = "zmk,behavior-hold-tap";
             label = "hold-tab with tap-preferred";
             bindings =
@@ -93,7 +93,7 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp F            &kp P           &kp B      &kp J        &kp L      &kp U    &kp Y  &tp GRAVE SQT
+&kp Q  &kp W  &kp F            &kp P           &kp B      &kp J        &kp L      &kp U    &kp Y  &ht GRAVE SQT
 &kp A  &kp R  &kp S            &kp T           &kp G      &kp M        &kp N      &kp E    &kp I          &kp O
 &kp Z  &kp X  &kp C            &kp D           &kp V      &kp K        &kp H  &kp COMMA  &kp DOT      &kp SLASH
                      &lt 1 BACKSPACE  &sk LEFT_SHIFT  &kp SPACE  &lt 2 ENTER
@@ -111,10 +111,10 @@
 
         symbols_layer {
             bindings = <
-              &kp EXCL              &kp AT  &kp HASH  &tp RA(NUMBER_5) DOLLAR         &kp PERCENT     &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp PLUS
+              &kp EXCL              &kp AT  &kp HASH  &ht RA(NUMBER_5) DOLLAR         &kp PERCENT     &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp PLUS
               &kp SEMI           &kp COLON  &kp LBRC                 &kp LPAR            &kp LBKT     &kp ASTRK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&tp RA(LS(SEMI)) CARET  &tp RA(LS(S)) AMPS  &kp RBRC                 &kp RPAR            &kp RBKT  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-                                                                  &lt 3 UNDER  &tp PIPE BACKSLASH         &none        &trans
+&ht RA(LS(SEMI)) CARET  &ht RA(LS(S)) AMPS  &kp RBRC                 &kp RPAR            &kp RBKT  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+                                                                  &lt 3 UNDER  &ht PIPE BACKSLASH         &none        &trans
             >;
         };
 
