@@ -9,12 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define DEF     0
-#define EXT     1
-#define SYM1    2
-#define SYM2    3
-#define FUNC    4
-
 / {
     // combos {
     // };
@@ -114,7 +108,7 @@
             >;
         };
 
-        symbols_layer1 {
+        symbols_layer {
             bindings = <
               &kp EXCL              &kp AT  &kp HASH  &mt RA(NUMBER_5) DOLLAR         &kp PERCENT     &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp PLUS
               &kp SEMI           &kp COLON  &kp LBRC                 &kp LPAR            &kp LBKT     &kp ASTRK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
@@ -150,7 +144,7 @@
             >;
         };
 
-        gaming_layer2 {
+        gaming2_layer {
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &trans  &trans  &trans
 &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans  &trans  &trans  &trans  &trans
