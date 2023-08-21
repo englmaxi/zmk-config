@@ -68,15 +68,16 @@
     behaviors {
         td_bspc: td_bspc {
             compatible = "zmk,behavior-tap-dance";
-            label = "td_bspc";
+            label = "delete char|word|row";
             #binding-cells = <0>;
             bindings =
                 <&kp BSPC>,
-                <&kp LC(BSPC)>;
+                <&kp LC(BSPC)>,
+                <&kp LC(LS(BSPC))>;
         };
         tp: tap_preferred {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_PREFERRED";
+            label = "hold-tab with tap-preferred";
             bindings =
                 <&kp>,
                 <&kp>;
