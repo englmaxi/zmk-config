@@ -24,7 +24,7 @@
 
         tab_combo {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <21 22>;
             layers = <0>;
         };
 
@@ -36,7 +36,7 @@
 
         enter_combo {
             bindings = <&kp ENTER>;
-            key-positions = <18 17>;
+            key-positions = <27 28>;
             layers = <0>;
         };
 
