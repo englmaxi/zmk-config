@@ -89,7 +89,7 @@
             bindings = <
 &kp Q  &kp W  &kp F  &kp P            &kp B    &kp J      &kp L        &kp U      &kp Y    &ht GRAVE SQT
 &kp A  &kp R  &kp S  &kp T            &kp G    &kp M      &kp N        &kp E      &kp I    &kp O
-&kp Z  &kp X  &kp C  &kp D            &kp V    &kp K      &kp H        &kp COMMA  &kp DOT  &kp SLASH
+&kp Z  &kp X  &kp C  &kp D            &kp V    &kp K      &kp H        &kp COMMA  &kp DOT  &kp SEMI
                      &lt 1 BACKSPACE  &td_scw  &kp SPACE  &lt 2 ENTER
             >;
         };
@@ -105,10 +105,10 @@
 
         symbols_layer {
             bindings = <
-&kp EXCL                &kp AT              &kp HASH  &ht RA(NUMBER_5) DOLLAR  &kp PERCENT         &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
-&kp SEMI                &kp COLON           &kp LBRC  &kp LPAR                 &kp LBKT            &kp ASTRK     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&ht RA(LS(SEMI)) CARET  &ht RA(LS(S)) AMPS  &kp RBRC  &kp RPAR                 &kp RBKT            &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-                                                      &lt 1 UNDER              &ht PIPE BACKSLASH  &none         &trans
+&ht EXCL QUESTION       &kp AT              &kp HASH  &ht RA(NUMBER_5) DOLLAR  &kp PERCENT  &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
+&ht PIPE BACKSLASH      &kp UNDER           &kp LBRC  &kp LPAR                 &kp LBKT     &kp ASTRK     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&ht RA(LS(SEMI)) CARET  &ht RA(LS(S)) AMPS  &kp RBRC  &kp RPAR                 &kp RBKT     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+                                                      &mo 1                    &none        &none         &trans
             >;
         };
 
