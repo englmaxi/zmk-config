@@ -70,7 +70,7 @@
         };
         td_scw: td_shift_caps_word {
             compatible = "zmk,behavior-tap-dance";
-            label = "shift on tap, caps_word on double-tab";
+            label = "shift on tap, caps_word on double-tap";
             #binding-cells = <0>;
             bindings =
                 <&sk LSHIFT>,
