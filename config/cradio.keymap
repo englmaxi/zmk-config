@@ -73,7 +73,7 @@
             label = "shift on tap, caps_word on double-tap";
             #binding-cells = <0>;
             bindings =
-                <&sk LSHIFT>,
+                <&kp LSHIFT>,
                 <&caps_word>;
         };
     };
@@ -92,10 +92,10 @@
 
         extended_layer {
             bindings = <
-&kp ESC    &kp LA(LEFT)  &kp LC(F)  &kp LA(RIGHT)  &kp INS    &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END      &kp CAPS
-&sk LALT   &sk LGUI      &sk LSHFT  &sk LCTRL      &sk RALT   &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT    &kp DEL
-&kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp TAB        &kp LC(V)  &kp RET   &kp BACKSPACE  &none      &key_repeat  &kp PRINTSCREEN
-                                    &trans         &none      &mo 4     &mo 2
+&kp ESC    &kp LC(W)  &kp LC(F)  &sk LC(LS(LA(LEFT_GUI)))  &kp INS    &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END      &kp CAPS
+&sk LALT   &sk LGUI   &sk LSHFT  &sk LCTRL                 &sk RALT   &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT    &kp DEL
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp TAB                   &kp LC(V)  &kp RET   &kp BACKSPACE  &none      &key_repeat  &kp PRINTSCREEN
+                                 &trans                    &none      &mo 4     &mo 2
             >;
         };
 
