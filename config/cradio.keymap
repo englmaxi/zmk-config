@@ -16,12 +16,6 @@
     combos {
         compatible = "zmk,combos";
 
-        caps_world_combo {
-            bindings = <&caps_word>;
-            key-positions = <31 32>;
-            layers = <0>;
-        };
-
         tab_combo {
             bindings = <&kp TAB>;
             key-positions = <21 22>;
@@ -51,18 +45,6 @@
             key-positions = <32 33>;
             layers = <5 0>;
         };
-
-        minus_combo {
-            bindings = <&kp MINUS>;
-            key-positions = <6 3>;
-            layers = <0>;
-        };
-
-        under_combo {
-            bindings = <&kp UNDER>;
-            key-positions = <23 26>;
-            layers = <0>;
-        };
     };
 
     behaviors {
@@ -75,7 +57,7 @@
                 <&kp LC(BSPC)>,
                 <&kp LC(LS(BSPC))>;
         };
-        ht: hold-tap_tap-preferred {
+        ht: ht {
             compatible = "zmk,behavior-hold-tap";
             label = "hold-tab with tap-preferred";
             bindings =
@@ -86,6 +68,14 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+        td_scw: td_shift_caps_word {
+            compatible = "zmk,behavior-tap-dance";
+            label = "shift on tap, caps_word on double-tab";
+            #binding-cells = <0>;
+            bindings =
+                <&sk LSHIFT>,
+                <&caps_word>;
+        };
     };
 
     keymap {
@@ -93,10 +83,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp F  &kp P            &kp B           &kp J      &kp L        &kp U      &kp Y    &ht GRAVE SQT
-&kp A  &kp R  &kp S  &kp T            &kp G           &kp M      &kp N        &kp E      &kp I    &kp O
-&kp Z  &kp X  &kp C  &kp D            &kp V           &kp K      &kp H        &kp COMMA  &kp DOT  &kp SLASH
-                     &lt 1 BACKSPACE  &sk LEFT_SHIFT  &kp SPACE  &lt 2 ENTER
+&kp Q  &kp W  &kp F  &kp P            &kp B    &kp J      &kp L        &kp U      &kp Y    &ht GRAVE SQT
+&kp A  &kp R  &kp S  &kp T            &kp G    &kp M      &kp N        &kp E      &kp I    &kp O
+&kp Z  &kp X  &kp C  &kp D            &kp V    &kp K      &kp H        &kp COMMA  &kp DOT  &kp SLASH
+                     &lt 1 BACKSPACE  &td_scw  &kp SPACE  &lt 2 ENTER
             >;
         };
 
@@ -105,7 +95,7 @@
 &kp ESC    &kp LA(LEFT)  &kp LC(F)  &kp LA(RIGHT)  &kp INS    &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END      &kp CAPS
 &sk LALT   &sk LGUI      &sk LSHFT  &sk LCTRL      &sk RALT   &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT    &kp DEL
 &kp LC(Z)  &kp LC(X)     &kp LC(C)  &kp TAB        &kp LC(V)  &kp RET   &kp BACKSPACE  &none      &key_repeat  &kp PRINTSCREEN
-                                    &trans         &none      &mo 4     &mo 3
+                                    &trans         &none      &mo 4     &mo 2
             >;
         };
 
@@ -114,7 +104,7 @@
 &kp EXCL                &kp AT              &kp HASH  &ht RA(NUMBER_5) DOLLAR  &kp PERCENT         &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
 &kp SEMI                &kp COLON           &kp LBRC  &kp LPAR                 &kp LBKT            &kp ASTRK     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
 &ht RA(LS(SEMI)) CARET  &ht RA(LS(S)) AMPS  &kp RBRC  &kp RPAR                 &kp RBKT            &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-                                                      &lt 3 UNDER              &ht PIPE BACKSLASH  &none         &trans
+                                                      &lt 1 UNDER              &ht PIPE BACKSLASH  &none         &trans
             >;
         };
 
@@ -152,6 +142,15 @@
 &trans        &trans        &trans        &kp ESC       &kp F5        &trans  &trans          &trans          &trans           &trans
                                           &trans        &trans        &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        fun_cond {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
