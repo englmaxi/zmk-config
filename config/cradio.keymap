@@ -80,6 +80,37 @@
                 <&kp LSHIFT>,
                 <&caps_word>;
         };
+        dot_morph_cancel: dot_morph_cancel {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_MORPH_CANCEL";
+            bindings =
+                <&kp DOT>,
+                <&kp DOT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        spc_morph: spc_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SPC_MORPH";
+            bindings =
+                <&kp SPACE>,
+                <&dot_space_shift>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    macros {
+        dot_space_shift: dot_space_shift {
+            compatible = "zmk,behavior-macro";
+            label = "DOT_SPACE_SHIFT";
+            #binding-cells = <0>;
+            bindings = <&dot_morph_cancel &kp SPACE &sk LEFT_SHIFT>;
+            wait-ms = <5>;
+            tap-ms = <5>;
+        };
     };
 
     keymap {
@@ -87,10 +118,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp F  &kp P            &kp B    &kp J      &kp L        &kp U      &kp Y    &ht GRAVE SQT
-&kp A  &kp R  &kp S  &kp T            &kp G    &kp M      &kp N        &kp E      &kp I    &kp O
-&kp Z  &kp X  &kp C  &kp D            &kp V    &kp K      &kp H        &kp COMMA  &kp DOT  &kp SEMI
-                     &lt 1 BACKSPACE  &td_scw  &kp SPACE  &lt 2 ENTER
+&kp Q  &kp W  &kp F  &kp P            &kp B    &kp J       &kp L        &kp U      &kp Y    &ht GRAVE SQT
+&kp A  &kp R  &kp S  &kp T            &kp G    &kp M       &kp N        &kp E      &kp I    &kp O
+&kp Z  &kp X  &kp C  &kp D            &kp V    &kp K       &kp H        &kp COMMA  &kp DOT  &kp SEMI
+                     &lt 1 BACKSPACE  &td_scw  &spc_morph  &lt 2 ENTER
             >;
         };
 
