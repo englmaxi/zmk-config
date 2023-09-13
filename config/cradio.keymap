@@ -104,7 +104,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        mt_spc_morph: mt_spc_morph {
+        ht_spc_morph: ht_spc_morph {
             compatible = "zmk,behavior-hold-tap";
             label = "tap executes spc_morph";
             bindings =
@@ -113,6 +113,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -135,7 +136,7 @@
 &kp Q  &kp W  &kp F  &kp P            &kp B    &kp J                         &kp L        &kp U      &kp Y    &ht GRAVE SQT
 &kp A  &kp R  &kp S  &kp T            &kp G    &kp M                         &kp N        &kp E      &kp I    &kp O
 &kp Z  &kp X  &kp C  &kp D            &kp V    &kp K                         &kp H        &kp COMMA  &kp DOT  &kp SEMI
-                     &lt 1 BACKSPACE  &td_scw  &mt_spc_morph LS(LC(LALT)) 0  &lt 2 ENTER
+                     &lt 1 BACKSPACE  &td_scw  &ht_spc_morph LS(LC(LALT)) 0  &lt 2 ENTER
             >;
         };
 
