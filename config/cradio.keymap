@@ -138,8 +138,6 @@
 &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K                         &kp H  &kp COMMA  &kp DOT  &kp SEMI
                      &mo 1  &td_scw  &ht_spc_morph LS(LC(LALT)) 0  &mo 2
             >;
-
-            label = "default layer";
         };
 
         EXT_layer {
@@ -149,8 +147,6 @@
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp TAB    &kp LC(V)  &kp RET   &kp BSPC   &none      &key_repeat  &kp PSCRN
                                  &trans     &trans     &mo 4     &trans
             >;
-
-            label = "extended layer";
         };
 
         SYM_layer {
@@ -160,8 +156,6 @@
 &ht RA(LS(SEMI)) CARET  &ht RA(LS(S)) AMPS  &kp RBRC  &kp RPAR               &kp RBKT   &kp N0     &kp N1  &kp N2  &kp N3  &kp FSLH
                                                       &trans                 &trans     &none      &trans
             >;
-
-            label = "symbol layer";
         };
 
         FUN_layer {
@@ -171,8 +165,6 @@
 &none     &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &none         &kp F10  &kp F1  &kp F2  &kp F3  &kp LC(NUMBER_0)
                                           &trans        &trans        &none    &trans
             >;
-
-            label = "function layer";
         };
 
         HW_layer {
@@ -182,8 +174,6 @@
 &none        &none  &none         &none         &none  &none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 3  &none
                                   &trans        &none  &trans  &none
             >;
-
-            label = "hardware layer";
         };
 
         GAME_layer {
@@ -193,8 +183,6 @@
 &kp LCTRL  &kp Z  &kp X  &kp C       &kp G      &kp B      &kp N  &kp M  &kp P  &kp DOT
                          &lt 6 LALT  &kp SPACE  &kp SPACE  &none
             >;
-
-            label = "gaming layer 1";
         };
 
         GAME2_layer {
@@ -204,8 +192,6 @@
 &trans        &kp BSPC      &kp DEL       &kp ESC       &kp F5        &trans  &trans    &trans    &trans     &trans
                                           &trans        &trans        &trans  &trans
             >;
-
-            label = "gaming layer 2";
         };
     };
 
