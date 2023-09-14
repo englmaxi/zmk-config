@@ -133,19 +133,19 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp F  &kp P            &kp B    &kp J                         &kp L        &kp U      &kp Y    &ht GRAVE SQT
-&kp A  &kp R  &kp S  &kp T            &kp G    &kp M                         &kp N        &kp E      &kp I    &kp O
-&kp Z  &kp X  &kp C  &kp D            &kp V    &kp K                         &kp H        &kp COMMA  &kp DOT  &kp SEMI
-                     &lt 1 BACKSPACE  &td_scw  &ht_spc_morph LS(LC(LALT)) 0  &lt 2 ENTER
+&kp Q  &kp W  &kp F  &kp P  &kp B    &kp J                         &kp L  &kp U      &kp Y    &ht GRAVE SQT
+&kp A  &kp R  &kp S  &kp T  &kp G    &kp M                         &kp N  &kp E      &kp I    &kp O
+&kp Z  &kp X  &kp C  &kp D  &kp V    &kp K                         &kp H  &kp COMMA  &kp DOT  &kp SEMI
+                     &mo 1  &td_scw  &ht_spc_morph LS(LC(LALT)) 0  &mo 2
             >;
         };
 
         extended_layer {
             bindings = <
-&kp ESC    &kp LC(W)  &kp LC(F)  &sk LC(LS(LA(LEFT_GUI)))  &kp INS    &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END      &kp CAPS
-&sk LALT   &sk LGUI   &sk LSHFT  &sk LCTRL                 &sk RALT   &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT    &kp DEL
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp TAB                   &kp LC(V)  &kp RET   &kp BACKSPACE  &none      &key_repeat  &kp PRINTSCREEN
-                                 &trans                    &trans     &mo 4     &mo 2
+&kp ESC    &kp LC(W)  &kp LC(F)  &kp BACKSPACE  &kp INS    &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END      &kp CAPS
+&sk LALT   &sk LGUI   &sk LSHFT  &sk LCTRL      &sk RALT   &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT    &kp DEL
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp TAB        &kp LC(V)  &kp RET   &kp BACKSPACE  &none      &key_repeat  &kp PRINTSCREEN
+                                 &trans         &trans     &mo 4     &mo 2
             >;
         };
 
