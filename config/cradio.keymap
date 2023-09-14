@@ -131,7 +131,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        BASE_layer {
+        BASE_LAYER {
             bindings = <
 &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J                         &kp L  &kp U      &kp Y    &ht GRAVE SQT
 &kp A  &kp R  &kp S  &kp T  &kp G    &kp M                         &kp N  &kp E      &kp I    &kp O
@@ -140,7 +140,7 @@
             >;
         };
 
-        EXT_layer {
+        EXT_LAYER {
             bindings = <
 &kp ESC    &kp LC(W)  &kp LC(F)  &kp BSPC   &kp INS    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END      &kp CAPS
 &sk LALT   &sk LGUI   &sk LSHFT  &sk LCTRL  &sk RALT   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT    &kp DEL
@@ -149,7 +149,7 @@
             >;
         };
 
-        SYM_layer {
+        SYM_LAYER {
             bindings = <
 &ht EXCL QMARK          &kp AT              &kp HASH  &ht RA(NUMBER_5) DLLR  &kp PRCNT  &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp PLUS
 &ht PIPE BSLH           &kp UNDER           &kp LBRC  &kp LPAR               &kp LBKT   &kp STAR   &kp N4  &kp N5  &kp N6  &kp MINUS
@@ -158,7 +158,7 @@
             >;
         };
 
-        FUN_layer {
+        FUN_LAYER {
             bindings = <
 &none     &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP  &kp C_BRI_UP  &kp F12  &kp F7  &kp F8  &kp F9  &kp LC(PLUS)
 &sk LALT  &sk LGUI      &sk LSHFT         &sk LCTRL     &kp C_BRI_DN  &kp F11  &kp F4  &kp F5  &kp F6  &kp LC(MINUS)
@@ -167,7 +167,7 @@
             >;
         };
 
-        HW_layer {
+        HW_LAYER {
             bindings = <
 &bootloader  &none  &none         &none         &none  &none   &none         &none         &none         &bootloader
 &none        &none  &out OUT_USB  &out OUT_TOG  &none  &none   &bt BT_NXT    &out OUT_BLE  &bt BT_CLR    &none
@@ -176,7 +176,7 @@
             >;
         };
 
-        GAME_layer {
+        GAME_LAYER {
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E       &kp R      &kp T      &kp Y  &kp U  &kp I  &kp O
 &kp LSHFT  &kp A  &kp S  &kp D       &kp F      &kp V      &kp H  &kp J  &kp K  &kp L
@@ -185,7 +185,7 @@
             >;
         };
 
-        GAME2_layer {
+        GAME2_LAYER {
             bindings = <
 &kp N1  &kp N2    &kp N3   &kp N4   &kp N5  &trans  &trans    &kp UP    &trans     &trans
 &kp N6  &kp N7    &kp N8   &kp N9   &kp N0  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
