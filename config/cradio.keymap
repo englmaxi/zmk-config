@@ -126,6 +126,14 @@
             wait-ms = <5>;
             tap-ms = <5>;
         };
+        sel_line: sel_line {
+            compatible = "zmk,behavior-macro";
+            label = "select the entire line";
+            #binding-cells = <0>;
+            bindings = <&kp HOME &kp LS(END)>;
+            wait-ms = <5>;
+            tap-ms = <5>;
+        };
     };
 
     keymap {
@@ -144,7 +152,7 @@
             bindings = <
 &kp ESC    &kp LC(W)  &kp LC(F)  &kp BSPC   &kp INS    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END      &kp CAPS
 &sk LALT   &sk LGUI   &sk LSHFT  &sk LCTRL  &sk RALT   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT    &kp DEL
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp TAB    &kp LC(V)  &kp RET   &kp BSPC   &none      &key_repeat  &kp PSCRN
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp TAB    &kp LC(V)  &kp RET   &kp BSPC   &sel_line  &key_repeat  &kp PSCRN
                                  &trans     &trans     &mo 4     &trans
             >;
         };
