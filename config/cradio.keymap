@@ -53,6 +53,54 @@
             key-positions = <32 33>;
             layers = <5 0>;
         };
+
+        lpar_comb {
+            bindings = <&kp LPAR>;
+            key-positions = <3 13>;
+            layers = <0>;
+        };
+
+        rpar_combo {
+            bindings = <&kp RPAR>;
+            key-positions = <6 16>;
+            layers = <0>;
+        };
+
+        lbkt_combo {
+            bindings = <&kp LBKT>;
+            key-positions = <4 14>;
+            layers = <0>;
+        };
+
+        rbkt_combo {
+            bindings = <&kp RBKT>;
+            key-positions = <5 15>;
+            layers = <0>;
+        };
+
+        lbrc_combo {
+            bindings = <&kp LBRC>;
+            key-positions = <12 2>;
+            layers = <0>;
+        };
+
+        rbrc_combo {
+            bindings = <&kp RBRC>;
+            key-positions = <7 17>;
+            layers = <0>;
+        };
+
+        under_combo {
+            bindings = <&kp UNDER>;
+            key-positions = <13 23>;
+            layers = <0>;
+        };
+
+        minus_combo {
+            bindings = <&kp MINUS>;
+            key-positions = <16 26>;
+            layers = <0>;
+        };
     };
 
     behaviors {
