@@ -207,10 +207,10 @@
 
         sym_layer {
             bindings = <
-&ht EXCL QMARK          &kp AT              &kp HASH  &ht RA(NUMBER_5) DLLR  &kp PRCNT  &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp PLUS
-&ht PIPE BSLH           &kp UNDER           &kp LBRC  &kp LPAR               &kp LBKT   &kp STAR   &kp N4  &kp N5  &kp N6  &kp MINUS
+&kp EXCL                &kp AT              &kp HASH  &ht RA(NUMBER_5) DLLR  &kp PRCNT  &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp PLUS
+&kp QMARK               &ht PIPE BSLH       &kp LBRC  &kp LPAR               &kp LBKT   &kp STAR   &kp N4  &kp N5  &kp N6  &kp MINUS
 &ht RA(LS(SEMI)) CARET  &ht RA(LS(S)) AMPS  &kp RBRC  &kp RPAR               &kp RBKT   &kp N0     &kp N1  &kp N2  &kp N3  &kp FSLH
-                                                      &trans                 &trans     &none      &trans
+                                                      &trans                 &kp UNDER  &none      &trans
             >;
         };
 
