@@ -131,6 +131,8 @@
             bindings =
                 <&kp LSHIFT>,
                 <&caps_word>;
+
+            tapping-term-ms = <400>;
         };
         dot_morph_cancel: dot_morph_cancel {
             compatible = "zmk,behavior-mod-morph";
