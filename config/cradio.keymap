@@ -24,18 +24,6 @@
     combos {
         compatible = "zmk,combos";
 
-        tab_combo {
-            bindings = <&kp TAB>;
-            key-positions = <21 22>;
-            layers = <0>;
-        };
-
-        esc_combo {
-            bindings = <&kp ESC>;
-            key-positions = <1 2>;
-            layers = <0>;
-        };
-
         enter_combo {
             bindings = <&kp RET>;
             key-positions = <27 28>;
@@ -52,54 +40,63 @@
             bindings = <&tog 5>;
             key-positions = <32 33>;
             layers = <5 0>;
+            require-prior-idle-ms = <1000>;
         };
 
         lpar_comb {
             bindings = <&kp LPAR>;
             key-positions = <3 13>;
             layers = <0>;
+            require-prior-idle-ms = <125>;
         };
 
         rpar_combo {
             bindings = <&kp RPAR>;
             key-positions = <6 16>;
             layers = <0>;
+            require-prior-idle-ms = <125>;
         };
 
         lbkt_combo {
             bindings = <&kp LBKT>;
             key-positions = <4 14>;
             layers = <0>;
+            require-prior-idle-ms = <125>;
         };
 
         rbkt_combo {
             bindings = <&kp RBKT>;
             key-positions = <5 15>;
             layers = <0>;
+            require-prior-idle-ms = <125>;
         };
 
         lbrc_combo {
             bindings = <&kp LBRC>;
             key-positions = <12 2>;
             layers = <0>;
+            require-prior-idle-ms = <125>;
         };
 
         rbrc_combo {
             bindings = <&kp RBRC>;
             key-positions = <7 17>;
             layers = <0>;
+            require-prior-idle-ms = <125>;
         };
 
         under_combo {
             bindings = <&kp UNDER>;
             key-positions = <13 23>;
             layers = <0>;
+            require-prior-idle-ms = <125>;
         };
 
         minus_combo {
             bindings = <&kp MINUS>;
             key-positions = <16 26>;
             layers = <0>;
+            require-prior-idle-ms = <125>;
         };
     };
 
@@ -108,17 +105,12 @@
             compatible = "zmk,behavior-tap-dance";
             label = "delete char|word|row";
             #binding-cells = <0>;
-            bindings =
-                <&kp BSPC>,
-                <&kp LC(BSPC)>,
-                <&kp LC(LS(BSPC))>;
+            bindings = <&kp BSPC>, <&kp LC(BSPC)>, <&kp LC(LS(BSPC))>;
         };
         ht: ht {
             compatible = "zmk,behavior-hold-tap";
             label = "hold-tab with tap-preferred";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -128,18 +120,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "shift on tap, caps_word on double-tap";
             #binding-cells = <0>;
-            bindings =
-                <&kp LSHIFT>,
-                <&caps_word>;
+            bindings = <&kp LSHIFT>, <&caps_word>;
 
             tapping-term-ms = <400>;
         };
         dot_morph_cancel: dot_morph_cancel {
             compatible = "zmk,behavior-mod-morph";
             label = "DOT_MORPH_CANCEL";
-            bindings =
-                <&kp DOT>,
-                <&kp DOT>;
+            bindings = <&kp DOT>, <&kp DOT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -147,9 +135,7 @@
         spc_morph: spc_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "SPC_MORPH";
-            bindings =
-                <&kp SPACE>,
-                <&dot_space_shift>;
+            bindings = <&kp SPACE>, <&dot_space_shift>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -157,9 +143,7 @@
         ht_spc_morph: ht_spc_morph {
             compatible = "zmk,behavior-hold-tap";
             label = "tap executes spc_morph";
-            bindings =
-                <&kp>,
-                <&spc_morph>;
+            bindings = <&kp>, <&spc_morph>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
