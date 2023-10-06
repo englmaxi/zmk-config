@@ -5,10 +5,10 @@
  */
 
 #include <behaviors.dtsi>
+#include "keys_us_international.h"
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "keys_us_international.h"
 
 &caps_word {
     continue-list = <UNDERSCORE BACKSPACE DELETE MINUS N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
@@ -194,10 +194,10 @@
 
         sym_layer {
             bindings = <
-&kp EXCL                &kp AT              &kp HASH  &ht RA(NUMBER_5) DLLR  &kp PRCNT  &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp PLUS
-&kp QMARK               &ht PIPE BSLH       &kp LBRC  &kp LPAR               &kp LBKT   &kp STAR   &kp N4  &kp N5  &kp N6  &kp MINUS
-&ht RA(LS(SEMI)) CARET  &ht RA(LS(S)) AMPS  &kp RBRC  &kp RPAR               &kp RBKT   &kp N0     &kp N1  &kp N2  &kp N3  &kp FSLH
-                                                      &trans                 &kp UNDER  &none      &trans
+&kp EXCL              &kp AT                &kp HASH  &ht USX_EURO DLLR  &kp PRCNT  &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp PLUS
+&kp QMARK             &ht PIPE BSLH         &kp LBRC  &kp LPAR           &kp LBKT   &kp STAR   &kp N4  &kp N5  &kp N6  &kp MINUS
+&ht USX_DEGREE CARET  &ht USX_SECTION AMPS  &kp RBRC  &kp RPAR           &kp RBKT   &kp N0     &kp N1  &kp N2  &kp N3  &kp FSLH
+                                                      &trans             &kp UNDER  &none      &trans
             >;
         };
 
