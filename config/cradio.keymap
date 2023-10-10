@@ -37,69 +37,6 @@
             key-positions = <8 7>;
             layers = <0>;
         };
-
-        tog_gaming_combo {
-            bindings = <&tog 5>;
-            key-positions = <32 33>;
-            layers = <5 0>;
-            require-prior-idle-ms = <1000>;
-        };
-
-        lpar_comb {
-            bindings = <&kp LPAR>;
-            key-positions = <3 13>;
-            layers = <0>;
-            require-prior-idle-ms = <125>;
-        };
-
-        rpar_combo {
-            bindings = <&kp RPAR>;
-            key-positions = <6 16>;
-            layers = <0>;
-            require-prior-idle-ms = <125>;
-        };
-
-        lbkt_combo {
-            bindings = <&kp LBKT>;
-            key-positions = <4 14>;
-            layers = <0>;
-            require-prior-idle-ms = <125>;
-        };
-
-        rbkt_combo {
-            bindings = <&kp RBKT>;
-            key-positions = <5 15>;
-            layers = <0>;
-            require-prior-idle-ms = <125>;
-        };
-
-        lbrc_combo {
-            bindings = <&kp LBRC>;
-            key-positions = <12 2>;
-            layers = <0>;
-            require-prior-idle-ms = <125>;
-        };
-
-        rbrc_combo {
-            bindings = <&kp RBRC>;
-            key-positions = <7 17>;
-            layers = <0>;
-            require-prior-idle-ms = <125>;
-        };
-
-        under_combo {
-            bindings = <&kp UNDER>;
-            key-positions = <13 23>;
-            layers = <0>;
-            require-prior-idle-ms = <125>;
-        };
-
-        minus_combo {
-            bindings = <&kp MINUS>;
-            key-positions = <16 26>;
-            layers = <0>;
-            require-prior-idle-ms = <125>;
-        };
     };
 
     behaviors {
@@ -151,6 +88,47 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+        sqt_morph: sqt_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SQT_MORPH";
+            bindings = <&kp DE_SQT>, <&kp DE_DQT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+        ht_sqt_morph: ht_sqt_morph {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_SQT_MORPH";
+            bindings = <&kp>, <&sqt_morph>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+        dot_morph: dot_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_MORPH";
+            bindings = <&kp DOT>, <&kp DE_LT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+        comma_morph: comma_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_MORPH";
+            bindings = <&kp DE_COMMA>, <&kp DE_GT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+        semi_morph: semi_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SEMI_MORPH";
+            bindings = <&kp DE_SEMI>, <&kp DE_COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -177,28 +155,28 @@
 
         base_layer {
             bindings = <
-&kp DE_Q  &kp DE_W  &kp DE_F  &kp DE_P  &kp DE_B    &kp DE_J                       &kp DE_L  &kp DE_U      &kp DE_Y    &ht DE_GRAVE DE_SQT
-&kp DE_A  &kp DE_R  &kp DE_S  &kp DE_T  &kp DE_G    &kp DE_M                       &kp DE_N  &kp DE_E      &kp DE_I    &kp DE_O
-&kp DE_Z  &kp DE_X  &kp DE_C  &kp DE_D  &kp DE_V    &kp DE_K                       &kp DE_H  &kp DE_COMMA  &kp DE_DOT  &kp DE_SEMI
-                     &mo 1  &td_scw  &ht LS(LC(LEFT_ALT)) SPACE  &mo 2
+&kp DE_Q  &kp DE_W  &kp DE_F  &kp DE_P  &kp DE_B  &kp DE_J                    &kp DE_L  &kp DE_U      &kp DE_Y    &ht_sqt_morph DE_GRAVE 0
+&kp DE_A  &kp DE_R  &kp DE_S  &kp DE_T  &kp DE_G  &kp DE_M                    &kp DE_N  &kp DE_E      &kp DE_I    &kp DE_O
+&kp DE_Z  &kp DE_X  &kp DE_C  &kp DE_D  &kp DE_V  &kp DE_K                    &kp DE_H  &comma_morph  &dot_morph  &semi_morph
+                              &mo 1     &td_scw   &ht LS(LC(LEFT_ALT)) SPACE  &mo 2
             >;
         };
 
         ext_layer {
             bindings = <
-&kp ESC    &kp LC(DE_W)  &kp LC(DE_F)  &kp BSPC   &kp INS    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END      &kp CAPS
-&sk LALT   &sk LGUI   &sk LSHFT  &sk LCTRL  &sk RALT   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT    &kp DEL
+&kp ESC    &kp LC(DE_W)  &kp LC(DE_F)  &kp BSPC   &kp INS       &kp HOME  &kp PG_DN  &kp PG_UP  &kp END      &kp CAPS
+&sk LALT   &sk LGUI      &sk LSHFT     &sk LCTRL  &sk RALT      &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT    &kp DEL
 &kp LC(Z)  &kp LC(DE_X)  &kp LC(DE_C)  &kp TAB    &kp LC(DE_V)  &kp RET   &kp BSPC   &sel_line  &key_repeat  &kp PSCRN
-                                 &trans     &trans     &mo 4     &trans
+                                       &trans     &trans        &mo 4     &trans
             >;
         };
 
         sym_layer {
             bindings = <
-&kp DE_EXCL             &kp DE_AT            &kp DE_HASH  &ht DE_EURO DE_DLLR  &kp DE_PRCNT  &kp DE_EQUAL  &kp N7  &kp N8  &kp N9  &kp DE_PLUS
-&kp DE_QMARK            &ht DE_PIPE DE_BSLH     &kp DE_LBRC  &kp DE_LPAR          &kp DE_LBKT   &kp DE_STAR   &kp N4  &kp N5  &kp N6  &kp DE_MINUS
-&ht DE_DEGREE DE_CARET  &ht DE_SECT DE_AMPS  &kp DE_RBRC  &kp DE_RPAR          &kp DE_RBKT   &kp N0     &kp N1  &kp N2  &kp N3  &kp DE_FSLH
-                                                 &trans            &kp UNDER  &none      &trans
+&kp DE_EXCL             &kp DE_AT            &kp DE_HASH  &ht DE_EURO DE_DLLR  &kp DE_PRCNT       &ht DE_TILDE DE_EQUAL  &kp N7  &kp N8  &kp N9  &kp DE_PLUS
+&kp DE_QMARK            &ht DE_PIPE DE_BSLH  &kp DE_LBRC  &kp DE_LPAR          &kp DE_LBKT        &kp DE_STAR            &kp N4  &kp N5  &kp N6  &kp DE_MINUS
+&ht DE_DEGREE DE_CARET  &ht DE_SECT DE_AMPS  &kp DE_RBRC  &kp DE_RPAR          &kp DE_RBKT        &kp N0                 &kp N1  &kp N2  &kp N3  &kp DE_FSLH
+                                                          &trans               &kp DE_UNDERSCORE  &none                  &trans
             >;
         };
 
@@ -222,10 +200,10 @@
 
         game_layer {
             bindings = <
-&kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E       &kp DE_R      &kp DE_T      &kp DE_Y  &kp DE_U  &kp DE_I  &kp DE_O
-&kp LSHFT  &kp DE_A  &kp DE_S  &kp DE_D       &kp DE_F      &kp DE_V      &kp DE_H  &kp DE_J  &kp DE_K  &kp DE_L
-&kp LCTRL  &kp DE_Z  &kp DE_X  &kp DE_C       &kp DE_G      &kp DE_B      &kp DE_N  &kp DE_M  &kp DE_P  &kp DE_DOT
-                         &lt 6 LALT  &kp SPACE  &kp SPACE  &none
+&kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E    &kp DE_R   &kp DE_T   &kp DE_Y  &kp DE_U  &kp DE_I  &kp DE_O
+&kp LSHFT  &kp DE_A  &kp DE_S  &kp DE_D    &kp DE_F   &kp DE_V   &kp DE_H  &kp DE_J  &kp DE_K  &kp DE_L
+&kp LCTRL  &kp DE_Z  &kp DE_X  &kp DE_C    &kp DE_G   &kp DE_B   &kp DE_N  &kp DE_M  &kp DE_P  &kp DE_DOT
+                               &lt 6 LALT  &kp SPACE  &kp SPACE  &none
             >;
         };
 
