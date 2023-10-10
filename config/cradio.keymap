@@ -12,7 +12,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &caps_word {
-    continue-list = <UNDERSCORE BACKSPACE DELETE MINUS N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
+    continue-list = <DE_UNDERSCORE BACKSPACE DELETE DE_MINUS N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
 };
 
 &sk {
@@ -177,36 +177,36 @@
 
         base_layer {
             bindings = <
-&kp Q  &kp W  &kp F  &kp P  &kp B    &kp J                       &kp L  &kp U      &kp Y    &ht GRAVE SQT
-&kp A  &kp R  &kp S  &kp T  &kp G    &kp M                       &kp N  &kp E      &kp I    &kp O
-&kp Z  &kp X  &kp C  &kp D  &kp V    &kp K                       &kp H  &kp COMMA  &kp DOT  &kp SEMI
+&kp DE_Q  &kp DE_W  &kp DE_F  &kp DE_P  &kp DE_B    &kp DE_J                       &kp DE_L  &kp DE_U      &kp DE_Y    &ht DE_GRAVE DE_SQT
+&kp DE_A  &kp DE_R  &kp DE_S  &kp DE_T  &kp DE_G    &kp DE_M                       &kp DE_N  &kp DE_E      &kp DE_I    &kp DE_O
+&kp DE_Z  &kp DE_X  &kp DE_C  &kp DE_D  &kp DE_V    &kp DE_K                       &kp DE_H  &kp DE_COMMA  &kp DE_DOT  &kp DE_SEMI
                      &mo 1  &td_scw  &ht LS(LC(LEFT_ALT)) SPACE  &mo 2
             >;
         };
 
         ext_layer {
             bindings = <
-&kp ESC    &kp LC(W)  &kp LC(F)  &kp BSPC   &kp INS    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END      &kp CAPS
+&kp ESC    &kp LC(DE_W)  &kp LC(DE_F)  &kp BSPC   &kp INS    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END      &kp CAPS
 &sk LALT   &sk LGUI   &sk LSHFT  &sk LCTRL  &sk RALT   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT    &kp DEL
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp TAB    &kp LC(V)  &kp RET   &kp BSPC   &sel_line  &key_repeat  &kp PSCRN
+&kp LC(Z)  &kp LC(DE_X)  &kp LC(DE_C)  &kp TAB    &kp LC(DE_V)  &kp RET   &kp BSPC   &sel_line  &key_repeat  &kp PSCRN
                                  &trans     &trans     &mo 4     &trans
             >;
         };
 
         sym_layer {
             bindings = <
-&kp EXCL             &kp AT            &kp HASH  &ht EN_EURO DLLR  &kp PRCNT  &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp PLUS
-&kp QMARK            &ht PIPE BSLH     &kp LBRC  &kp LPAR          &kp LBKT   &kp STAR   &kp N4  &kp N5  &kp N6  &kp MINUS
-&ht EN_DEGREE CARET  &ht EN_SECT AMPS  &kp RBRC  &kp RPAR          &kp RBKT   &kp N0     &kp N1  &kp N2  &kp N3  &kp FSLH
+&kp DE_EXCL             &kp DE_AT            &kp DE_HASH  &ht DE_EURO DE_DLLR  &kp DE_PRCNT  &kp DE_EQUAL  &kp N7  &kp N8  &kp N9  &kp DE_PLUS
+&kp DE_QMARK            &ht DE_PIPE DE_BSLH     &kp DE_LBRC  &kp DE_LPAR          &kp DE_LBKT   &kp DE_STAR   &kp N4  &kp N5  &kp N6  &kp DE_MINUS
+&ht DE_DEGREE DE_CARET  &ht DE_SECT DE_AMPS  &kp DE_RBRC  &kp DE_RPAR          &kp DE_RBKT   &kp N0     &kp N1  &kp N2  &kp N3  &kp DE_FSLH
                                                  &trans            &kp UNDER  &none      &trans
             >;
         };
 
         fun_layer {
             bindings = <
-&none     &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP  &kp C_BRI_UP  &kp F12  &kp F7  &kp F8  &kp F9  &kp LC(PLUS)
-&sk LALT  &sk LGUI      &sk LSHFT         &sk LCTRL     &kp C_BRI_DN  &kp F11  &kp F4  &kp F5  &kp F6  &kp LC(MINUS)
-&none     &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &none         &kp F10  &kp F1  &kp F2  &kp F3  &kp LC(NUMBER_0)
+&none     &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP  &kp C_BRI_UP  &kp F12  &kp F7  &kp F8  &kp F9  &kp LC(DE_PLUS)
+&sk LALT  &sk LGUI      &sk LSHFT         &sk LCTRL     &kp C_BRI_DN  &kp F11  &kp F4  &kp F5  &kp F6  &kp LC(DE_MINUS)
+&none     &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &none         &kp F10  &kp F1  &kp F2  &kp F3  &kp LC(N0)
                                           &trans        &trans        &none    &trans
             >;
         };
@@ -222,9 +222,9 @@
 
         game_layer {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E       &kp R      &kp T      &kp Y  &kp U  &kp I  &kp O
-&kp LSHFT  &kp A  &kp S  &kp D       &kp F      &kp V      &kp H  &kp J  &kp K  &kp L
-&kp LCTRL  &kp Z  &kp X  &kp C       &kp G      &kp B      &kp N  &kp M  &kp P  &kp DOT
+&kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E       &kp DE_R      &kp DE_T      &kp DE_Y  &kp DE_U  &kp DE_I  &kp DE_O
+&kp LSHFT  &kp DE_A  &kp DE_S  &kp DE_D       &kp DE_F      &kp DE_V      &kp DE_H  &kp DE_J  &kp DE_K  &kp DE_L
+&kp LCTRL  &kp DE_Z  &kp DE_X  &kp DE_C       &kp DE_G      &kp DE_B      &kp DE_N  &kp DE_M  &kp DE_P  &kp DE_DOT
                          &lt 6 LALT  &kp SPACE  &kp SPACE  &none
             >;
         };
