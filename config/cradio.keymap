@@ -108,7 +108,7 @@
         dot_morph: dot_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "DOT_MORPH";
-            bindings = <&kp DOT>, <&kp DE_LT>;
+            bindings = <&kp DOT>, <&kp DE_GT>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -116,7 +116,7 @@
         comma_morph: comma_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_MORPH";
-            bindings = <&kp DE_COMMA>, <&kp DE_GT>;
+            bindings = <&kp DE_COMMA>, <&kp DE_LT>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
