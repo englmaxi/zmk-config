@@ -51,7 +51,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             flavor = "tap-preferred";
         };
         td_scw: td_shift_caps_word {
