@@ -128,6 +128,14 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
+        lt_key_repeat: lt_key_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_KEY_REPEAT";
+            bindings = <&mo>, <&key_repeat>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     macros {
@@ -154,10 +162,10 @@
 
         base_layer {
             bindings = <
-&kp DE_Q              &kp DE_W  &kp DE_F        &kp DE_P  &kp DE_B  &kp DE_J                    &kp DE_L  &ht DE_U_UMLAUT DE_U  &kp DE_Y    &ht_sqt_morph DE_GRAVE 0
-&ht DE_A_UMLAUT DE_A  &kp DE_R  &ht DE_SZ DE_S  &kp DE_T  &kp DE_G  &kp DE_M                    &kp DE_N  &kp DE_E              &kp DE_I    &ht DE_O_UMLAUT DE_O
-&kp DE_Z              &kp DE_X  &kp DE_C        &kp DE_D  &kp DE_V  &kp DE_K                    &kp DE_H  &comma_morph          &dot_morph  &semi_morph
-                                                &mo 1     &td_scw   &ht LS(LC(LEFT_ALT)) SPACE  &mo 2
+&kp DE_Q              &kp DE_W  &kp DE_F        &kp DE_P  &kp DE_B  &kp DE_J                    &kp DE_L            &ht DE_U_UMLAUT DE_U  &kp DE_Y    &ht_sqt_morph DE_GRAVE 0
+&ht DE_A_UMLAUT DE_A  &kp DE_R  &ht DE_SZ DE_S  &kp DE_T  &kp DE_G  &kp DE_M                    &kp DE_N            &kp DE_E              &kp DE_I    &ht DE_O_UMLAUT DE_O
+&kp DE_Z              &kp DE_X  &kp DE_C        &kp DE_D  &kp DE_V  &kp DE_K                    &kp DE_H            &comma_morph          &dot_morph  &semi_morph
+                                                &mo 1     &td_scw   &ht LS(LC(LEFT_ALT)) SPACE  &lt_key_repeat 2 0
             >;
         };
 
