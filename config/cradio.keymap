@@ -287,7 +287,7 @@
         };
 
         fslh {
-            bindings = <&kp DE_FSLH>;
+            bindings = <&kp DE_SLASH>;
             key-positions = <17 27>;
             layers = <0 1 2>;
             timeout-ms = <35>;
