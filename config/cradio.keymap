@@ -128,7 +128,7 @@
 
         gt {
             bindings = <&kp DE_GT>;
-            key-positions = <16 17>;
+            key-positions = <17 18>;
             layers = <1>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
@@ -159,7 +159,7 @@
         };
 
         rbrc {
-            bindings = <&kp RBRC>;
+            bindings = <&kp DE_RBRC>;
             key-positions = <8 7>;
             layers = <1>;
             timeout-ms = <35>;
