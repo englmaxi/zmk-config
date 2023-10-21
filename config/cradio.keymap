@@ -309,6 +309,14 @@
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
+
+        ger {
+            bindings = <&sl 5>;
+            key-positions = <6 8>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -557,7 +565,7 @@
             >;
         };
 
-        layer_5 {
+        ger_layer {
             bindings = <
 &trans           &trans  &trans         &trans  &trans  &trans  &trans  &kp DE_U_UMLAUT  &trans  &trans
 &kp DE_A_UMLAUT  &trans  &kp DE_ESZETT  &trans  &trans  &trans  &trans  &trans           &trans  &kp DE_O_UMLAUT
