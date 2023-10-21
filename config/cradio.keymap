@@ -287,7 +287,7 @@
         };
 
         fslh {
-            bindings = <&kp DE_SLASH>;
+            bindings = <&kp DE_FSLH>;
             key-positions = <17 27>;
             layers = <0 1 2>;
             timeout-ms = <35>;
@@ -316,6 +316,14 @@
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
             layers = <0>;
+        };
+
+        undo {
+            bindings = <&kp LC(DE_Z)>;
+            key-positions = <21 20>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <100>;
+            layers = <0 1 2>;
         };
     };
 
@@ -514,7 +522,7 @@
 
         base_layer {
             bindings = <
-&kp DE_Q            &kp DE_W        &kp DE_F         &kp DE_P          &kp DE_B  &kp DE_J     &kp DE_L         &kp DE_U         &kp DE_Y        &sqt_morph
+&kp DE_Q            &kp DE_W        &kp DE_F         &kp DE_P          &kp DE_B  &kp DE_J     &kp DE_L         &kp DE_U         &kp DE_Y        &ht_sqt_morph DE_GRAVE 0
 &hml LEFT_GUI DE_A  &hml LALT DE_R  &hml LCTRL DE_S  &hml LSHIFT DE_T  &kp DE_G  &kp DE_M     &hmr RSHFT DE_N  &hmr LCTRL DE_E  &hmr LALT DE_I  &hmr LGUI DE_O
 &kp DE_Z            &kp DE_X        &kp DE_C         &kp DE_D          &kp DE_V  &kp DE_K     &kp DE_H         &kp DE_COMMA     &kp DE_DOT      &qexcl
                                                      &mo 1             &td_scw   &lt 3 SPACE  &mo_tog 2 2
@@ -523,7 +531,7 @@
 
         nav_layer {
             bindings = <
-&trans    &trans    &trans     &kp BSPC   &trans    &kp PG_UP  &trans             &ht LC(HOME) UP   &trans           &kp PAUSE_BREAK
+&trans    &kp DE_W  &kp DE_F   &kp BSPC   &trans    &kp PG_UP  &trans             &ht LC(HOME) UP   &trans           &kp PAUSE_BREAK
 &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &sk RALT  &kp PG_DN  &ht_home 0 LEFT    &ht LC(END) DOWN  &ht_end 0 RIGHT  &kp INS
 &trans    &trans    &trans     &trans     &trans    &kp RET    &ht LC(BSPC) BSPC  &kp TAB           &ht LC(DEL) DEL  &kp PSCRN
                                &trans     &trans    &trans     &trans
