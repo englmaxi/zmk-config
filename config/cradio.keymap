@@ -316,7 +316,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "shift on tap, caps_word on double-tap";
             #binding-cells = <0>;
-            bindings = <&kp LSHIFT>, <&caps_word>;
+            bindings = <&kp LSHIFT>, <&caps_word>, <&kp CLCK>;
 
             tapping-term-ms = <400>;
         };
@@ -523,10 +523,10 @@
 
         nav_layer {
             bindings = <
-&trans    &kp LC(DE_W)  &kp LC(DE_F)  &kp BSPC   &trans    &kp PG_UP  &trans                &ht LC(HOME) UP   &trans           &kp PAUSE_BREAK
-&sk LGUI  &sk LALT      &sk LCTRL     &sk LSHFT  &sk RALT  &kp PG_DN  &ht_end 0 LEFT_ARROW  &ht LC(END) DOWN  &ht_end 0 RIGHT  &kp INS
-&trans    &trans        &trans        &trans     &trans    &kp RET    &ht LC(BSPC) BSPC     &kp TAB           &ht LC(DEL) DEL  &kp PSCRN
-                                      &trans     &trans    &trans     &trans
+&trans    &trans    &trans     &kp BSPC   &trans    &kp PG_UP  &trans             &ht LC(HOME) UP   &trans           &kp PAUSE_BREAK
+&sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &sk RALT  &kp PG_DN  &ht_home 0 LEFT    &ht LC(END) DOWN  &ht_end 0 RIGHT  &kp INS
+&trans    &trans    &trans     &trans     &trans    &kp RET    &ht LC(BSPC) BSPC  &kp TAB           &ht LC(DEL) DEL  &kp PSCRN
+                               &trans     &trans    &trans     &trans
             >;
         };
 
@@ -557,21 +557,12 @@
             >;
         };
 
-        game_layer {
+        layer_5 {
             bindings = <
-&kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E    &kp DE_R   &kp DE_T   &kp DE_Y  &kp DE_U  &kp DE_I  &kp DE_O
-&kp LSHFT  &kp DE_A  &kp DE_S  &kp DE_D    &kp DE_F   &kp DE_V   &kp DE_H  &kp DE_J  &kp DE_K  &kp DE_L
-&kp LCTRL  &kp DE_Z  &kp DE_X  &kp DE_C    &kp DE_G   &kp DE_B   &kp DE_N  &kp DE_M  &kp DE_P  &kp DE_DOT
-                               &lt 6 LALT  &kp SPACE  &kp SPACE  &none
-            >;
-        };
-
-        game2_layer {
-            bindings = <
-&kp N1  &kp N2    &kp N3   &kp N4   &kp N5  &trans  &trans    &kp UP    &trans     &trans
-&kp N6  &kp N7    &kp N8   &kp N9   &kp N0  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&trans  &kp BSPC  &kp DEL  &kp ESC  &kp F5  &trans  &trans    &trans    &trans     &trans
-                           &trans   &trans  &trans  &trans
+&trans           &trans  &trans         &trans  &trans  &trans  &trans  &kp DE_U_UMLAUT  &trans  &trans
+&kp DE_A_UMLAUT  &trans  &kp DE_ESZETT  &trans  &trans  &trans  &trans  &trans           &trans  &kp DE_O_UMLAUT
+&trans           &trans  &trans         &trans  &trans  &trans  &trans  &trans           &trans  &trans
+                                        &trans  &trans  &trans  &trans
             >;
         };
     };
