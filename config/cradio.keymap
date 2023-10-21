@@ -136,7 +136,7 @@
 
         lbkt {
             bindings = <&lbkt_lbrc>;
-            key-positions = <27 26>;
+            key-positions = <6 7>;
             layers = <0 2>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
@@ -144,7 +144,7 @@
 
         rbkt {
             bindings = <&rbkt_rbrc>;
-            key-positions = <27 28>;
+            key-positions = <8 7>;
             layers = <0 2>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
@@ -152,7 +152,7 @@
 
         lbrc {
             bindings = <&kp DE_LBRC>;
-            key-positions = <27 26>;
+            key-positions = <6 7>;
             layers = <1>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
@@ -160,7 +160,7 @@
 
         rbrc {
             bindings = <&kp RBRC>;
-            key-positions = <27 28>;
+            key-positions = <8 7>;
             layers = <1>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
