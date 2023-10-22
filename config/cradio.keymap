@@ -522,10 +522,10 @@
 
         nav_layer {
             bindings = <
-&trans    &kp LC(DE_W)  &kp LC(DE_F)  &kp BSPC   &trans    &kp PG_UP  &trans             &ht LC(HOME) UP   &trans           &kp PAUSE_BREAK
-&sk LGUI  &sk LALT      &sk LCTRL     &sk LSHFT  &sk RALT  &kp PG_DN  &ht_home 0 LEFT    &ht LC(END) DOWN  &ht_end 0 RIGHT  &kp INS
-&trans    &trans        &trans        &trans     &trans    &kp RET    &ht LC(BSPC) BSPC  &kp TAB           &ht LC(DEL) DEL  &kp PSCRN
-                                      &trans     &trans    &trans     &trans
+&trans    &kp LC(DE_W)  &kp LC(DE_F)  &kp BSPC   &trans    &trans           &kp PG_DN          &kp PG_UP        &trans           &kp PAUSE_BREAK
+&sk LGUI  &sk LALT      &sk LCTRL     &sk LSHFT  &sk RALT  &ht_home 0 LEFT  &ht LC(END) DOWN   &ht LC(HOME) UP  &ht_end 0 RIGHT  &kp INS
+&trans    &trans        &trans        &trans     &trans    &kp RET          &ht LC(BSPC) BSPC  &kp TAB          &ht LC(DEL) DEL  &kp PSCRN
+                                      &trans     &trans    &trans           &trans
             >;
         };
 
