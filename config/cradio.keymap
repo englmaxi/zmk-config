@@ -334,7 +334,7 @@
             #binding-cells = <0>;
             bindings = <&kp LSHIFT>, <&caps_word>, <&kp CLCK>;
 
-            tapping-term-ms = <400>;
+            tapping-term-ms = <270>;
         };
         sqt_morph: sqt_morph {
             compatible = "zmk,behavior-mod-morph";
@@ -516,7 +516,7 @@
 &kp DE_Q            &kp DE_W        &kp DE_F         &kp DE_P          &kp DE_B  &kp DE_J     &kp DE_L         &kp DE_U         &kp DE_Y        &sqt_morph
 &hml LEFT_GUI DE_A  &hml LALT DE_R  &hml LCTRL DE_S  &hml LSHIFT DE_T  &kp DE_G  &kp DE_M     &hmr RSHFT DE_N  &hmr LCTRL DE_E  &hmr LALT DE_I  &hmr LGUI DE_O
 &kp DE_Z            &kp DE_X        &kp DE_C         &kp DE_D          &kp DE_V  &kp DE_K     &kp DE_H         &kp DE_COMMA     &kp DE_DOT      &qexcl
-                                                     &mo 1             &td_scw   &lt 3 SPACE  &mo_tog 2 2
+                                                     &mo 1             &td_scw   &lt 3 SPACE  &mo 2
             >;
         };
 
