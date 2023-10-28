@@ -286,7 +286,7 @@
             #binding-cells = <0>;
             bindings = <&kp LSHIFT>, <&caps_word>, <&kp CLCK>;
 
-            tapping-term-ms = <270>;
+            tapping-term-ms = <400>;
         };
         sqt_dqt: sqt_dqt {
             compatible = "zmk,behavior-mod-morph";
