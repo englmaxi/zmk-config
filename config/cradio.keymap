@@ -102,22 +102,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        lt {
-            bindings = <&kp DE_LT>;
-            key-positions = <16 17>;
-            layers = <1>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <100>;
-        };
-
-        gt {
-            bindings = <&kp DE_GT>;
-            key-positions = <17 18>;
-            layers = <1>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <100>;
-        };
-
         lbkt {
             bindings = <&lbkt_lbrc>;
             key-positions = <6 7>;
@@ -130,22 +114,6 @@
             bindings = <&rbkt_rbrc>;
             key-positions = <8 7>;
             layers = <0 2>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <100>;
-        };
-
-        lbrc {
-            bindings = <&kp DE_LBRC>;
-            key-positions = <6 7>;
-            layers = <1>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <100>;
-        };
-
-        rbrc {
-            bindings = <&kp DE_RBRC>;
-            key-positions = <8 7>;
-            layers = <1>;
             timeout-ms = <20>;
             require-prior-idle-ms = <100>;
         };
