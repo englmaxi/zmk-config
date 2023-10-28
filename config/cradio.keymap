@@ -89,7 +89,7 @@
         lpar {
             bindings = <&hmr_lpar_lt LS(LCTRL) 0>;
             key-positions = <16 17>;
-            layers = <0 2>;
+            layers = <0 2 1>;
             timeout-ms = <20>;
             require-prior-idle-ms = <100>;
         };
@@ -97,7 +97,7 @@
         rpar {
             bindings = <&hmr_rpar_gt LA(LCTRL) 0>;
             key-positions = <17 18>;
-            layers = <0 2>;
+            layers = <0 2 1>;
             timeout-ms = <20>;
             require-prior-idle-ms = <100>;
         };
@@ -105,7 +105,7 @@
         lbkt {
             bindings = <&lbkt_lbrc>;
             key-positions = <6 7>;
-            layers = <0 2>;
+            layers = <0 2 1>;
             timeout-ms = <20>;
             require-prior-idle-ms = <100>;
         };
@@ -113,7 +113,7 @@
         rbkt {
             bindings = <&rbkt_rbrc>;
             key-positions = <8 7>;
-            layers = <0 2>;
+            layers = <0 2 1>;
             timeout-ms = <20>;
             require-prior-idle-ms = <100>;
         };
