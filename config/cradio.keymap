@@ -536,7 +536,7 @@
                 <&kp DE_DQT &kp DE_DQT>,
                 <&macro_release>,
                 <&kp LSHFT>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp LEFT>;
 
             label = "DQT_MACRO";
@@ -550,7 +550,13 @@
         lgt_macro: lgt_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DE_LT &kp DE_GT &kp LEFT>;
+            bindings =
+                <&kp DE_LT &kp DE_GT>,
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp LEFT>;
+
             label = "LGT_MACRO";
         };
     };
