@@ -552,7 +552,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp DE_LT &kp DE_GT>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp LEFT>;
