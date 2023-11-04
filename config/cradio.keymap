@@ -508,6 +508,22 @@
 
             tapping-term-ms = <270>;
         };
+        gt_umorph: gt_umorph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GT_UMORPH";
+            bindings = <&kp DE_GT>, <&kp DE_GT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        dqt_umorph: dqt_umorph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DQT_UMORPH";
+            bindings = <&kp DE_DQT>, <&kp DE_DQT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -532,7 +548,7 @@
         dqt_macro: dqt_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DE_DQT &kp DE_DQT &kp LEFT>;
+            bindings = <&dqt_umorph &dqt_umorph &kp LEFT>;
             label = "DQT_MACRO";
         };
         brc_macro: brc_macro {
@@ -544,7 +560,7 @@
         lgt_macro: lgt_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DE_LT &kp DE_GT &kp LEFT>;
+            bindings = <&kp DE_LT &gt_umorph &kp LEFT>;
             label = "LGT_MACRO";
         };
     };
