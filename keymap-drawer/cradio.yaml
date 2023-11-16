@@ -1,0 +1,347 @@
+layout: {qmk_keyboard: ferris/sweep}
+layers:
+  BSE:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - DE Y
+  - {t: '''', s: '"'}
+  - {t: A, h: '$$mdi:microsoft-windows$$'}
+  - {t: R, h: LALT}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - G
+  - M
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: I, h: LALT}
+  - {t: O, h: '$$mdi:microsoft-windows$$'}
+  - DE Z
+  - X
+  - C
+  - {t: D, h: MSE}
+  - V
+  - K
+  - H
+  - DE COMMA
+  - .
+  - {t: DE QMARK, s: DE EXCL}
+  - NAV
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-space$$', h: FUN}
+  - NUM
+  NAV:
+  - $$mdi:keyboard-esc$$
+  - $$mdi:window-close$$
+  - $$mdi:text-search$$
+  - $$mdi:backspace-outline$$
+  - INS
+  - {t: ▽, type: trans}
+  - Page Down
+  - Page Up
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:microsoft-windows$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: LALT, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: RALT, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:arrow-left$$', h: HOME}
+  - {t: '$$mdi:arrow-down$$', h: LC(END)}
+  - {t: '$$mdi:arrow-up$$', h: LC(HOME)}
+  - {t: '$$mdi:arrow-right$$', h: END}
+  - PAUSE BREAK
+  - LC(DE Z)
+  - $$mdi:content-cut$$
+  - $$mdi:content-copy$$
+  - {t: ▽, type: trans}
+  - $$mdi:content-paste$$
+  - $$mdi:keyboard-return$$
+  - {t: '$$mdi:backspace-outline$$', h: LC(BSPC)}
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: LC(DEL)}
+  - PSCRN
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  NUM:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - {t: ▽, type: trans}
+  - .
+  - DE 7
+  - DE 8
+  - DE 9
+  - $$mdi:backspace-outline$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - DE COMMA
+  - DE 4
+  - DE 5
+  - DE 6
+  - $$mdi:keyboard-return$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - DE 0
+  - DE 1
+  - DE 2
+  - DE 3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  FUN:
+  - {t: ▽, type: trans}
+  - $$mdi:volume-minus$$
+  - $$mdi:volume-mute$$
+  - $$mdi:volume-plus$$
+  - $$tabler:brightness-up$$
+  - F12
+  - F7
+  - F8
+  - F9
+  - LC(DE PLUS)
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$tabler:brightness-down$$
+  - F11
+  - F4
+  - F5
+  - F6
+  - LC(DE MINUS)
+  - {t: ▽, type: trans}
+  - $$mdi:skip-backward$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-forward$$
+  - {t: ▽, type: trans}
+  - F10
+  - F1
+  - F2
+  - F3
+  - LC(0)
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  HW:
+  - $$mdi:progress-download$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:progress-download$$
+  - ''
+  - ''
+  - $$mdi:usb$$
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - ''
+  - ''
+  - {t: '$$mdi:skip-next$$', h: '$$mdi:bluetooth$$'}
+  - $$mdi:bluetooth$$
+  - $$mdi:bluetooth-off$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:numeric-0$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-1$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-3$$', h: '$$mdi:bluetooth$$'}
+  - ''
+  - {type: held}
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  GER:
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - DE U UMLAUT
+  - DE ACUTE
+  - DE GRAVE
+  - DE A UMLAUT
+  - {t: ▽, type: trans}
+  - DE ESZETT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - DE O UMLAUT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  MSE:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB4'
+  - '&mkp MB3'
+  - '&mkp MB5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:cursor-default-click$$
+  - $$mdi:cursor-default-click-outline$$
+combos:
+- p: [1, 2]
+  k: $$mdi:keyboard-esc$$
+  l: [BSE, NAV, NUM]
+- p: [2, 3]
+  k: $$mdi:keyboard-return$$
+  l: [BSE, NAV, NUM]
+- p: [26, 27]
+  k: $$mdi:backspace-outline$$
+  l: [BSE, NAV, NUM]
+- p: [27, 28]
+  k: $$mdi:backspace-reverse-outline$$
+  l: [BSE, NAV, NUM]
+- p: [12, 11]
+  k: $$mdi:keyboard-tab$$
+  l: [BSE, NAV, NUM]
+- p: [12, 13]
+  k: $$mdi:repeat$$
+  l: [BSE, NAV, NUM]
+- p: [16, 17]
+  k: {h: (, s: <}
+  l: [BSE]
+- p: [17, 18]
+  k: {h: ), s: '>'}
+  l: [BSE]
+- p: [6, 7]
+  k: {h: '[', s: '{'}
+  l: [BSE]
+- p: [8, 7]
+  k: {h: ']', s: '}'}
+  l: [BSE]
+- p: [1, 11]
+  k: '@'
+  l: [BSE]
+- p: [12, 2]
+  k: '#'
+  l: [BSE]
+- p: [3, 13]
+  k: $
+  l: [BSE]
+- p: [14, 4]
+  k: '%'
+  l: [BSE]
+- p: [22, 12]
+  k: \
+  l: [BSE]
+- p: [23, 13]
+  k: '='
+  l: [BSE]
+- p: [24, 14]
+  k: '~'
+  l: [BSE]
+- p: [15, 5]
+  k: ^
+  l: [BSE]
+- p: [6, 16]
+  k: +
+  l: [BSE]
+- p: [17, 7]
+  k: '*'
+  l: [BSE]
+- p: [8, 18]
+  k: '&'
+  l: [BSE]
+- p: [9, 19]
+  k: §
+  l: [BSE]
+- p: [25, 15]
+  k: _
+  l: [BSE]
+- p: [16, 26]
+  k: '-'
+  l: [BSE]
+- p: [17, 27]
+  k: /
+  l: [BSE]
+- p: [28, 18]
+  k: '|'
+  l: [BSE]
+- p: [19, 29]
+  k: °
+  l: [BSE]
+- p: [3, 1]
+  k: {t: GER, h: '$$mdi:gesture-tap-hold$$'}
+  l: [BSE]
+  a: top
+  o: 0.45
+- p: [21, 11]
+  k: €
+  l: [BSE]
+- p: [16, 18]
+  k: {t: (), h: LS(LALT), s: <>}
+  l: [BSE]
+  a: bottom
+  o: 0.75
+- p: [6, 8]
+  k: {t: '[]', s: '{}'}
+  l: [BSE]
+  a: top
+  o: 0.45

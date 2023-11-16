@@ -74,7 +74,7 @@ parse_config:
     '&lbkt_lbrc': {s: '{' , h: '['}
     '&rbkt_rbrc': {s: '}' , h: ']'}
     
-    '&td_sqt_dqt': {s: '"' , t: '''}
+    '&td_sqt_dqt': {s: '"' , t: "'"}
     '&mt_td_scw LSHFT 0': '$$mdi:apple-keyboard-shift$$'
     '&par_macro': '()'
     '&bkt_macro': '[]'
