@@ -266,67 +266,67 @@ combos:
   l: [BSE, NAV, NUM]
 - p: [16, 17]
   k: {h: (, s: <}
-  l: [BSE, NUM, NAV]
+  l: [BSE]
 - p: [17, 18]
   k: {h: ), s: '>'}
-  l: [BSE, NUM, NAV]
+  l: [BSE]
 - p: [6, 7]
   k: {h: '[', s: '{'}
-  l: [BSE, NUM, NAV]
+  l: [BSE]
 - p: [8, 7]
   k: {h: ']', s: '}'}
-  l: [BSE, NUM, NAV]
+  l: [BSE]
 - p: [1, 11]
   k: DE AT
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [12, 2]
   k: DE HASH
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [3, 13]
   k: DE DLLR
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [14, 4]
   k: DE PRCNT
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [22, 12]
   k: DE BSLH
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [23, 13]
   k: DE EQUAL
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [24, 14]
   k: DE TILDE
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [15, 5]
   k: DE CARET
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [6, 16]
   k: DE PLUS
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [17, 7]
   k: '*'
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [8, 18]
   k: DE AMPS
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [9, 19]
   k: DE SECT
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [25, 15]
   k: DE UNDER
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [16, 26]
   k: DE MINUS
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [17, 27]
   k: DE FSLH
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [28, 18]
   k: DE PIPE
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [19, 29]
   k: DE DEG
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [3, 1]
   k: {t: GER, h: '$$mdi:gesture-tap-hold$$'}
   l: [BSE]
@@ -334,14 +334,14 @@ combos:
   o: 0.45
 - p: [21, 11]
   k: DE EURO
-  l: [BSE, NAV, NUM]
+  l: [BSE]
 - p: [16, 18]
   k: {t: (), h: LS(LALT), s: <>}
-  l: [BSE, NUM, NAV]
+  l: [BSE]
   a: bottom
   o: 0.75
 - p: [6, 8]
   k: {t: '[]', s: '{}'}
-  l: [BSE, NUM, NAV]
+  l: [BSE]
   a: top
   o: 0.45

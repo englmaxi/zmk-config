@@ -79,7 +79,7 @@
         lpar {
             bindings = <&hmr_lpar_lt LS(LCTRL) 0>;
             key-positions = <16 17>;
-            layers = <0 2 1>;
+            layers = <0>;
             timeout-ms = <20>;
             require-prior-idle-ms = <100>;
         };
@@ -87,7 +87,7 @@
         rpar {
             bindings = <&hmr_rpar_gt LA(LCTRL) 0>;
             key-positions = <17 18>;
-            layers = <0 2 1>;
+            layers = <0>;
             timeout-ms = <20>;
             require-prior-idle-ms = <100>;
         };
@@ -95,7 +95,7 @@
         lbkt {
             bindings = <&lbkt_lbrc>;
             key-positions = <6 7>;
-            layers = <0 2 1>;
+            layers = <0>;
             timeout-ms = <20>;
             require-prior-idle-ms = <100>;
         };
@@ -103,7 +103,7 @@
         rbkt {
             bindings = <&rbkt_rbrc>;
             key-positions = <8 7>;
-            layers = <0 2 1>;
+            layers = <0>;
             timeout-ms = <20>;
             require-prior-idle-ms = <100>;
         };
@@ -111,7 +111,7 @@
         at {
             bindings = <&kp DE_AT>;
             key-positions = <1 11>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -119,7 +119,7 @@
         hash {
             bindings = <&kp DE_HASH>;
             key-positions = <12 2>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -127,7 +127,7 @@
         dllr {
             bindings = <&kp DE_DLLR>;
             key-positions = <3 13>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -135,7 +135,7 @@
         prcnt {
             bindings = <&kp DE_PRCNT>;
             key-positions = <14 4>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -143,7 +143,7 @@
         bslh {
             bindings = <&kp DE_BSLH>;
             key-positions = <22 12>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -151,7 +151,7 @@
         equal {
             bindings = <&kp DE_EQUAL>;
             key-positions = <23 13>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -159,7 +159,7 @@
         tilde {
             bindings = <&kp DE_TILDE>;
             key-positions = <24 14>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -167,7 +167,7 @@
         caret {
             bindings = <&kp DE_CARET>;
             key-positions = <15 5>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -175,7 +175,7 @@
         plus {
             bindings = <&kp DE_PLUS>;
             key-positions = <6 16>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -183,7 +183,7 @@
         star {
             bindings = <&kp DE_STAR>;
             key-positions = <17 7>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -191,7 +191,7 @@
         amps {
             bindings = <&kp DE_AMPS>;
             key-positions = <8 18>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -199,7 +199,7 @@
         sect {
             bindings = <&kp DE_SECT>;
             key-positions = <9 19>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -207,7 +207,7 @@
         under {
             bindings = <&kp DE_UNDER>;
             key-positions = <25 15>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -215,7 +215,7 @@
         minus {
             bindings = <&kp DE_MINUS>;
             key-positions = <16 26>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -223,7 +223,7 @@
         fslh {
             bindings = <&kp DE_FSLH>;
             key-positions = <17 27>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -231,7 +231,7 @@
         pipe {
             bindings = <&kp DE_PIPE>;
             key-positions = <28 18>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -239,7 +239,7 @@
         deg {
             bindings = <&kp DE_DEG>;
             key-positions = <19 29>;
-            layers = <0 1 2>;
+            layers = <0>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
         };
@@ -257,7 +257,7 @@
             key-positions = <21 11>;
             timeout-ms = <35>;
             require-prior-idle-ms = <100>;
-            layers = <0 1 2>;
+            layers = <0>;
         };
 
         par {
@@ -265,7 +265,7 @@
             key-positions = <16 18>;
             timeout-ms = <20>;
             require-prior-idle-ms = <100>;
-            layers = <0 2 1>;
+            layers = <0>;
         };
 
         bkt {
@@ -273,7 +273,7 @@
             key-positions = <6 8>;
             timeout-ms = <20>;
             require-prior-idle-ms = <100>;
-            layers = <0 2 1>;
+            layers = <0>;
         };
     };
 
