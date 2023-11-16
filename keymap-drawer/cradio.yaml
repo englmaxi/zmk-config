@@ -46,11 +46,11 @@ layers:
   - PG UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: LGUI, h: sticky}
-  - {t: LALT, h: sticky}
-  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
-  - {t: RALT, h: sticky}
+  - {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: LALT, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: RALT, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:arrow-left$$', h: HOME}
   - {t: '$$mdi:arrow-down$$', h: LC(END)}
   - {t: '$$mdi:arrow-up$$', h: LC(HOME)}
@@ -265,16 +265,16 @@ combos:
   k: $$mdi:repeat$$
   l: [BSE, NAV, NUM]
 - p: [16, 17]
-  k: {t: (, s: <}
+  k: {t: DE LPAR, h: LS(LCTRL), s: DE LT}
   l: [BSE, NUM, NAV]
 - p: [17, 18]
-  k: {t: ), s: '>'}
+  k: {t: DE RPAR, h: LA(LCTRL), s: DE GT}
   l: [BSE, NUM, NAV]
 - p: [6, 7]
-  k: {t: '[', s: '{'}
+  k: {t: DE LEFT BRACKET, s: DE LBRC}
   l: [BSE, NUM, NAV]
 - p: [8, 7]
-  k: {t: ']', s: '}'}
+  k: {t: DE RBKT, s: DE RBRC}
   l: [BSE, NUM, NAV]
 - p: [1, 11]
   k: DE AT
@@ -328,7 +328,7 @@ combos:
   k: DE DEG
   l: [BSE, NAV, NUM]
 - p: [3, 1]
-  k: {t: GER, h: sticky}
+  k: {t: GER, h: '$$mdi:gesture-tap-hold$$'}
   l: [BSE]
 - p: [21, 11]
   k: DE EURO

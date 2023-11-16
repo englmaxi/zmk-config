@@ -18,7 +18,7 @@ draw_config:
   legend_rel_y: 0.0
 
   svg_extra_style: ''
-  shrink_wide_legends: 7
+  shrink_wide_legends: 5
   glyph_tap_size: 14
   glyph_hold_size: 12
   glyph_shifted_size: 10
@@ -68,12 +68,6 @@ parse_config:
     '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
     '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$
     
-    '&hmr_lpar_lt LS(LCTRL) 0': {s: '<' , t: '('}
-    '&hmr_rpar_gt LA(LCTRL) 0': {s: '>' , t: ')'}
-    
-    '&lbkt_lbrc': {s: '{' , t: '['}
-    '&rbkt_rbrc': {s: '}' , t: ']'}
-    
     '&td_sqt_dqt': "'"
     '&mt_td_scw LSHFT 0': '$$mdi:apple-keyboard-shift$$'
     '&par_macro': '()'
@@ -92,7 +86,7 @@ parse_config:
     '&bt BT_NXT':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-next$$}
     '&mkp LCLK': '$$mdi:cursor-default-click$$'
     '&mkp RCLK': '$$mdi:cursor-default-click-outline$$'
-  sticky_label: sticky
+  sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
     t: ▽
     type: trans
@@ -208,4 +202,27 @@ parse_config:
     LC(INS): $$mdi:content-copy$$
     LS(INS): $$mdi:content-paste$$
     'LC(DE X)': $$mdi:content-cut$$
-  zmk_combos: {}
+    
+  zmk_combos:
+    combo_par:
+      align: bottom
+      offset: 0.03
+    combo_bkt:
+      align: top
+      offset: 0.03
+    combo_lbkt:
+      key:
+        shifted: "{"
+        hold: "["
+    combo_rbkt:
+      key:
+        shifted: "}"
+        hold: "]"
+    combo_lpar:
+      key:
+        shifted: "("
+        hold: "<"
+    combo_rpar:
+      key:
+        shifted: ")"
+        hold: ">"
