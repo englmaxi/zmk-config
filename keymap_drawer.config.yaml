@@ -30,8 +30,6 @@ draw_config:
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
   use_local_cache: true
 parse_config:
-  remove_prefixes:
-    - "DE"
   preprocess: false
   skip_binding_parsing: false
   raw_binding_map: {"&bootloader": "BOOT", "&key_repeat": "REPEAT", "&td_sqt_dqt": "SQT", "&td_scw": 'SPACE', "&par_macro": "()", "&bkt_macro": "[]", "&sqt_macro": "''", "&brc_macro": "{}", "&lgt_macro": "<>"}
