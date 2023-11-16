@@ -32,7 +32,7 @@ draw_config:
 parse_config:
   preprocess: false
   skip_binding_parsing: false
-  raw_binding_map: {"&bootloader": "BOOT"}
+  raw_binding_map: {"&bootloader": "BOOT", "&key_repeat": "REPEAT", "&&sqt_dqt": "SQT", "&td_scw": 'SPACE', "&par_macro": "()", "&bkt_macro": "[]", "&sqt_macro": "''", "&brc_macro": "{}", "&lgt_macro": "<>"}
   sticky_label: sticky
   trans_legend:
     t: ▽
@@ -103,5 +103,4 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
-    '(ZMK_HID_USAGE(HID_USAGE_KEY,HID_USAGE_KEY_KEYBOARD_A))': 'A'
   zmk_combos: {}

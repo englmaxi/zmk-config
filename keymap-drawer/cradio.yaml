@@ -334,8 +334,8 @@ combos:
   k: DE EURO
   l: [BSE, NAV, NUM]
 - p: [16, 18]
-  k: {t: '&par_macro', h: LS(LALT), s: '&lgt_macro'}
+  k: {t: (), h: LS(LALT), s: <>}
   l: [BSE, NUM, NAV]
 - p: [6, 8]
-  k: {t: '&bkt_macro', s: '&brc_macro'}
+  k: {t: '[]', s: '{}'}
   l: [BSE, NUM, NAV]

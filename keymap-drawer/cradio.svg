@@ -485,16 +485,16 @@ path.combo {
 <path d="M532,101 l-37,-1" class="combo"/>
 <path d="M532,101 l37,1" class="combo"/>
 <rect rx="6" ry="6" x="518" y="88" width="28" height="26" class="combo"/>
-<text x="532" y="101" class="combo tap"><tspan style="font-size: 70%">&amp;par_macro</tspan></text>
+<text x="532" y="101" class="combo tap">()</text>
 <text x="532" y="112" class="combo hold"><tspan style="font-size: 88%">LS(LALT)</tspan></text>
-<text x="532" y="90" class="combo shifted"><tspan style="font-size: 70%">&amp;lgt_macro</tspan></text>
+<text x="532" y="90" class="combo shifted">&lt;&gt;</text>
 </g>
 <g class="combo combopos-30">
 <path d="M532,45 l-37,-1" class="combo"/>
 <path d="M532,45 l37,1" class="combo"/>
 <rect rx="6" ry="6" x="518" y="32" width="28" height="26" class="combo"/>
-<text x="532" y="45" class="combo tap"><tspan style="font-size: 70%">&amp;bkt_macro</tspan></text>
-<text x="532" y="34" class="combo shifted"><tspan style="font-size: 70%">&amp;brc_macro</tspan></text>
+<text x="532" y="45" class="combo tap">[]</text>
+<text x="532" y="34" class="combo shifted">{}</text>
 </g>
 </g>
 </g>
@@ -830,16 +830,16 @@ path.combo {
 <path d="M532,101 l-37,-1" class="combo"/>
 <path d="M532,101 l37,1" class="combo"/>
 <rect rx="6" ry="6" x="518" y="88" width="28" height="26" class="combo"/>
-<text x="532" y="101" class="combo tap"><tspan style="font-size: 70%">&amp;par_macro</tspan></text>
+<text x="532" y="101" class="combo tap">()</text>
 <text x="532" y="112" class="combo hold"><tspan style="font-size: 88%">LS(LALT)</tspan></text>
-<text x="532" y="90" class="combo shifted"><tspan style="font-size: 70%">&amp;lgt_macro</tspan></text>
+<text x="532" y="90" class="combo shifted">&lt;&gt;</text>
 </g>
 <g class="combo combopos-29">
 <path d="M532,45 l-37,-1" class="combo"/>
 <path d="M532,45 l37,1" class="combo"/>
 <rect rx="6" ry="6" x="518" y="32" width="28" height="26" class="combo"/>
-<text x="532" y="45" class="combo tap"><tspan style="font-size: 70%">&amp;bkt_macro</tspan></text>
-<text x="532" y="34" class="combo shifted"><tspan style="font-size: 70%">&amp;brc_macro</tspan></text>
+<text x="532" y="45" class="combo tap">[]</text>
+<text x="532" y="34" class="combo shifted">{}</text>
 </g>
 </g>
 </g>
@@ -1172,16 +1172,16 @@ path.combo {
 <path d="M532,101 l-37,-1" class="combo"/>
 <path d="M532,101 l37,1" class="combo"/>
 <rect rx="6" ry="6" x="518" y="88" width="28" height="26" class="combo"/>
-<text x="532" y="101" class="combo tap"><tspan style="font-size: 70%">&amp;par_macro</tspan></text>
+<text x="532" y="101" class="combo tap">()</text>
 <text x="532" y="112" class="combo hold"><tspan style="font-size: 88%">LS(LALT)</tspan></text>
-<text x="532" y="90" class="combo shifted"><tspan style="font-size: 70%">&amp;lgt_macro</tspan></text>
+<text x="532" y="90" class="combo shifted">&lt;&gt;</text>
 </g>
 <g class="combo combopos-29">
 <path d="M532,45 l-37,-1" class="combo"/>
 <path d="M532,45 l37,1" class="combo"/>
 <rect rx="6" ry="6" x="518" y="32" width="28" height="26" class="combo"/>
-<text x="532" y="45" class="combo tap"><tspan style="font-size: 70%">&amp;bkt_macro</tspan></text>
-<text x="532" y="34" class="combo shifted"><tspan style="font-size: 70%">&amp;brc_macro</tspan></text>
+<text x="532" y="45" class="combo tap">[]</text>
+<text x="532" y="34" class="combo shifted">{}</text>
 </g>
 </g>
 </g>
