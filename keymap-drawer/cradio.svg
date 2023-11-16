@@ -30,6 +30,9 @@
 <svg id="mdi:bluetooth-off">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-bluetooth-off" viewBox="0 0 24 24"><path d="M13,5.83L14.88,7.71L13.28,9.31L14.69,10.72L17.71,7.7L12,2H11V7.03L13,9.03M5.41,4L4,5.41L10.59,12L5,17.59L6.41,19L11,14.41V22H12L16.29,17.71L18.59,20L20,18.59M13,18.17V14.41L14.88,16.29" /></svg>
 </svg>
+<svg id="mdi:close-box">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-close-box" viewBox="0 0 24 24"><path d="M19,3H16.3H7.7H5A2,2 0 0,0 3,5V7.7V16.4V19A2,2 0 0,0 5,21H7.7H16.4H19A2,2 0 0,0 21,19V16.3V7.7V5A2,2 0 0,0 19,3M15.6,17L12,13.4L8.4,17L7,15.6L10.6,12L7,8.4L8.4,7L12,10.6L15.6,7L17,8.4L13.4,12L17,15.6L15.6,17Z" /></svg>
+</svg>
 <svg id="mdi:content-copy">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-content-copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z" /></svg>
 </svg>
@@ -59,6 +62,9 @@
 </svg>
 <svg id="mdi:keyboard-tab">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab" viewBox="0 0 24 24"><path d="M20,18H22V6H20M11.59,7.41L15.17,11H1V13H15.17L11.59,16.58L13,18L19,12L13,6L11.59,7.41Z" /></svg>
+</svg>
+<svg id="mdi:magnify-close">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-magnify-close" viewBox="0 0 24 24"><path d="M9,2A7,7 0 0,1 16,9C16,10.5 15.5,12 14.61,13.19L15.41,14H16L22,20L20,22L14,16V15.41L13.19,14.61C12,15.5 10.5,16 9,16A7,7 0 0,1 2,9A7,7 0 0,1 9,2M11.12,5.46L9,7.59L6.88,5.46L5.46,6.88L7.59,9L5.46,11.12L6.88,12.54L9,10.41L11.12,12.54L12.54,11.12L10.41,9L12.54,6.88L11.12,5.46Z" /></svg>
 </svg>
 <svg id="mdi:magnify-minus">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-magnify-minus" viewBox="0 0 24 24"><path d="M9,2A7,7 0 0,1 16,9C16,10.57 15.5,12 14.61,13.19L15.41,14H16L22,20L20,22L14,16V15.41L13.19,14.61C12,15.5 10.57,16 9,16A7,7 0 0,1 2,9A7,7 0 0,1 9,2M5,8V10H13V8H5Z" /></svg>
@@ -116,9 +122,6 @@
 </svg>
 <svg id="mdi:volume-plus">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-plus" viewBox="0 0 24 24"><path d="M3,9H7L12,4V20L7,15H3V9M14,11H17V8H19V11H22V13H19V16H17V13H14V11Z" /></svg>
-</svg>
-<svg id="mdi:window-close">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-window-close" viewBox="0 0 24 24"><path d="M13.46,12L19,17.54V19H17.54L12,13.46L6.46,19H5V17.54L10.54,12L5,6.46V5H6.46L12,10.54L17.54,5H19V6.46L13.46,12Z" /></svg>
 </svg>
 <svg id="tabler:brightness-down">
 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness-down" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -555,7 +558,7 @@ path.combo {
 </g>
 <g transform="translate(84, 45)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:window-close" xlink:href="#mdi:window-close" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:window-close"/>
+<use href="#mdi:close-box" xlink:href="#mdi:close-box" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:close-box"/>
 </g>
 <g transform="translate(140, 28)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1011,7 +1014,7 @@ path.combo {
 </g>
 <g transform="translate(644, 192)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">LC(0)</text>
+<use href="#mdi:magnify-close" xlink:href="#mdi:magnify-close" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:magnify-close"/>
 </g>
 <g transform="translate(224, 238)" class="key trans keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>

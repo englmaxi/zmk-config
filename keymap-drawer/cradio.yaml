@@ -37,7 +37,7 @@ layers:
   - NUM
   NAV:
   - $$mdi:keyboard-esc$$
-  - $$mdi:window-close$$
+  - $$mdi:close-box$$
   - $$mdi:text-search$$
   - $$mdi:backspace-outline$$
   - INS
@@ -135,7 +135,7 @@ layers:
   - F1
   - F2
   - F3
-  - LC(0)
+  - $$mdi:magnify-close$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
