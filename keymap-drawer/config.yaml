@@ -17,7 +17,20 @@ draw_config:
   legend_rel_x: 0.0
   legend_rel_y: 0.0
 
-  svg_extra_style: ''
+  svg_extra_style: | 
+    .combo.tap {
+        font-size: 13px;
+    }
+    .combo.shifted {
+        font-size: 10px;
+        translate: -9px -2px;
+    }
+    .shifted.mdi\:usb {
+      translate: -12px 19px;
+    }
+    .hold.mdi\:bluetooth {
+      translate: 12px -18px;
+    } 
   shrink_wide_legends: 5
   glyph_tap_size: 14
   glyph_hold_size: 12
@@ -68,11 +81,11 @@ parse_config:
     '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
     '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$
     
-    '&hmr_lpar_lt LS(LCTRL) 0': {s: '<' , h: '('}
-    '&hmr_rpar_gt LA(LCTRL) 0': {s: '>' , h: ')'}
+    '&hmr_lpar_lt LS(LCTRL) 0': {s: '<' , t: '('}
+    '&hmr_rpar_gt LA(LCTRL) 0': {s: '>' , t: ')'}
     
-    '&lbkt_lbrc': {s: '{' , h: '['}
-    '&rbkt_rbrc': {s: '}' , h: ']'}
+    '&lbkt_lbrc': {s: '{' , t: '['}
+    '&rbkt_rbrc': {s: '}' , t: ']'}
     
     '&td_sqt_dqt': {s: '"' , t: "'"}
     '&mt_td_scw LSHFT 0': '$$mdi:apple-keyboard-shift$$'

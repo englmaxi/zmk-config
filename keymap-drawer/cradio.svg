@@ -258,6 +258,20 @@ path.combo {
     visibility: hidden;
 }
 /* End Tabler Icons Cleanup */
+
+.combo.tap {
+    font-size: 13px;
+}
+.combo.shifted {
+    font-size: 10px;
+    translate: -9px -2px;
+}
+.shifted.mdi\:usb {
+  translate: -12px 19px;
+}
+.hold.mdi\:bluetooth {
+  translate: 12px -18px;
+} 
 </style>
 <g transform="translate(30, 0)" class="layer-BSE">
 <text x="0" y="28" class="label">BSE:</text>
@@ -436,22 +450,22 @@ path.combo {
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="490" y="79" width="28" height="26" class="combo"/>
-<text x="504" y="103" class="combo hold">(</text>
+<text x="504" y="92" class="combo tap">(</text>
 <text x="504" y="81" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="80" width="28" height="26" class="combo"/>
-<text x="560" y="104" class="combo hold">)</text>
+<text x="560" y="93" class="combo tap">)</text>
 <text x="560" y="82" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="490" y="23" width="28" height="26" class="combo"/>
-<text x="504" y="47" class="combo hold">[</text>
+<text x="504" y="36" class="combo tap">[</text>
 <text x="504" y="25" class="combo shifted">{</text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="546" y="24" width="28" height="26" class="combo"/>
-<text x="560" y="48" class="combo hold">]</text>
+<text x="560" y="37" class="combo tap">]</text>
 <text x="560" y="26" class="combo shifted">}</text>
 </g>
 <g class="combo combopos-10">
