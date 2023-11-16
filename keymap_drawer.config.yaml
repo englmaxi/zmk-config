@@ -190,8 +190,8 @@ parse_config:
     RSHIFT: $$mdi:apple-keyboard-shift$$
     RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
 
-    LGUI: $$gdi:microsoft-windows$$
-    RGUI: $$gdi:microsoft-windows$$
+    LGUI: $$mdi:microsoft-windows$$
+    RGUI: $$mdi:microsoft-windows$$
     
     C_PP: $$mdi:play-pause$$
     C_NEXT: $$mdi:skip-forward$$
