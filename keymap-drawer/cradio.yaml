@@ -250,7 +250,7 @@ combos:
   k: ESC
   l: [BSE, NAV, NUM]
 - p: [2, 3]
-  k: ENTER
+  k: $$mdi:keyboard-return$$
   l: [BSE, NAV, NUM]
 - p: [26, 27]
   k: $$mdi:backspace-outline$$

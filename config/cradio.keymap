@@ -37,7 +37,7 @@
         };
 
         enter {
-            bindings = <&kp ENTER>;
+            bindings = <&kp RET>;
             key-positions = <2 3>;
             require-prior-idle-ms = <100>;
             timeout-ms = <20>;
