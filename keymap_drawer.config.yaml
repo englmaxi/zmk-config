@@ -213,7 +213,10 @@ parse_config:
   zmk_combos:
     par:
       align: bottom
-      o: 0.55
+      o: 0.65
     bkt:
       align: top
-      o: 0.30
+      o: 0.40
+    star:
+      key:
+        tab: '*'
