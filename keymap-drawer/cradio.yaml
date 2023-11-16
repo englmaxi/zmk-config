@@ -277,31 +277,31 @@ combos:
   k: {h: ']', s: '}'}
   l: [BSE]
 - p: [1, 11]
-  k: $$mdi:at$$
+  k: '@'
   l: [BSE]
 - p: [12, 2]
-  k: $$mdi:pound$$
+  k: '#'
   l: [BSE]
 - p: [3, 13]
-  k: $$mdi:currency-usd$$
+  k: $
   l: [BSE]
 - p: [14, 4]
-  k: $$mdi:percent$$
+  k: '%'
   l: [BSE]
 - p: [22, 12]
   k: \
   l: [BSE]
 - p: [23, 13]
-  k: $$mdi:equal$$
+  k: '='
   l: [BSE]
 - p: [24, 14]
-  k: $$mdi:tilde$$
+  k: '~'
   l: [BSE]
 - p: [15, 5]
-  k: $$mdi:chevron-up$$
+  k: ^
   l: [BSE]
 - p: [6, 16]
-  k: $$mdi:plus$$
+  k: +
   l: [BSE]
 - p: [17, 7]
   k: '*'
@@ -333,7 +333,7 @@ combos:
   a: top
   o: 0.45
 - p: [21, 11]
-  k: $$mdi:currency-eur$$
+  k: €
   l: [BSE]
 - p: [16, 18]
   k: {t: (), h: LS(LALT), s: <>}

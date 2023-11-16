@@ -232,31 +232,31 @@ parse_config:
         tap: '*'
     at:
       key:
-        tap: '$$mdi:at$$'
+        tap: '@'
     euro:
       key:
-        tap: '$$mdi:currency-eur$$'
+        tap: '€'
     caret:
       key:
-        tap: '$$mdi:chevron-up$$'
+        tap: '^'
     hash:
       key:
-        tap: '$$mdi:pound$$'
+        tap: '#'
     dllr:
       key:
-        tap: '$$mdi:currency-usd$$'
+        tap: '$'
     prcnt:
       key:
-        tap: '$$mdi:percent$$'
+        tap: '%'
     tilde:
       key:
-        tap: '$$mdi:tilde$$'
+        tap: '~'
     equal:
       key:
-        tap: '$$mdi:equal$$'
+        tap: '='
     plus:
       key:
-        tap: '$$mdi:plus$$'
+        tap: '+'
     bslh:
       key:
         tap: '\'
