@@ -11,7 +11,7 @@ layers:
   - DE U
   - DE Y
   - ''''
-  - {t: DE A, h: LGUI}
+  - {t: DE A, h: '$$gdi:microsoft-windows$$'}
   - {t: DE R, h: LALT}
   - {t: DE S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: DE T, h: '$$mdi:apple-keyboard-shift$$'}
@@ -20,7 +20,7 @@ layers:
   - {t: DE N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: DE E, h: '$$mdi:apple-keyboard-control$$'}
   - {t: DE I, h: LALT}
-  - {t: DE O, h: LGUI}
+  - {t: DE O, h: '$$gdi:microsoft-windows$$'}
   - DE Z
   - DE X
   - DE C
@@ -46,7 +46,7 @@ layers:
   - PG UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$gdi:microsoft-windows$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: LALT, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}

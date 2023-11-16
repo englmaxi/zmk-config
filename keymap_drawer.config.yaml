@@ -163,10 +163,13 @@ parse_config:
     TILDE2: '~'
     
     SPACE: $$mdi:keyboard-space$$
+    
     BACKSPACE: $$mdi:backspace-outline$$
     BSPC: $$mdi:backspace-outline$$
+    
     DELETE: $$mdi:backspace-reverse-outline$$
     DEL: $$mdi:backspace-reverse-outline$$
+    
     TAB: $$mdi:keyboard-tab$$
     LS(TAB): $$mdi:keyboard-tab-reverse$$
     
@@ -186,6 +189,9 @@ parse_config:
     RSHFT: $$mdi:apple-keyboard-shift$$
     RSHIFT: $$mdi:apple-keyboard-shift$$
     RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
+
+    LGUI: $$gdi:microsoft-windows$$
+    RGUI: $$gdi:microsoft-windows$$
     
     C_PP: $$mdi:play-pause$$
     C_NEXT: $$mdi:skip-forward$$
