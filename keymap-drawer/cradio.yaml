@@ -1,33 +1,33 @@
 layout: {qmk_keyboard: ferris/sweep}
 layers:
   BSE:
-  - DE Q
-  - DE W
-  - DE F
-  - DE P
-  - DE B
-  - DE J
-  - DE L
-  - DE U
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
   - DE Y
   - ''''
-  - {t: DE A, h: '$$mdi:microsoft-windows$$'}
-  - {t: DE R, h: LALT}
-  - {t: DE S, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: DE T, h: '$$mdi:apple-keyboard-shift$$'}
-  - DE G
-  - DE M
-  - {t: DE N, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: DE E, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: DE I, h: LALT}
-  - {t: DE O, h: '$$mdi:microsoft-windows$$'}
+  - {t: A, h: '$$mdi:microsoft-windows$$'}
+  - {t: R, h: LALT}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - G
+  - M
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: I, h: LALT}
+  - {t: O, h: '$$mdi:microsoft-windows$$'}
   - DE Z
-  - DE X
-  - DE C
-  - {t: DE D, h: MSE}
-  - DE V
-  - DE K
-  - DE H
+  - X
+  - C
+  - {t: D, h: MSE}
+  - V
+  - K
+  - H
   - DE COMMA
   - DE DOT
   - {t: DE QMARK, s: DE EXCL}
@@ -37,8 +37,8 @@ layers:
   - NUM
   NAV:
   - ESC
-  - LC(DE W)
-  - LC(DE F)
+  - LC(W)
+  - LC(F)
   - $$mdi:backspace-outline$$
   - INS
   - {t: ▽, type: trans}
@@ -57,7 +57,7 @@ layers:
   - {t: '$$mdi:arrow-right$$', h: END}
   - PAUSE BREAK
   - LC(DE Z)
-  - LC(DE X)
+  - LC(X)
   - $$mdi:content-copy$$
   - {t: ▽, type: trans}
   - $$mdi:content-paste$$

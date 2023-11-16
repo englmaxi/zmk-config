@@ -592,10 +592,10 @@
 
         base_layer {
             bindings = <
-&kp DE_Q        &kp DE_W        &kp DE_F         &kp DE_P          &kp DE_B            &kp DE_J     &kp DE_L         &kp DE_U         &kp DE_Y        &td_sqt_dqt
-&hml LGUI DE_A  &hml LALT DE_R  &hml LCTRL DE_S  &hml LSHIFT DE_T  &kp DE_G            &kp DE_M     &hmr RSHFT DE_N  &hmr LCTRL DE_E  &hmr LALT DE_I  &hmr LGUI DE_O
-&kp DE_Z        &kp DE_X        &kp DE_C         &lt 6 DE_D        &kp DE_V            &kp DE_K     &kp DE_H         &kp DE_COMMA     &kp DE_DOT      &qexcl
-                                                 &mo 1             &mt_td_scw LSHFT 0  &lt 3 SPACE  &mo 2
+&kp Q        &kp W        &kp F         &kp P          &kp B               &kp J        &kp L         &kp U         &kp DE_Y     &td_sqt_dqt
+&hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHIFT T  &kp G               &kp M        &hmr RSHFT N  &hmr LCTRL E  &hmr LALT I  &hmr LGUI O
+&kp DE_Z     &kp X        &kp C         &lt 6 D        &kp V               &kp K        &kp H         &kp DE_COMMA  &kp DE_DOT   &qexcl
+                                        &mo 1          &mt_td_scw LSHFT 0  &lt 3 SPACE  &mo 2
             >;
 
             label = "BSE";
@@ -603,10 +603,10 @@
 
         nav_layer {
             bindings = <
-&kp ESC       &kp LC(DE_W)  &kp LC(DE_F)  &kp BSPC   &kp INS      &trans           &kp PG_DN          &kp PG_UP        &trans           &trans
-&sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT  &sk RALT     &ht_home 0 LEFT  &ht LC(END) DOWN   &ht LC(HOME) UP  &ht_end 0 RIGHT  &kp PAUSE_BREAK
-&kp LC(DE_Z)  &kp LC(DE_X)  &kp LC(INS)   &trans     &kp LS(INS)  &kp RET          &ht LC(BSPC) BSPC  &kp TAB          &ht LC(DEL) DEL  &kp PSCRN
-                                          &trans     &trans       &trans           &trans
+&kp ESC       &kp LC(W)  &kp LC(F)    &kp BSPC   &kp INS      &trans           &kp PG_DN          &kp PG_UP        &trans           &trans
+&sk LGUI      &sk LALT   &sk LCTRL    &sk LSHFT  &sk RALT     &ht_home 0 LEFT  &ht LC(END) DOWN   &ht LC(HOME) UP  &ht_end 0 RIGHT  &kp PAUSE_BREAK
+&kp LC(DE_Z)  &kp LC(X)  &kp LC(INS)  &trans     &kp LS(INS)  &kp RET          &ht LC(BSPC) BSPC  &kp TAB          &ht LC(DEL) DEL  &kp PSCRN
+                                      &trans     &trans       &trans           &trans
             >;
 
             label = "NAV";
