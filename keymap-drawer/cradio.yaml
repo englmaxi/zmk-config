@@ -56,7 +56,7 @@ layers:
   - {t: '$$mdi:arrow-up$$', h: LC(HOME)}
   - {t: '$$mdi:arrow-right$$', h: END}
   - PAUSE BREAK
-  - LC(DE Z)
+  - $$mdi:undo$$
   - $$mdi:content-cut$$
   - $$mdi:content-copy$$
   - {t: ▽, type: trans}
@@ -115,7 +115,7 @@ layers:
   - F7
   - F8
   - F9
-  - LC(DE PLUS)
+  - $$mdi:magnify-plus$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -125,7 +125,7 @@ layers:
   - F4
   - F5
   - F6
-  - LC(DE MINUS)
+  - $$mdi:magnify-minus$$
   - {t: ▽, type: trans}
   - $$mdi:skip-backward$$
   - $$mdi:play-pause$$
@@ -237,9 +237,9 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Mouse4
-  - Mouse3
-  - Mouse5
+  - Mouse 4
+  - Mouse 3
+  - Mouse 5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -336,7 +336,7 @@ combos:
   k: €
   l: [BSE]
 - p: [16, 18]
-  k: {t: (), h: LS(LALT), s: <>}
+  k: {t: (), s: <>}
   l: [BSE]
   a: bottom
   o: 0.75

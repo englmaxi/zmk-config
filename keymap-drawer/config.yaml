@@ -93,9 +93,9 @@ parse_config:
     
     '&mkp LCLK': '$$mdi:cursor-default-click$$'
     '&mkp RCLK': '$$mdi:cursor-default-click-outline$$'
-    '&mkp MB3': 'Mouse3'
-    '&mkp MB4': 'Mouse4'
-    '&mkp MB5': 'Mouse5'
+    '&mkp MB3': 'Mouse 3'
+    '&mkp MB4': 'Mouse 4'
+    '&mkp MB5': 'Mouse 5'
     
   sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
@@ -222,12 +222,17 @@ parse_config:
     LS(INS): $$mdi:content-paste$$
     LC(X): $$mdi:content-cut$$
     LC(Z): $$mdi:undo$$
+    LC(DE_Z): $$mdi:undo$$
 
     LC(F): $$mdi:text-search$$
     LC(W): $$mdi:window-close$$
     
     PG_UP: Page Up
     PG_DN: Page Down
+
+    LC(DE_PLUS): $$mdi:magnify-plus$$
+    LC(DE_MINUS): $$mdi:magnify-minus$$
+    LC(0): $$mdi:magnify-close$$
 
     DE_DOT: '.'
     DE_COMMA: ','
@@ -249,6 +254,9 @@ parse_config:
     par:
       align: bottom
       o: 0.75
+      key:
+        tap: '()'
+        shifted: '<>'
     bkt:
       align: top
       o: 0.45

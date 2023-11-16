@@ -60,6 +60,12 @@
 <svg id="mdi:keyboard-tab">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab" viewBox="0 0 24 24"><path d="M20,18H22V6H20M11.59,7.41L15.17,11H1V13H15.17L11.59,16.58L13,18L19,12L13,6L11.59,7.41Z" /></svg>
 </svg>
+<svg id="mdi:magnify-minus">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-magnify-minus" viewBox="0 0 24 24"><path d="M9,2A7,7 0 0,1 16,9C16,10.57 15.5,12 14.61,13.19L15.41,14H16L22,20L20,22L14,16V15.41L13.19,14.61C12,15.5 10.57,16 9,16A7,7 0 0,1 2,9A7,7 0 0,1 9,2M5,8V10H13V8H5Z" /></svg>
+</svg>
+<svg id="mdi:magnify-plus">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-magnify-plus" viewBox="0 0 24 24"><path d="M9,2A7,7 0 0,1 16,9C16,10.57 15.5,12 14.61,13.19L15.41,14H16L22,20L20,22L14,16V15.41L13.19,14.61C12,15.5 10.57,16 9,16A7,7 0 0,1 2,9A7,7 0 0,1 9,2M8,5V8H5V10H8V13H10V10H13V8H10V5H8Z" /></svg>
+</svg>
 <svg id="mdi:microsoft-windows">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-microsoft-windows" viewBox="0 0 24 24"><path d="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z" /></svg>
 </svg>
@@ -95,6 +101,9 @@
 </svg>
 <svg id="mdi:toggle-switch">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-toggle-switch" viewBox="0 0 24 24"><path d="M17,7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7M17,15A3,3 0 0,1 14,12A3,3 0 0,1 17,9A3,3 0 0,1 20,12A3,3 0 0,1 17,15Z" /></svg>
+</svg>
+<svg id="mdi:undo">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-undo" viewBox="0 0 24 24"><path d="M12.5,8C9.85,8 7.45,9 5.6,10.6L2,7V16H11L7.38,12.38C8.77,11.22 10.54,10.5 12.5,10.5C16.04,10.5 19.05,12.81 20.1,16L22.47,15.22C21.08,11.03 17.15,8 12.5,8Z" /></svg>
 </svg>
 <svg id="mdi:usb">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-usb" viewBox="0 0 24 24"><path d="M15,7V11H16V13H13V5H15L12,1L9,5H11V13H8V10.93C8.7,10.56 9.2,9.85 9.2,9C9.2,7.78 8.21,6.8 7,6.8C5.78,6.8 4.8,7.78 4.8,9C4.8,9.85 5.3,10.56 6,10.93V13A2,2 0 0,0 8,15H11V18.05C10.29,18.41 9.8,19.15 9.8,20A2.2,2.2 0 0,0 12,22.2A2.2,2.2 0 0,0 14.2,20C14.2,19.15 13.71,18.41 13,18.05V15H16A2,2 0 0,0 18,13V11H19V7H15Z" /></svg>
@@ -526,7 +535,6 @@ path.combo {
 <path d="M532,172 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-46" class="combo"/>
 <rect rx="6" ry="6" x="518" y="159" width="28" height="26" class="combo"/>
 <text x="532" y="172" class="combo tap">()</text>
-<text x="532" y="183" class="combo hold"><tspan style="font-size: 62%">LS(LALT)</tspan></text>
 <text x="532" y="161" class="combo shifted">&lt;&gt;</text>
 </g>
 <g class="combo combopos-30">
@@ -638,9 +646,7 @@ path.combo {
 </g>
 <g transform="translate(28, 192)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">LC(DE</tspan><tspan x="0" dy="1.2em">Z)</tspan>
-</text>
+<use href="#mdi:undo" xlink:href="#mdi:undo" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:undo"/>
 </g>
 <g transform="translate(84, 157)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -925,9 +931,7 @@ path.combo {
 </g>
 <g transform="translate(644, 80)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">LC(DE</tspan><tspan x="0" dy="1.2em">PLUS)</tspan>
-</text>
+<use href="#mdi:magnify-plus" xlink:href="#mdi:magnify-plus" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:magnify-plus"/>
 </g>
 <g transform="translate(28, 136)" class="key trans keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -967,9 +971,7 @@ path.combo {
 </g>
 <g transform="translate(644, 136)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 83%">LC(DE</tspan><tspan x="0" dy="1.2em" style="font-size: 83%">MINUS)</tspan>
-</text>
+<use href="#mdi:magnify-minus" xlink:href="#mdi:magnify-minus" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:magnify-minus"/>
 </g>
 <g transform="translate(28, 192)" class="key trans keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1399,15 +1401,21 @@ path.combo {
 </g>
 <g transform="translate(476, 156)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">Mouse4</tspan></text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">Mouse</tspan><tspan x="0" dy="1.2em">4</tspan>
+</text>
 </g>
 <g transform="translate(532, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">Mouse3</tspan></text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">Mouse</tspan><tspan x="0" dy="1.2em">3</tspan>
+</text>
 </g>
 <g transform="translate(588, 157)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 83%">Mouse5</tspan></text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">Mouse</tspan><tspan x="0" dy="1.2em">5</tspan>
+</text>
 </g>
 <g transform="translate(644, 192)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
