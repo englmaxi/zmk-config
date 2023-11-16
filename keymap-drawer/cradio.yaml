@@ -9,7 +9,7 @@ layers:
   - J
   - L
   - U
-  - DE Y
+  - Y
   - {t: '''', s: '"'}
   - {t: A, h: '$$mdi:microsoft-windows$$'}
   - {t: R, h: LALT}
@@ -21,16 +21,16 @@ layers:
   - {t: E, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: LALT}
   - {t: O, h: '$$mdi:microsoft-windows$$'}
-  - DE Z
+  - Z
   - X
   - C
   - {t: D, h: MSE}
   - V
   - K
   - H
-  - DE COMMA
+  - ','
   - .
-  - {t: DE QMARK, s: DE EXCL}
+  - {t: '?', s: '!'}
   - NAV
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-space$$', h: FUN}
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - DE COMMA
+  - ','
   - DE 4
   - DE 5
   - DE 6
@@ -183,19 +183,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - DE U UMLAUT
-  - DE ACUTE
-  - DE GRAVE
-  - DE A UMLAUT
+  - Ü
+  - ´
+  - '`'
+  - Ä
   - {t: ▽, type: trans}
-  - DE ESZETT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ß
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - DE O UMLAUT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ö
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -237,9 +237,9 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB4'
-  - '&mkp MB3'
-  - '&mkp MB5'
+  - Mouse4
+  - Mouse3
+  - Mouse5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

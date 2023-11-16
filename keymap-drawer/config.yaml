@@ -90,8 +90,13 @@ parse_config:
     '&bt BT_SEL 4': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-4$$}
     '&bt BT_PRV':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-previous$$}
     '&bt BT_NXT':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-next$$}
+    
     '&mkp LCLK': '$$mdi:cursor-default-click$$'
     '&mkp RCLK': '$$mdi:cursor-default-click-outline$$'
+    '&mkp MB3': 'Mouse3'
+    '&mkp MB4': 'Mouse4'
+    '&mkp MB5': 'Mouse5'
+    
   sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
     t: ▽
@@ -225,6 +230,20 @@ parse_config:
     PG_DN: Page Down
 
     DE_DOT: '.'
+    DE_COMMA: ','
+    DE_Z: 'Z'
+    DE_Y: 'Y'
+    DE_QMARK: '?'
+    DE_EXCL: '!'
+    DE_PLUS: '+'
+    DE_MINUS: '-'
+
+    DE_A_UMLAUT: 'Ä'
+    DE_U_UMLAUT: 'Ü'
+    DE_O_UMLAUT: 'Ö'
+    DE_ESZETT: 'ß'
+    DE_ACUTE: '´'
+    DE_GRAVE: '`'
     
   zmk_combos:
     par:
