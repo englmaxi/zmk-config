@@ -1,4 +1,10 @@
-on: [push, pull_request, workflow_dispatch]
+name: Build ZMK firmware
+on:
+  workflow_dispatch:  # can be triggered manually
+  pull_request:
+  push:               # automatically run on changes to following paths
+    paths:
+      - "config/*"
 
 jobs:
   build:
