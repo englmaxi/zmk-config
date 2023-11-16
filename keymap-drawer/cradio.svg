@@ -463,34 +463,23 @@ path.combo {
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="490" y="79" width="28" height="26" class="combo"/>
-<text x="504" y="92" class="combo tap">
-<tspan x="504" dy="-0.6em">DE</tspan><tspan x="504" dy="1.2em">LPAR</tspan>
-</text>
-<text x="504" y="103" class="combo hold"><tspan style="font-size: 60%">LS(LCTRL)</tspan></text>
-<text x="504" y="81" class="combo shifted">DE LT</text>
+<text x="504" y="103" class="combo hold">(</text>
+<text x="504" y="81" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="80" width="28" height="26" class="combo"/>
-<text x="560" y="93" class="combo tap">
-<tspan x="560" dy="-0.6em">DE</tspan><tspan x="560" dy="1.2em">RPAR</tspan>
-</text>
-<text x="560" y="104" class="combo hold"><tspan style="font-size: 60%">LA(LCTRL)</tspan></text>
-<text x="560" y="82" class="combo shifted">DE GT</text>
+<text x="560" y="104" class="combo hold">)</text>
+<text x="560" y="82" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="490" y="23" width="28" height="26" class="combo"/>
-<text x="504" y="36" class="combo tap">
-<tspan x="504" dy="-1.2em" style="font-size: 71%">DE</tspan><tspan x="504" dy="1.2em" style="font-size: 71%">LEFT</tspan>
-<tspan x="504" dy="1.2em" style="font-size: 71%">BRACKET</tspan>
-</text>
-<text x="504" y="25" class="combo shifted"><tspan style="font-size: 71%">DE LBRC</tspan></text>
+<text x="504" y="47" class="combo hold">[</text>
+<text x="504" y="25" class="combo shifted">{</text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="546" y="24" width="28" height="26" class="combo"/>
-<text x="560" y="37" class="combo tap">
-<tspan x="560" dy="-0.6em">DE</tspan><tspan x="560" dy="1.2em">RBKT</tspan>
-</text>
-<text x="560" y="26" class="combo shifted"><tspan style="font-size: 71%">DE RBRC</tspan></text>
+<text x="560" y="48" class="combo hold">]</text>
+<text x="560" y="26" class="combo shifted">}</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="70" y="60" width="28" height="26" class="combo"/>
@@ -813,34 +802,23 @@ path.combo {
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="490" y="79" width="28" height="26" class="combo"/>
-<text x="504" y="92" class="combo tap">
-<tspan x="504" dy="-0.6em">DE</tspan><tspan x="504" dy="1.2em">LPAR</tspan>
-</text>
-<text x="504" y="103" class="combo hold"><tspan style="font-size: 60%">LS(LCTRL)</tspan></text>
-<text x="504" y="81" class="combo shifted">DE LT</text>
+<text x="504" y="103" class="combo hold">(</text>
+<text x="504" y="81" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="80" width="28" height="26" class="combo"/>
-<text x="560" y="93" class="combo tap">
-<tspan x="560" dy="-0.6em">DE</tspan><tspan x="560" dy="1.2em">RPAR</tspan>
-</text>
-<text x="560" y="104" class="combo hold"><tspan style="font-size: 60%">LA(LCTRL)</tspan></text>
-<text x="560" y="82" class="combo shifted">DE GT</text>
+<text x="560" y="104" class="combo hold">)</text>
+<text x="560" y="82" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="490" y="23" width="28" height="26" class="combo"/>
-<text x="504" y="36" class="combo tap">
-<tspan x="504" dy="-1.2em" style="font-size: 71%">DE</tspan><tspan x="504" dy="1.2em" style="font-size: 71%">LEFT</tspan>
-<tspan x="504" dy="1.2em" style="font-size: 71%">BRACKET</tspan>
-</text>
-<text x="504" y="25" class="combo shifted"><tspan style="font-size: 71%">DE LBRC</tspan></text>
+<text x="504" y="47" class="combo hold">[</text>
+<text x="504" y="25" class="combo shifted">{</text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="546" y="24" width="28" height="26" class="combo"/>
-<text x="560" y="37" class="combo tap">
-<tspan x="560" dy="-0.6em">DE</tspan><tspan x="560" dy="1.2em">RBKT</tspan>
-</text>
-<text x="560" y="26" class="combo shifted"><tspan style="font-size: 71%">DE RBRC</tspan></text>
+<text x="560" y="48" class="combo hold">]</text>
+<text x="560" y="26" class="combo shifted">}</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="70" y="60" width="28" height="26" class="combo"/>
@@ -1153,34 +1131,23 @@ path.combo {
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="490" y="79" width="28" height="26" class="combo"/>
-<text x="504" y="92" class="combo tap">
-<tspan x="504" dy="-0.6em">DE</tspan><tspan x="504" dy="1.2em">LPAR</tspan>
-</text>
-<text x="504" y="103" class="combo hold"><tspan style="font-size: 60%">LS(LCTRL)</tspan></text>
-<text x="504" y="81" class="combo shifted">DE LT</text>
+<text x="504" y="103" class="combo hold">(</text>
+<text x="504" y="81" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="80" width="28" height="26" class="combo"/>
-<text x="560" y="93" class="combo tap">
-<tspan x="560" dy="-0.6em">DE</tspan><tspan x="560" dy="1.2em">RPAR</tspan>
-</text>
-<text x="560" y="104" class="combo hold"><tspan style="font-size: 60%">LA(LCTRL)</tspan></text>
-<text x="560" y="82" class="combo shifted">DE GT</text>
+<text x="560" y="104" class="combo hold">)</text>
+<text x="560" y="82" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="490" y="23" width="28" height="26" class="combo"/>
-<text x="504" y="36" class="combo tap">
-<tspan x="504" dy="-1.2em" style="font-size: 71%">DE</tspan><tspan x="504" dy="1.2em" style="font-size: 71%">LEFT</tspan>
-<tspan x="504" dy="1.2em" style="font-size: 71%">BRACKET</tspan>
-</text>
-<text x="504" y="25" class="combo shifted"><tspan style="font-size: 71%">DE LBRC</tspan></text>
+<text x="504" y="47" class="combo hold">[</text>
+<text x="504" y="25" class="combo shifted">{</text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="546" y="24" width="28" height="26" class="combo"/>
-<text x="560" y="37" class="combo tap">
-<tspan x="560" dy="-0.6em">DE</tspan><tspan x="560" dy="1.2em">RBKT</tspan>
-</text>
-<text x="560" y="26" class="combo shifted"><tspan style="font-size: 71%">DE RBRC</tspan></text>
+<text x="560" y="48" class="combo hold">]</text>
+<text x="560" y="26" class="combo shifted">}</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="70" y="60" width="28" height="26" class="combo"/>

@@ -68,6 +68,12 @@ parse_config:
     '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
     '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$
     
+    '&hmr_lpar_lt LS(LCTRL) 0': {s: '<' , h: '('}
+    '&hmr_rpar_gt LA(LCTRL) 0': {s: '>' , h: ')'}
+    
+    '&lbkt_lbrc': {s: '{' , h: '['}
+    '&rbkt_rbrc': {s: '}' , h: ']'}
+    
     '&td_sqt_dqt': "'"
     '&mt_td_scw LSHFT 0': '$$mdi:apple-keyboard-shift$$'
     '&par_macro': '()'
@@ -206,23 +212,7 @@ parse_config:
   zmk_combos:
     combo_par:
       align: bottom
-      offset: 0.03
+      offset: 1.03
     combo_bkt:
       align: top
-      offset: 0.03
-    combo_lbkt:
-      key:
-        shifted: "{"
-        hold: "["
-    combo_rbkt:
-      key:
-        shifted: "}"
-        hold: "]"
-    combo_lpar:
-      key:
-        shifted: "("
-        hold: "<"
-    combo_rpar:
-      key:
-        shifted: ")"
-        hold: ">"
+      offset: 1.03

@@ -265,16 +265,16 @@ combos:
   k: $$mdi:repeat$$
   l: [BSE, NAV, NUM]
 - p: [16, 17]
-  k: {t: DE LPAR, h: LS(LCTRL), s: DE LT}
+  k: {h: (, s: <}
   l: [BSE, NUM, NAV]
 - p: [17, 18]
-  k: {t: DE RPAR, h: LA(LCTRL), s: DE GT}
+  k: {h: ), s: '>'}
   l: [BSE, NUM, NAV]
 - p: [6, 7]
-  k: {t: DE LEFT BRACKET, s: DE LBRC}
+  k: {h: '[', s: '{'}
   l: [BSE, NUM, NAV]
 - p: [8, 7]
-  k: {t: DE RBKT, s: DE RBRC}
+  k: {h: ']', s: '}'}
   l: [BSE, NUM, NAV]
 - p: [1, 11]
   k: DE AT
