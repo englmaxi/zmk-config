@@ -11,7 +11,7 @@ layers:
   - DE U
   - DE Y
   - ''''
-  - {t: DE A, h: LEFT GUI}
+  - {t: DE A, h: LGUI}
   - {t: DE R, h: LALT}
   - {t: DE S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: DE T, h: '$$mdi:apple-keyboard-shift$$'}
@@ -128,7 +128,7 @@ layers:
   - LC(DE MINUS)
   - {t: ▽, type: trans}
   - $$mdi:skip-backward$$
-  - PLAY PAUSE
+  - $$mdi:play-pause$$
   - $$mdi:skip-forward$$
   - {t: ▽, type: trans}
   - F10

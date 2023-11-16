@@ -5,12 +5,11 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/mouse.h>
+#include "keys_de.h"
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/mouse.h>
-
-#include "keys_de.h"
 
 &caps_word {
     continue-list = <DE_UNDERSCORE BACKSPACE DELETE DE_MINUS N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
@@ -26,7 +25,6 @@
 };
 
 / {
-
     combos {
         compatible = "zmk,combos";
 
@@ -594,10 +592,10 @@
 
         base_layer {
             bindings = <
-&kp DE_Q            &kp DE_W        &kp DE_F         &kp DE_P          &kp DE_B            &kp DE_J     &kp DE_L         &kp DE_U         &kp DE_Y        &td_sqt_dqt
-&hml LEFT_GUI DE_A  &hml LALT DE_R  &hml LCTRL DE_S  &hml LSHIFT DE_T  &kp DE_G            &kp DE_M     &hmr RSHFT DE_N  &hmr LCTRL DE_E  &hmr LALT DE_I  &hmr LGUI DE_O
-&kp DE_Z            &kp DE_X        &kp DE_C         &lt 6 DE_D        &kp DE_V            &kp DE_K     &kp DE_H         &kp DE_COMMA     &kp DE_DOT      &qexcl
-                                                     &mo 1             &mt_td_scw LSHFT 0  &lt 3 SPACE  &mo 2
+&kp DE_Q        &kp DE_W        &kp DE_F         &kp DE_P          &kp DE_B            &kp DE_J     &kp DE_L         &kp DE_U         &kp DE_Y        &td_sqt_dqt
+&hml LGUI DE_A  &hml LALT DE_R  &hml LCTRL DE_S  &hml LSHIFT DE_T  &kp DE_G            &kp DE_M     &hmr RSHFT DE_N  &hmr LCTRL DE_E  &hmr LALT DE_I  &hmr LGUI DE_O
+&kp DE_Z        &kp DE_X        &kp DE_C         &lt 6 DE_D        &kp DE_V            &kp DE_K     &kp DE_H         &kp DE_COMMA     &kp DE_DOT      &qexcl
+                                                 &mo 1             &mt_td_scw LSHFT 0  &lt 3 SPACE  &mo 2
             >;
 
             label = "BSE";
@@ -627,10 +625,10 @@
 
         fun_layer {
             bindings = <
-&trans  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP  &kp C_BRI_UP  &kp F12  &kp F7  &kp F8  &kp F9  &kp LC(DE_PLUS)
-&trans  &trans        &trans            &trans        &kp C_BRI_DN  &kp F11  &kp F4  &kp F5  &kp F6  &kp LC(DE_MINUS)
-&trans  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &trans        &kp F10  &kp F1  &kp F2  &kp F3  &kp LC(N0)
-                                        &trans        &trans        &trans   &trans
+&trans  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp C_BRI_UP  &kp F12  &kp F7  &kp F8  &kp F9  &kp LC(DE_PLUS)
+&trans  &trans        &trans      &trans        &kp C_BRI_DN  &kp F11  &kp F4  &kp F5  &kp F6  &kp LC(DE_MINUS)
+&trans  &kp C_PREV    &kp C_PP    &kp C_NEXT    &trans        &kp F10  &kp F1  &kp F2  &kp F3  &kp LC(N0)
+                                  &trans        &trans        &trans   &trans
             >;
 
             label = "FUN";
