@@ -288,6 +288,7 @@
 
             tapping-term-ms = <400>;
         };
+
         sqt_dqt: sqt_dqt {
             compatible = "zmk,behavior-mod-morph";
             label = "SQT_DQT";
@@ -296,6 +297,7 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
+
         qexcl: qexcl {
             compatible = "zmk,behavior-mod-morph";
             label = "QEXCL";
@@ -304,6 +306,7 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
+
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR";
@@ -317,6 +320,7 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>;
         };
+
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
@@ -330,6 +334,7 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33 31 30>;
         };
+
         ht: ht {
             compatible = "zmk,behavior-hold-tap";
             label = "HT";
@@ -340,6 +345,7 @@
             quick-tap-ms = <220>;
             tapping-term-ms = <220>;
         };
+
         masked_home: masked_home {
             compatible = "zmk,behavior-mod-morph";
             label = "MASKED_HOME";
@@ -348,6 +354,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
+
         masked_end: masked_end {
             compatible = "zmk,behavior-mod-morph";
             label = "MASKED_END";
@@ -356,6 +363,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
+
         ht_home: ht_home {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_HOME";
@@ -366,6 +374,7 @@
             quick-tap-ms = <220>;
             tapping-term-ms = <220>;
         };
+
         ht_end: ht_end {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_END";
@@ -376,6 +385,7 @@
             quick-tap-ms = <220>;
             tapping-term-ms = <220>;
         };
+
         mo_tog: mo_tog {
             compatible = "zmk,behavior-hold-tap";
             label = "MO_TOG";
@@ -384,6 +394,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <100>;
         };
+
         hml_repeat: hml_repeat {
             compatible = "zmk,behavior-hold-tap";
             label = "HML_REPEAT";
@@ -397,6 +408,7 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33 31 30>;
         };
+
         lpar_lt: lpar_lt {
             compatible = "zmk,behavior-mod-morph";
             label = "LPAR_LT";
@@ -405,6 +417,7 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
+
         rpar_gt: rpar_gt {
             compatible = "zmk,behavior-mod-morph";
             label = "RPAR_GT";
@@ -413,6 +426,7 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
+
         lbkt_lbrc: lbkt_lbrc {
             compatible = "zmk,behavior-mod-morph";
             label = "LBKT_LBRC";
@@ -421,6 +435,7 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
+
         rbkt_rbrc: rbkt_rbrc {
             compatible = "zmk,behavior-mod-morph";
             label = "RBKT_RBRC";
@@ -429,6 +444,7 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
+
         hmr_lpar_lt: hmr_lpar_lt {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR_LPAR_LT";
@@ -442,6 +458,7 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>;
         };
+
         hmr_rpar_gt: hmr_rpar_gt {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR_RPAR_GT";
@@ -455,6 +472,7 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>;
         };
+
         mt_td_scw: mt_td_scw {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_TD_SCW";
@@ -463,6 +481,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
         par_lgt: par_lgt {
             compatible = "zmk,behavior-mod-morph";
             label = "PAR_LGT";
@@ -471,6 +490,7 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
+
         bkt_brc: bkt_brc {
             compatible = "zmk,behavior-mod-morph";
             label = "BKT_BRC";
@@ -479,6 +499,7 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
+
         hmr_par_lgt: hmr_par_lgt {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR_PAR_LGT";
@@ -492,6 +513,7 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33>;
         };
+
         sqt_dqt_macro: sqt_dqt_macro {
             compatible = "zmk,behavior-mod-morph";
             label = "SQT_DQT_MACRO";
@@ -500,6 +522,7 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
+
         td_sqt_dqt: td_sqt_dqt {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SQT_DQT";
@@ -517,18 +540,21 @@
             bindings = <&kp DE_LPAR &kp DE_RPAR &kp LEFT>;
             label = "PAR_MACRO";
         };
+
         bkt_macro: bkt_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DE_LBKT &kp DE_RBKT &kp LEFT>;
             label = "BKT_MACRO";
         };
+
         sqt_macro: sqt_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DE_SQT &kp DE_SQT &kp LEFT>;
             label = "SQT_MACRO";
         };
+
         dqt_macro: dqt_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -541,12 +567,14 @@
 
             label = "DQT_MACRO";
         };
+
         brc_macro: brc_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DE_LBRC &kp DE_RBRC &kp LEFT>;
             label = "BRC_MACRO";
         };
+
         lgt_macro: lgt_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -568,9 +596,11 @@
             bindings = <
 &kp DE_Q            &kp DE_W        &kp DE_F         &kp DE_P          &kp DE_B            &kp DE_J     &kp DE_L         &kp DE_U         &kp DE_Y        &td_sqt_dqt
 &hml LEFT_GUI DE_A  &hml LALT DE_R  &hml LCTRL DE_S  &hml LSHIFT DE_T  &kp DE_G            &kp DE_M     &hmr RSHFT DE_N  &hmr LCTRL DE_E  &hmr LALT DE_I  &hmr LGUI DE_O
-&kp DE_Z            &kp DE_X        &kp DE_C         &kp DE_D          &kp DE_V            &kp DE_K     &kp DE_H         &kp DE_COMMA     &kp DE_DOT      &qexcl
+&kp DE_Z            &kp DE_X        &kp DE_C         &lt 6 DE_D        &kp DE_V            &kp DE_K     &kp DE_H         &kp DE_COMMA     &kp DE_DOT      &qexcl
                                                      &mo 1             &mt_td_scw LSHFT 0  &lt 3 SPACE  &mo 2
             >;
+
+            label = "BSE";
         };
 
         nav_layer {
@@ -580,6 +610,8 @@
 &kp LC(DE_Z)  &kp LC(DE_X)  &kp LC(INS)   &trans     &kp LS(INS)  &kp RET          &ht LC(BSPC) BSPC  &kp TAB          &ht LC(DEL) DEL  &kp PSCRN
                                           &trans     &trans       &trans           &trans
             >;
+
+            label = "NAV";
         };
 
         num_layer {
@@ -589,6 +621,8 @@
 &trans  &trans  &trans  &trans  &trans  &kp DE_N0     &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans
                         &trans  &trans  &trans        &trans
             >;
+
+            label = "NUM";
         };
 
         fun_layer {
@@ -598,6 +632,8 @@
 &trans  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &trans        &kp F10  &kp F1  &kp F2  &kp F3  &kp LC(N0)
                                         &trans        &trans        &trans   &trans
             >;
+
+            label = "FUN";
         };
 
         hw_layer {
@@ -607,6 +643,8 @@
 &none        &none  &none         &none         &none  &none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 3  &none
                                   &trans        &none  &trans  &none
             >;
+
+            label = "HW";
         };
 
         ger_layer {
@@ -616,6 +654,19 @@
 &trans           &trans  &trans         &trans  &trans  &trans  &trans  &trans           &trans        &trans
                                         &trans  &trans  &trans  &trans
             >;
+
+            label = "GER";
+        };
+
+        mouse_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &mkp MB4   &mkp MB3  &mkp MB5  &trans
+                        &trans  &trans  &mkp LCLK  &mkp RCLK
+            >;
+
+            label = "MSE";
         };
     };
 
