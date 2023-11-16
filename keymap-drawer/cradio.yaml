@@ -1,70 +1,70 @@
 layout: {qmk_keyboard: ferris/sweep}
 layers:
   BSE:
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Q))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_W))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_F))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_P))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_B))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_J))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_L))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_U))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Z))'
-  - '&td_sqt_dqt'
-  - '&hml LGUI (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_A))'
-  - '&hml LALT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_R))'
-  - '&hml LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_S))'
-  - '&hml LSHIFT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_T))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_G))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_M))'
-  - '&hmr RSHFT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_N))'
-  - '&hmr LCTRL (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_E))'
-  - '&hmr LALT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_I))'
-  - '&hmr LGUI (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_O))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_X))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_C))'
-  - '&lt 6 (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_D))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_V))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_K))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_H))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_COMMA_AND_LESS_THAN))'
-  - '&kp ((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_PERIOD_AND_GREATER_THAN)))'
-  - {t: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE))))', s: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_1_AND_EXCLAMATION))))'}
+  - DE Q
+  - DE W
+  - DE F
+  - DE P
+  - DE B
+  - DE J
+  - DE L
+  - DE U
+  - DE Y
+  - ''''
+  - {t: DE A, h: '$$mdi:microsoft-windows$$'}
+  - {t: DE R, h: LALT}
+  - {t: DE S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: DE T, h: '$$mdi:apple-keyboard-shift$$'}
+  - DE G
+  - DE M
+  - {t: DE N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: DE E, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: DE I, h: LALT}
+  - {t: DE O, h: '$$mdi:microsoft-windows$$'}
+  - DE Z
+  - DE X
+  - DE C
+  - {t: DE D, h: MSE}
+  - DE V
+  - DE K
+  - DE H
+  - DE COMMA
+  - DE DOT
+  - {t: DE QMARK, s: DE EXCL}
   - NAV
-  - {t: '&td_scw', h: LSHFT}
-  - {t: SPACE, h: FUN}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-space$$', h: FUN}
   - NUM
   NAV:
   - ESC
-  - '&kp LC((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_W)))'
-  - '&kp LC((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_F)))'
-  - BSPC
+  - LC(DE W)
+  - LC(DE F)
+  - $$mdi:backspace-outline$$
   - INS
   - {t: ▽, type: trans}
   - PG DN
   - PG UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: LGUI, h: sticky}
-  - {t: LALT, h: sticky}
-  - {t: LCTRL, h: sticky}
-  - {t: LSHFT, h: sticky}
-  - {t: RALT, h: sticky}
-  - {t: LEFT, h: HOME}
-  - {t: DOWN, h: LC(END)}
-  - {t: UP, h: LC(HOME)}
-  - {t: RIGHT, h: END}
+  - {t: '$$mdi:microsoft-windows$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: LALT, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: RALT, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:arrow-left$$', h: HOME}
+  - {t: '$$mdi:arrow-down$$', h: LC(END)}
+  - {t: '$$mdi:arrow-up$$', h: LC(HOME)}
+  - {t: '$$mdi:arrow-right$$', h: END}
   - PAUSE BREAK
-  - '&kp LC((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y)))'
-  - '&kp LC((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_X)))'
-  - LC(INS)
+  - LC(DE Z)
+  - LC(DE X)
+  - $$mdi:content-copy$$
   - {t: ▽, type: trans}
-  - LS(INS)
-  - RET
-  - {t: BSPC, h: LC(BSPC)}
-  - TAB
-  - {t: DEL, h: LC(DEL)}
+  - $$mdi:content-paste$$
+  - $$mdi:keyboard-return$$
+  - {t: '$$mdi:backspace-outline$$', h: LC(BSPC)}
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: LC(DEL)}
   - PSCRN
   - {type: held}
   - {t: ▽, type: trans}
@@ -76,30 +76,30 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
-  - '&kp ((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_PERIOD_AND_GREATER_THAN)))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_7_AND_AMPERSAND))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_8_AND_ASTERISK))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_9_AND_LEFT_PARENTHESIS))'
-  - BSPC
+  - DE DOT
+  - DE 7
+  - DE 8
+  - DE 9
+  - $$mdi:backspace-outline$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_COMMA_AND_LESS_THAN))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_4_AND_DOLLAR))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_5_AND_PERCENT))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_6_AND_CARET))'
-  - RET
+  - DE COMMA
+  - DE 4
+  - DE 5
+  - DE 6
+  - $$mdi:keyboard-return$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_0_AND_RIGHT_PARENTHESIS))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_1_AND_EXCLAMATION))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_2_AND_AT))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_3_AND_HASH))'
+  - DE 0
+  - DE 1
+  - DE 2
+  - DE 3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -107,29 +107,29 @@ layers:
   - {type: held}
   FUN:
   - {t: ▽, type: trans}
-  - VOL DN
-  - MUTE
-  - VOL UP
-  - BRI UP
+  - $$mdi:volume-minus$$
+  - $$mdi:volume-mute$$
+  - $$mdi:volume-plus$$
+  - $$tabler:brightness-up$$
   - F12
   - F7
   - F8
   - F9
-  - '&kp LC((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE)))'
+  - LC(DE PLUS)
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BRI DN
+  - $$tabler:brightness-down$$
   - F11
   - F4
   - F5
   - F6
-  - '&kp LC((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK)))'
+  - LC(DE MINUS)
   - {t: ▽, type: trans}
-  - PREV
-  - PP
-  - NEXT
+  - $$mdi:skip-backward$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-forward$$
   - {t: ▽, type: trans}
   - F10
   - F1
@@ -141,7 +141,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   HW:
-  - '&bootloader'
+  - $$mdi:progress-download$$
   - ''
   - ''
   - ''
@@ -150,26 +150,26 @@ layers:
   - ''
   - ''
   - ''
-  - '&bootloader'
+  - $$mdi:progress-download$$
   - ''
   - ''
-  - OUT USB
-  - OUT TOG
+  - $$mdi:usb$$
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - ''
   - ''
-  - BT NXT
-  - OUT BLE
-  - BT CLR
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:skip-next$$', h: '$$mdi:bluetooth$$'}
+  - $$mdi:bluetooth$$
+  - $$mdi:bluetooth-off$$
   - ''
   - ''
   - ''
   - ''
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '3'}
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:numeric-0$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-1$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-3$$', h: '$$mdi:bluetooth$$'}
   - ''
   - {type: held}
   - ''
@@ -183,19 +183,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_LEFT_BRACKET_AND_LEFT_BRACE))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_EQUAL_AND_PLUS))'
-  - '&kp (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_EQUAL_AND_PLUS)))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_APOSTROPHE_AND_QUOTE))'
+  - DE U UMLAUT
+  - DE ACUTE
+  - DE GRAVE
+  - DE A UMLAUT
   - {t: ▽, type: trans}
-  - '&kp ((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE)))'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - DE ESZETT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SEMICOLON_AND_COLON))'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - DE O UMLAUT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -234,7 +234,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB4'
@@ -243,8 +243,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - '&mkp RCLK'
+  - $$mdi:cursor-default-click$$
+  - $$mdi:cursor-default-click-outline$$
 combos:
 - p: [1, 2]
   k: ESC
@@ -253,89 +253,95 @@ combos:
   k: ENTER
   l: [BSE, NAV, NUM]
 - p: [26, 27]
-  k: BSPC
+  k: $$mdi:backspace-outline$$
   l: [BSE, NAV, NUM]
 - p: [27, 28]
-  k: DEL
+  k: $$mdi:backspace-reverse-outline$$
   l: [BSE, NAV, NUM]
 - p: [12, 11]
-  k: {t: TAB, h: LA(LCTRL)}
+  k: $$mdi:keyboard-tab$$
   l: [BSE, NAV, NUM]
 - p: [12, 13]
-  k: {t: '&key_repeat', h: LS(LCTRL)}
+  k: $$mdi:repeat$$
   l: [BSE, NAV, NUM]
 - p: [16, 17]
-  k: {t: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_8_AND_ASTERISK))))', h: LS(LCTRL), s: '&kp ((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_NON_US_BACKSLASH_AND_PIPE)))'}
+  k: {h: (, s: <}
   l: [BSE]
 - p: [17, 18]
-  k: {t: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_9_AND_LEFT_PARENTHESIS))))', h: LA(LCTRL), s: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_NON_US_BACKSLASH_AND_PIPE))))'}
+  k: {h: ), s: '>'}
   l: [BSE]
 - p: [6, 7]
-  k: {t: '&kp (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_8_AND_ASTERISK)))', s: '&kp ((RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_7_AND_AMPERSAND))))'}
+  k: {h: '[', s: '{'}
   l: [BSE]
 - p: [8, 7]
-  k: {t: '&kp ((RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_9_AND_LEFT_PARENTHESIS))))', s: '&kp ((RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_0_AND_RIGHT_PARENTHESIS))))'}
+  k: {h: ']', s: '}'}
   l: [BSE]
 - p: [1, 11]
-  k: '&kp ((RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Q))))'
+  k: DE AT
   l: [BSE]
 - p: [12, 2]
-  k: '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_BACKSLASH_AND_PIPE))'
+  k: DE HASH
   l: [BSE]
 - p: [3, 13]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_4_AND_DOLLAR))))'
+  k: DE DLLR
   l: [BSE]
 - p: [14, 4]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_5_AND_PERCENT))))'
+  k: DE PRCNT
   l: [BSE]
 - p: [22, 12]
-  k: '&kp ((RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE))))'
+  k: DE BSLH
   l: [BSE]
 - p: [23, 13]
-  k: '&kp (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_0_AND_RIGHT_PARENTHESIS)))'
+  k: DE EQUAL
   l: [BSE]
 - p: [24, 14]
-  k: '&kp (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE)))'
+  k: DE TILDE
   l: [BSE]
 - p: [15, 5]
-  k: '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_GRAVE_ACCENT_AND_TILDE))'
+  k: DE CARET
   l: [BSE]
 - p: [6, 16]
-  k: '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE))'
+  k: DE PLUS
   l: [BSE]
 - p: [17, 7]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE))))'
+  k: '*'
   l: [BSE]
 - p: [8, 18]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_6_AND_CARET))))'
+  k: DE AMPS
   l: [BSE]
 - p: [9, 19]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_3_AND_HASH))))'
+  k: DE SECT
   l: [BSE]
 - p: [25, 15]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK))))'
+  k: DE UNDER
   l: [BSE]
 - p: [16, 26]
-  k: '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK))'
+  k: DE MINUS
   l: [BSE]
 - p: [17, 27]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_7_AND_AMPERSAND))))'
+  k: DE FSLH
   l: [BSE]
 - p: [28, 18]
-  k: '&kp (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_NON_US_BACKSLASH_AND_PIPE)))'
+  k: DE PIPE
   l: [BSE]
 - p: [19, 29]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_GRAVE_ACCENT_AND_TILDE))))'
+  k: DE DEG
   l: [BSE]
 - p: [3, 1]
-  k: {t: GER, h: sticky}
+  k: {t: GER, h: '$$mdi:gesture-tap-hold$$'}
   l: [BSE]
+  a: top
+  o: 0.45
 - p: [21, 11]
-  k: '&kp (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_E)))'
+  k: DE EURO
   l: [BSE]
 - p: [16, 18]
-  k: {t: '&par_macro', h: LS(LALT), s: '&lgt_macro'}
+  k: {t: (), h: LS(LALT), s: <>}
   l: [BSE]
+  a: bottom
+  o: 0.75
 - p: [6, 8]
-  k: {t: '&bkt_macro', s: '&brc_macro'}
+  k: {t: '[]', s: '{}'}
   l: [BSE]
+  a: top
+  o: 0.45
