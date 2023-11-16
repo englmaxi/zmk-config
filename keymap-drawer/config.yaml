@@ -74,7 +74,7 @@ parse_config:
     '&lbkt_lbrc': {s: '{' , h: '['}
     '&rbkt_rbrc': {s: '}' , h: ']'}
     
-    '&td_sqt_dqt': "'"
+    '&td_sqt_dqt': {s: '"' , t: '''}
     '&mt_td_scw LSHFT 0': '$$mdi:apple-keyboard-shift$$'
     '&par_macro': '()'
     '&bkt_macro': '[]'
@@ -216,6 +216,15 @@ parse_config:
     LC(INS): $$mdi:content-copy$$
     LS(INS): $$mdi:content-paste$$
     LC(X): $$mdi:content-cut$$
+    LC(Z): $$mdi:undo$$
+
+    LC(F): $$mdi:text-search$$
+    LC(W): $$mdi:window-close$$
+    
+    PG_UP: Page Up
+    PG_DN: Page Down
+
+    DE_DOT: '.'
     
   zmk_combos:
     par:
