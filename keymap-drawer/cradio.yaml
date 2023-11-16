@@ -10,7 +10,7 @@ layers:
   - DE L
   - DE U
   - DE Y
-  - '&td_sqt_dqt'
+  - SQT
   - {t: DE A, h: LEFT GUI}
   - {t: DE R, h: LALT}
   - {t: DE S, h: LCTRL}

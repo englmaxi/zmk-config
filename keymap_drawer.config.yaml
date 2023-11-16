@@ -32,7 +32,7 @@ draw_config:
 parse_config:
   preprocess: false
   skip_binding_parsing: false
-  raw_binding_map: {"&bootloader": "BOOT", "&key_repeat": "REPEAT", "&&sqt_dqt": "SQT", "&td_scw": 'SPACE', "&par_macro": "()", "&bkt_macro": "[]", "&sqt_macro": "''", "&brc_macro": "{}", "&lgt_macro": "<>"}
+  raw_binding_map: {"&bootloader": "BOOT", "&key_repeat": "REPEAT", "&td_sqt_dqt": "SQT", "&td_scw": 'SPACE', "&par_macro": "()", "&bkt_macro": "[]", "&sqt_macro": "''", "&brc_macro": "{}", "&lgt_macro": "<>"}
   sticky_label: sticky
   trans_legend:
     t: ▽
