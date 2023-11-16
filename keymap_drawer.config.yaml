@@ -211,9 +211,9 @@ parse_config:
     'LC(DE X)': $$mdi:content-cut$$
     
   zmk_combos:
-    par:
+    combo_par:
       align: bottom
-      offset: 1.03
+      o: 0.15
     bkt:
       align: top
-      offset: 1.03
+      o: 0.15
