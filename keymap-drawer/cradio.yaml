@@ -337,9 +337,9 @@ combos:
   k: {t: (), h: LS(LALT), s: <>}
   l: [BSE, NUM, NAV]
   a: bottom
-  o: 0.15
+  o: 0.35
 - p: [6, 8]
   k: {t: '[]', s: '{}'}
   l: [BSE, NUM, NAV]
   a: top
-  o: 0.15
+  o: 0.2

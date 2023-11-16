@@ -213,7 +213,7 @@ parse_config:
   zmk_combos:
     par:
       align: bottom
-      o: 0.15
+      o: 0.35
     bkt:
       align: top
-      o: 0.15
+      o: 0.20
