@@ -77,9 +77,9 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - .
-  - DE 7
-  - DE 8
-  - DE 9
+  - '7'
+  - '8'
+  - '9'
   - $$mdi:backspace-outline$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -87,19 +87,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ','
-  - DE 4
-  - DE 5
-  - DE 6
+  - '4'
+  - '5'
+  - '6'
   - $$mdi:keyboard-return$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - DE 0
-  - DE 1
-  - DE 2
-  - DE 3
+  - '0'
+  - '1'
+  - '2'
+  - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
