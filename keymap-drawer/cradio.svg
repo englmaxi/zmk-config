@@ -45,6 +45,9 @@
 <svg id="mdi:keyboard-space">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-space" viewBox="0 0 24 24"><path d="M3 15H5V19H19V15H21V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V15Z" /></svg>
 </svg>
+<svg id="mdi:keyboard-tab">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab" viewBox="0 0 24 24"><path d="M20,18H22V6H20M11.59,7.41L15.17,11H1V13H15.17L11.59,16.58L13,18L19,12L13,6L11.59,7.41Z" /></svg>
+</svg>
 <svg id="mdi:numeric-0">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-0" viewBox="0 0 24 24"><path d="M11,7A2,2 0 0,0 9,9V15A2,2 0 0,0 11,17H13A2,2 0 0,0 15,15V9A2,2 0 0,0 13,7H11M11,9H13V15H11V9Z" /></svg>
 </svg>
@@ -54,6 +57,12 @@
 <svg id="mdi:numeric-3">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-3" viewBox="0 0 24 24"><path d="M15,15V13.5A1.5,1.5 0 0,0 13.5,12A1.5,1.5 0 0,0 15,10.5V9C15,7.89 14.1,7 13,7H9V9H13V11H11V13H13V15H9V17H13A2,2 0 0,0 15,15" /></svg>
 </svg>
+<svg id="mdi:progress-download">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-progress-download" viewBox="0 0 24 24"><path d="M13,2.03C17.73,2.5 21.5,6.25 21.95,11C22.5,16.5 18.5,21.38 13,21.93V19.93C16.64,19.5 19.5,16.61 19.96,12.97C20.5,8.58 17.39,4.59 13,4.05V2.05L13,2.03M11,2.06V4.06C9.57,4.26 8.22,4.84 7.1,5.74L5.67,4.26C7.19,3 9.05,2.25 11,2.06M4.26,5.67L5.69,7.1C4.8,8.23 4.24,9.58 4.05,11H2.05C2.25,9.04 3,7.19 4.26,5.67M2.06,13H4.06C4.24,14.42 4.81,15.77 5.69,16.9L4.27,18.33C3.03,16.81 2.26,14.96 2.06,13M7.1,18.37C8.23,19.25 9.58,19.82 11,20V22C9.04,21.79 7.18,21 5.67,19.74L7.1,18.37M12,16.5L7.5,12H11V8H13V12H16.5L12,16.5Z" /></svg>
+</svg>
+<svg id="mdi:repeat">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-repeat" viewBox="0 0 24 24"><path d="M17,17H7V14L3,18L7,22V19H19V13H17M7,7H17V10L21,6L17,2V5H5V11H7V7Z" /></svg>
+</svg>
 <svg id="mdi:skip-backward">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-backward" viewBox="0 0 24 24"><path d="M20,5V19L13,12M6,5V19H4V5M13,5V19L6,12" /></svg>
 </svg>
@@ -62,6 +71,9 @@
 </svg>
 <svg id="mdi:skip-next">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-next" viewBox="0 0 24 24"><path d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z" /></svg>
+</svg>
+<svg id="mdi:toggle-switch">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-toggle-switch" viewBox="0 0 24 24"><path d="M17,7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7M17,15A3,3 0 0,1 14,12A3,3 0 0,1 17,9A3,3 0 0,1 20,12A3,3 0 0,1 17,15Z" /></svg>
 </svg>
 <svg id="mdi:usb">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-usb" viewBox="0 0 24 24"><path d="M15,7V11H16V13H13V5H15L12,1L9,5H11V13H8V10.93C8.7,10.56 9.2,9.85 9.2,9C9.2,7.78 8.21,6.8 7,6.8C5.78,6.8 4.8,7.78 4.8,9C4.8,9.85 5.3,10.56 6,10.93V13A2,2 0 0,0 8,15H11V18.05C10.29,18.41 9.8,19.15 9.8,20A2.2,2.2 0 0,0 12,22.2A2.2,2.2 0 0,0 14.2,20C14.2,19.15 13.71,18.41 13,18.05V15H16A2,2 0 0,0 18,13V11H19V7H15Z" /></svg>
@@ -270,7 +282,7 @@ path.combo {
 </g>
 <g transform="translate(644, 80)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">SQT</text>
+<text x="0" y="0" class="key tap">&#x27;</text>
 </g>
 <g transform="translate(28, 136)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -437,44 +449,31 @@ path.combo {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="98" y="80" width="28" height="26" class="combo"/>
-<text x="112" y="93" class="combo tap">TAB</text>
-<text x="112" y="104" class="combo hold"><tspan style="font-size: 78%">LA(LCTRL)</tspan></text>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="105" y="86" height="14" width="14.0" class="combo tap glyph mdi:keyboard-tab"/>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="154" y="79" width="28" height="26" class="combo"/>
-<text x="168" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;key_repeat</tspan></text>
-<text x="168" y="103" class="combo hold"><tspan style="font-size: 78%">LS(LCTRL)</tspan></text>
+<use href="#mdi:repeat" xlink:href="#mdi:repeat" x="161" y="85" height="14" width="14.0" class="combo tap glyph mdi:repeat"/>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="490" y="79" width="28" height="26" class="combo"/>
-<text x="504" y="92" class="combo tap">
-<tspan x="504" dy="-0.6em">DE</tspan><tspan x="504" dy="1.2em">LPAR</tspan>
-</text>
-<text x="504" y="103" class="combo hold"><tspan style="font-size: 78%">LS(LCTRL)</tspan></text>
-<text x="504" y="81" class="combo shifted">DE LT</text>
+<text x="504" y="92" class="combo tap">(</text>
+<text x="504" y="81" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="80" width="28" height="26" class="combo"/>
-<text x="560" y="93" class="combo tap">
-<tspan x="560" dy="-0.6em">DE</tspan><tspan x="560" dy="1.2em">RPAR</tspan>
-</text>
-<text x="560" y="104" class="combo hold"><tspan style="font-size: 78%">LA(LCTRL)</tspan></text>
-<text x="560" y="82" class="combo shifted">DE GT</text>
+<text x="560" y="93" class="combo tap">)</text>
+<text x="560" y="82" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="490" y="23" width="28" height="26" class="combo"/>
-<text x="504" y="36" class="combo tap">
-<tspan x="504" dy="-1.2em">DE</tspan><tspan x="504" dy="1.2em">LEFT</tspan>
-<tspan x="504" dy="1.2em">BRACKET</tspan>
-</text>
-<text x="504" y="25" class="combo shifted">DE LBRC</text>
+<text x="504" y="36" class="combo tap">[</text>
+<text x="504" y="25" class="combo shifted">{</text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="546" y="24" width="28" height="26" class="combo"/>
-<text x="560" y="37" class="combo tap">
-<tspan x="560" dy="-0.6em">DE</tspan><tspan x="560" dy="1.2em">RBKT</tspan>
-</text>
-<text x="560" y="26" class="combo shifted">DE RBRC</text>
+<text x="560" y="37" class="combo tap">]</text>
+<text x="560" y="26" class="combo shifted">}</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="70" y="60" width="28" height="26" class="combo"/>
@@ -745,7 +744,7 @@ path.combo {
 </g>
 <g transform="translate(532, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">TAB</text>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-tab"/>
 </g>
 <g transform="translate(588, 157)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -789,44 +788,31 @@ path.combo {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="98" y="80" width="28" height="26" class="combo"/>
-<text x="112" y="93" class="combo tap">TAB</text>
-<text x="112" y="104" class="combo hold"><tspan style="font-size: 78%">LA(LCTRL)</tspan></text>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="105" y="86" height="14" width="14.0" class="combo tap glyph mdi:keyboard-tab"/>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="154" y="79" width="28" height="26" class="combo"/>
-<text x="168" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;key_repeat</tspan></text>
-<text x="168" y="103" class="combo hold"><tspan style="font-size: 78%">LS(LCTRL)</tspan></text>
+<use href="#mdi:repeat" xlink:href="#mdi:repeat" x="161" y="85" height="14" width="14.0" class="combo tap glyph mdi:repeat"/>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="490" y="79" width="28" height="26" class="combo"/>
-<text x="504" y="92" class="combo tap">
-<tspan x="504" dy="-0.6em">DE</tspan><tspan x="504" dy="1.2em">LPAR</tspan>
-</text>
-<text x="504" y="103" class="combo hold"><tspan style="font-size: 78%">LS(LCTRL)</tspan></text>
-<text x="504" y="81" class="combo shifted">DE LT</text>
+<text x="504" y="92" class="combo tap">(</text>
+<text x="504" y="81" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="80" width="28" height="26" class="combo"/>
-<text x="560" y="93" class="combo tap">
-<tspan x="560" dy="-0.6em">DE</tspan><tspan x="560" dy="1.2em">RPAR</tspan>
-</text>
-<text x="560" y="104" class="combo hold"><tspan style="font-size: 78%">LA(LCTRL)</tspan></text>
-<text x="560" y="82" class="combo shifted">DE GT</text>
+<text x="560" y="93" class="combo tap">)</text>
+<text x="560" y="82" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="490" y="23" width="28" height="26" class="combo"/>
-<text x="504" y="36" class="combo tap">
-<tspan x="504" dy="-1.2em">DE</tspan><tspan x="504" dy="1.2em">LEFT</tspan>
-<tspan x="504" dy="1.2em">BRACKET</tspan>
-</text>
-<text x="504" y="25" class="combo shifted">DE LBRC</text>
+<text x="504" y="36" class="combo tap">[</text>
+<text x="504" y="25" class="combo shifted">{</text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="546" y="24" width="28" height="26" class="combo"/>
-<text x="560" y="37" class="combo tap">
-<tspan x="560" dy="-0.6em">DE</tspan><tspan x="560" dy="1.2em">RBKT</tspan>
-</text>
-<text x="560" y="26" class="combo shifted">DE RBRC</text>
+<text x="560" y="37" class="combo tap">]</text>
+<text x="560" y="26" class="combo shifted">}</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="70" y="60" width="28" height="26" class="combo"/>
@@ -1131,44 +1117,31 @@ path.combo {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="98" y="80" width="28" height="26" class="combo"/>
-<text x="112" y="93" class="combo tap">TAB</text>
-<text x="112" y="104" class="combo hold"><tspan style="font-size: 78%">LA(LCTRL)</tspan></text>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="105" y="86" height="14" width="14.0" class="combo tap glyph mdi:keyboard-tab"/>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="154" y="79" width="28" height="26" class="combo"/>
-<text x="168" y="92" class="combo tap"><tspan style="font-size: 64%">&amp;key_repeat</tspan></text>
-<text x="168" y="103" class="combo hold"><tspan style="font-size: 78%">LS(LCTRL)</tspan></text>
+<use href="#mdi:repeat" xlink:href="#mdi:repeat" x="161" y="85" height="14" width="14.0" class="combo tap glyph mdi:repeat"/>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="490" y="79" width="28" height="26" class="combo"/>
-<text x="504" y="92" class="combo tap">
-<tspan x="504" dy="-0.6em">DE</tspan><tspan x="504" dy="1.2em">LPAR</tspan>
-</text>
-<text x="504" y="103" class="combo hold"><tspan style="font-size: 78%">LS(LCTRL)</tspan></text>
-<text x="504" y="81" class="combo shifted">DE LT</text>
+<text x="504" y="92" class="combo tap">(</text>
+<text x="504" y="81" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="80" width="28" height="26" class="combo"/>
-<text x="560" y="93" class="combo tap">
-<tspan x="560" dy="-0.6em">DE</tspan><tspan x="560" dy="1.2em">RPAR</tspan>
-</text>
-<text x="560" y="104" class="combo hold"><tspan style="font-size: 78%">LA(LCTRL)</tspan></text>
-<text x="560" y="82" class="combo shifted">DE GT</text>
+<text x="560" y="93" class="combo tap">)</text>
+<text x="560" y="82" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="490" y="23" width="28" height="26" class="combo"/>
-<text x="504" y="36" class="combo tap">
-<tspan x="504" dy="-1.2em">DE</tspan><tspan x="504" dy="1.2em">LEFT</tspan>
-<tspan x="504" dy="1.2em">BRACKET</tspan>
-</text>
-<text x="504" y="25" class="combo shifted">DE LBRC</text>
+<text x="504" y="36" class="combo tap">[</text>
+<text x="504" y="25" class="combo shifted">{</text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="546" y="24" width="28" height="26" class="combo"/>
-<text x="560" y="37" class="combo tap">
-<tspan x="560" dy="-0.6em">DE</tspan><tspan x="560" dy="1.2em">RBKT</tspan>
-</text>
-<text x="560" y="26" class="combo shifted">DE RBRC</text>
+<text x="560" y="37" class="combo tap">]</text>
+<text x="560" y="26" class="combo shifted">}</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="70" y="60" width="28" height="26" class="combo"/>
@@ -1446,7 +1419,7 @@ path.combo {
 <g transform="translate(0, 56)">
 <g transform="translate(28, 80)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">BOOT</text>
+<use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:progress-download"/>
 </g>
 <g transform="translate(84, 45)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1474,7 +1447,7 @@ path.combo {
 </g>
 <g transform="translate(644, 80)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">BOOT</text>
+<use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:progress-download"/>
 </g>
 <g transform="translate(28, 136)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1488,9 +1461,9 @@ path.combo {
 </g>
 <g transform="translate(196, 100)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">OUT</tspan><tspan x="0" dy="1.2em">TOG</tspan>
-</text>
+<use href="#mdi:toggle-switch" xlink:href="#mdi:toggle-switch" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:toggle-switch"/>
+<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:bluetooth"/>
+<use href="#mdi:usb" xlink:href="#mdi:usb" x="-5" y="-24" height="10" width="10.0" class="key shifted glyph mdi:usb"/>
 </g>
 <g transform="translate(252, 108)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

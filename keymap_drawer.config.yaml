@@ -33,9 +33,48 @@ parse_config:
   preprocess: false
   skip_binding_parsing: false
   raw_binding_map: 
-    '&bootloader': 'BOOT'
-    '&key_repeat': 'REPEAT'
-    '&td_sqt_dqt': 'SQT'
+    # Bluetooth
+    '&bt BT_SEL 0':
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ''
+      hold: 1
+    '&bt BT_SEL 1':
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ''
+      hold: 2
+    '&bt BT_SEL 2':
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ''
+      hold: 3
+    '&bt BT_SEL 3':
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ''
+      hold: 4
+    '&bt BT_SEL 4':
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ''
+      hold: 5
+    '&out OUT_TOG':
+      shifted: $$mdi:usb$$
+      tap: $$mdi:toggle-switch$$
+      hold: $$mdi:bluetooth$$
+      
+    '&sys_reset':
+      type: bootloader
+      tap: $$mdi:backup-restore$$
+    '&bootloader':
+      tap: $$mdi:progress-download$$
+      
+    '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
+    '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$
+    
+    '&hmr_lpar_lt LS(LCTRL) 0': {s: '<' , t: '('}
+    '&hmr_rpar_gt LA(LCTRL) 0': {s: '>' , t: ')'}
+    
+    '&lbkt_lbrc': {s: '{' , t: '['}
+    '&rbkt_rbrc': {s: '}' , t: ']'}
+    
+    '&td_sqt_dqt': "'"
     '&mt_td_scw LSHFT 0': '$$mdi:apple-keyboard-shift$$'
     '&par_macro': '()'
     '&bkt_macro': '[]'
@@ -127,6 +166,8 @@ parse_config:
     BACKSPACE: $$mdi:backspace-outline$$
     DELETE: $$mdi:backspace-reverse-outline$$
     DEL: $$mdi:backspace-reverse-outline$$
+    TAB: $$mdi:keyboard-tab$$
+    LS(TAB): $$mdi:keyboard-tab-reverse$$
     
     RETURN: $$mdi:keyboard-return$$
     RET: $$mdi:keyboard-return$$

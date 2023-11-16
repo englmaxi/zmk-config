@@ -10,7 +10,7 @@ layers:
   - DE L
   - DE U
   - DE Y
-  - SQT
+  - ''''
   - {t: DE A, h: LEFT GUI}
   - {t: DE R, h: LALT}
   - {t: DE S, h: '$$mdi:apple-keyboard-control$$'}
@@ -63,7 +63,7 @@ layers:
   - $$mdi:content-paste$$
   - $$mdi:keyboard-return$$
   - {t: BSPC, h: LC(BSPC)}
-  - TAB
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: LC(DEL)}
   - PSCRN
   - {type: held}
@@ -141,7 +141,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   HW:
-  - BOOT
+  - $$mdi:progress-download$$
   - ''
   - ''
   - ''
@@ -150,11 +150,11 @@ layers:
   - ''
   - ''
   - ''
-  - BOOT
+  - $$mdi:progress-download$$
   - ''
   - ''
   - $$mdi:usb$$
-  - OUT TOG
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - ''
   - ''
   - {t: '$$mdi:skip-next$$', h: '$$mdi:bluetooth$$'}
@@ -259,22 +259,22 @@ combos:
   k: $$mdi:backspace-reverse-outline$$
   l: [BSE, NAV, NUM]
 - p: [12, 11]
-  k: {t: TAB, h: LA(LCTRL)}
+  k: $$mdi:keyboard-tab$$
   l: [BSE, NAV, NUM]
 - p: [12, 13]
-  k: {t: '&key_repeat', h: LS(LCTRL)}
+  k: $$mdi:repeat$$
   l: [BSE, NAV, NUM]
 - p: [16, 17]
-  k: {t: DE LPAR, h: LS(LCTRL), s: DE LT}
+  k: {t: (, s: <}
   l: [BSE, NUM, NAV]
 - p: [17, 18]
-  k: {t: DE RPAR, h: LA(LCTRL), s: DE GT}
+  k: {t: ), s: '>'}
   l: [BSE, NUM, NAV]
 - p: [6, 7]
-  k: {t: DE LEFT BRACKET, s: DE LBRC}
+  k: {t: '[', s: '{'}
   l: [BSE, NUM, NAV]
 - p: [8, 7]
-  k: {t: DE RBKT, s: DE RBRC}
+  k: {t: ']', s: '}'}
   l: [BSE, NUM, NAV]
 - p: [1, 11]
   k: DE AT
