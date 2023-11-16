@@ -39,7 +39,7 @@ layers:
   - ESC
   - LC(DE W)
   - LC(DE F)
-  - BSPC
+  - $$mdi:backspace-outline$$
   - INS
   - {t: ▽, type: trans}
   - PG DN
@@ -62,7 +62,7 @@ layers:
   - {t: ▽, type: trans}
   - $$mdi:content-paste$$
   - $$mdi:keyboard-return$$
-  - {t: BSPC, h: LC(BSPC)}
+  - {t: '$$mdi:backspace-outline$$', h: LC(BSPC)}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: LC(DEL)}
   - PSCRN
@@ -80,7 +80,7 @@ layers:
   - DE 7
   - DE 8
   - DE 9
-  - BSPC
+  - $$mdi:backspace-outline$$
   - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
@@ -253,7 +253,7 @@ combos:
   k: ENTER
   l: [BSE, NAV, NUM]
 - p: [26, 27]
-  k: BSPC
+  k: $$mdi:backspace-outline$$
   l: [BSE, NAV, NUM]
 - p: [27, 28]
   k: $$mdi:backspace-reverse-outline$$
@@ -336,6 +336,10 @@ combos:
 - p: [16, 18]
   k: {t: (), h: LS(LALT), s: <>}
   l: [BSE, NUM, NAV]
+  a: bottom
+  o: 1.03
 - p: [6, 8]
   k: {t: '[]', s: '{}'}
   l: [BSE, NUM, NAV]
+  a: top
+  o: 1.03

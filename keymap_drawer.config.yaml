@@ -164,6 +164,7 @@ parse_config:
     
     SPACE: $$mdi:keyboard-space$$
     BACKSPACE: $$mdi:backspace-outline$$
+    BSPC: $$mdi:backspace-outline$$
     DELETE: $$mdi:backspace-reverse-outline$$
     DEL: $$mdi:backspace-reverse-outline$$
     TAB: $$mdi:keyboard-tab$$
@@ -210,9 +211,9 @@ parse_config:
     'LC(DE X)': $$mdi:content-cut$$
     
   zmk_combos:
-    combo_par:
+    par:
       align: bottom
       offset: 1.03
-    combo_bkt:
+    bkt:
       align: top
       offset: 1.03
