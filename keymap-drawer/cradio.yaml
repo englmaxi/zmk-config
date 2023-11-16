@@ -336,6 +336,8 @@ combos:
 - p: [16, 18]
   k: {t: (), h: LS(LALT), s: <>}
   l: [BSE, NUM, NAV]
+  a: bottom
+  o: 0.15
 - p: [6, 8]
   k: {t: '[]', s: '{}'}
   l: [BSE, NUM, NAV]
