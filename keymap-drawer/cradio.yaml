@@ -36,7 +36,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - NUM
   NAV:
-  - ESC
+  - $$mdi:keyboard-esc$$
   - LC(W)
   - LC(F)
   - $$mdi:backspace-outline$$
@@ -57,7 +57,7 @@ layers:
   - {t: '$$mdi:arrow-right$$', h: END}
   - PAUSE BREAK
   - LC(DE Z)
-  - LC(X)
+  - $$mdi:content-cut$$
   - $$mdi:content-copy$$
   - {t: ▽, type: trans}
   - $$mdi:content-paste$$
@@ -247,7 +247,7 @@ layers:
   - $$mdi:cursor-default-click-outline$$
 combos:
 - p: [1, 2]
-  k: ESC
+  k: $$mdi:keyboard-esc$$
   l: [BSE, NAV, NUM]
 - p: [2, 3]
   k: $$mdi:keyboard-return$$
@@ -277,55 +277,55 @@ combos:
   k: {h: ']', s: '}'}
   l: [BSE]
 - p: [1, 11]
-  k: DE AT
+  k: $$mdi:at$$
   l: [BSE]
 - p: [12, 2]
-  k: DE HASH
+  k: $$mdi:pound$$
   l: [BSE]
 - p: [3, 13]
-  k: DE DLLR
+  k: $$mdi:currency-usd$$
   l: [BSE]
 - p: [14, 4]
-  k: DE PRCNT
+  k: $$mdi:percent$$
   l: [BSE]
 - p: [22, 12]
-  k: DE BSLH
+  k: \
   l: [BSE]
 - p: [23, 13]
-  k: DE EQUAL
+  k: $$mdi:equal$$
   l: [BSE]
 - p: [24, 14]
-  k: DE TILDE
+  k: $$mdi:tilde$$
   l: [BSE]
 - p: [15, 5]
-  k: DE CARET
+  k: $$mdi:chevron-up$$
   l: [BSE]
 - p: [6, 16]
-  k: DE PLUS
+  k: $$mdi:plus$$
   l: [BSE]
 - p: [17, 7]
   k: '*'
   l: [BSE]
 - p: [8, 18]
-  k: DE AMPS
+  k: '&'
   l: [BSE]
 - p: [9, 19]
-  k: DE SECT
+  k: §
   l: [BSE]
 - p: [25, 15]
-  k: DE UNDER
+  k: _
   l: [BSE]
 - p: [16, 26]
-  k: DE MINUS
+  k: '-'
   l: [BSE]
 - p: [17, 27]
-  k: DE FSLH
+  k: /
   l: [BSE]
 - p: [28, 18]
-  k: DE PIPE
+  k: '|'
   l: [BSE]
 - p: [19, 29]
-  k: DE DEG
+  k: °
   l: [BSE]
 - p: [3, 1]
   k: {t: GER, h: '$$mdi:gesture-tap-hold$$'}
@@ -333,7 +333,7 @@ combos:
   a: top
   o: 0.45
 - p: [21, 11]
-  k: DE EURO
+  k: $$mdi:currency-eur$$
   l: [BSE]
 - p: [16, 18]
   k: {t: (), h: LS(LALT), s: <>}

@@ -163,6 +163,7 @@ parse_config:
     TILDE2: '~'
     
     SPACE: $$mdi:keyboard-space$$
+    ESC: $$mdi:keyboard-esc$$
     
     BACKSPACE: $$mdi:backspace-outline$$
     BSPC: $$mdi:backspace-outline$$
@@ -214,7 +215,7 @@ parse_config:
 
     LC(INS): $$mdi:content-copy$$
     LS(INS): $$mdi:content-paste$$
-    'LC(DE X)': $$mdi:content-cut$$
+    LC(X): $$mdi:content-cut$$
     
   zmk_combos:
     par:
@@ -229,3 +230,54 @@ parse_config:
     star:
       key:
         tap: '*'
+    at:
+      key:
+        tap: '$$mdi:at$$'
+    euro:
+      key:
+        tap: '$$mdi:currency-eur$$'
+    caret:
+      key:
+        tap: '$$mdi:chevron-up$$'
+    hash:
+      key:
+        tap: '$$mdi:pound$$'
+    dllr:
+      key:
+        tap: '$$mdi:currency-usd$$'
+    prcnt:
+      key:
+        tap: '$$mdi:percent$$'
+    tilde:
+      key:
+        tap: '$$mdi:tilde$$'
+    equal:
+      key:
+        tap: '$$mdi:equal$$'
+    plus:
+      key:
+        tap: '$$mdi:plus$$'
+    bslh:
+      key:
+        tap: '\'
+    amps:
+      key:
+        tap: '&'
+    sect:
+      key:
+        tap: '§'
+    under:
+      key:
+        tap: '_'
+    minus:
+      key:
+        tap: '-'
+    fslh:
+      key:
+        tap: '/'
+    pipe:
+      key:
+        tap: '|'
+    deg:
+      key:
+        tap: '°'
