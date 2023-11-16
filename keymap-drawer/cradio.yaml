@@ -82,7 +82,7 @@ layers:
   - DE 9
   - $$mdi:backspace-outline$$
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

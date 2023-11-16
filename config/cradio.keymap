@@ -615,7 +615,7 @@
         num_layer {
             bindings = <
 &trans  &trans  &trans  &none   &trans  &kp DE_DOT    &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp BSPC
-&trans  &none   &trans  &trans  &trans  &kp DE_COMMA  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp RET
+&trans  &trans  &trans  &trans  &trans  &kp DE_COMMA  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp RET
 &trans  &trans  &trans  &trans  &trans  &kp DE_N0     &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans
                         &trans  &trans  &trans        &trans
             >;
