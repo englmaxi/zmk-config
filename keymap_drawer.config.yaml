@@ -32,12 +32,31 @@ draw_config:
 parse_config:
   preprocess: false
   skip_binding_parsing: false
-  raw_binding_map: {"&bootloader": "BOOT", "&key_repeat": "REPEAT", "&td_sqt_dqt": "SQT", "&td_scw": 'SPACE', "&par_macro": "()", "&bkt_macro": "[]", "&sqt_macro": "''", "&brc_macro": "{}", "&lgt_macro": "<>"}
+  raw_binding_map: 
+    '&bootloader': 'BOOT'
+    '&key_repeat': 'REPEAT'
+    '&td_sqt_dqt': 'SQT'
+    '&mt_td_scw LSHFT 0': '$$mdi:apple-keyboard-shift$$'
+    '&par_macro': '()'
+    '&bkt_macro': '[]'
+    '&brc_macro': '{}'
+    '&lgt_macro': '<>'
+    '&bt BT_CLR': '$$mdi:bluetooth-off$$'
+    '&out OUT_BLE': '$$mdi:bluetooth$$'
+    '&out OUT_USB': '$$mdi:usb$$'
+    '&bt BT_SEL 0': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-0$$}
+    '&bt BT_SEL 1': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-1$$}
+    '&bt BT_SEL 2': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-2$$}
+    '&bt BT_SEL 3': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-3$$}
+    '&bt BT_SEL 4': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-4$$}
+    '&bt BT_PRV':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-previous$$}
+    '&bt BT_NXT':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-next$$}
+    '&mkp LCLK': '$$mdi:cursor-default-click$$'
+    '&mkp RCLK': '$$mdi:cursor-default-click-outline$$'
   sticky_label: sticky
   trans_legend:
     t: ▽
     type: trans
-  mark_alternate_layer_activators: false
   zmk_keycode_map:
     EXCLAMATION: '!'
     EXCL: '!'
@@ -103,4 +122,49 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
+    
+    SPACE: $$mdi:keyboard-space$$
+    BACKSPACE: $$mdi:backspace-outline$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
+    
+    RETURN: $$mdi:keyboard-return$$
+    RET: $$mdi:keyboard-return$$
+    
+    LCTRL: $$mdi:apple-keyboard-control$$
+    LEFT_CONTROL: $$mdi:apple-keyboard-control$$
+    
+    RCTRL: $$mdi:apple-keyboard-control$$
+    RIGHT_CONTROL: $$mdi:apple-keyboard-control$$
+    
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
+    
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
+    
+    C_PP: $$mdi:play-pause$$
+    C_NEXT: $$mdi:skip-forward$$
+    C_PREV: $$mdi:skip-backward$$
+    
+    C_MUTE: $$mdi:volume-mute$$
+    C_VOL_UP: $$mdi:volume-plus$$
+    C_VOL_DN: $$mdi:volume-minus$$
+    
+    C_BRI_UP: $$tabler:brightness-up$$
+    C_BRI_DN: $$tabler:brightness-down$$
+    
+    C_POWER: $$mdi:power$$
+    C_SLEEP: $$mdi:power-sleep$$
+    
+    UP: $$mdi:arrow-up$$
+    DOWN: $$mdi:arrow-down$$
+    LEFT: $$mdi:arrow-left$$
+    RIGHT: $$mdi:arrow-right$$
+
+    LC(INS): $$mdi:content-copy$$
+    LS(INS): $$mdi:content-paste$$
+    'LC(DE X)': $$mdi:content-cut$$
   zmk_combos: {}

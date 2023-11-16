@@ -13,12 +13,12 @@ layers:
   - SQT
   - {t: DE A, h: LEFT GUI}
   - {t: DE R, h: LALT}
-  - {t: DE S, h: LCTRL}
-  - {t: DE T, h: LSHIFT}
+  - {t: DE S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: DE T, h: '$$mdi:apple-keyboard-shift$$'}
   - DE G
   - DE M
-  - {t: DE N, h: RSHFT}
-  - {t: DE E, h: LCTRL}
+  - {t: DE N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: DE E, h: '$$mdi:apple-keyboard-control$$'}
   - {t: DE I, h: LALT}
   - {t: DE O, h: LGUI}
   - DE Z
@@ -32,8 +32,8 @@ layers:
   - DE DOT
   - {t: DE QMARK, s: DE EXCL}
   - NAV
-  - {t: '&td_scw', h: LSHFT}
-  - {t: SPACE, h: FUN}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-space$$', h: FUN}
   - NUM
   NAV:
   - ESC
@@ -48,23 +48,23 @@ layers:
   - {t: ▽, type: trans}
   - {t: LGUI, h: sticky}
   - {t: LALT, h: sticky}
-  - {t: LCTRL, h: sticky}
-  - {t: LSHFT, h: sticky}
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - {t: RALT, h: sticky}
-  - {t: LEFT, h: HOME}
-  - {t: DOWN, h: LC(END)}
-  - {t: UP, h: LC(HOME)}
-  - {t: RIGHT, h: END}
+  - {t: '$$mdi:arrow-left$$', h: HOME}
+  - {t: '$$mdi:arrow-down$$', h: LC(END)}
+  - {t: '$$mdi:arrow-up$$', h: LC(HOME)}
+  - {t: '$$mdi:arrow-right$$', h: END}
   - PAUSE BREAK
   - LC(DE Z)
   - LC(DE X)
-  - LC(INS)
+  - $$mdi:content-copy$$
   - {t: ▽, type: trans}
-  - LS(INS)
-  - RET
+  - $$mdi:content-paste$$
+  - $$mdi:keyboard-return$$
   - {t: BSPC, h: LC(BSPC)}
   - TAB
-  - {t: DEL, h: LC(DEL)}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: LC(DEL)}
   - PSCRN
   - {type: held}
   - {t: ▽, type: trans}
@@ -90,7 +90,7 @@ layers:
   - DE 4
   - DE 5
   - DE 6
-  - RET
+  - $$mdi:keyboard-return$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -107,10 +107,10 @@ layers:
   - {type: held}
   FUN:
   - {t: ▽, type: trans}
-  - VOL DN
-  - MUTE
-  - VOL UP
-  - BRI UP
+  - $$mdi:volume-minus$$
+  - $$mdi:volume-mute$$
+  - $$mdi:volume-plus$$
+  - $$tabler:brightness-up$$
   - F12
   - F7
   - F8
@@ -120,16 +120,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BRI DN
+  - $$tabler:brightness-down$$
   - F11
   - F4
   - F5
   - F6
   - LC(DE MINUS)
   - {t: ▽, type: trans}
-  - PREV
+  - $$mdi:skip-backward$$
   - PLAY PAUSE
-  - NEXT
+  - $$mdi:skip-forward$$
   - {t: ▽, type: trans}
   - F10
   - F1
@@ -153,13 +153,13 @@ layers:
   - BOOT
   - ''
   - ''
-  - OUT USB
+  - $$mdi:usb$$
   - OUT TOG
   - ''
   - ''
-  - BT NXT
-  - OUT BLE
-  - BT CLR
+  - {t: '$$mdi:skip-next$$', h: '$$mdi:bluetooth$$'}
+  - $$mdi:bluetooth$$
+  - $$mdi:bluetooth-off$$
   - ''
   - ''
   - ''
@@ -167,9 +167,9 @@ layers:
   - ''
   - ''
   - ''
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '3'}
+  - {t: '$$mdi:numeric-0$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-1$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-3$$', h: '$$mdi:bluetooth$$'}
   - ''
   - {type: held}
   - ''
@@ -243,8 +243,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - '&mkp RCLK'
+  - $$mdi:cursor-default-click$$
+  - $$mdi:cursor-default-click-outline$$
 combos:
 - p: [1, 2]
   k: ESC
@@ -256,7 +256,7 @@ combos:
   k: BSPC
   l: [BSE, NAV, NUM]
 - p: [27, 28]
-  k: DEL
+  k: $$mdi:backspace-reverse-outline$$
   l: [BSE, NAV, NUM]
 - p: [12, 11]
   k: {t: TAB, h: LA(LCTRL)}
