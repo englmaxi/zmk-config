@@ -29,7 +29,7 @@ draw_config:
 
     svg.keymap {
       font-family: REM,SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-      font-size: 24px;
+      font-size: 14px;
     }
     
     rect.combo, rect.combo-separate {
