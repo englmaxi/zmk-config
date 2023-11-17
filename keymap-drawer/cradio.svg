@@ -30,6 +30,9 @@
 <svg id="mdi:bluetooth-off">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-bluetooth-off" viewBox="0 0 24 24"><path d="M13,5.83L14.88,7.71L13.28,9.31L14.69,10.72L17.71,7.7L12,2H11V7.03L13,9.03M5.41,4L4,5.41L10.59,12L5,17.59L6.41,19L11,14.41V22H12L16.29,17.71L18.59,20L20,18.59M13,18.17V14.41L14.88,16.29" /></svg>
 </svg>
+<svg id="mdi:chevron-down">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-down" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
+</svg>
 <svg id="mdi:close-box-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-close-box-outline" viewBox="0 0 24 24"><path d="M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V5H19V19M17,8.4L13.4,12L17,15.6L15.6,17L12,13.4L8.4,17L7,15.6L10.6,12L7,8.4L8.4,7L12,10.6L15.6,7L17,8.4Z" /></svg>
 </svg>
@@ -71,9 +74,6 @@
 </svg>
 <svg id="mdi:magnify-remove-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-magnify-remove-outline" viewBox="0 0 24 24"><path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.5L20.5 19L15.5 14M9.5 14C7 14 5 12 5 9.5S7 5 9.5 5 14 7 14 9.5 12 14 9.5 14M10.91 11.62L9.5 10.21L8.09 11.62L7.38 10.91L8.79 9.5L7.38 8.09L8.09 7.38L9.5 8.79L10.91 7.38L11.62 8.09L10.21 9.5L11.62 10.91L10.91 11.62Z" /></svg>
-</svg>
-<svg id="mdi:menu-down-outline">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-menu-down-outline" viewBox="0 0 24 24"><path d="M18,9V10.5L12,16.5L6,10.5V9H18M12,13.67L14.67,11H9.33L12,13.67Z" /></svg>
 </svg>
 <svg id="mdi:microsoft-windows">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-microsoft-windows" viewBox="0 0 24 24"><path d="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z" /></svg>
@@ -253,21 +253,35 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 
-.combo.shifted {
+.shifted {
     translate: -9px 0px;
+    opacity: 0.3;
 }
-.shifted.mdi\:usb {
+
+rect.combo, rect.combo-separate {
+    opacity: 0.9;
+}
+
+.toggle.shifted {
   translate: -12px 17px;
 }
-.hold.mdi\:bluetooth {
+.toggle.hold {
   translate: 12px -16px;
 } 
-.hold.mdi\:cursor-default-click-outline {
-  translate: -8px -10px;
+
+.text_with_symbol.tap {
+  translate: -4px 4px;
 } 
-rect.combo, rect.combo-separate {
-    opacity: 0.95;
+.text_with_symbol.hold {
+  translate: 5px -20px;
+} 
+
+.trans.tap {
+    opacity: 0.7;
 }
+.key.trans {
+    fill-opacity: 0.5;
+}  
 </style>
 <g transform="translate(30, 0)" class="layer-BSE">
 <text x="0" y="28" class="label">BSE</text>
@@ -584,7 +598,7 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(420, 52)" class="key trans keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(476, 44)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -600,11 +614,11 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(588, 45)" class="key trans keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(644, 80)" class="key trans keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(28, 136)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -671,7 +685,7 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(196, 156)" class="key trans keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(252, 164)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -704,15 +718,15 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(280, 252)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(392, 252)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(448, 238)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="98" y="24" width="28" height="26" class="combo"/>
@@ -745,23 +759,23 @@ rect.combo, rect.combo-separate {
 <g transform="translate(0, 56)">
 <g transform="translate(28, 80)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(84, 45)" class="key trans keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(140, 28)" class="key trans keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(196, 44)" class="key trans keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(252, 52)" class="key trans keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(420, 52)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -785,23 +799,23 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(28, 136)" class="key trans keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(84, 101)" class="key trans keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(140, 84)" class="key trans keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(196, 100)" class="key trans keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(252, 108)" class="key trans keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(420, 108)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -825,23 +839,23 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(28, 192)" class="key trans keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(84, 157)" class="key trans keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(140, 140)" class="key trans keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(196, 156)" class="key trans keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(252, 164)" class="key trans keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(420, 164)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -861,19 +875,19 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(644, 192)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(224, 238)" class="key trans keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(280, 252)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(392, 252)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(448, 238)" class="key held keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
@@ -909,7 +923,7 @@ rect.combo, rect.combo-separate {
 <g transform="translate(0, 56)">
 <g transform="translate(28, 80)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(84, 45)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -949,19 +963,19 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(28, 136)" class="key trans keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(84, 101)" class="key trans keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(140, 84)" class="key trans keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(196, 100)" class="key trans keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(252, 108)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -989,7 +1003,7 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(28, 192)" class="key trans keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(84, 157)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1005,7 +1019,7 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(252, 164)" class="key trans keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(420, 164)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1029,18 +1043,18 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(224, 238)" class="key trans keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(280, 252)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(392, 252)" class="key held keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(448, 238)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 </g>
 </g>
@@ -1053,35 +1067,35 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(84, 45)" class="key trans keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(140, 28)" class="key trans keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(196, 44)" class="key trans keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(252, 52)" class="key trans keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(420, 52)" class="key trans keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(476, 44)" class="key trans keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(532, 28)" class="key trans keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(588, 45)" class="key trans keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(644, 80)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1089,11 +1103,11 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(28, 136)" class="key trans keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(84, 101)" class="key trans keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1107,16 +1121,16 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(252, 108)" class="key trans keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(420, 108)" class="key trans keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
-<g transform="translate(476, 100)" class="key keypos-16">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:skip-next" xlink:href="#mdi:skip-next" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:skip-next"/>
-<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:bluetooth"/>
+<g transform="translate(476, 100)" class="key text_with_symbol keypos-16">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol"/>
+<use href="#mdi:skip-next" xlink:href="#mdi:skip-next" x="-7" y="-7" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:skip-next"/>
+<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="10" height="12" width="12.0" class="key text_with_symbol hold glyph mdi:bluetooth"/>
 </g>
 <g transform="translate(532, 84)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1128,61 +1142,61 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(644, 136)" class="key trans keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(28, 192)" class="key trans keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(84, 157)" class="key trans keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(140, 140)" class="key trans keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(196, 156)" class="key trans keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(252, 164)" class="key trans keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(420, 164)" class="key trans keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
-<g transform="translate(476, 156)" class="key keypos-26">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">0</text>
-<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:bluetooth"/>
+<g transform="translate(476, 156)" class="key text_with_symbol keypos-26">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol"/>
+<text x="0" y="0" class="key text_with_symbol tap">0</text>
+<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="10" height="12" width="12.0" class="key text_with_symbol hold glyph mdi:bluetooth"/>
 </g>
-<g transform="translate(532, 140)" class="key keypos-27">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">1</text>
-<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:bluetooth"/>
+<g transform="translate(532, 140)" class="key text_with_symbol keypos-27">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol"/>
+<text x="0" y="0" class="key text_with_symbol tap">1</text>
+<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="10" height="12" width="12.0" class="key text_with_symbol hold glyph mdi:bluetooth"/>
 </g>
-<g transform="translate(588, 157)" class="key keypos-28">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">3</text>
-<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:bluetooth"/>
+<g transform="translate(588, 157)" class="key text_with_symbol keypos-28">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol"/>
+<text x="0" y="0" class="key text_with_symbol tap">3</text>
+<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="10" height="12" width="12.0" class="key text_with_symbol hold glyph mdi:bluetooth"/>
 </g>
 <g transform="translate(644, 192)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(224, 238)" class="key held keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(280, 252)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(392, 252)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(448, 238)" class="key held keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
@@ -1194,29 +1208,29 @@ rect.combo, rect.combo-separate {
 <g transform="translate(0, 56)">
 <g transform="translate(28, 80)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(84, 45)" class="key held keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(140, 28)" class="key trans keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(196, 44)" class="key held keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(252, 52)" class="key trans keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(420, 52)" class="key trans keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(476, 44)" class="key trans keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(532, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1236,7 +1250,7 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(84, 101)" class="key trans keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1244,27 +1258,27 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(196, 100)" class="key trans keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(252, 108)" class="key trans keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(420, 108)" class="key trans keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(476, 100)" class="key trans keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(532, 84)" class="key trans keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(588, 101)" class="key trans keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(644, 136)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1272,59 +1286,59 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(28, 192)" class="key trans keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(84, 157)" class="key trans keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(140, 140)" class="key trans keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(196, 156)" class="key trans keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(252, 164)" class="key trans keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(420, 164)" class="key trans keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(476, 156)" class="key trans keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(532, 140)" class="key trans keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(588, 157)" class="key trans keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(644, 192)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(224, 238)" class="key trans keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(280, 252)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(392, 252)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(448, 238)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 </g>
 </g>
@@ -1333,133 +1347,133 @@ rect.combo, rect.combo-separate {
 <g transform="translate(0, 56)">
 <g transform="translate(28, 80)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(84, 45)" class="key trans keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(140, 28)" class="key trans keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(196, 44)" class="key trans keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(252, 52)" class="key trans keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(420, 52)" class="key trans keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(476, 44)" class="key trans keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(532, 28)" class="key trans keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(588, 45)" class="key trans keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(644, 80)" class="key trans keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(28, 136)" class="key trans keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(84, 101)" class="key trans keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(140, 84)" class="key trans keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(196, 100)" class="key trans keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(252, 108)" class="key trans keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(420, 108)" class="key trans keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(476, 100)" class="key trans keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(532, 84)" class="key trans keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(588, 101)" class="key trans keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(644, 136)" class="key trans keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(28, 192)" class="key trans keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(84, 157)" class="key trans keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(140, 140)" class="key trans keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(196, 156)" class="key held keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(252, 164)" class="key trans keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(420, 164)" class="key trans keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
-<g transform="translate(476, 156)" class="key keypos-26">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">4</text>
-<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:cursor-default-click-outline"/>
+<g transform="translate(476, 156)" class="key text_with_symbol keypos-26">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol"/>
+<text x="0" y="0" class="key text_with_symbol tap">4</text>
+<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-6" y="10" height="12" width="12.0" class="key text_with_symbol hold glyph mdi:cursor-default-click-outline"/>
 </g>
-<g transform="translate(532, 140)" class="key keypos-27">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">3</text>
-<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:cursor-default-click-outline"/>
+<g transform="translate(532, 140)" class="key text_with_symbol keypos-27">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol"/>
+<text x="0" y="0" class="key text_with_symbol tap">3</text>
+<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-6" y="10" height="12" width="12.0" class="key text_with_symbol hold glyph mdi:cursor-default-click-outline"/>
 </g>
-<g transform="translate(588, 157)" class="key keypos-28">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">5</text>
-<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:cursor-default-click-outline"/>
+<g transform="translate(588, 157)" class="key text_with_symbol keypos-28">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol"/>
+<text x="0" y="0" class="key text_with_symbol tap">5</text>
+<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-6" y="10" height="12" width="12.0" class="key text_with_symbol hold glyph mdi:cursor-default-click-outline"/>
 </g>
 <g transform="translate(644, 192)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(224, 238)" class="key trans keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(280, 252)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(392, 252)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

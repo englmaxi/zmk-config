@@ -41,11 +41,11 @@ layers:
   - $$mdi:text-search$$
   - $$mdi:backspace-outline$$
   - INS
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - Page Down
   - Page Up
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:microsoft-windows$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: ALT, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -59,7 +59,7 @@ layers:
   - $$mdi:undo$$
   - $$mdi:content-cut$$
   - $$mdi:content-copy$$
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:content-paste$$
   - $$mdi:keyboard-return$$
   - {t: '$$mdi:backspace-outline$$', h: LC(BSPC)}
@@ -67,46 +67,46 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: LC(DEL)}
   - PSCRN
   - {type: held}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   NUM:
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - .
   - '7'
   - '8'
   - '9'
   - $$mdi:backspace-outline$$
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - ','
   - '4'
   - '5'
   - '6'
   - $$mdi:keyboard-return$$
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - '0'
   - '1'
   - '2'
   - '3'
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   FUN:
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:volume-minus$$
   - $$mdi:volume-mute$$
   - $$mdi:volume-plus$$
@@ -116,133 +116,133 @@ layers:
   - F8
   - F9
   - $$mdi:magnify-plus-outline$$
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - $$tabler:brightness-down$$
   - F11
   - F4
   - F5
   - F6
   - $$mdi:magnify-minus-outline$$
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:skip-backward$$
   - $$mdi:play-pause$$
   - $$mdi:skip-forward$$
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - F10
   - F1
   - F2
   - F3
   - $$mdi:magnify-remove-outline$$
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   HW:
   - $$mdi:progress-download$$
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:progress-download$$
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:usb$$
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:skip-next$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:skip-next$$', h: '$$mdi:bluetooth$$', type: text_with_symbol}
   - $$mdi:bluetooth$$
   - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '0', h: '$$mdi:bluetooth$$'}
-  - {t: '1', h: '$$mdi:bluetooth$$'}
-  - {t: '3', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '0', h: '$$mdi:bluetooth$$', type: text_with_symbol}
+  - {t: '1', h: '$$mdi:bluetooth$$', type: text_with_symbol}
+  - {t: '3', h: '$$mdi:bluetooth$$', type: text_with_symbol}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   GER:
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - Ü
   - ´
   - '`'
   - Ä
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - ß
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - Ö
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   MSE:
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '4', h: '$$mdi:cursor-default-click-outline$$'}
-  - {t: '3', h: '$$mdi:cursor-default-click-outline$$'}
-  - {t: '5', h: '$$mdi:cursor-default-click-outline$$'}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
-  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '4', h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
+  - {t: '3', h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
+  - {t: '5', h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:cursor-default-click-outline$$
   - $$mdi:cursor-default-click$$
 combos:

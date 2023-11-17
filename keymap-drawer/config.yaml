@@ -7,21 +7,35 @@ draw_config:
   legend_rel_y: 0.0
 
   svg_extra_style: |
-    .combo.shifted {
+    .shifted {
         translate: -9px 0px;
+        opacity: 0.3;
     }
-    .shifted.mdi\:usb {
+    
+    rect.combo, rect.combo-separate {
+        opacity: 0.9;
+    }
+    
+    .toggle.shifted {
       translate: -12px 17px;
     }
-    .hold.mdi\:bluetooth {
+    .toggle.hold {
       translate: 12px -16px;
     } 
-    .hold.mdi\:cursor-default-click-outline {
-      translate: -8px -10px;
+    
+    .text_with_symbol.tap {
+      translate: -4px 4px;
     } 
-    rect.combo, rect.combo-separate {
-        opacity: 0.95;
+    .text_with_symbol.hold {
+      translate: 5px -20px;
+    } 
+    
+    .trans.tap {
+        opacity: 0.7;
     }
+    .key.trans {
+        fill-opacity: 0.5;
+    }  
     
   shrink_wide_legends: 7
   
@@ -44,11 +58,8 @@ parse_config:
   
   raw_binding_map: 
       
-    '&sys_reset':
-      type: bootloader
-      tap: $$mdi:backup-restore$$
-    '&bootloader':
-      tap: $$mdi:progress-download$$
+    '&sys_reset': {type: bootloader, tap: $$mdi:backup-restore$$}
+    '&bootloader': $$mdi:progress-download$$
       
     '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
     '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$
@@ -67,31 +78,27 @@ parse_config:
     '&lgt_macro': '<>'
     
     '&bt BT_CLR': '$$mdi:bluetooth-off$$'
-    '&bt BT_SEL 0': {h: $$mdi:bluetooth$$ , t: '0'}
-    '&bt BT_SEL 1': {h: $$mdi:bluetooth$$ , t: '1'}
-    '&bt BT_SEL 2': {h: $$mdi:bluetooth$$ , t: '2'}
-    '&bt BT_SEL 3': {h: $$mdi:bluetooth$$ , t: '3'}
-    '&bt BT_SEL 4': {h: $$mdi:bluetooth$$ , t: '4'}
-    '&bt BT_PRV':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-previous$$}
-    '&bt BT_NXT':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-next$$}
+    '&bt BT_SEL 0': {h: $$mdi:bluetooth$$ , t: '0', type: text_with_symbol}
+    '&bt BT_SEL 1': {h: $$mdi:bluetooth$$ , t: '1', type: text_with_symbol}
+    '&bt BT_SEL 2': {h: $$mdi:bluetooth$$ , t: '2', type: text_with_symbol}
+    '&bt BT_SEL 3': {h: $$mdi:bluetooth$$ , t: '3', type: text_with_symbol}
+    '&bt BT_SEL 4': {h: $$mdi:bluetooth$$ , t: '4', type: text_with_symbol}
+    '&bt BT_PRV':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-previous$$, type: text_with_symbol}
+    '&bt BT_NXT':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-next$$, type: text_with_symbol}
     
     '&out OUT_BLE': '$$mdi:bluetooth$$'
     '&out OUT_USB': '$$mdi:usb$$'
-    '&out OUT_TOG':
-      shifted: $$mdi:usb$$
-      tap: $$mdi:toggle-switch$$
-      hold: $$mdi:bluetooth$$
-      type: toggle
+    '&out OUT_TOG': {s: $$mdi:usb$$, t: $$mdi:toggle-switch$$, h: $$mdi:bluetooth$$, type: toggle}
     
     '&mkp LCLK': '$$mdi:cursor-default-click-outline$$'
     '&mkp RCLK': '$$mdi:cursor-default-click$$'
-    '&mkp MB3': {t: '3' , h: '$$mdi:cursor-default-click-outline$$'}
-    '&mkp MB4': {t: '4' , h: '$$mdi:cursor-default-click-outline$$'}
-    '&mkp MB5': {t: '5' , h: '$$mdi:cursor-default-click-outline$$'}
+    '&mkp MB3': {t: '3' , h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
+    '&mkp MB4': {t: '4' , h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
+    '&mkp MB5': {t: '5' , h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
     
   sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
-    t: '$$mdi:menu-down-outline$$'
+    t: '$$mdi:chevron-down$$'
     type: trans
   zmk_keycode_map:
     EXCLAMATION: '!'
