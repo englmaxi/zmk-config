@@ -2,20 +2,32 @@ draw_config:
   line_spacing: 1.0
   arc_radius: 10.0
   append_colon_to_layer_header: false
-  small_pad: 4.0
+  small_pad: 1.0
+  draw_key_sides: true
 
   svg_extra_style: |
-    .shifted {
-        translate: -9px 0px;
-        opacity: 0.3;
-    }
-    
     rect.combo, rect.combo-separate {
-        opacity: 0.9;
+        opacity: 0.95;
+        stroke: #c9cccf;
+        stroke-width: 0.5;
+        fill: #d7eaed;
     }
     path.combo {
         stroke-dasharray: 4, 4;
         stroke-opacity: 0.3;
+    } 
+    
+    rect.held, rect.combo.held {
+        fill: #ebdada;
+    }
+    
+    .trans.tap, .ghost.tap {
+        opacity: 0.5;
+    } 
+    
+    .shifted {
+        translate: -9px 3px;
+        opacity: 0.3;
     }
     
     .toggle.shifted {
@@ -23,24 +35,20 @@ draw_config:
       opacity: 1.0;
     }
     .toggle.hold {
-      translate: 12px -16px;
+      translate: 12px -25px;
     } 
     
     .text_with_symbol.tap {
-      translate: -4px 4px;
+      translate: -2px 1px;
     } 
     .text_with_symbol.hold {
-      translate: 5px -20px;
+      translate: 5px -28px;
     } 
-    
-    .trans.tap {
-        opacity: 0.5;
-    }
     
   shrink_wide_legends: 7
   
   glyph_tap_size: 14
-  glyph_hold_size: 12
+  glyph_hold_size: 8
   glyph_shifted_size: 10
   
   glyphs: {}
