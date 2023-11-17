@@ -139,7 +139,7 @@ parse_config:
       tap: 4
       hold: $$mdi:cursor-default-click-outline$$
       type: text_with_symbol
-    '&mkp MB5'
+    '&mkp MB5':
       tap: 5
       hold: $$mdi:cursor-default-click-outline$$
       type: text_with_symbol
