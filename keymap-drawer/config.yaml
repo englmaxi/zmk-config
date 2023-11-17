@@ -15,9 +15,14 @@ draw_config:
     rect.combo, rect.combo-separate {
         opacity: 0.9;
     }
+    path.combo {
+        stroke-dasharray: 4, 4;
+        stroke-opacity: 0.3;
+    }
     
     .toggle.shifted {
       translate: -12px 17px;
+      opacity: 1.0;
     }
     .toggle.hold {
       translate: 12px -16px;
@@ -93,7 +98,7 @@ parse_config:
     '&mkp MB4': {t: '4' , h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
     '&mkp MB5': {t: '5' , h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
     
-  sticky_label: $$mdi:gesture-tap-hold$$
+  sticky_label: $$mdi:circle-small$$
   trans_legend:
     t: '$$mdi:chevron-down$$'
     type: trans
@@ -170,9 +175,13 @@ parse_config:
     
     BACKSPACE: $$mdi:backspace-outline$$
     BSPC: $$mdi:backspace-outline$$
+    LC(BSPC): $$mdi:backspace$$
     
     DELETE: $$mdi:backspace-reverse-outline$$
     DEL: $$mdi:backspace-reverse-outline$$
+    LC(DEL): $$mdi:backspace-reverse$$
+
+    PSCRN: $$mdi:monitor-screenshot$$
     
     TAB: $$mdi:keyboard-tab$$
     LS(TAB): $$mdi:keyboard-tab-reverse$$
@@ -216,6 +225,11 @@ parse_config:
     LEFT: $$mdi:arrow-left$$
     RIGHT: $$mdi:arrow-right$$
 
+    # HOME: $$mdi:format-horizontal-align-left$$
+    # END: $$mdi:format-horizontal-align-right$$
+    LC(HOME): $$mdi:format-vertical-align-top$$
+    LC(END): $$mdi:format-vertical-align-bottom$$
+
     LC(INS): $$mdi:content-copy$$
     LS(INS): $$mdi:content-paste$$
     LC(X): $$mdi:content-cut$$
@@ -251,16 +265,16 @@ parse_config:
   zmk_combos:
     par:
       align: bottom
-      o: 0.75
+      o: 1.2
       key:
         tap: '()'
         shifted: '<>'
     bkt:
       align: top
-      o: 0.45
+      o: 0.6
     ger:
       align: top
-      o: 0.45
+      o: 0.6
     star:
       key:
         tap: '*'

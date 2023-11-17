@@ -46,14 +46,14 @@ layers:
   - Page Up
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:microsoft-windows$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: ALT, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: RALT, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:microsoft-windows$$', h: '$$mdi:circle-small$$'}
+  - {t: ALT, h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
+  - {t: RALT, h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:arrow-left$$', h: HOME}
-  - {t: '$$mdi:arrow-down$$', h: LC(END)}
-  - {t: '$$mdi:arrow-up$$', h: LC(HOME)}
+  - {t: '$$mdi:arrow-down$$', h: '$$mdi:format-vertical-align-bottom$$'}
+  - {t: '$$mdi:arrow-up$$', h: '$$mdi:format-vertical-align-top$$'}
   - {t: '$$mdi:arrow-right$$', h: END}
   - PAUSE BREAK
   - $$mdi:undo$$
@@ -62,10 +62,10 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:content-paste$$
   - $$mdi:keyboard-return$$
-  - {t: '$$mdi:backspace-outline$$', h: LC(BSPC)}
+  - {t: '$$mdi:backspace-outline$$', h: '$$mdi:backspace$$'}
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:backspace-reverse-outline$$', h: LC(DEL)}
-  - PSCRN
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:backspace-reverse$$'}
+  - $$mdi:monitor-screenshot$$
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -328,10 +328,10 @@ combos:
   k: °
   l: [BSE]
 - p: [3, 1]
-  k: {t: GER, h: '$$mdi:gesture-tap-hold$$'}
+  k: {t: GER, h: '$$mdi:circle-small$$'}
   l: [BSE]
   a: top
-  o: 0.45
+  o: 0.6
 - p: [21, 11]
   k: €
   l: [BSE]
@@ -339,9 +339,9 @@ combos:
   k: {t: (), s: <>}
   l: [BSE]
   a: bottom
-  o: 0.75
+  o: 1.2
 - p: [6, 8]
   k: {t: '[]', s: '{}'}
   l: [BSE]
   a: top
-  o: 0.45
+  o: 0.6
