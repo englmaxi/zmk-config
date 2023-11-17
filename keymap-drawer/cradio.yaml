@@ -51,10 +51,10 @@ layers:
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
   - {t: RALT, h: '$$mdi:circle-small$$'}
-  - {t: '$$mdi:arrow-left$$', h: HOME}
+  - {t: '$$mdi:arrow-left$$', h: '$$mdi:format-horizontal-align-left$$'}
   - {t: '$$mdi:arrow-down$$', h: '$$mdi:format-vertical-align-bottom$$'}
   - {t: '$$mdi:arrow-up$$', h: '$$mdi:format-vertical-align-top$$'}
-  - {t: '$$mdi:arrow-right$$', h: END}
+  - {t: '$$mdi:arrow-right$$', h: '$$mdi:format-horizontal-align-right$$'}
   - PAUSE BREAK
   - $$mdi:undo$$
   - $$mdi:content-cut$$

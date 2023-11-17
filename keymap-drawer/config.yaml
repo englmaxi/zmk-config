@@ -223,8 +223,8 @@ parse_config:
     LEFT: $$mdi:arrow-left$$
     RIGHT: $$mdi:arrow-right$$
 
-    # HOME: $$mdi:format-horizontal-align-left$$
-    # END: $$mdi:format-horizontal-align-right$$
+    HOME: $$mdi:format-horizontal-align-left$$
+    END: $$mdi:format-horizontal-align-right$$
     LC(HOME): $$mdi:format-vertical-align-top$$
     LC(END): $$mdi:format-vertical-align-bottom$$
 

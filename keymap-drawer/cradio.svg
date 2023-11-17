@@ -60,6 +60,12 @@
 <svg id="mdi:cursor-default-click-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-cursor-default-click-outline" viewBox="0 0 24 24"><path d="M11.5,11L17.88,16.37L17,16.55L16.36,16.67C15.73,16.8 15.37,17.5 15.65,18.07L15.92,18.65L17.28,21.59L15.86,22.25L14.5,19.32L14.24,18.74C13.97,18.15 13.22,17.97 12.72,18.38L12.21,18.78L11.5,19.35V11M10.76,8.69A0.76,0.76 0 0,0 10,9.45V20.9C10,21.32 10.34,21.66 10.76,21.66C10.95,21.66 11.11,21.6 11.24,21.5L13.15,19.95L14.81,23.57C14.94,23.84 15.21,24 15.5,24C15.61,24 15.72,24 15.83,23.92L18.59,22.64C18.97,22.46 19.15,22 18.95,21.63L17.28,18L19.69,17.55C19.85,17.5 20,17.43 20.12,17.29C20.39,16.97 20.35,16.5 20,16.21L11.26,8.86L11.25,8.87C11.12,8.76 10.95,8.69 10.76,8.69M15,10V8H20V10H15M13.83,4.76L16.66,1.93L18.07,3.34L15.24,6.17L13.83,4.76M10,0H12V5H10V0M3.93,14.66L6.76,11.83L8.17,13.24L5.34,16.07L3.93,14.66M3.93,3.34L5.34,1.93L8.17,4.76L6.76,6.17L3.93,3.34M7,10H2V8H7V10" /></svg>
 </svg>
+<svg id="mdi:format-horizontal-align-left">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-format-horizontal-align-left" viewBox="0 0 24 24"><path d="M11,16V13H21V11H11V8L7,12L11,16M3,20H5V4H3V20Z" /></svg>
+</svg>
+<svg id="mdi:format-horizontal-align-right">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-format-horizontal-align-right" viewBox="0 0 24 24"><path d="M13,8V11H3V13H13V16L17,12L13,8M19,20H21V4H19V20Z" /></svg>
+</svg>
 <svg id="mdi:format-vertical-align-bottom">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-format-vertical-align-bottom" viewBox="0 0 24 24"><path d="M16,13H13V3H11V13H8L12,17L16,13M4,19V21H20V19H4Z" /></svg>
 </svg>
@@ -665,7 +671,7 @@ path.combo {
 <g transform="translate(420, 112)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:arrow-left" xlink:href="#mdi:arrow-left" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-left"/>
-<text x="0" y="22" class="key hold">HOME</text>
+<use href="#mdi:format-horizontal-align-left" xlink:href="#mdi:format-horizontal-align-left" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:format-horizontal-align-left"/>
 </g>
 <g transform="translate(476, 101)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -680,7 +686,7 @@ path.combo {
 <g transform="translate(588, 106)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:arrow-right" xlink:href="#mdi:arrow-right" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-right"/>
-<text x="0" y="22" class="key hold">END</text>
+<use href="#mdi:format-horizontal-align-right" xlink:href="#mdi:format-horizontal-align-right" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:format-horizontal-align-right"/>
 </g>
 <g transform="translate(644, 146)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
