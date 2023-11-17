@@ -169,7 +169,7 @@ parse_config:
     LALT: ALT
     
     SPACE: $$mdi:keyboard-space$$
-    ESC: $$mdi:keyboard-esc$$
+    # ESC: $$mdi:keyboard-esc$$
     
     BACKSPACE: $$mdi:backspace-outline$$
     BSPC: $$mdi:backspace-outline$$

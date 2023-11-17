@@ -36,7 +36,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - NUM
   NAV:
-  - $$mdi:keyboard-esc$$
+  - ESC
   - $$mdi:close-box-outline$$
   - $$mdi:text-search$$
   - $$mdi:backspace-outline$$
@@ -247,7 +247,7 @@ layers:
   - $$mdi:cursor-default-click$$
 combos:
 - p: [1, 2]
-  k: $$mdi:keyboard-esc$$
+  k: ESC
   l: [BSE, NAV, NUM]
 - p: [2, 3]
   k: $$mdi:keyboard-return$$
