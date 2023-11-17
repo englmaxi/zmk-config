@@ -294,7 +294,7 @@ path.combo {
 
 svg.keymap {
   font-family: REM,SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 rect.combo, rect.combo-separate {
