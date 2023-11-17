@@ -115,7 +115,7 @@ layers:
   - F7
   - F8
   - F9
-  - $$mdi:magnify-plus$$
+  - $$mdi:magnify-plus-outline$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -125,7 +125,7 @@ layers:
   - F4
   - F5
   - F6
-  - $$mdi:magnify-minus$$
+  - $$mdi:magnify-minus-outline$$
   - {t: ▽, type: trans}
   - $$mdi:skip-backward$$
   - $$mdi:play-pause$$
@@ -135,7 +135,7 @@ layers:
   - F1
   - F2
   - F3
-  - $$mdi:magnify-close$$
+  - $$mdi:magnify-remove-outline$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -237,9 +237,9 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Mouse 4
-  - Mouse 3
-  - Mouse 5
+  - {t: '$$mdi:cursor-default-click$$', s: '4'}
+  - {t: '$$mdi:cursor-default-click$$', s: '3'}
+  - {t: '$$mdi:cursor-default-click$$', s: '5'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

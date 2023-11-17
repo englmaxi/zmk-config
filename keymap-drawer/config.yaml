@@ -106,9 +106,9 @@ parse_config:
     
     '&mkp LCLK': '$$mdi:cursor-default-click$$'
     '&mkp RCLK': '$$mdi:cursor-default-click-outline$$'
-    '&mkp MB3': 'Mouse 3'
-    '&mkp MB4': 'Mouse 4'
-    '&mkp MB5': 'Mouse 5'
+    '&mkp MB3': {s: '3' , t: '$$mdi:cursor-default-click$$'}
+    '&mkp MB4': {s: '4' , t: '$$mdi:cursor-default-click$$'}
+    '&mkp MB5': {s: '5' , t: '$$mdi:cursor-default-click$$'}
     
   sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
@@ -179,6 +179,8 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
+
+    NUM: $$mdi:numeric$$
     
     SPACE: $$mdi:keyboard-space$$
     ESC: $$mdi:keyboard-esc$$
@@ -243,9 +245,9 @@ parse_config:
     PG_UP: Page Up
     PG_DN: Page Down
 
-    LC(DE_PLUS): $$mdi:magnify-plus$$
-    LC(DE_MINUS): $$mdi:magnify-minus$$
-    LC(N0): $$mdi:magnify-close$$
+    LC(DE_PLUS): $$mdi:magnify-plus-outline$
+    LC(DE_MINUS): $$mdi:magnify-minus-outline$$
+    LC(N0): $$mdi:magnify-remove-outline$$
 
     DE_DOT: '.'
     DE_COMMA: ','
