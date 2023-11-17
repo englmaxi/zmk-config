@@ -169,7 +169,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '0', h: '$$mdi:bluetooth$$', type: text_with_symbol}
   - {t: '1', h: '$$mdi:bluetooth$$', type: text_with_symbol}
-  - {t: '3', h: '$$mdi:bluetooth$$', type: text_with_symbol}
+  - {t: '2', h: '$$mdi:bluetooth$$', type: text_with_symbol}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
