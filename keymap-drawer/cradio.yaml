@@ -115,7 +115,7 @@ layers:
   - F7
   - F8
   - F9
-  - $$mdi:magnify-plus-outline$
+  - $$mdi:magnify-plus-outline$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -237,9 +237,9 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '$$mdi:cursor-default-click$$', s: '4'}
-  - {t: '$$mdi:cursor-default-click$$', s: '3'}
-  - {t: '$$mdi:cursor-default-click$$', s: '5'}
+  - {t: '4', h: '$$mdi:cursor-default-click$$'}
+  - {t: '3', h: '$$mdi:cursor-default-click$$'}
+  - {t: '5', h: '$$mdi:cursor-default-click$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

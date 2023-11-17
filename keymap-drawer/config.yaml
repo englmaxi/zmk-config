@@ -18,17 +18,16 @@ draw_config:
   legend_rel_y: 0.0
 
   svg_extra_style: | 
-    .combo.tap {
-        font-size: 13px;
-    }
     .combo.shifted {
-        font-size: 10px;
         translate: -9px -2px;
     }
     .shifted.mdi\:usb {
       translate: -12px 19px;
     }
     .hold.mdi\:bluetooth {
+      translate: 12px -18px;
+    } 
+    .hold.mdi\:cursor {
       translate: 12px -18px;
     } 
   shrink_wide_legends: 5
@@ -106,9 +105,9 @@ parse_config:
     
     '&mkp LCLK': '$$mdi:cursor-default-click$$'
     '&mkp RCLK': '$$mdi:cursor-default-click-outline$$'
-    '&mkp MB3': {s: '3' , t: '$$mdi:cursor-default-click$$'}
-    '&mkp MB4': {s: '4' , t: '$$mdi:cursor-default-click$$'}
-    '&mkp MB5': {s: '5' , t: '$$mdi:cursor-default-click$$'}
+    '&mkp MB3': {t: '3' , h: '$$mdi:cursor-default-click$$'}
+    '&mkp MB4': {t: '4' , h: '$$mdi:cursor-default-click$$'}
+    '&mkp MB5': {t: '5' , h: '$$mdi:cursor-default-click$$'}
     
   sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
@@ -245,7 +244,7 @@ parse_config:
     PG_UP: Page Up
     PG_DN: Page Down
 
-    LC(DE_PLUS): $$mdi:magnify-plus-outline$
+    LC(DE_PLUS): $$mdi:magnify-plus-outline$$
     LC(DE_MINUS): $$mdi:magnify-minus-outline$$
     LC(N0): $$mdi:magnify-remove-outline$$
 
