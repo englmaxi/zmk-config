@@ -237,14 +237,14 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '4', h: '$$mdi:cursor-default-click$$'}
-  - {t: '3', h: '$$mdi:cursor-default-click$$'}
-  - {t: '5', h: '$$mdi:cursor-default-click$$'}
+  - {t: '4', h: '$$mdi:cursor-default-click-outline$$'}
+  - {t: '3', h: '$$mdi:cursor-default-click-outline$$'}
+  - {t: '5', h: '$$mdi:cursor-default-click-outline$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:cursor-default-click$$
   - $$mdi:cursor-default-click-outline$$
+  - $$mdi:cursor-default-click$$
 combos:
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$

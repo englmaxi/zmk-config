@@ -27,7 +27,7 @@ draw_config:
     .hold.mdi\:bluetooth {
       translate: 12px -18px;
     } 
-    .hold.mdi\:cursor-default-click {
+    .hold.mdi\:cursor-default-click-outline {
       translate: -8px -12px;
     } 
   shrink_wide_legends: 5
@@ -103,11 +103,11 @@ parse_config:
     '&bt BT_PRV':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-previous$$}
     '&bt BT_NXT':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-next$$}
     
-    '&mkp LCLK': '$$mdi:cursor-default-click$$'
-    '&mkp RCLK': '$$mdi:cursor-default-click-outline$$'
-    '&mkp MB3': {t: '3' , h: '$$mdi:cursor-default-click$$'}
-    '&mkp MB4': {t: '4' , h: '$$mdi:cursor-default-click$$'}
-    '&mkp MB5': {t: '5' , h: '$$mdi:cursor-default-click$$'}
+    '&mkp LCLK': '$$mdi:cursor-default-click-outline$$'
+    '&mkp RCLK': '$$mdi:cursor-default-click$$'
+    '&mkp MB3': {t: '3' , h: '$$mdi:cursor-default-click-outline$$'}
+    '&mkp MB4': {t: '4' , h: '$$mdi:cursor-default-click-outline$$'}
+    '&mkp MB5': {t: '5' , h: '$$mdi:cursor-default-click-outline$$'}
     
   sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:

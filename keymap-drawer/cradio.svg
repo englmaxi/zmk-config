@@ -268,7 +268,7 @@ path.combo {
 .hold.mdi\:bluetooth {
   translate: 12px -18px;
 } 
-.hold.mdi\:cursor-default-click {
+.hold.mdi\:cursor-default-click-outline {
   translate: -8px -12px;
 } 
 </style>
@@ -1440,17 +1440,17 @@ path.combo {
 <g transform="translate(476, 156)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">4</text>
-<use href="#mdi:cursor-default-click" xlink:href="#mdi:cursor-default-click" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:cursor-default-click"/>
+<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:cursor-default-click-outline"/>
 </g>
 <g transform="translate(532, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">3</text>
-<use href="#mdi:cursor-default-click" xlink:href="#mdi:cursor-default-click" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:cursor-default-click"/>
+<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:cursor-default-click-outline"/>
 </g>
 <g transform="translate(588, 157)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">5</text>
-<use href="#mdi:cursor-default-click" xlink:href="#mdi:cursor-default-click" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:cursor-default-click"/>
+<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:cursor-default-click-outline"/>
 </g>
 <g transform="translate(644, 192)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1466,11 +1466,11 @@ path.combo {
 </g>
 <g transform="translate(392, 252)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:cursor-default-click" xlink:href="#mdi:cursor-default-click" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:cursor-default-click"/>
+<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:cursor-default-click-outline"/>
 </g>
 <g transform="translate(448, 238)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:cursor-default-click-outline"/>
+<use href="#mdi:cursor-default-click" xlink:href="#mdi:cursor-default-click" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:cursor-default-click"/>
 </g>
 </g>
 </g>
