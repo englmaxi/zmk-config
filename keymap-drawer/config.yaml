@@ -85,13 +85,13 @@ parse_config:
       tap: "'"
       shifted: '"'
       
-    '&mt_td_scw LSHFT 0': '$$mdi:apple-keyboard-shift$$'
+    '&mt_td_scw LSHFT 0': $$mdi:apple-keyboard-shift$$
     '&par_macro': '()'
     '&bkt_macro': '[]'
     '&brc_macro': '{}'
     '&lgt_macro': '<>'
     
-    '&bt BT_CLR': '$$mdi:bluetooth-off$$'
+    '&bt BT_CLR': $$mdi:bluetooth-off$$
     '&bt BT_SEL 0':
       tap: '0'
       hold: $$mdi:bluetooth$$
@@ -121,33 +121,33 @@ parse_config:
       hold: $$mdi:bluetooth$$
       type: text_with_symbol
     
-    '&out OUT_BLE': '$$mdi:bluetooth$$'
-    '&out OUT_USB': '$$mdi:usb$$'
+    '&out OUT_BLE': $$mdi:bluetooth$$
+    '&out OUT_USB': $$mdi:usb$$
     '&out OUT_TOG':
       tap: $$mdi:toggle-switch$$
       hold: $$mdi:bluetooth$$
       shifted: $$mdi:usb$$
       type: toggle
     
-    '&mkp LCLK': '$$mdi:cursor-default-click-outline$$'
-    '&mkp RCLK': '$$mdi:cursor-default-click$$'
+    '&mkp LCLK': $$mdi:cursor-default-click-outline$$
+    '&mkp RCLK': $$mdi:cursor-default-click$$
     '&mkp MB3':
-      tap: '3'
-      hold: '$$mdi:cursor-default-click-outline$$
+      tap: 3
+      hold: $$mdi:cursor-default-click-outline$$
       type: text_with_symbol
     '&mkp MB4':
-      tap: '4'
-      hold: '$$mdi:cursor-default-click-outline$$'
+      tap: 4
+      hold: $$mdi:cursor-default-click-outline$$
       type: text_with_symbol
     '&mkp MB5'
-      tap: '5'
-      hold: '$$mdi:cursor-default-click-outline$$'
+      tap: 5
+      hold: $$mdi:cursor-default-click-outline$$
       type: text_with_symbol
     
   sticky_label: $$mdi:circle-small$$
   
   trans_legend:
-    tap: '$$mdi:chevron-down$$'
+    tap: $$mdi:chevron-down$$
     type: trans
     
   zmk_combos:
