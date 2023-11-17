@@ -3,8 +3,6 @@ draw_config:
   arc_radius: 10.0
   append_colon_to_layer_header: false
   small_pad: 4.0
-  legend_rel_x: 0.0
-  legend_rel_y: 0.0
 
   svg_extra_style: |
     .shifted {
@@ -60,19 +58,33 @@ parse_config:
   
   raw_binding_map: 
       
-    '&sys_reset': {type: bootloader, tap: $$mdi:backup-restore$$}
+    '&sys_reset': 
+      tap: $$mdi:backup-restore$$
+      type: bootloader
+      
     '&bootloader': $$mdi:progress-download$$
       
     '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
     '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$
     
-    '&hmr_lpar_lt LS(LCTRL) 0': {s: '<' , t: '('}
-    '&hmr_rpar_gt LA(LCTRL) 0': {s: '>' , t: ')'}
+    '&hmr_lpar_lt LS(LCTRL) 0':
+      tap: '('
+      shifted: '<'
+    '&hmr_rpar_gt LA(LCTRL) 0':
+      tap: ')'
+      shifted: '>'
     
-    '&lbkt_lbrc': {s: '{' , t: '['}
-    '&rbkt_rbrc': {s: '}' , t: ']'}
+    '&lbkt_lbrc':
+      tap: '['
+      shifted: '{'
+    '&rbkt_rbrc':
+      tap: ']'
+      shifted: '}'
     
-    '&td_sqt_dqt': {s: '"' , t: "'"}
+    '&td_sqt_dqt':
+      tap: "'"
+      shifted: '"'
+      
     '&mt_td_scw LSHFT 0': '$$mdi:apple-keyboard-shift$$'
     '&par_macro': '()'
     '&bkt_macro': '[]'
@@ -80,93 +92,79 @@ parse_config:
     '&lgt_macro': '<>'
     
     '&bt BT_CLR': '$$mdi:bluetooth-off$$'
-    '&bt BT_SEL 0': {h: $$mdi:bluetooth$$ , t: '0', type: text_with_symbol}
-    '&bt BT_SEL 1': {h: $$mdi:bluetooth$$ , t: '1', type: text_with_symbol}
-    '&bt BT_SEL 2': {h: $$mdi:bluetooth$$ , t: '2', type: text_with_symbol}
-    '&bt BT_SEL 3': {h: $$mdi:bluetooth$$ , t: '3', type: text_with_symbol}
-    '&bt BT_SEL 4': {h: $$mdi:bluetooth$$ , t: '4', type: text_with_symbol}
-    '&bt BT_PRV':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-previous$$, type: text_with_symbol}
-    '&bt BT_NXT':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-next$$, type: text_with_symbol}
+    '&bt BT_SEL 0':
+      tap: '0'
+      hold: $$mdi:bluetooth$$
+      type: text_with_symbol
+    '&bt BT_SEL 1':
+      tap: '1'
+      hold: $$mdi:bluetooth$$
+      type: text_with_symbol
+    '&bt BT_SEL 2':
+      tap: '2'
+      hold: $$mdi:bluetooth$$
+      type: text_with_symbol
+    '&bt BT_SEL 3':
+      tap: '3'
+      hold: $$mdi:bluetooth$$
+      type: text_with_symbol
+    '&bt BT_SEL 4':
+      tap: '4'
+      hold: $$mdi:bluetooth$$
+      type: text_with_symbol
+    '&bt BT_PRV':
+      tap: $$mdi:skip-previous$$
+      hold: $$mdi:bluetooth$$
+      type: text_with_symbol
+    '&bt BT_NXT':
+      tap: $$mdi:skip-next$$
+      hold: $$mdi:bluetooth$$
+      type: text_with_symbol
     
     '&out OUT_BLE': '$$mdi:bluetooth$$'
     '&out OUT_USB': '$$mdi:usb$$'
-    '&out OUT_TOG': {s: $$mdi:usb$$, t: $$mdi:toggle-switch$$, h: $$mdi:bluetooth$$, type: toggle}
+    '&out OUT_TOG':
+      tap: $$mdi:toggle-switch$$
+      hold: $$mdi:bluetooth$$
+      shifted: $$mdi:usb$$
+      type: toggle
     
     '&mkp LCLK': '$$mdi:cursor-default-click-outline$$'
     '&mkp RCLK': '$$mdi:cursor-default-click$$'
-    '&mkp MB3': {t: '3' , h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
-    '&mkp MB4': {t: '4' , h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
-    '&mkp MB5': {t: '5' , h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
+    '&mkp MB3':
+      tap: '3'
+      hold: '$$mdi:cursor-default-click-outline$$
+      type: text_with_symbol
+    '&mkp MB4':
+      tap: '4'
+      hold: '$$mdi:cursor-default-click-outline$$'
+      type: text_with_symbol
+    '&mkp MB5'
+      tap: '5'
+      hold: '$$mdi:cursor-default-click-outline$$'
+      type: text_with_symbol
     
   sticky_label: $$mdi:circle-small$$
+  
   trans_legend:
-    t: '$$mdi:chevron-down$$'
+    tap: '$$mdi:chevron-down$$'
     type: trans
+    
+  zmk_combos:
+    par:
+      align: bottom
+      offset: 1.2
+      key:
+        tap: '()'
+        shifted: '<>'
+    bkt:
+      align: top
+      offset: 0.6
+    ger:
+      align: top
+      offset: 0.6
+      
   zmk_keycode_map:
-    EXCLAMATION: '!'
-    EXCL: '!'
-    AT_SIGN: '@'
-    AT: '@'
-    HASH: '#'
-    POUND: '#'
-    DOLLAR: $
-    DLLR: $
-    PERCENT: '%'
-    PRCNT: '%'
-    CARET: ^
-    AMPERSAND: '&'
-    AMPS: '&'
-    ASTERISK: '*'
-    ASTRK: '*'
-    STAR: '*'
-    LEFT_PARENTHESIS: (
-    LPAR: (
-    RIGHT_PARENTHESIS: )
-    RPAR: )
-    EQUAL: '='
-    PLUS: +
-    MINUS: '-'
-    UNDERSCORE: _
-    UNDER: _
-    SLASH: /
-    FSLH: /
-    QUESTION: '?'
-    QMARK: '?'
-    BACKSLASH: \
-    BSLH: \
-    PIPE: '|'
-    NON_US_BACKSLASH: \
-    PIPE2: '|'
-    NON_US_BSLH: '|'
-    SEMICOLON: ;
-    SEMI: ;
-    COLON: ':'
-    SINGLE_QUOTE: ''''
-    SQT: ''''
-    APOSTROPHE: <
-    APOS: .
-    DOUBLE_QUOTES: '"'
-    DQT: '"'
-    COMMA: ','
-    LESS_THAN: <
-    LT: <
-    PERIOD: .
-    DOT: .
-    GREATER_THAN: '>'
-    GT: '>'
-    LEFT_BRACKET: '['
-    LBKT: '['
-    LEFT_BRACE: '{'
-    LBRC: '{'
-    RIGHT_BRACKET: ']'
-    RBKT: ']'
-    RIGHT_BRACE: '}'
-    RBRC: '}'
-    GRAVE: '`'
-    TILDE: '~'
-    NON_US_HASH: '#'
-    NUHS: '#'
-    TILDE2: '~'
 
     LALT: ALT
     
@@ -246,14 +244,12 @@ parse_config:
     LC(DE_MINUS): $$mdi:magnify-minus-outline$$
     LC(N0): $$mdi:magnify-remove-outline$$
 
-    DE_DOT: '.'
-    DE_COMMA: ','
     DE_Z: 'Z'
     DE_Y: 'Y'
-    DE_QMARK: '?'
-    DE_EXCL: '!'
-    DE_PLUS: '+'
-    DE_MINUS: '-'
+
+    DE_SECT: '§'
+    DE_DEG: '°'
+    DE_EURO: '€'
 
     DE_A_UMLAUT: 'Ä'
     DE_U_UMLAUT: 'Ü'
@@ -262,70 +258,134 @@ parse_config:
     DE_ACUTE: '´'
     DE_GRAVE: '`'
     
-  zmk_combos:
-    par:
-      align: bottom
-      o: 1.2
-      key:
-        tap: '()'
-        shifted: '<>'
-    bkt:
-      align: top
-      o: 0.6
-    ger:
-      align: top
-      o: 0.6
-    star:
-      key:
-        tap: '*'
-    at:
-      key:
-        tap: '@'
-    euro:
-      key:
-        tap: '€'
-    caret:
-      key:
-        tap: '^'
-    hash:
-      key:
-        tap: '#'
-    dllr:
-      key:
-        tap: '$'
-    prcnt:
-      key:
-        tap: '%'
-    tilde:
-      key:
-        tap: '~'
-    equal:
-      key:
-        tap: '='
-    plus:
-      key:
-        tap: '+'
-    bslh:
-      key:
-        tap: '\'
-    amps:
-      key:
-        tap: '&'
-    sect:
-      key:
-        tap: '§'
-    under:
-      key:
-        tap: '_'
-    minus:
-      key:
-        tap: '-'
-    fslh:
-      key:
-        tap: '/'
-    pipe:
-      key:
-        tap: '|'
-    deg:
-      key:
-        tap: '°'
+    # default
+    EXCLAMATION: '!'
+    EXCL: '!'
+    AT_SIGN: '@'
+    AT: '@'
+    HASH: '#'
+    POUND: '#'
+    DOLLAR: $
+    DLLR: $
+    PERCENT: '%'
+    PRCNT: '%'
+    CARET: ^
+    AMPERSAND: '&'
+    AMPS: '&'
+    ASTERISK: '*'
+    ASTRK: '*'
+    STAR: '*'
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL: '='
+    PLUS: +
+    MINUS: '-'
+    UNDERSCORE: _
+    UNDER: _
+    SLASH: /
+    FSLH: /
+    QUESTION: '?'
+    QMARK: '?'
+    BACKSLASH: \
+    BSLH: \
+    PIPE: '|'
+    NON_US_BACKSLASH: \
+    PIPE2: '|'
+    NON_US_BSLH: '|'
+    SEMICOLON: ;
+    SEMI: ;
+    COLON: ':'
+    SINGLE_QUOTE: ''''
+    SQT: ''''
+    APOSTROPHE: <
+    APOS: .
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    COMMA: ','
+    LESS_THAN: <
+    LT: <
+    PERIOD: .
+    DOT: .
+    GREATER_THAN: '>'
+    GT: '>'
+    LEFT_BRACKET: '['
+    LBKT: '['
+    LEFT_BRACE: '{'
+    LBRC: '{'
+    RIGHT_BRACKET: ']'
+    RBKT: ']'
+    RIGHT_BRACE: '}'
+    RBRC: '}'
+    GRAVE: '`'
+    TILDE: '~'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    TILDE2: '~'
+    
+    # default german
+    DE_EXCLAMATION: '!'
+    DE_EXCL: '!'
+    DE_AT_SIGN: '@'
+    DE_AT: '@'
+    DE_HASH: '#'
+    DE_POUND: '#'
+    DE_DOLLAR: $
+    DE_DLLR: $
+    DE_PERCENT: '%'
+    DE_PRCNT: '%'
+    DE_CARET: ^
+    DE_AMPERSAND: '&'
+    DE_AMPS: '&'
+    DE_ASTERISK: '*'
+    DE_ASTRK: '*'
+    DE_STAR: '*'
+    DE_LEFT_PARENTHESIS: (
+    DE_LPAR: (
+    DE_RIGHT_PARENTHESIS: )
+    DE_RPAR: )
+    DE_EQUAL: '='
+    DE_PLUS: +
+    DE_MINUS: '-'
+    DE_UNDERSCORE: _
+    DE_UNDER: _
+    DE_SLASH: /
+    DE_FSLH: /
+    DE_QUESTION: '?'
+    DE_QMARK: '?'
+    DE_BACKSLASH: \
+    DE_BSLH: \
+    DE_PIPE: '|'
+    DE_NON_US_BACKSLASH: \
+    DE_PIPE2: '|'
+    DE_NON_US_BSLH: '|'
+    DE_SEMICOLON: ;
+    DE_SEMI: ;
+    DE_COLON: ':'
+    DE_SINGLE_QUOTE: ''''
+    DE_SQT: ''''
+    DE_APOSTROPHE: <
+    DE_APOS: .
+    DE_DOUBLE_QUOTES: '"'
+    DE_DQT: '"'
+    DE_COMMA: ','
+    DE_LESS_THAN: <
+    DE_LT: <
+    DE_PERIOD: .
+    DE_DOT: .
+    DE_GREATER_THAN: '>'
+    DE_GT: '>'
+    DE_LEFT_BRACKET: '['
+    DE_LBKT: '['
+    DE_LEFT_BRACE: '{'
+    DE_LBRC: '{'
+    DE_RIGHT_BRACKET: ']'
+    DE_RBKT: ']'
+    DE_RIGHT_BRACE: '}'
+    DE_RBRC: '}'
+    DE_GRAVE: '`'
+    DE_TILDE: '~'
+    DE_NON_US_HASH: '#'
+    DE_NUHS: '#'
+    DE_TILDE2: '~'
