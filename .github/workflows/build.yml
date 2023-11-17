@@ -5,6 +5,7 @@ on:
   push:               # automatically run on changes to following paths
     paths:
       - "config/*"
+      - "build.yaml"
 
 jobs:
   build:
