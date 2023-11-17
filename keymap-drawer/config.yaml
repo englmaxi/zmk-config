@@ -30,6 +30,9 @@ draw_config:
     .hold.mdi\:cursor-default-click-outline {
       translate: -8px -12px;
     } 
+    rect.combo, rect.combo-separate {
+        opacity: 0.95;
+    }
   shrink_wide_legends: 5
   glyph_tap_size: 14
   glyph_hold_size: 12
@@ -76,8 +79,6 @@ parse_config:
       tap: $$mdi:backup-restore$$
     '&bootloader':
       tap: $$mdi:progress-download$$
-      
-    '&qexcl': {s: '!' , t: '?'}
       
     '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
     '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$

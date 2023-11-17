@@ -271,6 +271,9 @@ path.combo {
 .hold.mdi\:cursor-default-click-outline {
   translate: -8px -12px;
 } 
+rect.combo, rect.combo-separate {
+    opacity: 0.95;
+}
 </style>
 <g transform="translate(30, 0)" class="layer-BSE">
 <text x="0" y="28" class="label">BSE:</text>
