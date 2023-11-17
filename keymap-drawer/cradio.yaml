@@ -55,7 +55,7 @@ layers:
   - {t: '$$mdi:arrow-down$$', h: '$$mdi:format-vertical-align-bottom$$'}
   - {t: '$$mdi:arrow-up$$', h: '$$mdi:format-vertical-align-top$$'}
   - {t: '$$mdi:arrow-right$$', h: '$$mdi:format-horizontal-align-right$$'}
-  - PAUSE BREAK
+  - Pause Break
   - $$mdi:undo$$
   - $$mdi:content-cut$$
   - $$mdi:content-copy$$
