@@ -8,7 +8,7 @@ draw_config:
   svg_extra_style: |
     svg.keymap {
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: bold;
     }
     
@@ -55,7 +55,7 @@ draw_config:
   
   glyph_tap_size: 14
   glyph_hold_size: 8
-  glyph_shifted_size: 10
+  glyph_shifted_size: 8
   
   glyphs: {}
   glyph_urls:
@@ -101,7 +101,7 @@ parse_config:
       
     '&mt_td_scw LSHFT 0': $$mdi:apple-keyboard-shift$$
     '&par_macro': '( )'
-    '&bkt_macro': '[ ]'
+    '&bkt_macro': '[]'
     '&brc_macro': '{ }'
     '&lgt_macro': '< >'
     

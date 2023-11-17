@@ -273,7 +273,7 @@ path.combo {
 
 svg.keymap {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: bold;
 }
 
@@ -635,9 +635,7 @@ rect.held, rect.combo.held {
 <path d="M532,-18 h-46 a10.0,10.0 0 0 0 -10.0,10.0 v34" class="combo"/>
 <path d="M532,-18 h46 a10.0,10.0 0 0 1 10.0,10.0 v40" class="combo"/>
 <rect rx="6" ry="6" x="518" y="-31" width="28" height="26" class="combo"/>
-<text x="532" y="-18" class="combo tap">
-<tspan x="532" dy="-0.5em">[</tspan><tspan x="532" dy="1.0em">]</tspan>
-</text>
+<text x="532" y="-18" class="combo tap">[]</text>
 <text x="532" y="-30" class="combo shifted">{ }</text>
 </g>
 </g>
@@ -1302,7 +1300,7 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key toggle"/>
 <use href="#mdi:toggle-switch" xlink:href="#mdi:toggle-switch" x="-7" y="-11" height="14" width="14.0" class="key toggle tap glyph mdi:toggle-switch"/>
 <use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-4" y="17" height="8" width="8.0" class="key toggle hold glyph mdi:bluetooth"/>
-<use href="#mdi:usb" xlink:href="#mdi:usb" x="-5" y="-25" height="10" width="10.0" class="key toggle shifted glyph mdi:usb"/>
+<use href="#mdi:usb" xlink:href="#mdi:usb" x="-4" y="-25" height="8" width="8.0" class="key toggle shifted glyph mdi:usb"/>
 </g>
 <g transform="translate(252, 112)" class="key trans keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>

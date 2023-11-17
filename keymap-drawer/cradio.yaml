@@ -341,7 +341,7 @@ combos:
   a: bottom
   o: 1.2
 - p: [6, 8]
-  k: {t: '[ ]', s: '{ }'}
+  k: {t: '[]', s: '{ }'}
   l: [BSE]
   a: top
   o: 0.6
