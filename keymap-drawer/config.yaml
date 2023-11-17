@@ -27,8 +27,8 @@ draw_config:
     .hold.mdi\:bluetooth {
       translate: 12px -18px;
     } 
-    .hold.mdi\:cursor {
-      translate: 12px -18px;
+    .hold.mdi\:cursor-default-click {
+      translate: -8px -12px;
     } 
   shrink_wide_legends: 5
   glyph_tap_size: 14
@@ -179,7 +179,7 @@ parse_config:
     NUHS: '#'
     TILDE2: '~'
 
-    NUM: $$mdi:numeric$$
+    LALT: ALT
     
     SPACE: $$mdi:keyboard-space$$
     ESC: $$mdi:keyboard-esc$$
@@ -239,7 +239,7 @@ parse_config:
     LC(DE_Z): $$mdi:undo$$
 
     LC(F): $$mdi:text-search$$
-    LC(W): $$mdi:close-box$$
+    LC(W): $$mdi:close-box-outline$$
     
     PG_UP: Page Up
     PG_DN: Page Down

@@ -12,14 +12,14 @@ layers:
   - Y
   - {t: '''', s: '"'}
   - {t: A, h: '$$mdi:microsoft-windows$$'}
-  - {t: R, h: LALT}
+  - {t: R, h: ALT}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - M
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: E, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: I, h: LALT}
+  - {t: I, h: ALT}
   - {t: O, h: '$$mdi:microsoft-windows$$'}
   - Z
   - X
@@ -37,7 +37,7 @@ layers:
   - NUM
   NAV:
   - $$mdi:keyboard-esc$$
-  - $$mdi:close-box$$
+  - $$mdi:close-box-outline$$
   - $$mdi:text-search$$
   - $$mdi:backspace-outline$$
   - INS
@@ -47,7 +47,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '$$mdi:microsoft-windows$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: LALT, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: ALT, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: RALT, h: '$$mdi:gesture-tap-hold$$'}

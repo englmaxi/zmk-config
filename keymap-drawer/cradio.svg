@@ -30,8 +30,8 @@
 <svg id="mdi:bluetooth-off">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-bluetooth-off" viewBox="0 0 24 24"><path d="M13,5.83L14.88,7.71L13.28,9.31L14.69,10.72L17.71,7.7L12,2H11V7.03L13,9.03M5.41,4L4,5.41L10.59,12L5,17.59L6.41,19L11,14.41V22H12L16.29,17.71L18.59,20L20,18.59M13,18.17V14.41L14.88,16.29" /></svg>
 </svg>
-<svg id="mdi:close-box">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-close-box" viewBox="0 0 24 24"><path d="M19,3H16.3H7.7H5A2,2 0 0,0 3,5V7.7V16.4V19A2,2 0 0,0 5,21H7.7H16.4H19A2,2 0 0,0 21,19V16.3V7.7V5A2,2 0 0,0 19,3M15.6,17L12,13.4L8.4,17L7,15.6L10.6,12L7,8.4L8.4,7L12,10.6L15.6,7L17,8.4L13.4,12L17,15.6L15.6,17Z" /></svg>
+<svg id="mdi:close-box-outline">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-close-box-outline" viewBox="0 0 24 24"><path d="M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V5H19V19M17,8.4L13.4,12L17,15.6L15.6,17L12,13.4L8.4,17L7,15.6L10.6,12L7,8.4L8.4,7L12,10.6L15.6,7L17,8.4Z" /></svg>
 </svg>
 <svg id="mdi:content-copy">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-content-copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z" /></svg>
@@ -268,8 +268,8 @@ path.combo {
 .hold.mdi\:bluetooth {
   translate: 12px -18px;
 } 
-.hold.mdi\:cursor {
-  translate: 12px -18px;
+.hold.mdi\:cursor-default-click {
+  translate: -8px -12px;
 } 
 </style>
 <g transform="translate(30, 0)" class="layer-BSE">
@@ -324,7 +324,7 @@ path.combo {
 <g transform="translate(84, 101)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">R</text>
-<text x="0" y="24" class="key hold">LALT</text>
+<text x="0" y="24" class="key hold">ALT</text>
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -357,7 +357,7 @@ path.combo {
 <g transform="translate(588, 101)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">I</text>
-<text x="0" y="24" class="key hold">LALT</text>
+<text x="0" y="24" class="key hold">ALT</text>
 </g>
 <g transform="translate(644, 136)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -571,7 +571,7 @@ path.combo {
 </g>
 <g transform="translate(84, 45)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:close-box" xlink:href="#mdi:close-box" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:close-box"/>
+<use href="#mdi:close-box-outline" xlink:href="#mdi:close-box-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:close-box-outline"/>
 </g>
 <g transform="translate(140, 28)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -616,7 +616,7 @@ path.combo {
 </g>
 <g transform="translate(84, 101)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">LALT</text>
+<text x="0" y="0" class="key tap">ALT</text>
 <use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
