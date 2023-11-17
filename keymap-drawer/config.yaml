@@ -77,6 +77,8 @@ parse_config:
     '&bootloader':
       tap: $$mdi:progress-download$$
       
+    '&qexcl': {s: '!' , t: '?'}
+      
     '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
     '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$
     
