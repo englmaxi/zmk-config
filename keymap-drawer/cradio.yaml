@@ -41,11 +41,11 @@ layers:
   - $$mdi:text-search$$
   - $$mdi:backspace-outline$$
   - INS
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - Page Down
   - Page Up
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - {t: '$$mdi:microsoft-windows$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: ALT, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -59,7 +59,7 @@ layers:
   - $$mdi:undo$$
   - $$mdi:content-cut$$
   - $$mdi:content-copy$$
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - $$mdi:content-paste$$
   - $$mdi:keyboard-return$$
   - {t: '$$mdi:backspace-outline$$', h: LC(BSPC)}
@@ -67,46 +67,46 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: LC(DEL)}
   - PSCRN
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   NUM:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - .
   - '7'
   - '8'
   - '9'
   - $$mdi:backspace-outline$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - ','
   - '4'
   - '5'
   - '6'
   - $$mdi:keyboard-return$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - '0'
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - {type: held}
   FUN:
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - $$mdi:volume-minus$$
   - $$mdi:volume-mute$$
   - $$mdi:volume-plus$$
@@ -116,133 +116,133 @@ layers:
   - F8
   - F9
   - $$mdi:magnify-plus-outline$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - $$tabler:brightness-down$$
   - F11
   - F4
   - F5
   - F6
   - $$mdi:magnify-minus-outline$$
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - $$mdi:skip-backward$$
   - $$mdi:play-pause$$
   - $$mdi:skip-forward$$
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - F10
   - F1
   - F2
   - F3
   - $$mdi:magnify-remove-outline$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   HW:
   - $$mdi:progress-download$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - $$mdi:progress-download$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - $$mdi:usb$$
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - {t: '$$mdi:skip-next$$', h: '$$mdi:bluetooth$$'}
   - $$mdi:bluetooth$$
   - $$mdi:bluetooth-off$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '$$mdi:numeric-0$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-1$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-3$$', h: '$$mdi:bluetooth$$'}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '0', h: '$$mdi:bluetooth$$'}
+  - {t: '1', h: '$$mdi:bluetooth$$'}
+  - {t: '3', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - {type: held}
   GER:
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - Ü
   - ´
   - '`'
   - Ä
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - ß
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - Ö
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   MSE:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - {t: '4', h: '$$mdi:cursor-default-click-outline$$'}
   - {t: '3', h: '$$mdi:cursor-default-click-outline$$'}
   - {t: '5', h: '$$mdi:cursor-default-click-outline$$'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - $$mdi:cursor-default-click-outline$$
   - $$mdi:cursor-default-click$$
 combos:

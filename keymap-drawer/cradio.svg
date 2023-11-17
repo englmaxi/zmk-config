@@ -72,17 +72,11 @@
 <svg id="mdi:magnify-remove-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-magnify-remove-outline" viewBox="0 0 24 24"><path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.5L20.5 19L15.5 14M9.5 14C7 14 5 12 5 9.5S7 5 9.5 5 14 7 14 9.5 12 14 9.5 14M10.91 11.62L9.5 10.21L8.09 11.62L7.38 10.91L8.79 9.5L7.38 8.09L8.09 7.38L9.5 8.79L10.91 7.38L11.62 8.09L10.21 9.5L11.62 10.91L10.91 11.62Z" /></svg>
 </svg>
+<svg id="mdi:menu-down-outline">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-menu-down-outline" viewBox="0 0 24 24"><path d="M18,9V10.5L12,16.5L6,10.5V9H18M12,13.67L14.67,11H9.33L12,13.67Z" /></svg>
+</svg>
 <svg id="mdi:microsoft-windows">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-microsoft-windows" viewBox="0 0 24 24"><path d="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z" /></svg>
-</svg>
-<svg id="mdi:numeric-0">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-0" viewBox="0 0 24 24"><path d="M11,7A2,2 0 0,0 9,9V15A2,2 0 0,0 11,17H13A2,2 0 0,0 15,15V9A2,2 0 0,0 13,7H11M11,9H13V15H11V9Z" /></svg>
-</svg>
-<svg id="mdi:numeric-1">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-1" viewBox="0 0 24 24"><path d="M10,7V9H12V17H14V7H10Z" /></svg>
-</svg>
-<svg id="mdi:numeric-3">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-3" viewBox="0 0 24 24"><path d="M15,15V13.5A1.5,1.5 0 0,0 13.5,12A1.5,1.5 0 0,0 15,10.5V9C15,7.89 14.1,7 13,7H9V9H13V11H11V13H13V15H9V17H13A2,2 0 0,0 15,15" /></svg>
 </svg>
 <svg id="mdi:play-pause">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-play-pause" viewBox="0 0 24 24"><path d="M3,5V19L11,12M13,19H16V5H13M18,5V19H21V5" /></svg>
@@ -260,23 +254,23 @@ path.combo {
 /* End Tabler Icons Cleanup */
 
 .combo.shifted {
-    translate: -9px -2px;
+    translate: -9px 0px;
 }
 .shifted.mdi\:usb {
-  translate: -12px 19px;
+  translate: -12px 17px;
 }
 .hold.mdi\:bluetooth {
-  translate: 12px -18px;
+  translate: 12px -16px;
 } 
 .hold.mdi\:cursor-default-click-outline {
-  translate: -8px -12px;
+  translate: -8px -10px;
 } 
 rect.combo, rect.combo-separate {
     opacity: 0.95;
 }
 </style>
 <g transform="translate(30, 0)" class="layer-BSE">
-<text x="0" y="28" class="label">BSE:</text>
+<text x="0" y="28" class="label">BSE</text>
 <g transform="translate(0, 81)">
 <g transform="translate(28, 80)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -317,27 +311,27 @@ rect.combo, rect.combo-separate {
 <g transform="translate(644, 80)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">&#x27;</text>
-<text x="0" y="-24" class="key shifted">&quot;</text>
+<text x="0" y="-22" class="key shifted">&quot;</text>
 </g>
 <g transform="translate(28, 136)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">A</text>
-<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:microsoft-windows"/>
+<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:microsoft-windows"/>
 </g>
 <g transform="translate(84, 101)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">R</text>
-<text x="0" y="24" class="key hold">ALT</text>
+<text x="0" y="22" class="key hold">ALT</text>
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">S</text>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-control"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-control"/>
 </g>
 <g transform="translate(196, 100)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">T</text>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-shift"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-shift"/>
 </g>
 <g transform="translate(252, 108)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -350,22 +344,22 @@ rect.combo, rect.combo-separate {
 <g transform="translate(476, 100)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">N</text>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-shift"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-shift"/>
 </g>
 <g transform="translate(532, 84)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">E</text>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-control"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-control"/>
 </g>
 <g transform="translate(588, 101)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">I</text>
-<text x="0" y="24" class="key hold">ALT</text>
+<text x="0" y="22" class="key hold">ALT</text>
 </g>
 <g transform="translate(644, 136)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">O</text>
-<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:microsoft-windows"/>
+<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:microsoft-windows"/>
 </g>
 <g transform="translate(28, 192)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -382,7 +376,7 @@ rect.combo, rect.combo-separate {
 <g transform="translate(196, 156)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">D</text>
-<text x="0" y="24" class="key hold">MSE</text>
+<text x="0" y="22" class="key hold">MSE</text>
 </g>
 <g transform="translate(252, 164)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -407,7 +401,7 @@ rect.combo, rect.combo-separate {
 <g transform="translate(644, 192)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">?</text>
-<text x="0" y="-24" class="key shifted">!</text>
+<text x="0" y="-22" class="key shifted">!</text>
 </g>
 <g transform="translate(224, 238)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -420,7 +414,7 @@ rect.combo, rect.combo-separate {
 <g transform="translate(392, 252)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-space"/>
-<text x="0" y="24" class="key hold">FUN</text>
+<text x="0" y="22" class="key hold">FUN</text>
 </g>
 <g transform="translate(448, 238)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -453,22 +447,22 @@ rect.combo, rect.combo-separate {
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="490" y="79" width="28" height="26" class="combo"/>
 <text x="504" y="92" class="combo tap">(</text>
-<text x="504" y="81" class="combo shifted">&lt;</text>
+<text x="504" y="83" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="80" width="28" height="26" class="combo"/>
 <text x="560" y="93" class="combo tap">)</text>
-<text x="560" y="82" class="combo shifted">&gt;</text>
+<text x="560" y="84" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="490" y="23" width="28" height="26" class="combo"/>
 <text x="504" y="36" class="combo tap">[</text>
-<text x="504" y="25" class="combo shifted">{</text>
+<text x="504" y="27" class="combo shifted">{</text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="546" y="24" width="28" height="26" class="combo"/>
 <text x="560" y="37" class="combo tap">]</text>
-<text x="560" y="26" class="combo shifted">}</text>
+<text x="560" y="28" class="combo shifted">}</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="70" y="60" width="28" height="26" class="combo"/>
@@ -539,34 +533,34 @@ rect.combo, rect.combo-separate {
 <text x="644" y="164" class="combo tap">°</text>
 </g>
 <g class="combo combopos-27">
-<path d="M140,-11 h50 a6.0,6.0 0 0 1 6.0,6.0 v30" class="combo"/>
-<path d="M140,-11 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v31" class="combo"/>
+<path d="M140,-11 h46 a10.0,10.0 0 0 1 10.0,10.0 v26" class="combo"/>
+<path d="M140,-11 h-46 a10.0,10.0 0 0 0 -10.0,10.0 v27" class="combo"/>
 <rect rx="6" ry="6" x="126" y="-24" width="28" height="26" class="combo"/>
 <text x="140" y="-11" class="combo tap">GER</text>
-<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="134" y="-12" height="12" width="12.0" class="combo hold glyph mdi:gesture-tap-hold"/>
+<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="134" y="-14" height="12" width="12.0" class="combo hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g class="combo combopos-28">
 <rect rx="6" ry="6" x="70" y="116" width="28" height="26" class="combo"/>
 <text x="84" y="129" class="combo tap">€</text>
 </g>
 <g class="combo combopos-29">
-<path d="M532,172 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-48" class="combo"/>
-<path d="M532,172 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-46" class="combo"/>
+<path d="M532,172 h-46 a10.0,10.0 0 0 1 -10.0,-10.0 v-44" class="combo"/>
+<path d="M532,172 h46 a10.0,10.0 0 0 0 10.0,-10.0 v-42" class="combo"/>
 <rect rx="6" ry="6" x="518" y="159" width="28" height="26" class="combo"/>
 <text x="532" y="172" class="combo tap">()</text>
-<text x="532" y="161" class="combo shifted">&lt;&gt;</text>
+<text x="532" y="163" class="combo shifted">&lt;&gt;</text>
 </g>
 <g class="combo combopos-30">
-<path d="M532,-11 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v30" class="combo"/>
-<path d="M532,-11 h50 a6.0,6.0 0 0 1 6.0,6.0 v31" class="combo"/>
+<path d="M532,-11 h-46 a10.0,10.0 0 0 0 -10.0,10.0 v26" class="combo"/>
+<path d="M532,-11 h46 a10.0,10.0 0 0 1 10.0,10.0 v27" class="combo"/>
 <rect rx="6" ry="6" x="518" y="-24" width="28" height="26" class="combo"/>
 <text x="532" y="-11" class="combo tap">[]</text>
-<text x="532" y="-22" class="combo shifted">{}</text>
+<text x="532" y="-20" class="combo shifted">{}</text>
 </g>
 </g>
 </g>
 <g transform="translate(30, 403)" class="layer-NAV">
-<text x="0" y="28" class="label">NAV:</text>
+<text x="0" y="28" class="label">NAV</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 80)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -590,77 +584,77 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(420, 52)" class="key trans keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(476, 44)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Page</tspan><tspan x="0" dy="1.2em">Down</tspan>
+<tspan x="0" dy="-0.5em">Page</tspan><tspan x="0" dy="1.0em">Down</tspan>
 </text>
 </g>
 <g transform="translate(532, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Page</tspan><tspan x="0" dy="1.2em">Up</tspan>
+<tspan x="0" dy="-0.5em">Page</tspan><tspan x="0" dy="1.0em">Up</tspan>
 </text>
 </g>
 <g transform="translate(588, 45)" class="key trans keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(644, 80)" class="key trans keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(28, 136)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:microsoft-windows"/>
-<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:gesture-tap-hold"/>
+<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g transform="translate(84, 101)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ALT</text>
-<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:gesture-tap-hold"/>
+<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:apple-keyboard-control"/>
-<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:gesture-tap-hold"/>
+<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g transform="translate(196, 100)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:apple-keyboard-shift"/>
-<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:gesture-tap-hold"/>
+<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g transform="translate(252, 108)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">RALT</text>
-<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:gesture-tap-hold"/>
+<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g transform="translate(420, 108)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:arrow-left" xlink:href="#mdi:arrow-left" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-left"/>
-<text x="0" y="24" class="key hold">HOME</text>
+<text x="0" y="22" class="key hold">HOME</text>
 </g>
 <g transform="translate(476, 100)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:arrow-down" xlink:href="#mdi:arrow-down" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-down"/>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 71%">LC(END)</tspan></text>
+<text x="0" y="22" class="key hold">LC(END)</text>
 </g>
 <g transform="translate(532, 84)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:arrow-up" xlink:href="#mdi:arrow-up" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-up"/>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 62%">LC(HOME)</tspan></text>
+<text x="0" y="22" class="key hold"><tspan style="font-size: 88%">LC(HOME)</tspan></text>
 </g>
 <g transform="translate(588, 101)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:arrow-right" xlink:href="#mdi:arrow-right" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-right"/>
-<text x="0" y="24" class="key hold">END</text>
+<text x="0" y="22" class="key hold">END</text>
 </g>
 <g transform="translate(644, 136)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">PAUSE</tspan><tspan x="0" dy="1.2em">BREAK</tspan>
+<tspan x="0" dy="-0.5em">PAUSE</tspan><tspan x="0" dy="1.0em">BREAK</tspan>
 </text>
 </g>
 <g transform="translate(28, 192)" class="key keypos-20">
@@ -677,7 +671,7 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(196, 156)" class="key trans keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(252, 164)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -690,7 +684,7 @@ rect.combo, rect.combo-separate {
 <g transform="translate(476, 156)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:backspace-outline"/>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 62%">LC(BSPC)</tspan></text>
+<text x="0" y="22" class="key hold"><tspan style="font-size: 88%">LC(BSPC)</tspan></text>
 </g>
 <g transform="translate(532, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -699,7 +693,7 @@ rect.combo, rect.combo-separate {
 <g transform="translate(588, 157)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:backspace-reverse-outline"/>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 71%">LC(DEL)</tspan></text>
+<text x="0" y="22" class="key hold">LC(DEL)</text>
 </g>
 <g transform="translate(644, 192)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -710,15 +704,15 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(280, 252)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(392, 252)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(448, 238)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="98" y="24" width="28" height="26" class="combo"/>
@@ -747,27 +741,27 @@ rect.combo, rect.combo-separate {
 </g>
 </g>
 <g transform="translate(30, 739)" class="layer-NUM">
-<text x="0" y="28" class="label">NUM:</text>
+<text x="0" y="28" class="label">NUM</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 80)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(84, 45)" class="key trans keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(140, 28)" class="key trans keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(196, 44)" class="key trans keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(252, 52)" class="key trans keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(420, 52)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -791,23 +785,23 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(28, 136)" class="key trans keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(84, 101)" class="key trans keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(140, 84)" class="key trans keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(196, 100)" class="key trans keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(252, 108)" class="key trans keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(420, 108)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -831,23 +825,23 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(28, 192)" class="key trans keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(84, 157)" class="key trans keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(140, 140)" class="key trans keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(196, 156)" class="key trans keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(252, 164)" class="key trans keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(420, 164)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -867,19 +861,19 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(644, 192)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(224, 238)" class="key trans keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(280, 252)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(392, 252)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(448, 238)" class="key held keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
@@ -911,11 +905,11 @@ rect.combo, rect.combo-separate {
 </g>
 </g>
 <g transform="translate(30, 1075)" class="layer-FUN">
-<text x="0" y="28" class="label">FUN:</text>
+<text x="0" y="28" class="label">FUN</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 80)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(84, 45)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -955,19 +949,19 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(28, 136)" class="key trans keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(84, 101)" class="key trans keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(140, 84)" class="key trans keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(196, 100)" class="key trans keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(252, 108)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -995,7 +989,7 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(28, 192)" class="key trans keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(84, 157)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1011,7 +1005,7 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(252, 164)" class="key trans keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(420, 164)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1035,23 +1029,23 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(224, 238)" class="key trans keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(280, 252)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(392, 252)" class="key held keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(448, 238)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 </g>
 </g>
 <g transform="translate(30, 1411)" class="layer-HW">
-<text x="0" y="28" class="label">HW:</text>
+<text x="0" y="28" class="label">HW</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 80)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1059,35 +1053,35 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(84, 45)" class="key trans keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(140, 28)" class="key trans keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(196, 44)" class="key trans keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(252, 52)" class="key trans keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(420, 52)" class="key trans keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(476, 44)" class="key trans keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(532, 28)" class="key trans keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(588, 45)" class="key trans keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(644, 80)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1095,34 +1089,34 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(28, 136)" class="key trans keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(84, 101)" class="key trans keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:usb" xlink:href="#mdi:usb" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:usb"/>
 </g>
-<g transform="translate(196, 100)" class="key keypos-13">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:toggle-switch" xlink:href="#mdi:toggle-switch" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:toggle-switch"/>
-<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:bluetooth"/>
-<use href="#mdi:usb" xlink:href="#mdi:usb" x="-5" y="-24" height="10" width="10.0" class="key shifted glyph mdi:usb"/>
+<g transform="translate(196, 100)" class="key toggle keypos-13">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key toggle"/>
+<use href="#mdi:toggle-switch" xlink:href="#mdi:toggle-switch" x="-7" y="-7" height="14" width="14.0" class="key toggle tap glyph mdi:toggle-switch"/>
+<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="10" height="12" width="12.0" class="key toggle hold glyph mdi:bluetooth"/>
+<use href="#mdi:usb" xlink:href="#mdi:usb" x="-5" y="-22" height="10" width="10.0" class="key toggle shifted glyph mdi:usb"/>
 </g>
 <g transform="translate(252, 108)" class="key trans keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(420, 108)" class="key trans keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(476, 100)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:skip-next" xlink:href="#mdi:skip-next" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:skip-next"/>
-<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:bluetooth"/>
+<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:bluetooth"/>
 </g>
 <g transform="translate(532, 84)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1134,61 +1128,61 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(644, 136)" class="key trans keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(28, 192)" class="key trans keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(84, 157)" class="key trans keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(140, 140)" class="key trans keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(196, 156)" class="key trans keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(252, 164)" class="key trans keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(420, 164)" class="key trans keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(476, 156)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:numeric-0" xlink:href="#mdi:numeric-0" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:numeric-0"/>
-<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:bluetooth"/>
+<text x="0" y="0" class="key tap">0</text>
+<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:bluetooth"/>
 </g>
 <g transform="translate(532, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:numeric-1" xlink:href="#mdi:numeric-1" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:numeric-1"/>
-<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:bluetooth"/>
+<text x="0" y="0" class="key tap">1</text>
+<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:bluetooth"/>
 </g>
 <g transform="translate(588, 157)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:numeric-3" xlink:href="#mdi:numeric-3" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:numeric-3"/>
-<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:bluetooth"/>
+<text x="0" y="0" class="key tap">3</text>
+<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:bluetooth"/>
 </g>
 <g transform="translate(644, 192)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(224, 238)" class="key held keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(280, 252)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(392, 252)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(448, 238)" class="key held keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
@@ -1196,33 +1190,33 @@ rect.combo, rect.combo-separate {
 </g>
 </g>
 <g transform="translate(30, 1747)" class="layer-GER">
-<text x="0" y="28" class="label">GER:</text>
+<text x="0" y="28" class="label">GER</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 80)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(84, 45)" class="key held keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(140, 28)" class="key trans keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(196, 44)" class="key held keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(252, 52)" class="key trans keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(420, 52)" class="key trans keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(476, 44)" class="key trans keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(532, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1242,7 +1236,7 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(84, 101)" class="key trans keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1250,27 +1244,27 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(196, 100)" class="key trans keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(252, 108)" class="key trans keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(420, 108)" class="key trans keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(476, 100)" class="key trans keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(532, 84)" class="key trans keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(588, 101)" class="key trans keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(644, 136)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1278,194 +1272,194 @@ rect.combo, rect.combo-separate {
 </g>
 <g transform="translate(28, 192)" class="key trans keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(84, 157)" class="key trans keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(140, 140)" class="key trans keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(196, 156)" class="key trans keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(252, 164)" class="key trans keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(420, 164)" class="key trans keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(476, 156)" class="key trans keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(532, 140)" class="key trans keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(588, 157)" class="key trans keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(644, 192)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(224, 238)" class="key trans keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(280, 252)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(392, 252)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(448, 238)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 </g>
 </g>
 <g transform="translate(30, 2083)" class="layer-MSE">
-<text x="0" y="28" class="label">MSE:</text>
+<text x="0" y="28" class="label">MSE</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 80)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(84, 45)" class="key trans keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(140, 28)" class="key trans keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(196, 44)" class="key trans keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(252, 52)" class="key trans keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(420, 52)" class="key trans keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(476, 44)" class="key trans keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(532, 28)" class="key trans keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(588, 45)" class="key trans keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(644, 80)" class="key trans keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(28, 136)" class="key trans keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(84, 101)" class="key trans keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(140, 84)" class="key trans keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(196, 100)" class="key trans keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(252, 108)" class="key trans keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(420, 108)" class="key trans keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(476, 100)" class="key trans keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(532, 84)" class="key trans keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(588, 101)" class="key trans keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(644, 136)" class="key trans keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(28, 192)" class="key trans keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(84, 157)" class="key trans keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(140, 140)" class="key trans keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(196, 156)" class="key held keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(252, 164)" class="key trans keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(420, 164)" class="key trans keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(476, 156)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">4</text>
-<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:cursor-default-click-outline"/>
+<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:cursor-default-click-outline"/>
 </g>
 <g transform="translate(532, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">3</text>
-<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:cursor-default-click-outline"/>
+<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:cursor-default-click-outline"/>
 </g>
 <g transform="translate(588, 157)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">5</text>
-<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:cursor-default-click-outline"/>
+<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-6" y="10" height="12" width="12.0" class="key hold glyph mdi:cursor-default-click-outline"/>
 </g>
 <g transform="translate(644, 192)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(224, 238)" class="key trans keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(280, 252)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<use href="#mdi:menu-down-outline" xlink:href="#mdi:menu-down-outline" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:menu-down-outline"/>
 </g>
 <g transform="translate(392, 252)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

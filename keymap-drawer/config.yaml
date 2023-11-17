@@ -1,78 +1,48 @@
 draw_config:
-  key_h: 56.0
-  split_gap: 30.0
-  combo_w: 28.0
-  combo_h: 26.0
-  key_rx: 6.0
-  key_ry: 6.0
-  
-  inner_pad_w: 2.0
-  inner_pad_h: 2.0
-  outer_pad_w: 30.0
-  outer_pad_h: 56.0
-  line_spacing: 1.2
-  arc_radius: 6.0
-  append_colon_to_layer_header: true
-  small_pad: 2.0
+  line_spacing: 1.0
+  arc_radius: 10.0
+  append_colon_to_layer_header: false
+  small_pad: 4.0
   legend_rel_x: 0.0
   legend_rel_y: 0.0
 
-  svg_extra_style: | 
+  svg_extra_style: |
     .combo.shifted {
-        translate: -9px -2px;
+        translate: -9px 0px;
     }
     .shifted.mdi\:usb {
-      translate: -12px 19px;
+      translate: -12px 17px;
     }
     .hold.mdi\:bluetooth {
-      translate: 12px -18px;
+      translate: 12px -16px;
     } 
     .hold.mdi\:cursor-default-click-outline {
-      translate: -8px -12px;
+      translate: -8px -10px;
     } 
     rect.combo, rect.combo-separate {
         opacity: 0.95;
     }
-  shrink_wide_legends: 5
+    
+  shrink_wide_legends: 7
+  
   glyph_tap_size: 14
   glyph_hold_size: 12
   glyph_shifted_size: 10
+  
   glyphs: {}
   glyph_urls:
     tabler: https://tabler-icons.io/static/tabler-icons/icons/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
+    
   use_local_cache: true
+  
 parse_config:
   preprocess: false
   skip_binding_parsing: false
+  
   raw_binding_map: 
-    # Bluetooth
-    '&bt BT_SEL 0':
-      shifted: $$mdi:bluetooth-connect$$
-      tap: ''
-      hold: 1
-    '&bt BT_SEL 1':
-      shifted: $$mdi:bluetooth-connect$$
-      tap: ''
-      hold: 2
-    '&bt BT_SEL 2':
-      shifted: $$mdi:bluetooth-connect$$
-      tap: ''
-      hold: 3
-    '&bt BT_SEL 3':
-      shifted: $$mdi:bluetooth-connect$$
-      tap: ''
-      hold: 4
-    '&bt BT_SEL 4':
-      shifted: $$mdi:bluetooth-connect$$
-      tap: ''
-      hold: 5
-    '&out OUT_TOG':
-      shifted: $$mdi:usb$$
-      tap: $$mdi:toggle-switch$$
-      hold: $$mdi:bluetooth$$
       
     '&sys_reset':
       type: bootloader
@@ -95,16 +65,23 @@ parse_config:
     '&bkt_macro': '[]'
     '&brc_macro': '{}'
     '&lgt_macro': '<>'
+    
     '&bt BT_CLR': '$$mdi:bluetooth-off$$'
-    '&out OUT_BLE': '$$mdi:bluetooth$$'
-    '&out OUT_USB': '$$mdi:usb$$'
-    '&bt BT_SEL 0': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-0$$}
-    '&bt BT_SEL 1': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-1$$}
-    '&bt BT_SEL 2': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-2$$}
-    '&bt BT_SEL 3': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-3$$}
-    '&bt BT_SEL 4': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-4$$}
+    '&bt BT_SEL 0': {h: $$mdi:bluetooth$$ , t: '0'}
+    '&bt BT_SEL 1': {h: $$mdi:bluetooth$$ , t: '1'}
+    '&bt BT_SEL 2': {h: $$mdi:bluetooth$$ , t: '2'}
+    '&bt BT_SEL 3': {h: $$mdi:bluetooth$$ , t: '3'}
+    '&bt BT_SEL 4': {h: $$mdi:bluetooth$$ , t: '4'}
     '&bt BT_PRV':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-previous$$}
     '&bt BT_NXT':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-next$$}
+    
+    '&out OUT_BLE': '$$mdi:bluetooth$$'
+    '&out OUT_USB': '$$mdi:usb$$'
+    '&out OUT_TOG':
+      shifted: $$mdi:usb$$
+      tap: $$mdi:toggle-switch$$
+      hold: $$mdi:bluetooth$$
+      type: toggle
     
     '&mkp LCLK': '$$mdi:cursor-default-click-outline$$'
     '&mkp RCLK': '$$mdi:cursor-default-click$$'
@@ -114,7 +91,7 @@ parse_config:
     
   sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
-    t: ▽
+    t: '$$mdi:menu-down-outline$$'
     type: trans
   zmk_keycode_map:
     EXCLAMATION: '!'
