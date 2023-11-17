@@ -277,11 +277,8 @@ rect.combo, rect.combo-separate {
 } 
 
 .trans.tap {
-    opacity: 0.7;
+    opacity: 0.5;
 }
-.key.trans {
-    fill-opacity: 0.5;
-}  
 </style>
 <g transform="translate(30, 0)" class="layer-BSE">
 <text x="0" y="28" class="label">BSE</text>

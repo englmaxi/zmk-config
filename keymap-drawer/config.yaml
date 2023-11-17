@@ -31,11 +31,8 @@ draw_config:
     } 
     
     .trans.tap {
-        opacity: 0.7;
+        opacity: 0.5;
     }
-    .key.trans {
-        fill-opacity: 0.5;
-    }  
     
   shrink_wide_legends: 7
   
