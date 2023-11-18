@@ -276,6 +276,12 @@ svg.keymap {
   font-size: 10px;
   font-weight: bold;
 }
+    
+text.label {
+  stroke: #dfdfde;
+  stroke-width: 12;
+  stroke-linejoin: round;
+}
 
 rect.combo, rect.combo-separate {
   opacity: 0.95;
