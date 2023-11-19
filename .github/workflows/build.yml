@@ -1,10 +1,14 @@
 name: Build ZMK firmware
 on:
-  workflow_dispatch:  # can be triggered manually
+  workflow_dispatch:
   pull_request:
-  push:               # automatically run on changes to following paths
+  push:
     paths:
-      - "config/*"
+      - "config/*.conf"
+      - "config/*.dtsi"
+      - "config/*.h"
+      - "config/*.keymap"
+      - "config/boards/**"
       - "build.yaml"
 
 jobs:
