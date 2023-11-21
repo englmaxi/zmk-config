@@ -11,6 +11,16 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#define DEF 0
+#define NAV 1
+#define NUM 2
+#define FUN 3
+#define HW 4
+#define GER 5
+#define MSE 6
+
+#include "combos.dtsi"
+
 &caps_word {
     continue-list = <DE_UNDERSCORE BACKSPACE DELETE DE_MINUS N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
 };
