@@ -19,6 +19,10 @@
 #define GER 5
 #define MSE 6
 
+#define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24  // left hand
+#define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29  // right hand
+#define THUMBS 30 31 32 33                              // thumbs
+
 #include "combos.dtsi"
 
 &caps_word {
@@ -602,10 +606,10 @@
 
         base_layer {
             bindings = <
-&kp Q        &kp W        &kp F         &kp P          &kp B               &kp J        &kp L         &kp U         &kp DE_Y     &td_sqt_dqt
-&hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHIFT T  &kp G               &kp M        &hmr RSHFT N  &hmr LCTRL E  &hmr LALT I  &hmr LGUI O
-&kp DE_Z     &kp X        &kp C         &lt 6 D        &kp V               &kp K        &kp H         &kp DE_COMMA  &kp DE_DOT   &qexcl
-                                        &mo 1          &mt_td_scw LSHFT 0  &lt 3 SPACE  &mo 2
+&kp Q        &kp W        &kp F         &kp P          &kp B               &kp J         &kp L         &kp U         &kp DE_Y     &td_sqt_dqt
+&hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHIFT T  &kp G               &kp M         &hmr RSHFT N  &hmr LCTRL E  &hmr LALT I  &hmr LGUI O
+&kp DE_Z     &kp X        &kp C         &lt 6 D        &kp V               &kp K         &kp H         &kp DE_COMMA  &kp DE_DOT   &qexcl
+                                        &mo NAV        &mt_td_scw LSHFT 0  &lt FUN SPACE &mo NUM
             >;
 
             label = "BSE";
