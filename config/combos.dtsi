@@ -32,11 +32,11 @@
     combos {
         compatible = "zmk,combos";
 
-        COMBO(esc,      &kp ESC,        1  2, DEF FUN NUM,  COMBO_TERM_SLOW)
-        COMBO(enter,    &kp RET,        2  3, DEF FUN NUM,  COMBO_TERM_SLOW)
-        COMBO(ger,      &sl GER,        1  2, DEF,          COMBO_TERM_SLOW)
+        COMBO(esc,      &kp ESC,         1  2, DEF FUN NUM,  COMBO_TERM_SLOW)
+        COMBO(enter,    &kp RET,         2  3, DEF FUN NUM,  COMBO_TERM_SLOW)
+        COMBO(ger,      &sl GER,         1  3, DEF,          COMBO_TERM_SLOW)
 
-        COMBO(tab,      HRC_TAB,       11 12, DEF FUN NUM, COMBO_TERM_SLOW)
+        COMBO(tab,      HRC_TAB,        11 12, DEF FUN NUM, COMBO_TERM_SLOW)
         COMBO(repeat,   HRC_REPEAT,     12 13, DEF FUN NUM, COMBO_TERM_SLOW)
 
         COMBO(lbkt,     &lbkt_lbrc,      6  7, DEF,         COMBO_TERM_SLOW)
