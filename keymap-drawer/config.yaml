@@ -112,11 +112,11 @@ parse_config:
     '&brc_macro': '{ }'
     '&lgt_macro': '< >'
 
-    '&kp COMMA':
+    '&kp DE_COMMA':
       tap: ','
       shifted: ';'
     
-    '&kp DOT':
+    '&kp DE_DOT':
       tap: '.'
       shifted: ':'
     
