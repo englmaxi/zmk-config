@@ -9,7 +9,7 @@ layers:
   - J
   - L
   - U
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Z))'
+  - Y
   - {t: '''', s: '"'}
   - {t: A, h: '$$mdi:microsoft-windows$$'}
   - {t: R, h: ALT}
@@ -21,16 +21,16 @@ layers:
   - {t: E, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: ALT}
   - {t: O, h: '$$mdi:microsoft-windows$$'}
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y))'
+  - Z
   - X
   - C
   - {t: D, h: MSE}
   - V
   - K
   - H
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_COMMA_AND_LESS_THAN))'
-  - '&kp ((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_PERIOD_AND_GREATER_THAN)))'
-  - {t: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE))))', s: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_1_AND_EXCLAMATION))))'}
+  - ','
+  - .
+  - {t: '?', s: '!'}
   - NAV
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-space$$', h: FUN}
@@ -56,7 +56,7 @@ layers:
   - {t: '$$mdi:arrow-up$$', h: '$$mdi:format-vertical-align-top$$'}
   - {t: '$$mdi:arrow-right$$', h: '$$mdi:format-horizontal-align-right$$'}
   - Pause Break
-  - '&kp LC((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y)))'
+  - $$mdi:undo$$
   - $$mdi:content-cut$$
   - $$mdi:content-copy$$
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -76,7 +76,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - '&kp ((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_PERIOD_AND_GREATER_THAN)))'
+  - .
   - '7'
   - '8'
   - '9'
@@ -86,7 +86,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_COMMA_AND_LESS_THAN))'
+  - ','
   - '4'
   - '5'
   - '6'
@@ -115,7 +115,7 @@ layers:
   - F7
   - F8
   - F9
-  - '&kp LC((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE)))'
+  - $$mdi:magnify-plus-outline$$
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -125,7 +125,7 @@ layers:
   - F4
   - F5
   - F6
-  - '&kp LC((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK)))'
+  - $$mdi:magnify-minus-outline$$
   - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:skip-backward$$
   - $$mdi:play-pause$$
@@ -183,19 +183,19 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_LEFT_BRACKET_AND_LEFT_BRACE))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_EQUAL_AND_PLUS))'
-  - '&kp (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_EQUAL_AND_PLUS)))'
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_APOSTROPHE_AND_QUOTE))'
+  - Ü
+  - ´
+  - '`'
+  - Ä
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - '&kp ((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE)))'
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - DE SZ
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SEMICOLON_AND_COLON))'
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - Ö
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -286,56 +286,56 @@ combos:
   k: $$mdi:backspace-reverse-outline$$
   l: [DEF, FUN, NUM]
 - p: [4, 14]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_5_AND_PERCENT))))'
+  k: '%'
   l: [DEF]
 - p: [3, 13]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_4_AND_DOLLAR))))'
+  k: $
   l: [DEF]
 - p: [2, 12]
-  k: '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_BACKSLASH_AND_PIPE))'
+  k: '#'
   l: [DEF]
 - p: [1, 11]
-  k: '&kp ((RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Q))))'
+  k: '@'
   l: [DEF]
 - p: [14, 24]
-  k: '&kp (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE)))'
+  k: '~'
   l: [DEF]
 - p: [13, 23]
-  k: '&kp (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_0_AND_RIGHT_PARENTHESIS)))'
+  k: '='
   l: [DEF]
 - p: [12, 22]
-  k: '&kp ((RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE))))'
+  k: \
   l: [DEF]
 - p: [11, 21]
-  k: '&kp (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_E)))'
+  k: €
   l: [DEF]
 - p: [5, 15]
-  k: '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_GRAVE_ACCENT_AND_TILDE))'
+  k: ^
   l: [DEF]
 - p: [6, 16]
-  k: '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE))'
+  k: +
   l: [DEF]
 - p: [7, 17]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE))))'
+  k: '*'
   l: [DEF]
 - p: [8, 18]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_6_AND_CARET))))'
+  k: '&'
   l: [DEF]
 - p: [9, 19]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_3_AND_HASH))))'
+  k: §
   l: [DEF]
 - p: [15, 25]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK))))'
+  k: _
   l: [DEF]
 - p: [16, 26]
-  k: '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK))'
+  k: '-'
   l: [DEF]
 - p: [17, 27]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_7_AND_AMPERSAND))))'
+  k: /
   l: [DEF]
 - p: [18, 28]
-  k: '&kp (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_NON_US_BACKSLASH_AND_PIPE)))'
+  k: '|'
   l: [DEF]
 - p: [19, 29]
-  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_GRAVE_ACCENT_AND_TILDE))))'
+  k: °
   l: [DEF]
