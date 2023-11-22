@@ -73,7 +73,7 @@ draw_config:
   use_local_cache: true
   
 parse_config:
-  preprocess: false
+  preprocess: true
   skip_binding_parsing: false
   
   raw_binding_map: 

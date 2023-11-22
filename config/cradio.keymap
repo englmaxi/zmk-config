@@ -4,9 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
+#ifndef KEYMAP_DRAWER
+#include "keys_de.h"
+#endif
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/mouse.h>
-#include "keys_de.h"
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -353,7 +356,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        fun_cond {
+        tri_layer  {
             if-layers = <NAV NUM>;
             then-layer = <HW>;
         };
@@ -415,10 +418,10 @@
         ger_layer {
             label = "GER";
             bindings = <
-&trans           &trans  &trans         &trans  &trans  &trans  &trans  &kp DE_U_UMLAUT  &kp DE_ACUTE  &kp DE_GRAVE
-&kp DE_A_UMLAUT  &trans  &kp DE_ESZETT  &trans  &trans  &trans  &trans  &trans           &trans        &kp DE_O_UMLAUT
-&trans           &trans  &trans         &trans  &trans  &trans  &trans  &trans           &trans        &trans
-                                        &trans  &trans  &trans  &trans
+&trans           &trans  &trans     &trans  &trans  &trans  &trans  &kp DE_U_UMLAUT  &kp DE_ACUTE  &kp DE_GRAVE
+&kp DE_A_UMLAUT  &trans  &kp DE_SZ  &trans  &trans  &trans  &trans  &trans           &trans        &kp DE_O_UMLAUT
+&trans           &trans  &trans     &trans  &trans  &trans  &trans  &trans           &trans        &trans
+                                    &trans  &trans  &trans  &trans
             >;
         };
 
