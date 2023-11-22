@@ -1,0 +1,341 @@
+layout: {qmk_keyboard: ferris/sweep}
+layers:
+  DEF:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Z))'
+  - {t: '''', s: '"'}
+  - {t: A, h: '$$mdi:microsoft-windows$$'}
+  - {t: R, h: ALT}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - G
+  - M
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: I, h: ALT}
+  - {t: O, h: '$$mdi:microsoft-windows$$'}
+  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y))'
+  - X
+  - C
+  - {t: D, h: MSE}
+  - V
+  - K
+  - H
+  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_COMMA_AND_LESS_THAN))'
+  - '&kp ((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_PERIOD_AND_GREATER_THAN)))'
+  - {t: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE))))', s: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_1_AND_EXCLAMATION))))'}
+  - NAV
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-space$$', h: FUN}
+  - NUM
+  NAV:
+  - ESC
+  - $$mdi:close-box-outline$$
+  - $$mdi:text-search$$
+  - $$mdi:backspace-outline$$
+  - INS
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - Page Down
+  - Page Up
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:microsoft-windows$$', h: '$$mdi:circle-small$$'}
+  - {t: ALT, h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
+  - {t: RALT, h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:arrow-left$$', h: '$$mdi:format-horizontal-align-left$$'}
+  - {t: '$$mdi:arrow-down$$', h: '$$mdi:format-vertical-align-bottom$$'}
+  - {t: '$$mdi:arrow-up$$', h: '$$mdi:format-vertical-align-top$$'}
+  - {t: '$$mdi:arrow-right$$', h: '$$mdi:format-horizontal-align-right$$'}
+  - Pause Break
+  - '&kp LC((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y)))'
+  - $$mdi:content-cut$$
+  - $$mdi:content-copy$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - $$mdi:content-paste$$
+  - $$mdi:keyboard-return$$
+  - {t: '$$mdi:backspace-outline$$', h: '$$mdi:backspace$$'}
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:backspace-reverse$$'}
+  - $$mdi:monitor-screenshot$$
+  - {type: held}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  NUM:
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - '&kp ((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_PERIOD_AND_GREATER_THAN)))'
+  - '7'
+  - '8'
+  - '9'
+  - $$mdi:backspace-outline$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_COMMA_AND_LESS_THAN))'
+  - '4'
+  - '5'
+  - '6'
+  - $$mdi:keyboard-return$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
+  FUN:
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - $$mdi:volume-minus$$
+  - $$mdi:volume-mute$$
+  - $$mdi:volume-plus$$
+  - $$tabler:brightness-up$$
+  - F12
+  - F7
+  - F8
+  - F9
+  - '&kp LC((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE)))'
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - $$tabler:brightness-down$$
+  - F11
+  - F4
+  - F5
+  - F6
+  - '&kp LC((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK)))'
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - $$mdi:skip-backward$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-forward$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - F10
+  - F1
+  - F2
+  - F3
+  - $$mdi:magnify-remove-outline$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  HW:
+  - $$mdi:progress-download$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - $$mdi:progress-download$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - $$mdi:usb$$
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:skip-next$$', h: '$$mdi:bluetooth$$', type: text_with_symbol}
+  - $$mdi:bluetooth$$
+  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '0', h: '$$mdi:bluetooth$$', type: text_with_symbol}
+  - {t: '1', h: '$$mdi:bluetooth$$', type: text_with_symbol}
+  - {t: '2', h: '$$mdi:bluetooth$$', type: text_with_symbol}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
+  GER:
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_LEFT_BRACKET_AND_LEFT_BRACE))'
+  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_EQUAL_AND_PLUS))'
+  - '&kp (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_EQUAL_AND_PLUS)))'
+  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_APOSTROPHE_AND_QUOTE))'
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - '&kp ((ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE)))'
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SEMICOLON_AND_COLON))'
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  MSE:
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '4', h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
+  - {t: '3', h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
+  - {t: '5', h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - $$mdi:cursor-default-click-outline$$
+  - $$mdi:cursor-default-click$$
+combos:
+- p: [1, 2]
+  k: ESC
+  l: [DEF, FUN, NUM]
+- p: [2, 3]
+  k: $$mdi:keyboard-return$$
+  l: [DEF, FUN, NUM]
+- p: [1, 3]
+  k: {t: GER, h: '$$mdi:circle-small$$'}
+  l: [DEF]
+- p: [11, 12]
+  k: $$mdi:keyboard-tab$$
+  l: [DEF, FUN, NUM]
+- p: [12, 13]
+  k: $$mdi:repeat$$
+  l: [DEF, FUN, NUM]
+- p: [6, 7]
+  k: {t: '[', s: '{'}
+  l: [DEF]
+- p: [7, 8]
+  k: {t: ']', s: '}'}
+  l: [DEF]
+- p: [6, 8]
+  k: {t: '[]', s: '{ }'}
+  l: [DEF]
+- p: [16, 17]
+  k: {t: (, s: <}
+  l: [DEF]
+- p: [17, 18]
+  k: {t: ), s: '>'}
+  l: [DEF]
+- p: [16, 18]
+  k: {t: ( ), h: LS(LALT), s: < >}
+  l: [DEF]
+- p: [26, 27]
+  k: $$mdi:backspace-outline$$
+  l: [DEF, FUN, NUM]
+- p: [27, 23]
+  k: $$mdi:backspace-reverse-outline$$
+  l: [DEF, FUN, NUM]
+- p: [4, 14]
+  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_5_AND_PERCENT))))'
+  l: [DEF]
+- p: [3, 13]
+  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_4_AND_DOLLAR))))'
+  l: [DEF]
+- p: [2, 12]
+  k: '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_BACKSLASH_AND_PIPE))'
+  l: [DEF]
+- p: [1, 11]
+  k: '&kp ((RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Q))))'
+  l: [DEF]
+- p: [14, 24]
+  k: '&kp (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE)))'
+  l: [DEF]
+- p: [13, 23]
+  k: '&kp (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_0_AND_RIGHT_PARENTHESIS)))'
+  l: [DEF]
+- p: [12, 22]
+  k: '&kp ((RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE))))'
+  l: [DEF]
+- p: [11, 21]
+  k: '&kp (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_E)))'
+  l: [DEF]
+- p: [5, 15]
+  k: '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_GRAVE_ACCENT_AND_TILDE))'
+  l: [DEF]
+- p: [6, 16]
+  k: '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE))'
+  l: [DEF]
+- p: [7, 17]
+  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE))))'
+  l: [DEF]
+- p: [8, 18]
+  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_6_AND_CARET))))'
+  l: [DEF]
+- p: [9, 19]
+  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_3_AND_HASH))))'
+  l: [DEF]
+- p: [15, 25]
+  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK))))'
+  l: [DEF]
+- p: [16, 26]
+  k: '&kp (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SLASH_AND_QUESTION_MARK))'
+  l: [DEF]
+- p: [17, 27]
+  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_7_AND_AMPERSAND))))'
+  l: [DEF]
+- p: [18, 28]
+  k: '&kp (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_NON_US_BACKSLASH_AND_PIPE)))'
+  l: [DEF]
+- p: [19, 29]
+  k: '&kp ((LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_GRAVE_ACCENT_AND_TILDE))))'
+  l: [DEF]
