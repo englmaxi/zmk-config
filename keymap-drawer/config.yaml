@@ -186,7 +186,6 @@ parse_config:
       offset: 0.6
       
   zmk_keycode_map:
-
     LALT: ALT
     
     SPACE: $$mdi:keyboard-space$$
@@ -343,69 +342,3 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
-    
-    # default german
-    DE_EXCLAMATION: '!'
-    DE_EXCL: '!'
-    DE_AT_SIGN: '@'
-    DE_AT: '@'
-    DE_HASH: '#'
-    DE_POUND: '#'
-    DE_DOLLAR: $
-    DE_DLLR: $
-    DE_PERCENT: '%'
-    DE_PRCNT: '%'
-    DE_CARET: ^
-    DE_AMPERSAND: '&'
-    DE_AMPS: '&'
-    DE_ASTERISK: '*'
-    DE_ASTRK: '*'
-    DE_STAR: '*'
-    DE_LEFT_PARENTHESIS: (
-    DE_LPAR: (
-    DE_RIGHT_PARENTHESIS: )
-    DE_RPAR: )
-    DE_EQUAL: '='
-    DE_PLUS: +
-    DE_MINUS: '-'
-    DE_UNDERSCORE: _
-    DE_UNDER: _
-    DE_SLASH: /
-    DE_FSLH: /
-    DE_QUESTION: '?'
-    DE_QMARK: '?'
-    DE_BACKSLASH: \
-    DE_BSLH: \
-    DE_PIPE: '|'
-    DE_NON_US_BACKSLASH: \
-    DE_PIPE2: '|'
-    DE_NON_US_BSLH: '|'
-    DE_SEMICOLON: ;
-    DE_SEMI: ;
-    DE_COLON: ':'
-    DE_SINGLE_QUOTE: ''''
-    DE_SQT: ''''
-    DE_APOSTROPHE: <
-    DE_APOS: .
-    DE_DOUBLE_QUOTES: '"'
-    DE_DQT: '"'
-    DE_COMMA: ','
-    DE_LESS_THAN: <
-    DE_LT: <
-    #DE_PERIOD: .
-    #DE_DOT: .
-    DE_GREATER_THAN: '>'
-    DE_GT: '>'
-    DE_LEFT_BRACKET: '['
-    DE_LBKT: '['
-    DE_LEFT_BRACE: '{'
-    DE_LBRC: '{'
-    DE_RIGHT_BRACKET: ']'
-    DE_RBKT: ']'
-    DE_RIGHT_BRACE: '}'
-    DE_RBRC: '}'
-    DE_GRAVE: '`'
-    DE_TILDE: '~'
-    DE_NON_US_HASH: '#'
-    DE_NUHS: '#'
-    DE_TILDE2: '~'
