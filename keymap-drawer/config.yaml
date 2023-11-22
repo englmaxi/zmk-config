@@ -171,16 +171,16 @@ parse_config:
     type: trans
     
   zmk_combos:
-    par:
+    combo_par:
       align: bottom
       offset: 1.2
       key:
         tap: '()'
         shifted: '<>'
-    bkt:
+    combo_bkt:
       align: top
       offset: 0.6
-    ger:
+    combo_ger:
       align: top
       offset: 0.6
       
@@ -276,7 +276,7 @@ parse_config:
     DE_A_UMLAUT: 'Ä'
     DE_U_UMLAUT: 'Ü'
     DE_O_UMLAUT: 'Ö'
-    DE_ESZETT: 'ß'
+    DE_SZ: 'ß'
     DE_ACUTE: '´'
     DE_GRAVE: '`'
     
