@@ -48,7 +48,7 @@
         COMBO(par,      HRC_PAR,        16 18, DEF,         COMBO_TERM_SLOW)
 
         COMBO(bspc,     &kp BSPC,       26 27, DEF FUN NUM, COMBO_TERM_SLOW)
-        COMBO(del,      &kp DEL,        27 23, DEF FUN NUM, COMBO_TERM_SLOW)
+        COMBO(del,      &kp DEL,        27 28, DEF FUN NUM, COMBO_TERM_SLOW)
 
         COMBO(prcnt,    &kp DE_PRCNT,    4 14, DEF,         COMBO_TERM_FAST)
         COMBO(dllr,     &kp DE_DLLR,     3 13, DEF,         COMBO_TERM_FAST)
