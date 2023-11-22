@@ -288,7 +288,7 @@ combos:
 - p: [26, 27]
   k: $$mdi:backspace-outline$$
   l: [DEF, FUN, NUM]
-- p: [27, 23]
+- p: [27, 28]
   k: $$mdi:backspace-reverse-outline$$
   l: [DEF, FUN, NUM]
 - p: [4, 14]

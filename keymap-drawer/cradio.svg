@@ -563,10 +563,8 @@ rect.held, rect.combo.held {
 <use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="497" y="141" height="14" width="14.0" class="combo tap glyph mdi:backspace-outline"/>
 </g>
 <g class="combo combopos-12">
-<path d="M364,148 l149,-7" class="combo"/>
-<path d="M364,148 l-149,7" class="combo"/>
-<rect rx="6" ry="6" x="350" y="135" width="28" height="26" class="combo"/>
-<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="357" y="141" height="14" width="14.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
+<rect rx="6" ry="6" x="546" y="138" width="28" height="26" class="combo"/>
+<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="553" y="144" height="14" width="14.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
 </g>
 <g class="combo combopos-13">
 <rect rx="6" ry="6" x="238" y="71" width="28" height="26" class="combo"/>
@@ -1026,10 +1024,8 @@ rect.held, rect.combo.held {
 <use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="497" y="141" height="14" width="14.0" class="combo tap glyph mdi:backspace-outline"/>
 </g>
 <g class="combo combopos-5">
-<path d="M364,148 l149,-7" class="combo"/>
-<path d="M364,148 l-149,7" class="combo"/>
-<rect rx="6" ry="6" x="350" y="135" width="28" height="26" class="combo"/>
-<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="357" y="141" height="14" width="14.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
+<rect rx="6" ry="6" x="546" y="138" width="28" height="26" class="combo"/>
+<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="553" y="144" height="14" width="14.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
 </g>
 </g>
 </g>
@@ -1226,10 +1222,8 @@ rect.held, rect.combo.held {
 <use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="497" y="141" height="14" width="14.0" class="combo tap glyph mdi:backspace-outline"/>
 </g>
 <g class="combo combopos-5">
-<path d="M364,148 l149,-7" class="combo"/>
-<path d="M364,148 l-149,7" class="combo"/>
-<rect rx="6" ry="6" x="350" y="135" width="28" height="26" class="combo"/>
-<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="357" y="141" height="14" width="14.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
+<rect rx="6" ry="6" x="546" y="138" width="28" height="26" class="combo"/>
+<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="553" y="144" height="14" width="14.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
 </g>
 </g>
 </g>
