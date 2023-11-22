@@ -274,16 +274,16 @@ parse_config:
     LC(DE_MINUS): $$mdi:magnify-minus-outline$$
     LC(N0): $$mdi:magnify-remove-outline$$
 
-    DE_SECT: '§'
-    DE_DEG: '°'
-    DE_EURO: '€'
+    SECT: '§'
+    DEG: '°'
+    EURO: '€'
 
-    DE_A_UMLAUT: 'Ä'
-    DE_U_UMLAUT: 'Ü'
-    DE_O_UMLAUT: 'Ö'
-    DE_SZ: 'ß'
-    DE_ACUTE: '´'
-    DE_GRAVE: '`'
+    A_UMLAUT: 'Ä'
+    U_UMLAUT: 'Ü'
+    O_UMLAUT: 'Ö'
+    SZ: 'ß'
+    ACUTE: '´'
+    GRAVE: '`'
     
     # default
     EXCLAMATION: '!'
