@@ -183,19 +183,19 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - U UMLAUT
-  - ACUTE
+  - Ü
+  - ´
   - '`'
-  - A UMLAUT
+  - Ä
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - SZ
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ß
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - O UMLAUT
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - Ö
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -313,7 +313,7 @@ combos:
   k: \
   l: [DEF]
 - p: [11, 21]
-  k: EURO
+  k: €
   l: [DEF]
 - p: [5, 15]
   k: ^
@@ -328,7 +328,7 @@ combos:
   k: '&'
   l: [DEF]
 - p: [9, 19]
-  k: SECT
+  k: §
   l: [DEF]
 - p: [15, 25]
   k: _
@@ -343,5 +343,5 @@ combos:
   k: '|'
   l: [DEF]
 - p: [19, 29]
-  k: DEG
+  k: °
   l: [DEF]
