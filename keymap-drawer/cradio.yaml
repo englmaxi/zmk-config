@@ -115,7 +115,7 @@ layers:
   - F7
   - F8
   - F9
-  - $$mdi:magnify-plus-outline$$
+  - LC(PLUS)
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -125,7 +125,7 @@ layers:
   - F4
   - F5
   - F6
-  - $$mdi:magnify-minus-outline$$
+  - LC(MINUS)
   - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:skip-backward$$
   - $$mdi:play-pause$$
@@ -183,19 +183,19 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - Ü
-  - ´
+  - U UMLAUT
+  - ACUTE
   - '`'
-  - Ä
+  - A UMLAUT
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - ß
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - SZ
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - Ö
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - O UMLAUT
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -313,7 +313,7 @@ combos:
   k: \
   l: [DEF]
 - p: [11, 21]
-  k: €
+  k: EURO
   l: [DEF]
 - p: [5, 15]
   k: ^
@@ -328,7 +328,7 @@ combos:
   k: '&'
   l: [DEF]
 - p: [9, 19]
-  k: §
+  k: SECT
   l: [DEF]
 - p: [15, 25]
   k: _
@@ -343,5 +343,5 @@ combos:
   k: '|'
   l: [DEF]
 - p: [19, 29]
-  k: °
+  k: DEG
   l: [DEF]
