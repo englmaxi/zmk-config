@@ -75,6 +75,7 @@ draw_config:
 parse_config:
   preprocess: true
   skip_binding_parsing: false
+  zmk_remove_keycode_prefix: ["DE_"]
   
   raw_binding_map: 
       
@@ -266,9 +267,6 @@ parse_config:
     LC(DE_MINUS): $$mdi:magnify-minus-outline$$
     LC(N0): $$mdi:magnify-remove-outline$$
 
-    DE_Z: 'Z'
-    DE_Y: 'Y'
-
     DE_SECT: '§'
     DE_DEG: '°'
     DE_EURO: '€'
@@ -394,8 +392,8 @@ parse_config:
     DE_COMMA: ','
     DE_LESS_THAN: <
     DE_LT: <
-    DE_PERIOD: .
-    DE_DOT: .
+    #DE_PERIOD: .
+    #DE_DOT: .
     DE_GREATER_THAN: '>'
     DE_GT: '>'
     DE_LEFT_BRACKET: '['
