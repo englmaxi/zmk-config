@@ -113,11 +113,11 @@ parse_config:
     '&lgt_macro': '< >'
 
     '&kp DE_COMMA':
-      tap: ","
+      tap: ','
       shifted: ';'
     
     '&kp DE_DOT':
-      tap: "'."
+      tap: '.'
       shifted: ':'
     
     '&bt BT_CLR': $$mdi:bluetooth-off$$
