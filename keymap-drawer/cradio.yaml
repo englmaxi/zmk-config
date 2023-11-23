@@ -28,8 +28,8 @@ layers:
   - V
   - K
   - H
-  - ','
-  - .
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - NAV
   - $$mdi:apple-keyboard-shift$$
@@ -76,7 +76,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - .
+  - {t: ., s: ':'}
   - '7'
   - '8'
   - '9'
@@ -86,7 +86,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - ','
+  - {t: ',', s: ;}
   - '4'
   - '5'
   - '6'
