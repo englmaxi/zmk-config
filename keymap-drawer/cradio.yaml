@@ -115,7 +115,7 @@ layers:
   - F7
   - F8
   - F9
-  - LC(PLUS)
+  - $$mdi:magnify-plus-outline$$
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -125,7 +125,7 @@ layers:
   - F4
   - F5
   - F6
-  - LC(MINUS)
+  - $$mdi:magnify-minus-outline$$
   - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:skip-backward$$
   - $$mdi:play-pause$$
