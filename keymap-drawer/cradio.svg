@@ -1,4 +1,4 @@
-<svg width="732" height="2541" viewBox="0 0 732 2541" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="732" height="2458" viewBox="0 0 732 2458" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
 <svg id="mdi:apple-keyboard-control">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-control" viewBox="0 0 24 24"><path d="M19.78,11.78L18.36,13.19L12,6.83L5.64,13.19L4.22,11.78L12,4L19.78,11.78Z" /></svg>
@@ -324,7 +324,7 @@ rect.held, rect.combo.held {
 </style>
 <g transform="translate(30, 0)" class="layer-DEF">
 <text x="0" y="28" class="label">DEF</text>
-<g transform="translate(0, 90)">
+<g transform="translate(0, 74)">
 <g transform="translate(28, 90)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
@@ -648,7 +648,7 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(30, 441)" class="layer-NAV">
+<g transform="translate(30, 358)" class="layer-NAV">
 <text x="0" y="28" class="label">NAV</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 90)" class="key keypos-0">
@@ -839,7 +839,7 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(30, 782)" class="layer-NUM">
+<g transform="translate(30, 699)" class="layer-NUM">
 <text x="0" y="28" class="label">NUM</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 90)" class="key trans keypos-0">
@@ -1039,7 +1039,7 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1123)" class="layer-FUN">
+<g transform="translate(30, 1040)" class="layer-FUN">
 <text x="0" y="28" class="label">FUN</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 90)" class="key trans keypos-0">
@@ -1237,7 +1237,7 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1463)" class="layer-HW">
+<g transform="translate(30, 1380)" class="layer-HW">
 <text x="0" y="28" class="label">HW</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 90)" class="key keypos-0">
@@ -1416,7 +1416,7 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1804)" class="layer-GER">
+<g transform="translate(30, 1721)" class="layer-GER">
 <text x="0" y="28" class="label">GER</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 90)" class="key trans keypos-0">
@@ -1589,7 +1589,7 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2144)" class="layer-MSE">
+<g transform="translate(30, 2061)" class="layer-MSE">
 <text x="0" y="28" class="label">MSE</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 90)" class="key trans keypos-0">
