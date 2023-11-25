@@ -251,10 +251,13 @@ parse_config:
     LEFT: $$mdi:arrow-left$$
     RIGHT: $$mdi:arrow-right$$
 
-    HOME: $$mdi:format-horizontal-align-left$$
-    END: $$mdi:format-horizontal-align-right$$
+    # HOME: $$mdi:format-horizontal-align-left$$
+    # END: $$mdi:format-horizontal-align-right$$
     LC(HOME): $$mdi:format-vertical-align-top$$
     LC(END): $$mdi:format-vertical-align-bottom$$
+    
+    PG_UP: Page Up
+    PG_DN: Page Down
 
     LC(INS): $$mdi:content-copy$$
     LS(INS): $$mdi:content-paste$$
@@ -265,9 +268,6 @@ parse_config:
 
     LC(F): $$mdi:text-search$$
     LC(W): $$mdi:close-box-outline$$
-    
-    PG_UP: Page Up
-    PG_DN: Page Down
 
     PAUSE_BREAK: Pause Break
 
