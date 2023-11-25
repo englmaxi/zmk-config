@@ -1,6 +1,6 @@
 draw_config:
   line_spacing: 1.0
-  arc_radius: 10.0
+  arc_radius: 8.0
   append_colon_to_layer_header: false
   small_pad: 1.0
   draw_key_sides: true
@@ -51,10 +51,11 @@ draw_config:
     } 
     
     .text_with_symbol.tap {
-      translate: -2px 1px;
+      translate: -1px 1px;
     } 
     .text_with_symbol.hold {
-      translate: 5px -28px;
+      translate: 6px -31px;
+      font-size: 8px;
     } 
     
   shrink_wide_legends: 7
@@ -124,7 +125,7 @@ parse_config:
     
     '&bt BT_CLR':
       tap: $$mdi:bluetooth$$
-      hold: $$mdi:close$$
+      hold: $$mdi:close-thick$$
       type: text_with_symbol
     '&bt BT_SEL 0':
       tap: $$mdi:bluetooth-connect$$
