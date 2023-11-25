@@ -102,7 +102,7 @@
         SM(bkt_brc,         &bkt_macro,     &brc_macro)
 
         TD(td_scw,      400,    &kp LSHIFT, &caps_word,     &kp CLCK)
-        TD(td_sqt_dqt,  270,    &sqt_dqt>,  &sqt_dqt_macro)
+        TD(td_sqt_dqt,  270,    &sqt_dqt,   &sqt_dqt_macro)
 
         mt_td_scw: mt_td_scw { // wrapper for tap-dance, workaround for #1691
             compatible = "zmk,behavior-hold-tap";
@@ -162,7 +162,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
+        default_layer {
             label = "DEF";
             bindings = <
 &kp Q        &kp W        &kp F         &kp P          &kp B               &kp J         &kp L         &kp U         &kp DE_Y     &td_sqt_dqt
