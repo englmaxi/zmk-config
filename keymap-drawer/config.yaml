@@ -284,7 +284,6 @@ parse_config:
     O_UMLAUT: 'Ö'
     SZ: 'ß'
     ACUTE: '´'
-    GRAVE: '`'
     
     # default
     EXCLAMATION: '!'
