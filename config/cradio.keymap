@@ -43,6 +43,11 @@
     ignore-modifiers;
 };
 
+&mt {
+    quick-tap-ms = <220>;
+    tapping-term-ms = <220>;
+};
+
 #define HM(NAME, TAP, HT_KEYPOS) \
     NAME: NAME { \
         compatible = "zmk,behavior-hold-tap"; \
@@ -90,20 +95,9 @@
         SM(bkt_brc, &bkt_macro, &brc_macro)
         SM(sqt_dqt_macro, &sqt_macro, &dqt_macro)
 
-        ht: ht {
+        mt_home: mt_home {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <220>;
-            tapping-term-ms = <220>;
-        };
-
-        ht_home: ht_home {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_HOME";
+            label = "MT_HOME";
             bindings = <&masked_home>, <&kp>;
 
             #binding-cells = <2>;
@@ -112,9 +106,9 @@
             tapping-term-ms = <220>;
         };
 
-        ht_end: ht_end {
+        mt_end: mt_end {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_END";
+            label = "MT_END";
             bindings = <&masked_end>, <&kp>;
 
             #binding-cells = <2>;
@@ -123,7 +117,7 @@
             tapping-term-ms = <220>;
         };
 
-        mt_td_scw: mt_td_scw {
+        mt_td_scw: mt_td_scw { // wrapper for tap-dance, workaround for #1691
             compatible = "zmk,behavior-hold-tap";
             label = "MT_TD_SCW";
             bindings = <&kp>, <&td_scw>;
@@ -164,6 +158,10 @@
             bindings = <&kp DE_LBRC &kp DE_RBRC &kp LEFT>;
         )
 
+        ZMK_MACRO(sqt_macro,
+            bindings = <&kp DE_SQT &kp DE_SQT &kp LEFT>;
+        )
+
         ZMK_MACRO(lgt_macro,
             bindings =
                 <&kp DE_LT &kp DE_GT>,
@@ -171,10 +169,6 @@
                 <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp LEFT>;
-        )
-
-        ZMK_MACRO(sqt_macro,
-            bindings = <&kp DE_SQT &kp DE_SQT &kp LEFT>;
         )
 
         ZMK_MACRO(dqt_macro,
@@ -213,8 +207,8 @@
             label = "NAV";
             bindings = <
 &kp ESC       &kp LC(W)  &kp LC(F)    &kp BSPC   &kp INS      &trans           &kp PG_DN          &kp PG_UP        &trans           &trans
-&sk LGUI      &sk LALT   &sk LCTRL    &sk LSHFT  &sk RALT     &ht_home 0 LEFT  &ht LC(END) DOWN   &ht LC(HOME) UP  &ht_end 0 RIGHT  &kp PAUSE_BREAK
-&kp LC(DE_Z)  &kp LC(X)  &kp LC(INS)  &trans     &kp LS(INS)  &kp RET          &ht LC(BSPC) BSPC  &kp TAB          &ht LC(DEL) DEL  &kp PSCRN
+&sk LGUI      &sk LALT   &sk LCTRL    &sk LSHFT  &sk RALT     &mt_home 0 LEFT  &mt LC(END) DOWN   &mt LC(HOME) UP  &mt_end 0 RIGHT  &kp PAUSE_BREAK
+&kp LC(DE_Z)  &kp LC(X)  &kp LC(INS)  &trans     &kp LS(INS)  &kp RET          &mt LC(BSPC) BSPC  &kp TAB          &mt LC(DEL) DEL  &kp PSCRN
                                       &trans     &trans       &trans           &trans
             >;
         };
