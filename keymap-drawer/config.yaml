@@ -123,56 +123,76 @@ parse_config:
       shifted: ':'
     
     '&bt BT_CLR':
-      tap: $$mdi:close$$
-      hold: $$mdi:bluetooth$$
+      tap: $$mdi:bluetooth$$
+      hold: $$mdi:close$$
       type: text_with_symbol
     '&bt BT_SEL 0':
-      tap: '0'
-      hold: $$mdi:bluetooth-connect$$
+      tap: $$mdi:bluetooth-connect$$
+      hold: '0'
       type: text_with_symbol
     '&bt BT_SEL 1':
-      tap: '1'
-      hold: $$mdi:bluetooth-connect$$
+      tap: $$mdi:bluetooth-connect$$
+      hold: '1'
       type: text_with_symbol
     '&bt BT_SEL 2':
-      tap: '2'
-      hold: $$mdi:bluetooth-connect$$
+      tap: $$mdi:bluetooth-connect$$
+      hold: '2'
       type: text_with_symbol
     '&bt BT_SEL 3':
-      tap: '3'
-      hold: $$mdi:bluetooth-connect$$
+      tap: $$mdi:bluetooth-connect$$
+      hold: '3'
       type: text_with_symbol
     '&bt BT_SEL 4':
-      tap: '4'
-      hold: $$mdi:bluetooth-connect$$
+      tap: $$mdi:bluetooth-connect$$
+      hold: '4'
+      type: text_with_symbol
+    '&bt_0':
+      tap: $$mdi:bluetooth-connect$$
+      hold: '0'
+      type: text_with_symbol
+    '&bt_1':
+      tap: $$mdi:bluetooth-connect$$
+      hold: '1'
+      type: text_with_symbol
+    '&bt_2':
+      tap: $$mdi:bluetooth-connect$$
+      hold: '2'
+      type: text_with_symbol
+    '&bt_3':
+      tap: $$mdi:bluetooth-connect$$
+      hold: '3'
+      type: text_with_symbol
+    '&bt_4':
+      tap: $$mdi:bluetooth-connect$$
+      hold: '4'
       type: text_with_symbol
     '&bt BT_DISC 0':
-      tap: '0'
-      hold: $$mdi:bluetooth-off$$
+      tap: $$mdi:bluetooth-off$$
+      hold: '0'
       type: text_with_symbol
     '&bt BT_DISC 1':
-      tap: '1'
-      hold: $$mdi:bluetooth-off$$
+      tap: $$mdi:bluetooth-off$$
+      hold: '1'
       type: text_with_symbol
     '&bt BT_DISC 2':
-      tap: '2'
-      hold: $$mdi:bluetooth-off$$
+      tap: $$mdi:bluetooth-off$$
+      hold: '2'
       type: text_with_symbol
     '&bt BT_DISC 3':
-      tap: '3'
-      hold: $$mdi:bluetooth-off$$
+      tap: $$mdi:bluetooth-off$$
+      hold: '3'
       type: text_with_symbol
     '&bt BT_DISC 4':
-      tap: '4'
-      hold: $$mdi:bluetooth-off$$
+      tap: $$mdi:bluetooth-off$$
+      hold: '4'
       type: text_with_symbol
     '&bt BT_PRV':
-      tap: $$mdi:skip-previous$$
-      hold: $$mdi:bluetooth$$
+      tap: $$mdi:bluetooth$$
+      hold: $$mdi:skip-previous$$
       type: text_with_symbol
     '&bt BT_NXT':
-      tap: $$mdi:skip-next$$
-      hold: $$mdi:bluetooth$$
+      tap: $$mdi:bluetooth$$
+      hold: $$mdi:skip-next$$
       type: text_with_symbol
     
     '&out OUT_BLE': $$mdi:bluetooth$$
@@ -186,16 +206,16 @@ parse_config:
     '&mkp LCLK': $$mdi:cursor-default-click-outline$$
     '&mkp RCLK': $$mdi:cursor-default-click$$
     '&mkp MB3':
-      tap: 3
-      hold: $$mdi:cursor-default-click-outline$$
+      tap: $$mdi:cursor-default-click-outline$$
+      hold: 3
       type: text_with_symbol
     '&mkp MB4':
-      tap: 4
-      hold: $$mdi:cursor-default-click-outline$$
+      tap: $$mdi:cursor-default-click-outline$$
+      hold: 4
       type: text_with_symbol
     '&mkp MB5':
-      tap: 5
-      hold: $$mdi:cursor-default-click-outline$$
+      tap: $$mdi:cursor-default-click-outline$$
+      hold: 5
       type: text_with_symbol
     
   sticky_label: $$mdi:circle-small$$
@@ -207,7 +227,7 @@ parse_config:
   zmk_combos:
     combo_par:
       align: bottom
-      offset: 1.0
+      offset: 0.9
       key:
         tap: '()'
         shifted: '<>'
