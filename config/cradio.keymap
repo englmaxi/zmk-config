@@ -39,10 +39,6 @@
     release-after-ms = <900>;
 };
 
-&sl {
-    ignore-modifiers;
-};
-
 &mt {
     quick-tap-ms = <220>;
     tapping-term-ms = <220>;
@@ -206,9 +202,9 @@
         nav_layer {
             label = "NAV";
             bindings = <
-&kp ESC       &kp LC(W)  &kp LC(F)    &kp BSPC   &kp INS      &trans           &kp PG_DN          &kp PG_UP        &trans           &trans
-&sk LGUI      &sk LALT   &sk LCTRL    &sk LSHFT  &sk RALT     &mt_home 0 LEFT  &mt LC(END) DOWN   &mt LC(HOME) UP  &mt_end 0 RIGHT  &kp PAUSE_BREAK
-&kp LC(DE_Z)  &kp LC(X)  &kp LC(INS)  &trans     &kp LS(INS)  &kp RET          &mt LC(BSPC) BSPC  &kp TAB          &mt LC(DEL) DEL  &kp PSCRN
+&kp ESC       &kp LC(W)  &kp LC(F)    &kp BSPC   &kp INS      &mt LC(END) HOME &kp PG_DN         &kp PG_UP &mt LC(HOME) END &trans
+&sk LGUI      &sk LALT   &sk LCTRL    &sk LSHFT  &sk RALT     &kp LEFT         &kp DOWN          &kp UP    &kp RIGHT        &kp PAUSE_BREAK
+&kp LC(DE_Z)  &kp LC(X)  &kp LC(INS)  &trans     &kp LS(INS)  &kp RET          &mt LC(BSPC) BSPC &kp TAB   &mt LC(DEL) DEL  &kp PSCRN
                                       &trans     &trans       &trans           &trans
             >;
         };
