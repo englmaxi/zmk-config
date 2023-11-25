@@ -106,7 +106,7 @@ parse_config:
       tap: "'"
       shifted: '"'
       
-    '&mt_td_scw LSHFT 0': $$mdi:apple-keyboard-shift$$
+    '&scw LSHFT 0': $$mdi:apple-keyboard-shift$$
     '&par_macro': '( )'
     '&bkt_macro': '[]'
     '&brc_macro': '{ }'
@@ -245,6 +245,8 @@ parse_config:
     
     C_POWER: $$mdi:power$$
     C_SLEEP: $$mdi:power-sleep$$
+
+    C_AL_CALC: $$mdi:calculator-variant$$
     
     UP: $$mdi:arrow-up$$
     DOWN: $$mdi:arrow-down$$
