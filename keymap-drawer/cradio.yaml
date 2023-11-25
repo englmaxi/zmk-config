@@ -32,7 +32,7 @@ layers:
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - NAV
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '&td_scw', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - NUM
   NAV:
@@ -45,7 +45,7 @@ layers:
   - Page Down
   - Page Up
   - {t: END, h: '$$mdi:format-vertical-align-bottom$$'}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - AL CALC
   - {t: '$$mdi:microsoft-windows$$', h: '$$mdi:circle-small$$'}
   - {t: ALT, h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
@@ -183,10 +183,10 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - Ü
+  - UE
   - ´
   - '`'
-  - Ä
+  - AE
   - {t: '$$mdi:chevron-down$$', type: trans}
   - ß
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -195,7 +195,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - Ö
+  - OE
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
