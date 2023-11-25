@@ -59,8 +59,8 @@ layers:
   - $$mdi:undo$$
   - $$mdi:content-cut$$
   - $$mdi:content-copy$$
-  - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:content-paste$$
+  - $$mdi:redo$$
   - $$mdi:keyboard-return$$
   - {t: '$$mdi:backspace-outline$$', h: '$$mdi:backspace$$'}
   - $$mdi:keyboard-tab$$
