@@ -147,19 +147,19 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '0', h: '$$mdi:bluetooth-off$$', type: text_with_symbol}
-  - {t: '1', h: '$$mdi:bluetooth-off$$', type: text_with_symbol}
-  - {t: '1', h: '$$mdi:bluetooth-off$$', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-off$$', h: '0', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-off$$', h: '1', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-off$$', h: '1', type: text_with_symbol}
   - {t: '$$mdi:progress-download$$', type: bootloader}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
   - $$mdi:usb$$
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:close$$', h: '$$mdi:bluetooth$$', type: text_with_symbol}
-  - '&bt_0'
-  - '&bt_1'
-  - '&bt_2'
+  - {t: '$$mdi:bluetooth$$', h: '$$mdi:close$$', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-connect$$', h: '0', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-connect$$', h: '1', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2', type: text_with_symbol}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -237,9 +237,9 @@ layers:
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '4', h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
-  - {t: '3', h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
-  - {t: '5', h: '$$mdi:cursor-default-click-outline$$', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', h: '4', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', h: '3', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', h: '5', type: text_with_symbol}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -284,7 +284,7 @@ combos:
   k: {t: (), s: <>}
   l: [DEF]
   a: bottom
-  o: 1.0
+  o: 0.9
 - p: [26, 27]
   k: $$mdi:backspace-outline$$
   l: [DEF, FUN, NUM]
