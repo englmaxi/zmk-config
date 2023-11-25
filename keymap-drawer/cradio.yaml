@@ -149,7 +149,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:bluetooth-off$$', h: '0', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-off$$', h: '1', type: text_with_symbol}
-  - {t: '$$mdi:bluetooth-off$$', h: '1', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-off$$', h: '2', type: text_with_symbol}
   - {t: '$$mdi:progress-download$$', type: bootloader}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:chevron-down$$', type: trans}
