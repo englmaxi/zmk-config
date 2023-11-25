@@ -57,6 +57,15 @@
         hold-trigger-on-release; \
     };
 
+#define SM(NAME, TAP, SHIFTED) \
+    NAME: NAME { \
+        compatible = "zmk,behavior-mod-morph"; \
+        label = TO_STRING(SM_ ## NAME); \
+        bindings = <TAP>, <SHIFTED>; \
+        #binding-cells = <0>; \
+        mods = <(MOD_RSFT|MOD_LSFT)>; \
+    };
+
 / {
 
     behaviors {
@@ -69,32 +78,17 @@
         HM(hmr_rpar_gt, &rpar_gt,       KEYS_L)
         HM(hmr_par_lgt, &par_lgt,       KEYS_L)
 
-        td_scw: td_shift_caps_word {
-            compatible = "zmk,behavior-tap-dance";
-            label = "shift on tap, caps_word on double-tap";
-            #binding-cells = <0>;
-            bindings = <&kp LSHIFT>, <&caps_word>, <&kp CLCK>;
-
-            tapping-term-ms = <400>;
-        };
-
-        sqt_dqt: sqt_dqt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SQT_DQT";
-            bindings = <&kp DE_SQT>, <&kp DE_DQT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
-
-        qexcl: qexcl {
-            compatible = "zmk,behavior-mod-morph";
-            label = "QEXCL";
-            bindings = <&kp DE_QMARK>, <&kp DE_EXCL>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
+        SM(sqt_dqt, &kp DE_SQT, &kp DE_DQT)
+        SM(qexcl, &kp DE_QMARK, &kp DE_EXCL)
+        SM(masked_home, &kp HOME, &kp HOME)
+        SM(masked_end, &kp END, &kp END)
+        SM(lpar_lt, &kp DE_LPAR, &kp DE_LT)
+        SM(rpar_gt, &kp DE_RPAR, &kp DE_GT)
+        SM(lbkt_lbrc, &kp DE_LBKT, &kp DE_LBRC)
+        SM(rbkt_rbrc, &kp DE_RBKT, &kp DE_RBRC)
+        SM(par_lgt, &par_macro, &lgt_macro)
+        SM(bkt_brc, &bkt_macro, &brc_macro)
+        SM(sqt_dqt_macro, &sqt_macro, &dqt_macro)
 
         ht: ht {
             compatible = "zmk,behavior-hold-tap";
@@ -105,24 +99,6 @@
             flavor = "tap-preferred";
             quick-tap-ms = <220>;
             tapping-term-ms = <220>;
-        };
-
-        masked_home: masked_home {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MASKED_HOME";
-            bindings = <&kp HOME>, <&kp HOME>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
-        };
-
-        masked_end: masked_end {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MASKED_END";
-            bindings = <&kp END>, <&kp END>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
 
         ht_home: ht_home {
@@ -147,51 +123,6 @@
             tapping-term-ms = <220>;
         };
 
-        mo_tog: mo_tog {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MO_TOG";
-            bindings = <&mo>, <&tog>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <100>;
-        };
-
-        lpar_lt: lpar_lt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LPAR_LT";
-            bindings = <&kp DE_LPAR>, <&kp DE_LT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
-
-        rpar_gt: rpar_gt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RPAR_GT";
-            bindings = <&kp DE_RPAR>, <&kp DE_GT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
-
-        lbkt_lbrc: lbkt_lbrc {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LBKT_LBRC";
-            bindings = <&kp DE_LEFT_BRACKET>, <&kp DE_LBRC>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
-
-        rbkt_rbrc: rbkt_rbrc {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RBKT_RBRC";
-            bindings = <&kp DE_RBKT>, <&kp DE_RBRC>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
-
         mt_td_scw: mt_td_scw {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_TD_SCW";
@@ -201,31 +132,13 @@
             tapping-term-ms = <200>;
         };
 
-        par_lgt: par_lgt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "PAR_LGT";
-            bindings = <&par_macro>, <&lgt_macro>;
-
+        td_scw: td_shift_caps_word {
+            compatible = "zmk,behavior-tap-dance";
+            label = "shift on tap, caps_word on double-tap";
             #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
+            bindings = <&kp LSHIFT>, <&caps_word>, <&kp CLCK>;
 
-        bkt_brc: bkt_brc {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BKT_BRC";
-            bindings = <&bkt_macro>, <&brc_macro>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
-
-        sqt_dqt_macro: sqt_dqt_macro {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SQT_DQT_MACRO";
-            bindings = <&sqt_macro>, <&dqt_macro>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
+            tapping-term-ms = <400>;
         };
 
         td_sqt_dqt: td_sqt_dqt {
