@@ -104,7 +104,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - ''
   - ''
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
   FUN:
   - ''
   - $$mdi:volume-minus$$
@@ -174,7 +174,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
   GER:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
