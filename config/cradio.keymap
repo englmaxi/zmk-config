@@ -31,7 +31,7 @@
 #include "combos.dtsi"
 
 &caps_word {
-    continue-list = <BACKSPACE DELETE DE_UNDERSCORE DE_MINUS N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
+    continue-list = <BACKSPACE DELETE DE_UNDER DE_MINUS N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
 };
 
 &sk {
@@ -76,8 +76,9 @@
 		bindings = <TAP1>, <TAP2> __VA_OPT__(, <)__VA_ARGS__ __VA_OPT__(>); \
     };
 
-/ {
+#define CT(KEY) &mt LC(KEY) KEY
 
+/ {
     behaviors {
         // home row mods
         HM(hml,         &kp,            KEYS_R)
@@ -198,7 +199,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &lt NUM DE_Z  &kp X         &kp C         &lt 6 D       &kp V             &kp K         &kp H         &kp DE_COMMA  &kp DE_DOT    &qexcl
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              &mo NAV       &scw LSHFT 0      &lt FUN SPACE &mo NUM
+                                              &mo NAV       &scw RET 0        &lt FUN SPACE &mo NUM
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -207,11 +208,11 @@
             label = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp ESC       &kp LC(W)     &kp LC(F)     &kp BSPC      &kp INS           &mt LC(HOME) HOME &kp PG_DN &kp PG_UP     &mt LC(END) END &kp C_AL_CALC
+    &kp ESC       &kp LC(W)     &kp LC(F)     &kp BSPC      &kp INS           CT(HOME)      &kp PG_DN     &kp PG_UP     CT(END)       &kp C_AL_CALC
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &sk RALT          &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp PAUSE_BREAK
+    &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &sk RALT          &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp PSCRN
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LC(DE_Z)  &kp LC(X)     &kp LC(INS)   &kp LS(INS)   &kp LC(DE_Y)      &kp RET       &mt LC(BSPC) BSPC &kp TAB   &mt LC(DEL) DEL &kp PSCRN
+    &kp LC(DE_Z)  &kp LC(X)     &kp LC(INS)   &kp LS(INS)   &kp LC(DE_Y)      &kp RET       CT(BSPC)      &kp TAB       CT(DEL)       &kp PAUSE_BREAK
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -222,11 +223,11 @@
             label = "NUM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &trans        &trans        &trans        &trans        &trans            &kp DE_DOT    &kp N7        &kp N8        &kp N9        &kp BSPC
+    &none         &none         &none         &none         &none             &kp DE_DOT    &kp N7        &kp N8        &kp N9        &kp BSPC
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &trans        &trans        &trans        &trans        &trans            &kp DE_COMMA  &kp N4        &kp N5        &kp N6        &kp RET
+    &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none             &kp N0        &kp N4        &kp N5        &kp N6        &kp RET
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &trans        &trans        &trans        &trans        &trans            &kp N0        &kp N1        &kp N2        &kp N3        &trans
+    &none         &none         &none         &none         &none             &kp DE_COMMA  &kp N1        &kp N2        &kp N3        &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -237,11 +238,11 @@
             label = "FUN";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &trans        &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &kp C_BRI_UP      &kp F12       &kp F7        &kp F8        &kp F9        &kp LC(DE_PLUS)
+    &none         &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &kp C_BRI_UP      &kp F12       &kp F7        &kp F8        &kp F9        &kp LC(DE_PLUS)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &trans        &trans        &trans        &trans        &kp C_BRI_DN      &kp F11       &kp F4        &kp F5        &kp F6        &kp LC(DE_MINUS)
+    &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &kp C_BRI_DN      &kp F11       &kp F4        &kp F5        &kp F6        &kp LC(DE_MINUS)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &trans        &kp C_PREV    &kp C_PP      &kp C_NEXT    &trans            &kp F10       &kp F1        &kp F2        &kp F3        &kp LC(N0)
+    &none         &kp C_PREV    &kp C_PP      &kp C_NEXT    &none             &kp F10       &kp F1        &kp F2        &kp F3        &kp LC(N0)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -252,11 +253,11 @@
             label = "HW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &bootloader   &trans        &trans        &trans        &trans            &trans        &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bootloader
+    &bootloader   &none         &none         &none         &none             &none         &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bootloader
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &sys_reset    &trans        &out OUT_TOG  &out OUT_USB  &trans            &bt BT_CLR    &bt_0         &bt_1         &bt_2         &sys_reset
+    &sys_reset    &none         &out OUT_TOG  &out OUT_USB  &trans            &bt BT_CLR    &bt_0         &bt_1         &bt_2         &sys_reset
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans
+    &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -282,11 +283,11 @@
             label = "MSE";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans
+    &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans
+    &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none             &none         &none         &none         &none         &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &trans        &trans        &trans        &trans        &trans            &trans        &mkp MB4      &mkp MB3      &mkp MB5      &trans
+    &none         &none         &none         &none         &none             &none         &mkp MB4      &mkp MB3      &mkp MB5      &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans        &trans            &mkp LCLK     &mkp RCLK
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯

@@ -76,7 +76,7 @@ draw_config:
 parse_config:
   preprocess: true
   skip_binding_parsing: false
-  mark_alternate_layer_activators: true
+  mark_alternate_layer_activators: false
   zmk_remove_keycode_prefix: ["DE_"]
     
   sticky_label: $$mdi:circle-small$$
@@ -117,7 +117,12 @@ parse_config:
       tap: "'"
       shifted: '"'
       
+    '&scw RET 0':
+      tap: $$mdi:keyboard-return$$
+      shifted: $$mdi:apple-keyboard-shift$$
+      
     '&scw LSHFT 0': $$mdi:apple-keyboard-shift$$
+
     '&par_macro': '( )'
     '&bkt_macro': '[]'
     '&brc_macro': '{ }'
@@ -230,7 +235,7 @@ parse_config:
   zmk_combos:
     combo_par:
       align: bottom
-      offset: 0.95
+      offset: 1.05
       key:
         tap: '()'
         shifted: '<>'
