@@ -182,7 +182,7 @@ parse_config:
   zmk_combos:
     combo_par:
       align: bottom
-      offset: 1.2
+      offset: 1.1
       key:
         tap: '()'
         shifted: '<>'
