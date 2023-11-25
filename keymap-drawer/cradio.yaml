@@ -45,7 +45,7 @@ layers:
   - Page Down
   - Page Up
   - {t: END, h: '$$mdi:format-vertical-align-bottom$$'}
-  - $$mdi:calculator-variant$$
+  - $$mdi:calculator$$
   - {t: '$$mdi:microsoft-windows$$', h: '$$mdi:circle-small$$'}
   - {t: ALT, h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
