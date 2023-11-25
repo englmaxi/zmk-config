@@ -246,7 +246,7 @@ parse_config:
     C_POWER: $$mdi:power$$
     C_SLEEP: $$mdi:power-sleep$$
 
-    C_AL_CALC: $$mdi:calculator-variant$$
+    C_AL_CALC: $$mdi:calculator$$
     
     UP: $$mdi:arrow-up$$
     DOWN: $$mdi:arrow-down$$
