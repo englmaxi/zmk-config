@@ -92,28 +92,6 @@
         SM(rbkt_rbrc,       &kp DE_RBKT,    &kp DE_RBRC)
         SM(bkt_brc,         &bkt_macro,     &brc_macro)
 
-        mt_home: mt_home {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_HOME";
-            bindings = <&masked_home>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <220>;
-            tapping-term-ms = <220>;
-        };
-
-        mt_end: mt_end {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_END";
-            bindings = <&masked_end>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <220>;
-            tapping-term-ms = <220>;
-        };
-
         mt_td_scw: mt_td_scw { // wrapper for tap-dance, workaround for #1691
             compatible = "zmk,behavior-hold-tap";
             label = "MT_TD_SCW";
