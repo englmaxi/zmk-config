@@ -203,10 +203,10 @@
         nav_layer {
             label = "NAV";
             bindings = <
-&kp ESC       &kp LC(W)  &kp LC(F)    &kp BSPC   &kp INS      &mt LC(HOME) HOME &kp PG_DN         &kp PG_UP &mt LC(END) END &trans
-&sk LGUI      &sk LALT   &sk LCTRL    &sk LSHFT  &sk RALT     &kp LEFT          &kp DOWN          &kp UP    &kp RIGHT       &kp PAUSE_BREAK
-&kp LC(DE_Z)  &kp LC(X)  &kp LC(INS)  &trans     &kp LS(INS)  &kp RET           &mt LC(BSPC) BSPC &kp TAB   &mt LC(DEL) DEL &kp PSCRN
-                                      &trans     &trans       &trans            &trans
+&kp ESC       &kp LC(W)  &kp LC(F)    &kp BSPC    &kp INS      &mt LC(HOME) HOME &kp PG_DN         &kp PG_UP &mt LC(END) END &trans
+&sk LGUI      &sk LALT   &sk LCTRL    &sk LSHFT   &sk RALT     &kp LEFT          &kp DOWN          &kp UP    &kp RIGHT       &kp PAUSE_BREAK
+&kp LC(DE_Z)  &kp LC(X)  &kp LC(INS)  &kp LS(INS) &kp LC(DE_Y) &kp RET           &mt LC(BSPC) BSPC &kp TAB   &mt LC(DEL) DEL &kp PSCRN
+                                      &trans      &trans       &trans            &trans
             >;
         };
 

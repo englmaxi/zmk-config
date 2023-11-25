@@ -260,6 +260,8 @@ parse_config:
     LS(INS): $$mdi:content-paste$$
     LC(X): $$mdi:content-cut$$
     LC(Z): $$mdi:undo$$
+    LC(Y): $$mdi:redo$$
+    LC(LS(Z)): $$mdi:redo$$
 
     LC(F): $$mdi:text-search$$
     LC(W): $$mdi:close-box-outline$$
