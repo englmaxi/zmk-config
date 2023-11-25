@@ -152,59 +152,39 @@
     };
 
     macros {
-        par_macro: par_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+        ZMK_MACRO(par_makcro,
             bindings = <&kp DE_LPAR &kp DE_RPAR &kp LEFT>;
-            label = "PAR_MACRO";
-        };
+        )
 
-        bkt_macro: bkt_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+        ZMK_MACRO(bkt_macro,
             bindings = <&kp DE_LBKT &kp DE_RBKT &kp LEFT>;
-            label = "BKT_MACRO";
-        };
+        )
 
-        brc_macro: brc_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+        ZMK_MACRO(brc_macro,
             bindings = <&kp DE_LBRC &kp DE_RBRC &kp LEFT>;
-            label = "BRC_MACRO";
-        };
+        )
 
-        lgt_macro: lgt_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+        ZMK_MACRO(lgt_macro,
             bindings =
                 <&kp DE_LT &kp DE_GT>,
                 <&macro_release>,
                 <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp LEFT>;
+        )
 
-            label = "LGT_MACRO";
-        };
-
-        sqt_macro: sqt_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+        ZMK_MACRO(sqt_macro,
             bindings = <&kp DE_SQT &kp DE_SQT &kp LEFT>;
-            label = "SQT_MACRO";
-        };
+        )
 
-        dqt_macro: dqt_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+        ZMK_MACRO(dqt_macro,
             bindings =
                 <&kp DE_DQT &kp DE_DQT>,
                 <&macro_release>,
                 <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp LEFT>;
-
-            label = "DQT_MACRO";
-        };
+        )
     };
 
     conditional_layers {
