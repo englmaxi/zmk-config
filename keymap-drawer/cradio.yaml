@@ -21,7 +21,7 @@ layers:
   - {t: E, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: ALT}
   - {t: O, h: '$$mdi:microsoft-windows$$'}
-  - Z
+  - {t: Z, h: NUM}
   - X
   - C
   - {t: D, h: MSE}
@@ -41,10 +41,10 @@ layers:
   - $$mdi:text-search$$
   - $$mdi:backspace-outline$$
   - INS
-  - {t: '$$mdi:format-horizontal-align-left$$', h: '$$mdi:format-vertical-align-top$$'}
+  - {t: HOME, h: '$$mdi:format-vertical-align-top$$'}
   - Page Down
   - Page Up
-  - {t: '$$mdi:format-horizontal-align-right$$', h: '$$mdi:format-vertical-align-bottom$$'}
+  - {t: END, h: '$$mdi:format-vertical-align-bottom$$'}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:microsoft-windows$$', h: '$$mdi:circle-small$$'}
   - {t: ALT, h: '$$mdi:circle-small$$'}
@@ -91,7 +91,7 @@ layers:
   - '5'
   - '6'
   - $$mdi:keyboard-return$$
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -104,7 +104,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   FUN:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:volume-minus$$
@@ -161,7 +161,7 @@ layers:
   - $$mdi:bluetooth$$
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -174,7 +174,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   GER:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
