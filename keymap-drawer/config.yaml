@@ -73,8 +73,9 @@ draw_config:
   use_local_cache: true
   
 parse_config:
-  preprocess: false
+  preprocess: true
   skip_binding_parsing: false
+  zmk_remove_keycode_prefix: ["DE_"]
   
   raw_binding_map: 
       
@@ -110,6 +111,14 @@ parse_config:
     '&bkt_macro': '[]'
     '&brc_macro': '{ }'
     '&lgt_macro': '< >'
+
+    '&kp DE_COMMA':
+      tap: ','
+      shifted: ';'
+    
+    '&kp DE_DOT':
+      tap: '.'
+      shifted: ':'
     
     '&bt BT_CLR': $$mdi:bluetooth-off$$
     '&bt BT_SEL 0':
@@ -171,21 +180,20 @@ parse_config:
     type: trans
     
   zmk_combos:
-    par:
+    combo_par:
       align: bottom
       offset: 1.2
       key:
         tap: '()'
         shifted: '<>'
-    bkt:
+    combo_bkt:
       align: top
       offset: 0.6
-    ger:
+    combo_ger:
       align: top
       offset: 0.6
       
   zmk_keycode_map:
-
     LALT: ALT
     
     SPACE: $$mdi:keyboard-space$$
@@ -243,42 +251,39 @@ parse_config:
     LEFT: $$mdi:arrow-left$$
     RIGHT: $$mdi:arrow-right$$
 
-    HOME: $$mdi:format-horizontal-align-left$$
-    END: $$mdi:format-horizontal-align-right$$
+    # HOME: $$mdi:format-horizontal-align-left$$
+    # END: $$mdi:format-horizontal-align-right$$
     LC(HOME): $$mdi:format-vertical-align-top$$
     LC(END): $$mdi:format-vertical-align-bottom$$
+    
+    PG_UP: Page Up
+    PG_DN: Page Down
 
     LC(INS): $$mdi:content-copy$$
     LS(INS): $$mdi:content-paste$$
     LC(X): $$mdi:content-cut$$
     LC(Z): $$mdi:undo$$
-    LC(DE_Z): $$mdi:undo$$
+    LC(Y): $$mdi:redo$$
+    LC(LS(Z)): $$mdi:redo$$
 
     LC(F): $$mdi:text-search$$
     LC(W): $$mdi:close-box-outline$$
-    
-    PG_UP: Page Up
-    PG_DN: Page Down
 
     PAUSE_BREAK: Pause Break
 
-    LC(DE_PLUS): $$mdi:magnify-plus-outline$$
-    LC(DE_MINUS): $$mdi:magnify-minus-outline$$
+    LC(PLUS): $$mdi:magnify-plus-outline$$
+    LC(MINUS): $$mdi:magnify-minus-outline$$
     LC(N0): $$mdi:magnify-remove-outline$$
 
-    DE_Z: 'Z'
-    DE_Y: 'Y'
+    SECT: '§'
+    DEG: '°'
+    EURO: '€'
 
-    DE_SECT: '§'
-    DE_DEG: '°'
-    DE_EURO: '€'
-
-    DE_A_UMLAUT: 'Ä'
-    DE_U_UMLAUT: 'Ü'
-    DE_O_UMLAUT: 'Ö'
-    DE_ESZETT: 'ß'
-    DE_ACUTE: '´'
-    DE_GRAVE: '`'
+    A_UMLAUT: 'Ä'
+    U_UMLAUT: 'Ü'
+    O_UMLAUT: 'Ö'
+    SZ: 'ß'
+    ACUTE: '´'
     
     # default
     EXCLAMATION: '!'
@@ -345,69 +350,3 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
-    
-    # default german
-    DE_EXCLAMATION: '!'
-    DE_EXCL: '!'
-    DE_AT_SIGN: '@'
-    DE_AT: '@'
-    DE_HASH: '#'
-    DE_POUND: '#'
-    DE_DOLLAR: $
-    DE_DLLR: $
-    DE_PERCENT: '%'
-    DE_PRCNT: '%'
-    DE_CARET: ^
-    DE_AMPERSAND: '&'
-    DE_AMPS: '&'
-    DE_ASTERISK: '*'
-    DE_ASTRK: '*'
-    DE_STAR: '*'
-    DE_LEFT_PARENTHESIS: (
-    DE_LPAR: (
-    DE_RIGHT_PARENTHESIS: )
-    DE_RPAR: )
-    DE_EQUAL: '='
-    DE_PLUS: +
-    DE_MINUS: '-'
-    DE_UNDERSCORE: _
-    DE_UNDER: _
-    DE_SLASH: /
-    DE_FSLH: /
-    DE_QUESTION: '?'
-    DE_QMARK: '?'
-    DE_BACKSLASH: \
-    DE_BSLH: \
-    DE_PIPE: '|'
-    DE_NON_US_BACKSLASH: \
-    DE_PIPE2: '|'
-    DE_NON_US_BSLH: '|'
-    DE_SEMICOLON: ;
-    DE_SEMI: ;
-    DE_COLON: ':'
-    DE_SINGLE_QUOTE: ''''
-    DE_SQT: ''''
-    DE_APOSTROPHE: <
-    DE_APOS: .
-    DE_DOUBLE_QUOTES: '"'
-    DE_DQT: '"'
-    DE_COMMA: ','
-    DE_LESS_THAN: <
-    DE_LT: <
-    DE_PERIOD: .
-    DE_DOT: .
-    DE_GREATER_THAN: '>'
-    DE_GT: '>'
-    DE_LEFT_BRACKET: '['
-    DE_LBKT: '['
-    DE_LEFT_BRACE: '{'
-    DE_LBRC: '{'
-    DE_RIGHT_BRACKET: ']'
-    DE_RBKT: ']'
-    DE_RIGHT_BRACE: '}'
-    DE_RBRC: '}'
-    DE_GRAVE: '`'
-    DE_TILDE: '~'
-    DE_NON_US_HASH: '#'
-    DE_NUHS: '#'
-    DE_TILDE2: '~'
