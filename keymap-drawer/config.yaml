@@ -122,7 +122,7 @@ parse_config:
       tap: '.'
       shifted: ':'
     
-    '&bt BT_CLR': $$mdi:bluetooth-off$$
+    '&bt BT_CLR':
       tap: $$mdi:close$$
       hold: $$mdi:bluetooth$$
       type: text_with_symbol
