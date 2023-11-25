@@ -41,10 +41,10 @@ layers:
   - $$mdi:text-search$$
   - $$mdi:backspace-outline$$
   - INS
-  - {t: '$$mdi:format-horizontal-align-left$$', h: '$$mdi:format-vertical-align-bottom$$'}
+  - {t: '$$mdi:format-horizontal-align-left$$', h: '$$mdi:format-vertical-align-top$$'}
   - Page Down
   - Page Up
-  - {t: '$$mdi:format-horizontal-align-right$$', h: '$$mdi:format-vertical-align-top$$'}
+  - {t: '$$mdi:format-horizontal-align-right$$', h: '$$mdi:format-vertical-align-bottom$$'}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:microsoft-windows$$', h: '$$mdi:circle-small$$'}
   - {t: ALT, h: '$$mdi:circle-small$$'}

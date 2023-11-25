@@ -680,7 +680,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:format-horizontal-align-left" xlink:href="#mdi:format-horizontal-align-left" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:format-horizontal-align-left"/>
-<use href="#mdi:format-vertical-align-bottom" xlink:href="#mdi:format-vertical-align-bottom" x="-4" y="17" height="8" width="8.0" class="key hold glyph mdi:format-vertical-align-bottom"/>
+<use href="#mdi:format-vertical-align-top" xlink:href="#mdi:format-vertical-align-top" x="-4" y="17" height="8" width="8.0" class="key hold glyph mdi:format-vertical-align-top"/>
 </g>
 <g transform="translate(476, 45)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -700,7 +700,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:format-horizontal-align-right" xlink:href="#mdi:format-horizontal-align-right" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:format-horizontal-align-right"/>
-<use href="#mdi:format-vertical-align-top" xlink:href="#mdi:format-vertical-align-top" x="-4" y="17" height="8" width="8.0" class="key hold glyph mdi:format-vertical-align-top"/>
+<use href="#mdi:format-vertical-align-bottom" xlink:href="#mdi:format-vertical-align-bottom" x="-4" y="17" height="8" width="8.0" class="key hold glyph mdi:format-vertical-align-bottom"/>
 </g>
 <g transform="translate(644, 90)" class="key trans keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
