@@ -66,6 +66,15 @@
         #binding-cells = <0>; \
         mods = <(MOD_RSFT|MOD_LSFT)>; \
     };
+    
+#define TD(NAME, T_TERM, TAP1, TAP2, ...) \
+    NAME: NAME { \
+        compatible = "zmk,behavior-tap-dance"; \
+        label = TO_STRING(TD_ ## NAME); \
+        #binding-cells = <0>; \
+        tapping-term-ms = <270>; \
+		bindings = <TAP1>, <TAP2> __VA_OPT__(, <)__VA_ARGS__ __VA_OPT__(>); \
+    };
 
 / {
 
@@ -92,6 +101,9 @@
         SM(rbkt_rbrc,       &kp DE_RBKT,    &kp DE_RBRC)
         SM(bkt_brc,         &bkt_macro,     &brc_macro)
 
+        TD(td_scw,      400,    &kp LSHIFT, &caps_word,     &kp CLCK)
+        TD(td_sqt_dqt,  270,    &sqt_dqt>,  &sqt_dqt_macro)
+
         mt_td_scw: mt_td_scw { // wrapper for tap-dance, workaround for #1691
             compatible = "zmk,behavior-hold-tap";
             label = "MT_TD_SCW";
@@ -99,24 +111,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-        };
-
-        td_scw: td_shift_caps_word {
-            compatible = "zmk,behavior-tap-dance";
-            label = "shift on tap, caps_word on double-tap";
-            #binding-cells = <0>;
-            bindings = <&kp LSHIFT>, <&caps_word>, <&kp CLCK>;
-
-            tapping-term-ms = <400>;
-        };
-
-        td_sqt_dqt: td_sqt_dqt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_SQT_DQT";
-            #binding-cells = <0>;
-            bindings = <&sqt_dqt>, <&sqt_dqt_macro>;
-
-            tapping-term-ms = <270>;
         };
     };
 
