@@ -32,7 +32,7 @@ layers:
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - NAV
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-return$$', s: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - NUM
   NAV:
@@ -55,7 +55,7 @@ layers:
   - $$mdi:arrow-down$$
   - $$mdi:arrow-up$$
   - $$mdi:arrow-right$$
-  - Pause Break
+  - $$mdi:monitor-screenshot$$
   - $$mdi:undo$$
   - $$mdi:content-cut$$
   - $$mdi:content-copy$$
@@ -65,48 +65,48 @@ layers:
   - {t: '$$mdi:backspace-outline$$', h: '$$mdi:backspace$$'}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:backspace-reverse$$'}
-  - $$mdi:monitor-screenshot$$
+  - Pause Break
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   NUM:
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ., s: ':'}
   - '7'
   - '8'
   - '9'
   - $$mdi:backspace-outline$$
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: ',', s: ;}
+  - $$mdi:microsoft-windows$$
+  - ALT
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - ''
+  - '0'
   - '4'
   - '5'
   - '6'
   - $$mdi:keyboard-return$$
   - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - '0'
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ',', s: ;}
   - '1'
   - '2'
   - '3'
+  - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {type: held}
   FUN:
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
   - $$mdi:volume-minus$$
   - $$mdi:volume-mute$$
   - $$mdi:volume-plus$$
@@ -116,21 +116,21 @@ layers:
   - F8
   - F9
   - $$mdi:magnify-plus-outline$$
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - $$mdi:microsoft-windows$$
+  - ALT
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - $$tabler:brightness-down$$
   - F11
   - F4
   - F5
   - F6
   - $$mdi:magnify-minus-outline$$
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
   - $$mdi:skip-backward$$
   - $$mdi:play-pause$$
   - $$mdi:skip-forward$$
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
   - F10
   - F1
   - F2
@@ -142,17 +142,17 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   HW:
   - {t: '$$mdi:progress-download$$', type: bootloader}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: '$$mdi:bluetooth-off$$', h: '0', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-off$$', h: '1', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-off$$', h: '2', type: text_with_symbol}
   - {t: '$$mdi:progress-download$$', type: bootloader}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
   - $$mdi:usb$$
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -162,19 +162,19 @@ layers:
   - {t: '$$mdi:bluetooth-connect$$', h: '2', type: text_with_symbol}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   GER:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
@@ -211,36 +211,36 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   MSE:
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:microsoft-windows$$
+  - ALT
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
+  - ''
   - {t: '$$mdi:cursor-default-click-outline$$', h: '4', type: text_with_symbol}
   - {t: '$$mdi:cursor-default-click-outline$$', h: '3', type: text_with_symbol}
   - {t: '$$mdi:cursor-default-click-outline$$', h: '5', type: text_with_symbol}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:cursor-default-click-outline$$
@@ -284,7 +284,7 @@ combos:
   k: {t: (), s: <>}
   l: [DEF]
   a: bottom
-  o: 0.95
+  o: 1.05
 - p: [26, 27]
   k: $$mdi:backspace-outline$$
   l: [DEF, FUN, NUM]
