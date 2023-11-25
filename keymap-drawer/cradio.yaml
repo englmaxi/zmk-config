@@ -284,7 +284,7 @@ combos:
   k: {t: (), s: <>}
   l: [DEF]
   a: bottom
-  o: 1.2
+  o: 1.1
 - p: [26, 27]
   k: $$mdi:backspace-outline$$
   l: [DEF, FUN, NUM]
