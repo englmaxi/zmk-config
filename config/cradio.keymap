@@ -152,7 +152,7 @@
     };
 
     macros {
-        ZMK_MACRO(par_makcro,
+        ZMK_MACRO(par_macro,
             bindings = <&kp DE_LPAR &kp DE_RPAR &kp LEFT>;
         )
 
