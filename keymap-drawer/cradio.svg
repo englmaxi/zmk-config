@@ -51,11 +51,11 @@
 <svg id="mdi:circle-small">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-circle-small" viewBox="0 0 24 24"><path d="M12,10A2,2 0 0,0 10,12C10,13.11 10.9,14 12,14C13.11,14 14,13.11 14,12A2,2 0 0,0 12,10Z" /></svg>
 </svg>
-<svg id="mdi:close">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-close" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
-</svg>
 <svg id="mdi:close-box-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-close-box-outline" viewBox="0 0 24 24"><path d="M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V5H19V19M17,8.4L13.4,12L17,15.6L15.6,17L12,13.4L8.4,17L7,15.6L10.6,12L7,8.4L8.4,7L12,10.6L15.6,7L17,8.4Z" /></svg>
+</svg>
+<svg id="mdi:close-thick">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-close-thick" viewBox="0 0 24 24"><path d="M20 6.91L17.09 4L12 9.09L6.91 4L4 6.91L9.09 12L4 17.09L6.91 20L12 14.91L17.09 20L20 17.09L14.91 12L20 6.91Z" /></svg>
 </svg>
 <svg id="mdi:content-copy">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-content-copy" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z" /></svg>
@@ -322,10 +322,11 @@ rect.held, rect.combo.held {
 } 
 
 .text_with_symbol.tap {
-  translate: -2px 1px;
+  translate: -1px 1px;
 } 
 .text_with_symbol.hold {
-  translate: 5px -28px;
+  translate: 6px -31px;
+  font-size: 8px;
 } 
 </style>
 <g transform="translate(30, 0)" class="layer-DEF">
@@ -525,8 +526,8 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="161" y="29" height="14" width="14.0" class="combo tap glyph mdi:keyboard-return"/>
 </g>
 <g class="combo combopos-2">
-<path d="M140,-18 h-46 a10.0,10.0 0 0 0 -10.0,10.0 v40" class="combo"/>
-<path d="M140,-18 h46 a10.0,10.0 0 0 1 10.0,10.0 v34" class="combo"/>
+<path d="M140,-18 h-48 a8.0,8.0 0 0 0 -8.0,8.0 v42" class="combo"/>
+<path d="M140,-18 h48 a8.0,8.0 0 0 1 8.0,8.0 v36" class="combo"/>
 <rect rx="6" ry="6" x="126" y="-31" width="28" height="26" class="combo"/>
 <text x="140" y="-18" class="combo tap">GER</text>
 <use href="#mdi:circle-small" xlink:href="#mdi:circle-small" x="136" y="-14" height="8" width="8.0" class="combo hold glyph mdi:circle-small"/>
@@ -550,8 +551,8 @@ rect.held, rect.combo.held {
 <text x="560" y="27" class="combo shifted">}</text>
 </g>
 <g class="combo combopos-7">
-<path d="M532,-18 h-46 a10.0,10.0 0 0 0 -10.0,10.0 v34" class="combo"/>
-<path d="M532,-18 h46 a10.0,10.0 0 0 1 10.0,10.0 v40" class="combo"/>
+<path d="M532,-18 h-48 a8.0,8.0 0 0 0 -8.0,8.0 v36" class="combo"/>
+<path d="M532,-18 h48 a8.0,8.0 0 0 1 8.0,8.0 v42" class="combo"/>
 <rect rx="6" ry="6" x="518" y="-31" width="28" height="26" class="combo"/>
 <text x="532" y="-18" class="combo tap">[]</text>
 <text x="532" y="-30" class="combo shifted">{ }</text>
@@ -567,8 +568,8 @@ rect.held, rect.combo.held {
 <text x="560" y="83" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-10">
-<path d="M532,186 h-46 a10.0,10.0 0 0 1 -10.0,-10.0 v-56" class="combo"/>
-<path d="M532,186 h46 a10.0,10.0 0 0 0 10.0,-10.0 v-51" class="combo"/>
+<path d="M532,186 h-48 a8.0,8.0 0 0 1 -8.0,-8.0 v-58" class="combo"/>
+<path d="M532,186 h48 a8.0,8.0 0 0 0 8.0,-8.0 v-53" class="combo"/>
 <rect rx="6" ry="6" x="518" y="173" width="28" height="26" class="combo"/>
 <text x="532" y="186" class="combo tap">()</text>
 <text x="532" y="174" class="combo shifted">&lt;&gt;</text>
@@ -1329,7 +1330,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
 <use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:bluetooth"/>
-<use href="#mdi:close" xlink:href="#mdi:close" x="-4" y="17" height="8" width="8.0" class="key text_with_symbol hold glyph mdi:close"/>
+<use href="#mdi:close-thick" xlink:href="#mdi:close-thick" x="-4" y="17" height="8" width="8.0" class="key text_with_symbol hold glyph mdi:close-thick"/>
 </g>
 <g transform="translate(476, 101)" class="key text_with_symbol keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>

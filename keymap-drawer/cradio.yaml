@@ -156,7 +156,7 @@ layers:
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
   - $$mdi:usb$$
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:bluetooth$$', h: '$$mdi:close$$', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth$$', h: '$$mdi:close-thick$$', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', h: '0', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', h: '1', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', h: '2', type: text_with_symbol}
