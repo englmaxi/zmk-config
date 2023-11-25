@@ -83,7 +83,9 @@ parse_config:
       tap: $$mdi:backup-restore$$
       type: bootloader
       
-    '&bootloader': $$mdi:progress-download$$
+    '&bootloader': 
+      tap: $$mdi:progress-download$$
+      type: bootloader
       
     '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
     '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$
@@ -121,25 +123,48 @@ parse_config:
       shifted: ':'
     
     '&bt BT_CLR': $$mdi:bluetooth-off$$
+      tap: $$mdi:close$$
+      hold: $$mdi:bluetooth$$
+      type: text_with_symbol
     '&bt BT_SEL 0':
       tap: '0'
-      hold: $$mdi:bluetooth$$
+      hold: $$mdi:bluetooth-connect$$
       type: text_with_symbol
     '&bt BT_SEL 1':
       tap: '1'
-      hold: $$mdi:bluetooth$$
+      hold: $$mdi:bluetooth-connect$$
       type: text_with_symbol
     '&bt BT_SEL 2':
       tap: '2'
-      hold: $$mdi:bluetooth$$
+      hold: $$mdi:bluetooth-connect$$
       type: text_with_symbol
     '&bt BT_SEL 3':
       tap: '3'
-      hold: $$mdi:bluetooth$$
+      hold: $$mdi:bluetooth-connect$$
       type: text_with_symbol
     '&bt BT_SEL 4':
       tap: '4'
-      hold: $$mdi:bluetooth$$
+      hold: $$mdi:bluetooth-connect$$
+      type: text_with_symbol
+    '&bt BT_DISC 0':
+      tap: '0'
+      hold: $$mdi:bluetooth-off$$
+      type: text_with_symbol
+    '&bt BT_DISC 1':
+      tap: '1'
+      hold: $$mdi:bluetooth-off$$
+      type: text_with_symbol
+    '&bt BT_DISC 2':
+      tap: '2'
+      hold: $$mdi:bluetooth-off$$
+      type: text_with_symbol
+    '&bt BT_DISC 3':
+      tap: '3'
+      hold: $$mdi:bluetooth-off$$
+      type: text_with_symbol
+    '&bt BT_DISC 4':
+      tap: '4'
+      hold: $$mdi:bluetooth-off$$
       type: text_with_symbol
     '&bt BT_PRV':
       tap: $$mdi:skip-previous$$
@@ -282,8 +307,11 @@ parse_config:
     EURO: '€'
 
     A_UMLAUT: 'Ä'
+    AE: 'Ä'
     U_UMLAUT: 'Ü'
+    UE: 'Ü'
     O_UMLAUT: 'Ö'
+    OE: 'Ö'
     SZ: 'ß'
     ACUTE: '´'
     

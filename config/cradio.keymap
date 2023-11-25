@@ -156,6 +156,24 @@
                 <&macro_tap>,
                 <&kp LEFT>;
         )
+
+        ZMK_MACRO(bt_0,
+            bindings =
+                <&out OUT_BLE>,
+                <&bt BT_SEL 0>;
+        )
+
+        ZMK_MACRO(bt_1,
+            bindings =
+                <&out OUT_BLE>,
+                <&bt BT_SEL 1>;
+        )
+
+        ZMK_MACRO(bt_2,
+            bindings =
+                <&out OUT_BLE>,
+                <&bt BT_SEL 2>;
+        )
     };
 
     conditional_layers {
@@ -234,11 +252,11 @@
             label = "HW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &bootloader   &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &bootloader
+    &bootloader   &trans        &trans        &trans        &trans            &trans        &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 1 &bootloader
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &trans        &trans        &out OUT_USB  &out OUT_TOG  &trans            &trans        &bt BT_NXT    &out OUT_BLE  &bt BT_CLR    &trans
+    &sys_reset    &trans        &out OUT_TOG  &out OUT_USB  &trans            &bt BT_CLR    &bt_0         &bt_1         &bt_2         &sys_reset
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &trans        &trans        &trans        &trans        &trans            &trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans
+    &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
