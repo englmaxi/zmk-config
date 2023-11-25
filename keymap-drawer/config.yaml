@@ -76,7 +76,15 @@ draw_config:
 parse_config:
   preprocess: true
   skip_binding_parsing: false
+  mark_alternate_layer_activators: true
   zmk_remove_keycode_prefix: ["DE_"]
+    
+  sticky_label: $$mdi:circle-small$$
+  toggle_label: $$mdi:toggle-switch$$
+  
+  trans_legend:
+    tap: $$mdi:chevron-down$$
+    type: trans
   
   raw_binding_map: 
       
@@ -219,16 +227,10 @@ parse_config:
       hold: 5
       type: text_with_symbol
     
-  sticky_label: $$mdi:circle-small$$
-  
-  trans_legend:
-    tap: $$mdi:chevron-down$$
-    type: trans
-    
   zmk_combos:
     combo_par:
       align: bottom
-      offset: 0.9
+      offset: 0.95
       key:
         tap: '()'
         shifted: '<>'
