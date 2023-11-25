@@ -79,17 +79,18 @@
         HM(hmr_rpar_gt, &rpar_gt,       KEYS_L)
         HM(hmr_par_lgt, &par_lgt,       KEYS_L)
 
-        SM(sqt_dqt, &kp DE_SQT, &kp DE_DQT)
-        SM(qexcl, &kp DE_QMARK, &kp DE_EXCL)
-        SM(masked_home, &kp HOME, &kp HOME)
-        SM(masked_end, &kp END, &kp END)
-        SM(lpar_lt, &kp DE_LPAR, &kp DE_LT)
-        SM(rpar_gt, &kp DE_RPAR, &kp DE_GT)
-        SM(lbkt_lbrc, &kp DE_LBKT, &kp DE_LBRC)
-        SM(rbkt_rbrc, &kp DE_RBKT, &kp DE_RBRC)
-        SM(par_lgt, &par_macro, &lgt_macro)
-        SM(bkt_brc, &bkt_macro, &brc_macro)
-        SM(sqt_dqt_macro, &sqt_macro, &dqt_macro)
+        SM(qexcl,           &kp DE_QMARK,   &kp DE_EXCL)
+
+        SM(sqt_dqt,         &kp DE_SQT,     &kp DE_DQT)
+        SM(sqt_dqt_macro,   &sqt_macro,     &dqt_macro)
+
+        SM(lpar_lt,         &kp DE_LPAR,    &kp DE_LT)
+        SM(rpar_gt,         &kp DE_RPAR,    &kp DE_GT)
+        SM(par_lgt,         &par_macro,     &lgt_macro)
+
+        SM(lbkt_lbrc,       &kp DE_LBKT,    &kp DE_LBRC)
+        SM(rbkt_rbrc,       &kp DE_RBKT,    &kp DE_RBRC)
+        SM(bkt_brc,         &bkt_macro,     &brc_macro)
 
         mt_home: mt_home {
             compatible = "zmk,behavior-hold-tap";
@@ -202,10 +203,10 @@
         nav_layer {
             label = "NAV";
             bindings = <
-&kp ESC       &kp LC(W)  &kp LC(F)    &kp BSPC   &kp INS      &mt LC(END) HOME &kp PG_DN         &kp PG_UP &mt LC(HOME) END &trans
-&sk LGUI      &sk LALT   &sk LCTRL    &sk LSHFT  &sk RALT     &kp LEFT         &kp DOWN          &kp UP    &kp RIGHT        &kp PAUSE_BREAK
-&kp LC(DE_Z)  &kp LC(X)  &kp LC(INS)  &trans     &kp LS(INS)  &kp RET          &mt LC(BSPC) BSPC &kp TAB   &mt LC(DEL) DEL  &kp PSCRN
-                                      &trans     &trans       &trans           &trans
+&kp ESC       &kp LC(W)  &kp LC(F)    &kp BSPC   &kp INS      &mt LC(HOME) HOME &kp PG_DN         &kp PG_UP &mt LC(END) END &trans
+&sk LGUI      &sk LALT   &sk LCTRL    &sk LSHFT  &sk RALT     &kp LEFT          &kp DOWN          &kp UP    &kp RIGHT       &kp PAUSE_BREAK
+&kp LC(DE_Z)  &kp LC(X)  &kp LC(INS)  &trans     &kp LS(INS)  &kp RET           &mt LC(BSPC) BSPC &kp TAB   &mt LC(DEL) DEL &kp PSCRN
+                                      &trans     &trans       &trans            &trans
             >;
         };
 
