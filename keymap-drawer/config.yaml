@@ -76,7 +76,7 @@ draw_config:
 parse_config:
   preprocess: true
   skip_binding_parsing: false
-  mark_alternate_layer_activators: false
+  mark_alternate_layer_activators: true
   zmk_remove_keycode_prefix: ["DE_"]
     
   sticky_label: $$mdi:circle-small$$
