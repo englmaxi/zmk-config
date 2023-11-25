@@ -32,7 +32,7 @@ layers:
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - NAV
-  - {t: '&td_scw', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - NUM
   NAV:
@@ -45,7 +45,7 @@ layers:
   - Page Down
   - Page Up
   - {t: END, h: '$$mdi:format-vertical-align-bottom$$'}
-  - AL CALC
+  - $$mdi:calculator-variant$$
   - {t: '$$mdi:microsoft-windows$$', h: '$$mdi:circle-small$$'}
   - {t: ALT, h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
