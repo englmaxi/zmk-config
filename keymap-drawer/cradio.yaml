@@ -67,8 +67,8 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:backspace-reverse$$'}
   - Pause Break
   - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
+  - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
   NUM:
   - ''
@@ -102,8 +102,8 @@ layers:
   - '3'
   - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
+  - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
   FUN:
   - ''
@@ -136,10 +136,10 @@ layers:
   - F2
   - F3
   - $$mdi:magnify-remove-outline$$
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
+  - ''
   - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
   HW:
   - {t: '$$mdi:progress-download$$', type: bootloader}
   - ''
@@ -155,7 +155,7 @@ layers:
   - ''
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
   - $$mdi:usb$$
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
   - {t: '$$mdi:bluetooth$$', h: '$$mdi:close-thick$$', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', h: '0', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', h: '1', type: text_with_symbol}
@@ -172,8 +172,8 @@ layers:
   - ''
   - ''
   - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
+  - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
   GER:
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -241,17 +241,17 @@ layers:
   - {t: '$$mdi:cursor-default-click-outline$$', h: '3', type: text_with_symbol}
   - {t: '$$mdi:cursor-default-click-outline$$', h: '5', type: text_with_symbol}
   - ''
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
+  - ''
   - $$mdi:cursor-default-click-outline$$
   - $$mdi:cursor-default-click$$
 combos:
 - p: [1, 2]
   k: ESC
-  l: [DEF, FUN, NUM]
+  l: [DEF]
 - p: [2, 3]
   k: $$mdi:keyboard-return$$
-  l: [DEF, FUN, NUM]
+  l: [DEF]
 - p: [1, 3]
   k: {t: GER, h: '$$mdi:circle-small$$'}
   l: [DEF]
@@ -259,10 +259,10 @@ combos:
   o: 0.6
 - p: [11, 12]
   k: $$mdi:keyboard-tab$$
-  l: [DEF, FUN, NUM]
+  l: [DEF]
 - p: [12, 13]
   k: $$mdi:repeat$$
-  l: [DEF, FUN, NUM]
+  l: [DEF]
 - p: [6, 7]
   k: {t: '[', s: '{'}
   l: [DEF]
@@ -287,10 +287,10 @@ combos:
   o: 1.05
 - p: [26, 27]
   k: $$mdi:backspace-outline$$
-  l: [DEF, FUN, NUM]
+  l: [DEF, NUM]
 - p: [27, 28]
   k: $$mdi:backspace-reverse-outline$$
-  l: [DEF, FUN, NUM]
+  l: [DEF, NUM]
 - p: [4, 14]
   k: '%'
   l: [DEF]
