@@ -22,6 +22,7 @@
 #define COMBO_TERM_FAST 30
 #define COMBO_TERM_SLOW 40
 
+// fixes #544
 #define HRC_TAB     &hml            LA(LCTRL)   TAB
 #define HRC_REPEAT  &hml_repeat     LS(LCTRL)   0
 #define HRC_LPAR    &hmr_lpar_lt    LS(LCTRL)   0
