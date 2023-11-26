@@ -231,6 +231,39 @@ parse_config:
       tap: $$mdi:cursor-default-click-outline$$
       hold: 5
       type: text_with_symbol
+
+    '&mmv MOVE_UP':
+      tap: $$mdi:mouse$$
+      hold: $$mdi:arrow-up-bold$$
+      type: text_with_symbol
+    '&mmv MOVE_DOWN':
+      tap: $$mdi:mouse$$
+      hold: $$mdi:arrow-down-bold$$
+      type: text_with_symbol
+    '&mmv MOVE_LEFT':
+      tap: $$mdi:mouse$$
+      hold: $$mdi:arrow-left-bold$$
+      type: text_with_symbol
+    '&mmv MOVE_RIGHT':
+      tap: $$mdi:mouse$$
+      hold: $$mdi:arrow-right-bold$$
+      type: text_with_symbol
+    '&msc SCRL_UP':
+      tap: $$mdi:mouse$$
+      hold: $$mdi:menu-up$$
+      type: text_with_symbol
+    '&msc SCRL_DOWN':
+      tap: $$mdi:mouse$$
+      hold: $$mdi:menu-down$$
+      type: text_with_symbol
+    '&msc SCRL_LEFT':
+      tap: $$mdi:mouse$$
+      hold: $$mdi:menu-left$$
+      type: text_with_symbol
+    '&msc SCRL_RIGHT':
+      tap: $$mdi:mouse$$
+      hold: $$mdi:menu-right$$
+      type: text_with_symbol
     
   zmk_combos:
     combo_par:
