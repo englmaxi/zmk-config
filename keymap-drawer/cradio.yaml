@@ -216,20 +216,20 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:mouse$$', h: '$$mdi:menu-left$$', type: text_with_symbol}
+  - {t: '$$mdi:mouse$$', h: '$$mdi:menu-down$$', type: text_with_symbol}
+  - {t: '$$mdi:mouse$$', h: '$$mdi:arrow-up-bold$$', type: text_with_symbol}
+  - {t: '$$mdi:mouse$$', h: '$$mdi:menu-up$$', type: text_with_symbol}
+  - {t: '$$mdi:mouse$$', h: '$$mdi:menu-right$$', type: text_with_symbol}
   - $$mdi:microsoft-windows$$
   - ALT
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:mouse$$', h: '$$mdi:arrow-left-bold$$', type: text_with_symbol}
+  - {t: '$$mdi:mouse$$', h: '$$mdi:arrow-down-bold$$', type: text_with_symbol}
+  - {t: '$$mdi:mouse$$', h: '$$mdi:arrow-right-bold$$', type: text_with_symbol}
   - ''
   - ''
   - ''
