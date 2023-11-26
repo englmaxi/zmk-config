@@ -384,8 +384,8 @@ parse_config:
     COLON: ':'
     SINGLE_QUOTE: ''''
     SQT: ''''
-    APOSTROPHE: <
-    APOS: .
+    APOSTROPHE: ''''
+    APOS: ''''
     DOUBLE_QUOTES: '"'
     DQT: '"'
     COMMA: ','
