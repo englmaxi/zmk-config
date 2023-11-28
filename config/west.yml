@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: englmaxi
-      revision: main
+      revision: pointers
       import: app/west.yml
   self:
     path: config
