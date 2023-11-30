@@ -13,4 +13,4 @@ on:
 
 jobs:
   build:
-    uses: englmaxi/zmk/.github/workflows/build-user-config.yml@pointers
+    uses: englmaxi/zmk/.github/workflows/build-user-config.yml@dev
