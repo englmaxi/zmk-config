@@ -1663,7 +1663,9 @@ rect.held, rect.combo.held {
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key  combo-separate side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key  combo-separate"/>
-<text x="0" y="-4" class="key  combo-separate tap">[]</text>
+<text x="0" y="-4" class="key  combo-separate tap">
+<tspan x="0" dy="-0.0em">[</tspan><tspan x="0" dy="1.0em">]</tspan>
+</text>
 <text x="0" y="-25" class="key  combo-separate shifted">{ }</text>
 </g>
 <g transform="translate(14, 103)" class="key keypos-1">
@@ -1809,8 +1811,11 @@ rect.held, rect.combo.held {
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key  combo-separate side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key  combo-separate"/>
-<text x="0" y="-4" class="key  combo-separate tap">()</text>
-<text x="0" y="-25" class="key  combo-separate shifted">&lt;&gt;</text>
+<text x="0" y="-4" class="key  combo-separate tap">
+<tspan x="0" dy="-0.5em">(</tspan><tspan x="0" dy="1.0em">)</tspan>
+</text>
+<text x="0" y="25" class="key  combo-separate hold"><tspan style="font-size: 88%">LS(LALT)</tspan></text>
+<text x="0" y="-25" class="key  combo-separate shifted">&lt; &gt;</text>
 </g>
 <g transform="translate(14, 103)" class="key keypos-1">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key side"/>

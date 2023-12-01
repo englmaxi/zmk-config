@@ -270,7 +270,7 @@ combos:
   k: {t: ']', s: '}'}
   l: [DEF]
 - p: [6, 8]
-  k: {t: '[]', s: '{ }'}
+  k: {t: '[ ]', s: '{ }'}
   l: [DEF]
   a: top
   o: 0.6
@@ -282,7 +282,7 @@ combos:
   k: {t: ), s: '>'}
   l: [DEF]
 - p: [16, 18]
-  k: {t: (), s: <>}
+  k: {t: ( ), h: LS(LALT), s: < >}
   l: [DEF]
   a: bottom
   o: 1.05
