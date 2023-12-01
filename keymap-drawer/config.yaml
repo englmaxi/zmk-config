@@ -236,10 +236,12 @@ parse_config:
     combo_par:
       align: bottom
       offset: 1.05
+      draw_separate: true
       key:
         tap: '()'
         shifted: '<>'
     combo_bkt:
+      draw_separate: true
       align: top
       offset: 0.6
     combo_ger:
