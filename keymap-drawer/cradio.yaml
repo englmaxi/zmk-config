@@ -274,6 +274,7 @@ combos:
   l: [DEF]
   a: top
   o: 0.6
+  draw_separate: true
 - p: [16, 17]
   k: {t: (, s: <}
   l: [DEF]
@@ -285,6 +286,7 @@ combos:
   l: [DEF]
   a: bottom
   o: 1.05
+  draw_separate: true
 - p: [26, 27]
   k: $$mdi:backspace-outline$$
   l: [DEF, NUM]
