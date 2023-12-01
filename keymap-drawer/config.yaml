@@ -316,6 +316,7 @@ parse_config:
 
     LC(INS): $$mdi:content-copy$$
     LS(INS): $$mdi:content-paste$$
+    LS(DEL): $$mdi:content-cut$$
     LC(X): $$mdi:content-cut$$
     LC(Z): $$mdi:undo$$
     LC(Y): $$mdi:redo$$
