@@ -57,7 +57,7 @@ layers:
   - $$mdi:arrow-right$$
   - $$mdi:monitor-screenshot$$
   - $$mdi:undo$$
-  - $$mdi:content-cut$$
+  - LS(DEL)
   - $$mdi:content-copy$$
   - $$mdi:content-paste$$
   - $$mdi:redo$$
