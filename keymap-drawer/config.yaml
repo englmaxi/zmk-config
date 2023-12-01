@@ -124,7 +124,7 @@ parse_config:
     '&scw LSHFT 0': $$mdi:apple-keyboard-shift$$
 
     '&par_macro': '( )'
-    '&bkt_macro': '[]'
+    '&bkt_macro': '[ ]'
     '&brc_macro': '{ }'
     '&lgt_macro': '< >'
 
@@ -237,13 +237,10 @@ parse_config:
       align: bottom
       offset: 1.05
       draw_separate: true
-      key:
-        tap: '()'
-        shifted: '<>'
     combo_bkt:
-      draw_separate: true
       align: top
       offset: 0.6
+      draw_separate: true
     combo_ger:
       align: top
       offset: 0.6
