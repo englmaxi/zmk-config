@@ -98,6 +98,8 @@ parse_config:
       
     '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
     '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$
+
+    '&key_repeat': $$mdi:repeat$$
     
     '&hmr_lpar_lt LS(LCTRL) 0':
       tap: '('
