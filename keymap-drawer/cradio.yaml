@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: ferris/sweep}
 layers:
   DEF:
-  - Q
+  - '&key_repeat'
   - W
   - F
   - P
@@ -80,7 +80,7 @@ layers:
   - '7'
   - '8'
   - '9'
-  - $$mdi:backspace-outline$$
+  - ''
   - $$mdi:microsoft-windows$$
   - ALT
   - $$mdi:apple-keyboard-control$$
@@ -304,6 +304,9 @@ combos:
   l: [DEF]
 - p: [1, 11]
   k: '@'
+  l: [DEF]
+- p: [0, 10]
+  k: Q
   l: [DEF]
 - p: [14, 24]
   k: '~'
