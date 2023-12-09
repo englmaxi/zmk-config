@@ -152,22 +152,11 @@
                 <&kp LEFT>;
         )
 
-        ZMK_MACRO(bt_0,
+        ZMK_MACRO1(bts,
             bindings =
                 <&out OUT_BLE>,
-                <&bt BT_SEL 0>;
-        )
-
-        ZMK_MACRO(bt_1,
-            bindings =
-                <&out OUT_BLE>,
-                <&bt BT_SEL 1>;
-        )
-
-        ZMK_MACRO(bt_2,
-            bindings =
-                <&out OUT_BLE>,
-                <&bt BT_SEL 2>;
+                <&macro_param_1to1>,
+                <&bt BT_SEL MACRO_PLACEHOLDER>;
         )
     };
 
@@ -249,7 +238,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &bootloader   &none         &none         &none         &none             &none         &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bootloader
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &sys_reset    &none         &out OUT_TOG  &out OUT_USB  &none             &bt BT_CLR    &bt_0         &bt_1         &bt_2         &sys_reset
+    &sys_reset    &none         &out OUT_TOG  &out OUT_USB  &none             &bt BT_CLR    &bts 0        &bts 1        &bts 2        &sys_reset
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯

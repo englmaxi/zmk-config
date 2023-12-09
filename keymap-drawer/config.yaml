@@ -157,23 +157,23 @@ parse_config:
       tap: $$mdi:bluetooth-connect$$
       hold: '4'
       type: text_with_symbol
-    '&bt_0':
+    '&bts 0':
       tap: $$mdi:bluetooth-connect$$
       hold: '0'
       type: text_with_symbol
-    '&bt_1':
+    '&bts 1':
       tap: $$mdi:bluetooth-connect$$
       hold: '1'
       type: text_with_symbol
-    '&bt_2':
+    '&bts 2':
       tap: $$mdi:bluetooth-connect$$
       hold: '2'
       type: text_with_symbol
-    '&bt_3':
+    '&bts 3':
       tap: $$mdi:bluetooth-connect$$
       hold: '3'
       type: text_with_symbol
-    '&bt_4':
+    '&bts 4':
       tap: $$mdi:bluetooth-connect$$
       hold: '4'
       type: text_with_symbol
