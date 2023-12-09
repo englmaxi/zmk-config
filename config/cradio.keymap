@@ -4,8 +4,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define TO_STRING(x) #x
-
 #ifndef KEYMAP_DRAWER
 #include "keys_de.h"
 #endif
@@ -44,35 +42,32 @@
     tapping-term-ms = <220>;
 };
 
-#define HM(NAME, TAP, HT_KEYPOS) \
-    NAME: NAME { \
-        compatible = "zmk,behavior-hold-tap"; \
-        label = TO_STRING(HM_ ## NAME); \
-        #binding-cells = <2>; \
-        tapping-term-ms = <280>; \
-        quick-tap-ms = <175>; \
-        require-prior-idle-ms = <175>; \
-        flavor = "balanced"; \
-        bindings = <&kp>, <TAP>; \
-        hold-trigger-key-positions = <HT_KEYPOS THUMBS>; \
-        hold-trigger-on-release; \
+#define HM(NAME, TAP, HT_KEYPOS)                            \
+    NAME: NAME {                                            \
+        compatible = "zmk,behavior-hold-tap";               \
+        #binding-cells = <2>;                               \
+        tapping-term-ms = <280>;                            \
+        quick-tap-ms = <175>;                               \
+        require-prior-idle-ms = <175>;                      \
+        flavor = "balanced";                                \
+        bindings = <&kp>, <TAP>;                            \
+        hold-trigger-key-positions = <HT_KEYPOS THUMBS>;    \
+        hold-trigger-on-release;                            \
     };
 
-#define SM(NAME, TAP, SHIFTED) \
-    NAME: NAME { \
-        compatible = "zmk,behavior-mod-morph"; \
-        label = TO_STRING(SM_ ## NAME); \
-        bindings = <TAP>, <SHIFTED>; \
-        #binding-cells = <0>; \
-        mods = <(MOD_RSFT|MOD_LSFT)>; \
+#define SM(NAME, TAP, SHIFTED)                  \
+    NAME: NAME {                                \
+        compatible = "zmk,behavior-mod-morph";  \
+        bindings = <TAP>, <SHIFTED>;            \
+        #binding-cells = <0>;                   \
+        mods = <(MOD_RSFT|MOD_LSFT)>;           \
     };
     
-#define TD(NAME, T_TERM, TAP1, TAP2, ...) \
-    NAME: NAME { \
-        compatible = "zmk,behavior-tap-dance"; \
-        label = TO_STRING(TD_ ## NAME); \
-        #binding-cells = <0>; \
-        tapping-term-ms = <270>; \
+#define TD(NAME, T_TERM, TAP1, TAP2, ...)                                   \
+    NAME: NAME {                                                            \
+        compatible = "zmk,behavior-tap-dance";                              \
+        #binding-cells = <0>;                                               \
+        tapping-term-ms = <T_TERM>;                                         \
 		bindings = <TAP1>, <TAP2> __VA_OPT__(, <)__VA_ARGS__ __VA_OPT__(>); \
     };
 
@@ -104,13 +99,12 @@
         SM(bkt_brc,         &bkt_macro,     &brc_macro)
 
         // tap-dance
-        TD(td_scw,      400,    &kp LSHIFT, &caps_word,     &kp CLCK)
+        TD(td_rcw,      400,    &kp RET,    &caps_word,     &kp CLCK)
         TD(td_sqt_dqt,  270,    &sqt_dqt,   &sqt_dqt_macro)
 
-        scw: scw { // wrapper for tap-dance, workaround for #1691
+        rcw: rcw { // wrapper for tap-dance, workaround for #1691
             compatible = "zmk,behavior-hold-tap";
-            label = "shift-caps-word";
-            bindings = <&td_scw>, <&kp>;
+            bindings = <&kp>, <&td_rcw>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -190,7 +184,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "DEF";
+            display-name = "DEF";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp DE_Y      &td_sqt_dqt
@@ -199,28 +193,28 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &lt NUM DE_Z  &kp X         &kp C         &lt 6 D       &kp V             &kp K         &kp H         &kp DE_COMMA  &kp DE_DOT    &qexcl
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              &mo NAV       &scw 0 RET        &lt FUN SPACE &mo NUM
+                                              &mo NAV       &rcw LSHFT 0      &lt FUN SPACE &mo NUM
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
 
         navigation_layer {
-            label = "NAV";
+            display-name = "NAV";
             bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬───────────────╮
     &kp ESC       &kp LC(W)     &kp LC(F)     &kp BSPC      &kp INS           CT(HOME)      &kp PG_DN     &kp PG_UP     CT(END)       &kp C_AL_CALC
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼───────────────┤
     &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &sk RALT          &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp PSCRN
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼───────────────┤
     &kp LC(DE_Z)  &kp LS(DEL)   &kp LC(INS)   &kp LS(INS)   &kp LC(DE_Y)      &kp RET       CT(BSPC)      &kp TAB       CT(DEL)       &kp PAUSE_BREAK
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴───────────────╯
                                               &trans        &none             &none         &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
 
         number_layer {
-            label = "NUM";
+            display-name = "NUM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &none         &none         &none         &none         &none             &kp DE_DOT    &kp N7        &kp N8        &kp N9        &kp BSPC
@@ -235,22 +229,22 @@
         };
 
         function_layer {
-            label = "FUN";
+            display-name = "FUN";
             bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬────────────────╮
     &none         &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &kp C_BRI_UP      &kp F12       &kp F7        &kp F8        &kp F9        &kp LC(DE_PLUS)
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼────────────────┤
     &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &kp C_BRI_DN      &kp F11       &kp F4        &kp F5        &kp F6        &kp LC(DE_MINUS)
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼────────────────┤
     &none         &kp C_PREV    &kp C_PP      &kp C_NEXT    &none             &kp F10       &kp F1        &kp F2        &kp F3        &kp LC(N0)
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴────────────────╯
                                               &none         &none             &trans        &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
 
         hardware_layer {
-            label = "HW";
+            display-name = "HW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &bootloader   &none         &none         &none         &none             &none         &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bootloader
@@ -265,7 +259,7 @@
         };
 
         german_layer {
-            label = "GER";
+            display-name = "GER";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &trans        &trans        &trans        &trans        &trans            &trans        &trans        &kp DE_UE     &kp DE_ACUTE  &kp DE_GRAVE
@@ -280,7 +274,7 @@
         };
 
         mouse_layer {
-            label = "MSE";
+            display-name = "MSE";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
@@ -289,7 +283,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &none         &none         &none         &none         &none             &none         &mkp MB4      &mkp MB3      &mkp MB5      &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              &none         &none             &mkp LCLK     &mkp RCLK
+                                              &none         &trans            &mkp LCLK     &mkp RCLK
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };

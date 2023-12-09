@@ -117,7 +117,7 @@ parse_config:
       tap: "'"
       shifted: '"'
       
-    '&scw 0 RET':
+    '&rcw LSHFT 0':
       tap: $$mdi:keyboard-return$$
       hold: $$mdi:apple-keyboard-shift$$
 
