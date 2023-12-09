@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: ferris/sweep}
 layers:
   DEF:
-  - '&key_repeat'
+  - $$mdi:repeat$$
   - W
   - F
   - P
