@@ -242,7 +242,7 @@ layers:
   - {t: '$$mdi:cursor-default-click-outline$$', h: '5', type: text_with_symbol}
   - ''
   - ''
-  - ''
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:cursor-default-click-outline$$
   - $$mdi:cursor-default-click$$
 combos:
