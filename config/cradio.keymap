@@ -22,8 +22,8 @@
 #define GER 5
 #define MSE 6
 
-#define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24  // left hand
-#define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29  // right hand
+#define KEYS_L  0  1  2  3  4 10 11 12 13 14 20 21 22 23 24  // left hand
+#define KEYS_R  5  6  7  8  9 15 16 17 18 19 25 26 27 28 29  // right hand
 #define THUMBS 30 31 32 33                              // thumbs
 
 #include "combos.dtsi"
@@ -46,10 +46,10 @@
     NAME: NAME {                                            \
         compatible = "zmk,behavior-hold-tap";               \
         #binding-cells = <2>;                               \
+        flavor = "balanced";                                \
         tapping-term-ms = <280>;                            \
         quick-tap-ms = <175>;                               \
         require-prior-idle-ms = <175>;                      \
-        flavor = "balanced";                                \
         bindings = <&kp>, <TAP>;                            \
         hold-trigger-key-positions = <HT_KEYPOS THUMBS>;    \
         hold-trigger-on-release;                            \
@@ -58,8 +58,8 @@
 #define SM(NAME, TAP, SHIFTED)                  \
     NAME: NAME {                                \
         compatible = "zmk,behavior-mod-morph";  \
-        bindings = <TAP>, <SHIFTED>;            \
         #binding-cells = <0>;                   \
+        bindings = <TAP>, <SHIFTED>;            \
         mods = <(MOD_RSFT|MOD_LSFT)>;           \
     };
     
@@ -68,7 +68,7 @@
         compatible = "zmk,behavior-tap-dance";                              \
         #binding-cells = <0>;                                               \
         tapping-term-ms = <T_TERM>;                                         \
-		bindings = <TAP1>, <TAP2> __VA_OPT__(, <)__VA_ARGS__ __VA_OPT__(>); \
+        bindings = <TAP1>, <TAP2> __VA_OPT__(, <)__VA_ARGS__ __VA_OPT__(>); \
     };
 
 #define CT(KEY) &mt LC(KEY) KEY
@@ -104,10 +104,9 @@
 
         rcw: rcw { // wrapper for tap-dance, workaround for #1691
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&td_rcw>;
-
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            bindings = <&kp>, <&td_rcw>;
         };
     };
 
@@ -227,7 +226,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼────────────────┤
     &none         &kp C_PREV    &kp C_PP      &kp C_NEXT    &none             &kp F10       &kp F1        &kp F2        &kp F3        &kp LC(N0)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴────────────────╯
-                                              &none         &none             &trans        &none
+                                              &none         &none             &none         &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -242,7 +241,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              &trans        &none             &none         &trans
+                                              &none         &none             &none         &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
