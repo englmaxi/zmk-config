@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: ferris/sweep}
 layers:
   DEF:
-  - $$mdi:repeat$$
+  - Q
   - W
   - F
   - P
@@ -304,9 +304,6 @@ combos:
   l: [DEF]
 - p: [1, 11]
   k: '@'
-  l: [DEF]
-- p: [0, 10]
-  k: Q
   l: [DEF]
 - p: [14, 24]
   k: '~'
