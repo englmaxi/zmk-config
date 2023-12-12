@@ -38,7 +38,7 @@
         COMBO(ger,      &sl GER,         1  3, DEF,     COMBO_TERM_SLOW)
 
         COMBO(tab,      HRC_TAB,        11 12, DEF,     COMBO_TERM_SLOW)
-        COMBO(hrrepeat, HRC_REPEAT,     12 13, DEF,     COMBO_TERM_SLOW)
+        COMBO(repeat,   HRC_REPEAT,     12 13, DEF,     COMBO_TERM_SLOW)
 
         COMBO(lbkt,     &lbkt_lbrc,      6  7, DEF,     COMBO_TERM_SLOW)
         COMBO(rbkt,     &rbkt_rbrc,      7  8, DEF,     COMBO_TERM_SLOW)
@@ -55,7 +55,6 @@
         COMBO(dllr,     &kp DE_DLLR,     3 13, DEF,     COMBO_TERM_FAST)
         COMBO(hash,     &kp DE_HASH,     2 12, DEF,     COMBO_TERM_FAST)
         COMBO(at,       &kp DE_AT,       1 11, DEF,     COMBO_TERM_FAST)
-        COMBO(repeat,   &kp Q,           0 10, DEF,     COMBO_TERM_FAST)
 
         COMBO(tilde,    &kp DE_TILDE,   14 24, DEF,     COMBO_TERM_FAST)
         COMBO(equal,    &kp DE_EQUAL,   13 23, DEF,     COMBO_TERM_FAST)
