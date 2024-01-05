@@ -141,7 +141,7 @@
             bindings =
                 <&kp DE_LBRC &kp DE_RBRC>,
                 <&macro_release>,
-                <&kp LSHFT>,
+                <&kp LSHFT &kp LALT>,
                 <&macro_tap>,
                 <&kp LEFT>;
         )
@@ -151,7 +151,7 @@
             bindings =
                 <&kp DE_LT &kp DE_GT>,
                 <&macro_release>,
-                <&kp LSHFT &kp LALT>,
+                <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp LEFT>;
         )
