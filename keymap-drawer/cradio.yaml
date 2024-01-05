@@ -270,19 +270,19 @@ combos:
   k: {t: ']', s: '>'}
   l: [DEF]
 - p: [6, 8]
-  k: {t: '[]', s: '{}'}
+  k: {t: '[]', s: <>}
   l: [DEF]
   a: top
   o: 0.6
   draw_separate: true
 - p: [16, 17]
-  k: {t: (, h: LS(LCTRL), s: '{'}
+  k: {t: (, s: '{'}
   l: [DEF]
 - p: [17, 18]
-  k: {t: ), h: LA(LCTRL), s: '}'}
+  k: {t: ), s: '}'}
   l: [DEF]
 - p: [16, 18]
-  k: {t: (), s: <>}
+  k: {t: (), s: '{}'}
   l: [DEF]
   a: bottom
   o: 1.05
