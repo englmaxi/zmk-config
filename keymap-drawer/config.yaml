@@ -117,6 +117,20 @@ parse_config:
       tap: ']'
       shifted: '}'
     
+    '&hmr_lpar_lbrc LS(LCTRL) 0':
+      tap: '('
+      shifted: '{'
+    '&hmr_rpar_rbrc LA(LCTRL) 0':
+      tap: ')'
+      shifted: '}'
+    
+    '&lbkt_lt':
+      tap: '['
+      shifted: '<'
+    '&rbkt_gt':
+      tap: ']'
+      shifted: '>'
+    
     '&td_sqt_dqt':
       tap: "'"
       shifted: '"'
@@ -238,14 +252,14 @@ parse_config:
       draw_separate: true
       key:
         tap: '()'
-        shifted: '<>'
+        shifted: '{}'
     combo_bkt:
       align: top
       offset: 0.6
       draw_separate: true
       key:
         tap: '[]'
-        shifted: '{}'
+        shifted: '<>'
     combo_ger:
       align: top
       offset: 0.6
