@@ -25,9 +25,9 @@
 // fixes #544
 #define HRC_TAB     &hml            LA(LCTRL)   TAB
 #define HRC_REPEAT  &hml_repeat     LS(LCTRL)   0
-#define HRC_LPAR    &hmr_lpar_lt    LS(LCTRL)   0
-#define HRC_RPAR    &hmr_rpar_gt    LA(LCTRL)   0
-#define HRC_PAR     &hmr_par_lgt    LS(LALT)    0
+#define HRC_LPAR    &hmr_lpar_lbrc  LS(LCTRL)   0
+#define HRC_RPAR    &hmr_rpar_rbrc  LA(LCTRL)   0
+#define HRC_PAR     &hmr_par_brc    LS(LALT)    0
 
 / {
     combos {
@@ -40,9 +40,9 @@
         COMBO(tab,      HRC_TAB,        11 12, DEF,     COMBO_TERM_SLOW)
         COMBO(repeat,   HRC_REPEAT,     12 13, DEF,     COMBO_TERM_SLOW)
 
-        COMBO(lbkt,     &lbkt_lbrc,      6  7, DEF,     COMBO_TERM_SLOW)
-        COMBO(rbkt,     &rbkt_rbrc,      7  8, DEF,     COMBO_TERM_SLOW)
-        COMBO(bkt,      &bkt_brc,        6  8, DEF,     COMBO_TERM_SLOW)
+        COMBO(lbkt,     &lbkt_lt,        6  7, DEF,     COMBO_TERM_SLOW)
+        COMBO(rbkt,     &rbkt_gt,        7  8, DEF,     COMBO_TERM_SLOW)
+        COMBO(bkt,      &bkt_lgt,        6  8, DEF,     COMBO_TERM_SLOW)
 
         COMBO(lpar,     HRC_LPAR,       16 17, DEF,     COMBO_TERM_SLOW)
         COMBO(rpar,     HRC_RPAR,       17 18, DEF,     COMBO_TERM_SLOW)

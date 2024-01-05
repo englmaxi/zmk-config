@@ -79,10 +79,10 @@
         HM(hml,         &kp,            KEYS_R)
         HM(hml_repeat,  &key_repeat,    KEYS_R)
 
-        HM(hmr,         &kp,            KEYS_L)
-        HM(hmr_lpar_lt, &lpar_lt,       KEYS_L)
-        HM(hmr_rpar_gt, &rpar_gt,       KEYS_L)
-        HM(hmr_par_lgt, &par_lgt,       KEYS_L)
+        HM(hmr,             &kp,        KEYS_L)
+        HM(hmr_lpar_lbrc,   &lpar_lbrc, KEYS_L)
+        HM(hmr_rpar_rbrc,   &rpar_rbrc, KEYS_L)
+        HM(hmr_par_brc,     &par_brc,   KEYS_L)
 
         // shift morphs
         SM(qexcl,           &kp DE_QMARK,   &kp DE_EXCL)
@@ -90,13 +90,13 @@
         SM(sqt_dqt,         &kp DE_SQT,     &kp DE_DQT)
         SM(sqt_dqt_macro,   &sqt_macro,     &dqt_macro)
 
-        SM(lpar_lt,         &kp DE_LPAR,    &kp DE_LT)
-        SM(rpar_gt,         &kp DE_RPAR,    &kp DE_GT)
-        SM(par_lgt,         &par_macro,     &lgt_macro)
+        SM(lpar_lbrc,   &kp DE_LPAR,    &kp DE_LBRC)
+        SM(rpar_rbrc,   &kp DE_RPAR,    &kp DE_RBRC)
+        SM(par_brc,     &par_macro,     &brc_macro)
 
-        SM(lbkt_lbrc,       &kp DE_LBKT,    &kp DE_LBRC)
-        SM(rbkt_rbrc,       &kp DE_RBKT,    &kp DE_RBRC)
-        SM(bkt_brc,         &bkt_macro,     &brc_macro)
+        SM(lbkt_lt, &kp DE_LBKT,    &kp DE_LT)
+        SM(rbkt_gt, &kp DE_RBKT,    &kp DE_GT)
+        SM(bkt_lgt, &bkt_macro,     &lgt_macro)
 
         // tap-dance
         TD(td_rcw,      400,    &kp RET,    &caps_word,     &kp CLCK)
