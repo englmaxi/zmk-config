@@ -121,11 +121,6 @@
             bindings = <&kp DE_LBKT &kp DE_RBKT &kp LEFT>;
         )
 
-        // { } <-
-        ZMK_MACRO(brc_macro,
-            bindings = <&kp DE_LBRC &kp DE_RBRC &kp LEFT>;
-        )
-
         // ' ' <-
         ZMK_MACRO(sqt_macro,
             bindings = <&kp DE_SQT &kp DE_SQT &kp LEFT>;
@@ -135,6 +130,16 @@
         ZMK_MACRO(dqt_macro,
             bindings =
                 <&kp DE_DQT &kp DE_DQT>,
+                <&macro_release>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp LEFT>;
+        )
+
+        // { } <-
+        ZMK_MACRO(brc_macro,
+            bindings =
+                <&kp DE_LBRC &kp DE_RBRC>,
                 <&macro_release>,
                 <&kp LSHFT>,
                 <&macro_tap>,
