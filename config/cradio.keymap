@@ -128,38 +128,30 @@
 
         // " " <-
         ZMK_MACRO(dqt_macro,
-            bindings =
-                <&kp DE_DQT &kp DE_DQT>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp LEFT>;
+            bindings
+                = <&macro_release &kp LSHFT>
+                , <&macro_tap     &kp DE_DQT &kp DE_DQT &kp LEFT>;
         )
 
         // { } <-
         ZMK_MACRO(brc_macro,
-            bindings =
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp DE_LBRC &kp DE_RBRC &kp LEFT>;
+            bindings
+                = <&macro_release &kp LSHFT>
+                , <&macro_tap     &kp DE_LBRC &kp DE_RBRC &kp LEFT>;
         )
 
         // < > <-
         ZMK_MACRO(lgt_macro,
-            bindings =
-                <&kp DE_LT &kp DE_GT>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp LEFT>;
+            bindings
+                = <&macro_release &kp LSHFT>
+                , <&macro_tap     &kp DE_LT &kp DE_GT &kp LEFT>;
         )
 
         ZMK_MACRO1(bts,
-            bindings =
-                <&out OUT_BLE>,
-                <&macro_param_1to1>,
-                <&bt BT_SEL MACRO_PLACEHOLDER>;
+            bindings
+                = <&out OUT_BLE>
+                , <&macro_param_1to1>
+                , <&bt BT_SEL MACRO_PLACEHOLDER>;
         )
     };
 
