@@ -139,8 +139,10 @@
         // { } <-
         ZMK_MACRO(brc_macro,
             bindings =
-                <&macro_release &kp LSHF>,
-                <&macro_tap     &kp DE_LBRC &kp DE_RBRC &kp LEFT>;
+                <&macro_release>,
+                <&kp LSHF>,
+                <&macro_tap>,
+                <&kp DE_LBRC &kp DE_RBRC &kp LEFT>;
         )
 
         // < > <-
