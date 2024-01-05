@@ -544,22 +544,24 @@ rect.held, rect.combo.held {
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="490" y="23" width="28" height="26" class="combo"/>
 <text x="504" y="36" class="combo tap">[</text>
-<text x="504" y="24" class="combo shifted">{</text>
+<text x="504" y="24" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="546" y="26" width="28" height="26" class="combo"/>
 <text x="560" y="39" class="combo tap">]</text>
-<text x="560" y="27" class="combo shifted">}</text>
+<text x="560" y="27" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="490" y="79" width="28" height="26" class="combo"/>
 <text x="504" y="92" class="combo tap">(</text>
-<text x="504" y="80" class="combo shifted">&lt;</text>
+<text x="504" y="104" class="combo hold"><tspan style="font-size: 78%">LS(LCTRL)</tspan></text>
+<text x="504" y="80" class="combo shifted">{</text>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="546" y="82" width="28" height="26" class="combo"/>
 <text x="560" y="95" class="combo tap">)</text>
-<text x="560" y="83" class="combo shifted">&gt;</text>
+<text x="560" y="107" class="combo hold"><tspan style="font-size: 78%">LA(LCTRL)</tspan></text>
+<text x="560" y="83" class="combo shifted">}</text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="490" y="135" width="28" height="26" class="combo"/>
