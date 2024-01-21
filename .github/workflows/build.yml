@@ -8,7 +8,7 @@ on:
       - "config/*.dtsi"
       - "config/*.h"
       - "config/*.keymap"
-      - "config/boards/**"
+      - "boards/**"
       - "build.yaml"
 
 jobs:
