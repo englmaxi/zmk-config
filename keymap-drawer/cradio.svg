@@ -108,9 +108,6 @@
 <svg id="mdi:progress-download">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-progress-download" viewBox="0 0 24 24"><path d="M13,2.03C17.73,2.5 21.5,6.25 21.95,11C22.5,16.5 18.5,21.38 13,21.93V19.93C16.64,19.5 19.5,16.61 19.96,12.97C20.5,8.58 17.39,4.59 13,4.05V2.05L13,2.03M11,2.06V4.06C9.57,4.26 8.22,4.84 7.1,5.74L5.67,4.26C7.19,3 9.05,2.25 11,2.06M4.26,5.67L5.69,7.1C4.8,8.23 4.24,9.58 4.05,11H2.05C2.25,9.04 3,7.19 4.26,5.67M2.06,13H4.06C4.24,14.42 4.81,15.77 5.69,16.9L4.27,18.33C3.03,16.81 2.26,14.96 2.06,13M7.1,18.37C8.23,19.25 9.58,19.82 11,20V22C9.04,21.79 7.18,21 5.67,19.74L7.1,18.37M12,16.5L7.5,12H11V8H13V12H16.5L12,16.5Z" /></svg>
 </svg>
-<svg id="mdi:redo">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-redo" viewBox="0 0 24 24"><path d="M18.4,10.6C16.55,9 14.15,8 11.5,8C6.85,8 2.92,11.03 1.54,15.22L3.9,16C4.95,12.81 7.95,10.5 11.5,10.5C13.45,10.5 15.23,11.22 16.62,12.38L13,16H22V7L18.4,10.6Z" /></svg>
-</svg>
 <svg id="mdi:repeat">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-repeat" viewBox="0 0 24 24"><path d="M17,17H7V14L3,18L7,22V19H19V13H17M7,7H17V10L21,6L17,2V5H5V11H7V7Z" /></svg>
 </svg>
@@ -618,28 +615,20 @@ rect.held, rect.combo.held {
 <text x="588" y="78" class="combo tap">&amp;</text>
 </g>
 <g class="combo combopos-23">
-<rect rx="6" ry="6" x="630" y="105" width="28" height="26" class="combo"/>
-<text x="644" y="118" class="combo tap">§</text>
-</g>
-<g class="combo combopos-24">
 <rect rx="6" ry="6" x="406" y="127" width="28" height="26" class="combo"/>
 <text x="420" y="140" class="combo tap">_</text>
 </g>
-<g class="combo combopos-25">
+<g class="combo combopos-24">
 <rect rx="6" ry="6" x="462" y="116" width="28" height="26" class="combo"/>
 <text x="476" y="129" class="combo tap">-</text>
 </g>
-<g class="combo combopos-26">
+<g class="combo combopos-25">
 <rect rx="6" ry="6" x="518" y="99" width="28" height="26" class="combo"/>
 <text x="532" y="112" class="combo tap">/</text>
 </g>
-<g class="combo combopos-27">
+<g class="combo combopos-26">
 <rect rx="6" ry="6" x="574" y="121" width="28" height="26" class="combo"/>
 <text x="588" y="134" class="combo tap">|</text>
-</g>
-<g class="combo combopos-28">
-<rect rx="6" ry="6" x="630" y="161" width="28" height="26" class="combo"/>
-<text x="644" y="174" class="combo tap">°</text>
 </g>
 </g>
 </g>
@@ -674,22 +663,20 @@ rect.held, rect.combo.held {
 <g transform="translate(420, 56)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">HOME</text>
-<use href="#mdi:format-vertical-align-top" xlink:href="#mdi:format-vertical-align-top" x="-4" y="17" height="8" width="8.0" class="key hold glyph mdi:format-vertical-align-top"/>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.5em">Page</tspan><tspan x="0" dy="1.0em">Up</tspan>
+</text>
 </g>
 <g transform="translate(476, 45)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.5em">Page</tspan><tspan x="0" dy="1.0em">Down</tspan>
-</text>
+<text x="0" y="-4" class="key tap">HOME</text>
+<use href="#mdi:format-vertical-align-top" xlink:href="#mdi:format-vertical-align-top" x="-4" y="17" height="8" width="8.0" class="key hold glyph mdi:format-vertical-align-top"/>
 </g>
 <g transform="translate(532, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.5em">Page</tspan><tspan x="0" dy="1.0em">Up</tspan>
-</text>
+<use href="#mdi:arrow-up" xlink:href="#mdi:arrow-up" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:arrow-up"/>
 </g>
 <g transform="translate(588, 50)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -700,7 +687,9 @@ rect.held, rect.combo.held {
 <g transform="translate(644, 90)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:calculator" xlink:href="#mdi:calculator" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:calculator"/>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.5em">Pause</tspan><tspan x="0" dy="1.0em">Break</tspan>
+</text>
 </g>
 <g transform="translate(28, 146)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -735,17 +724,19 @@ rect.held, rect.combo.held {
 <g transform="translate(420, 112)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:arrow-left" xlink:href="#mdi:arrow-left" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:arrow-left"/>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.5em">Page</tspan><tspan x="0" dy="1.0em">Down</tspan>
+</text>
 </g>
 <g transform="translate(476, 101)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:arrow-down" xlink:href="#mdi:arrow-down" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:arrow-down"/>
+<use href="#mdi:arrow-left" xlink:href="#mdi:arrow-left" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:arrow-left"/>
 </g>
 <g transform="translate(532, 84)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:arrow-up" xlink:href="#mdi:arrow-up" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:arrow-up"/>
+<use href="#mdi:arrow-down" xlink:href="#mdi:arrow-down" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:arrow-down"/>
 </g>
 <g transform="translate(588, 106)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -780,7 +771,7 @@ rect.held, rect.combo.held {
 <g transform="translate(252, 168)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:redo" xlink:href="#mdi:redo" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:redo"/>
+<text x="0" y="-4" class="key tap">V</text>
 </g>
 <g transform="translate(420, 168)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -807,9 +798,7 @@ rect.held, rect.combo.held {
 <g transform="translate(644, 202)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.5em">Pause</tspan><tspan x="0" dy="1.0em">Break</tspan>
-</text>
+<use href="#mdi:calculator" xlink:href="#mdi:calculator" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:calculator"/>
 </g>
 <g transform="translate(227, 224) rotate(15.0)" class="key held keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
@@ -1127,7 +1116,6 @@ rect.held, rect.combo.held {
 <g transform="translate(420, 168)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">F10</text>
 </g>
 <g transform="translate(476, 157)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>

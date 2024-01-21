@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: ferris/sweep}
+layout: {qmk_keyboard: berylline}
 layers:
   DEF:
   - Q
@@ -21,16 +21,12 @@ layers:
   - {t: E, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: ALT}
   - {t: O, h: '$$mdi:microsoft-windows$$'}
-  - {t: Z, h: NUM}
   - X
   - C
   - {t: D, h: MSE}
-  - V
-  - K
   - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - {t: '?', s: '!'}
   - NAV
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
@@ -56,16 +52,12 @@ layers:
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
   - $$mdi:monitor-screenshot$$
-  - $$mdi:undo$$
   - $$mdi:content-cut$$
   - $$mdi:content-copy$$
   - $$mdi:content-paste$$
-  - V
-  - $$mdi:keyboard-return$$
   - {t: '$$mdi:backspace-outline$$', h: '$$mdi:backspace$$'}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:backspace-reverse$$'}
-  - $$mdi:calculator$$
   - {type: held}
   - ''
   - ''
@@ -91,16 +83,12 @@ layers:
   - '5'
   - '6'
   - $$mdi:keyboard-return$$
-  - {type: held}
   - ''
   - ''
   - ''
-  - ''
-  - {t: ',', s: ;}
   - '1'
   - '2'
   - '3'
-  - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
   - ''
   - ''
@@ -126,16 +114,12 @@ layers:
   - F5
   - F6
   - $$mdi:magnify-minus-outline$$
-  - ''
   - $$mdi:skip-backward$$
   - $$mdi:play-pause$$
   - $$mdi:skip-forward$$
-  - ''
-  - ''
   - F1
   - F2
   - F3
-  - $$mdi:magnify-remove-outline$$
   - ''
   - ''
   - {type: held}
@@ -161,10 +145,6 @@ layers:
   - {t: '$$mdi:bluetooth-connect$$', h: '1', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', h: '2', type: text_with_symbol}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {type: held}
-  - ''
-  - ''
-  - ''
   - ''
   - ''
   - ''
@@ -206,10 +186,6 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
   MSE:
   - ''
   - ''
@@ -233,14 +209,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - {type: held}
-  - ''
-  - ''
   - {t: '$$mdi:cursor-default-click-outline$$', h: '4', type: text_with_symbol}
   - {t: '$$mdi:cursor-default-click-outline$$', h: '3', type: text_with_symbol}
   - {t: '$$mdi:cursor-default-click-outline$$', h: '5', type: text_with_symbol}
-  - ''
   - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:cursor-default-click-outline$$
@@ -287,10 +259,10 @@ combos:
   a: bottom
   o: 1.05
   draw_separate: true
-- p: [26, 27]
+- p: [23, 24]
   k: $$mdi:backspace-outline$$
   l: [DEF, NUM]
-- p: [27, 28]
+- p: [24, 25]
   k: $$mdi:backspace-reverse-outline$$
   l: [DEF, NUM]
 - p: [4, 14]
@@ -305,16 +277,16 @@ combos:
 - p: [1, 11]
   k: '@'
   l: [DEF]
-- p: [14, 24]
+- p: [14, 22]
   k: '~'
   l: [DEF]
-- p: [13, 23]
+- p: [13, 22]
   k: '='
   l: [DEF]
-- p: [12, 22]
+- p: [12, 21]
   k: \
   l: [DEF]
-- p: [11, 21]
+- p: [11, 20]
   k: €
   l: [DEF]
 - p: [5, 15]
@@ -329,15 +301,27 @@ combos:
 - p: [8, 18]
   k: '&'
   l: [DEF]
-- p: [15, 25]
+- p: [15, 23]
   k: _
   l: [DEF]
-- p: [16, 26]
+- p: [16, 23]
   k: '-'
   l: [DEF]
-- p: [17, 27]
+- p: [17, 24]
   k: /
   l: [DEF]
-- p: [18, 28]
+- p: [18, 25]
   k: '|'
+  l: [DEF]
+- p: [10, 20]
+  k: Z
+  l: [DEF]
+- p: [3, 4]
+  k: V
+  l: [DEF]
+- p: [6, 5]
+  k: K
+  l: [DEF]
+- p: [19, 25]
+  k: {t: '?', s: '!'}
   l: [DEF]
