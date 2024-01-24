@@ -1179,9 +1179,11 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 </g>
-<g transform="translate(420, 56)" class="key keypos-5">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<g transform="translate(420, 56)" class="key text_with_symbol keypos-5">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
+<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:bluetooth"/>
+<use href="#mdi:close-thick" xlink:href="#mdi:close-thick" x="-4" y="17" height="8" width="8.0" class="key text_with_symbol hold glyph mdi:close-thick"/>
 </g>
 <g transform="translate(476, 45)" class="key text_with_symbol keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
@@ -1215,27 +1217,25 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 </g>
-<g transform="translate(140, 84)" class="key toggle keypos-12">
+<g transform="translate(140, 84)" class="key keypos-12">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+</g>
+<g transform="translate(196, 101)" class="key toggle keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key toggle side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key toggle"/>
 <use href="#mdi:toggle-switch" xlink:href="#mdi:toggle-switch" x="-7" y="-11" height="14" width="14.0" class="key toggle tap glyph mdi:toggle-switch"/>
 <use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-4" y="17" height="8" width="8.0" class="key toggle hold glyph mdi:bluetooth"/>
 <use href="#mdi:usb" xlink:href="#mdi:usb" x="-4" y="-25" height="8" width="8.0" class="key toggle shifted glyph mdi:usb"/>
 </g>
-<g transform="translate(196, 101)" class="key keypos-13">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:usb" xlink:href="#mdi:usb" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:usb"/>
-</g>
 <g transform="translate(252, 112)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 </g>
-<g transform="translate(420, 112)" class="key text_with_symbol keypos-15">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
-<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:bluetooth"/>
-<use href="#mdi:close-thick" xlink:href="#mdi:close-thick" x="-4" y="17" height="8" width="8.0" class="key text_with_symbol hold glyph mdi:close-thick"/>
+<g transform="translate(420, 112)" class="key keypos-15">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<use href="#mdi:usb" xlink:href="#mdi:usb" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:usb"/>
 </g>
 <g transform="translate(476, 101)" class="key text_with_symbol keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
