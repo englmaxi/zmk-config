@@ -143,12 +143,12 @@
             bindings
                 = <&macro_release &kp LSHFT>
                 , <&macro_tap     &kp DE_LT &kp DE_GT &kp LEFT>;
-        )
-
+        )     
+        
         ZMK_MACRO1(bts,
             bindings
                 = <&out OUT_BLE>
-                , <&macro_param_1to1>
+                , <&macro_param_1to2>
                 , <&bt BT_SEL MACRO_PLACEHOLDER>;
         )
     };
@@ -233,7 +233,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHIFT T &kp G             &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I   &hmr LGUI O
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    DEF_L_P       &kp X         &kp C         &lt 6 D       DEF_L_I           DEF_R_I         &kp H         &kp DE_COMMA  &kp DE_DOT  DEF_R_P
+    DEF_L_P       &kp X         &kp C         &lt 6 D       DEF_L_I           DEF_R_I       &kp H         &kp DE_COMMA  &kp DE_DOT    DEF_R_P
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &mo NAV       &rcw LSHFT 0      &lt FUN SPACE &mo NUM
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -289,11 +289,11 @@
             display-name = "HW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &bootloader   &none         &none         &none         &none             &none         &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bootloader
+    &bootloader   &none         &none         &none         &none             &bt BT_CLR    &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bootloader
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &sys_reset    &none         &out OUT_TOG  &out OUT_USB  &none             &bt BT_CLR    &bts 0        &bts 1        &bts 2        &sys_reset
+    &sys_reset    &none         &none         &out OUT_TOG  &none             &out OUT_USB  &bts 0        &bts 1        &bts 2        &sys_reset
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    HW_L_P         &none         &none         &none        HW_L_I            HW_R_I        &none         &none         &none         HW_R_P
+    HW_L_P        &none         &none         &none         HW_L_I            HW_R_I        &none         &none         &none         HW_R_P
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &none         &none             &none         &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -308,7 +308,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp DE_AE     &trans        &kp DE_SZ     &trans        &trans            &trans        &trans        &trans        &trans        &kp DE_OE
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    GER_L_P      &trans        &trans        &trans         GER_L_I           GER_R_I       &trans        &trans        &trans        GER_R_P
+    GER_L_P       &trans        &trans        &trans        GER_L_I           GER_R_I       &trans        &trans        &trans        GER_R_P
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
