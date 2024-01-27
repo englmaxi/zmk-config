@@ -59,8 +59,8 @@ layers:
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:backspace-reverse$$'}
   - {type: held}
-  - ''
-  - ''
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   NUM:
   - ''
@@ -90,8 +90,8 @@ layers:
   - '2'
   - '3'
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - ''
-  - ''
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   FUN:
   - ''
@@ -120,10 +120,10 @@ layers:
   - F1
   - F2
   - F3
-  - ''
-  - ''
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
-  - ''
+  - {t: '$$mdi:chevron-down$$', type: trans}
   HW:
   - {t: '$$mdi:progress-download$$', type: bootloader}
   - ''

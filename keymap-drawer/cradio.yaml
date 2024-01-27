@@ -60,15 +60,15 @@ layers:
   - $$mdi:content-cut$$
   - $$mdi:content-copy$$
   - $$mdi:content-paste$$
-  - V
+  - $$mdi:redo$$
   - $$mdi:keyboard-return$$
   - {t: '$$mdi:backspace-outline$$', h: '$$mdi:backspace$$'}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:backspace-reverse$$'}
   - $$mdi:calculator$$
   - {type: held}
-  - ''
-  - ''
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   NUM:
   - ''
@@ -102,8 +102,8 @@ layers:
   - '3'
   - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - ''
-  - ''
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   FUN:
   - ''
@@ -136,10 +136,10 @@ layers:
   - F2
   - F3
   - $$mdi:magnify-remove-outline$$
-  - ''
-  - ''
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
-  - ''
+  - {t: '$$mdi:chevron-down$$', type: trans}
   HW:
   - {t: '$$mdi:progress-download$$', type: bootloader}
   - ''
