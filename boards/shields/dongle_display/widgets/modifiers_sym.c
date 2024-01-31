@@ -9,13 +9,8 @@
 #endif
 
 const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_CONTROL uint8_t control_map[] = {
-#if CONFIG_MODIFIER_WIDGET_INVERTED
-  0x00, 0x00, 0x00, 0xff, /*Color of index 0*/
-  0xff, 0xff, 0xff, 0xff, /*Color of index 1*/
-#else
   0xff, 0xff, 0xff, 0xff, 	/*Color of index 0*/
   0x00, 0x00, 0x00, 0xff, 	/*Color of index 1*/
-#endif
 
   0x00, 0x00, 
   0x00, 0x00, 
@@ -48,13 +43,8 @@ const lv_img_dsc_t control_icon = {
 #endif
 
 const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_SHIFT uint8_t shift_map[] = {
-#if CONFIG_MODIFIER_WIDGET_INVERTED
-  0x00, 0x00, 0x00, 0xff, /*Color of index 0*/
-  0xff, 0xff, 0xff, 0xff, /*Color of index 1*/
-#else
   0xff, 0xff, 0xff, 0xff, 	/*Color of index 0*/
   0x00, 0x00, 0x00, 0xff, 	/*Color of index 1*/
-#endif
 
   0x00, 0x00, 
   0x00, 0x00, 
@@ -87,13 +77,8 @@ const lv_img_dsc_t shift_icon = {
 #endif
 
 const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ALT uint8_t alt_map[] = {
-#if CONFIG_MODIFIER_WIDGET_INVERTED
-  0x00, 0x00, 0x00, 0xff, /*Color of index 0*/
-  0xff, 0xff, 0xff, 0xff, /*Color of index 1*/
-#else
   0xff, 0xff, 0xff, 0xff, 	/*Color of index 0*/
   0x00, 0x00, 0x00, 0xff, 	/*Color of index 1*/
-#endif
 
   0x00, 0x00, 
   0x00, 0x00, 
@@ -126,13 +111,8 @@ const lv_img_dsc_t alt_icon = {
 #endif
 
 const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_GUI uint8_t gui_map[] = {
-#if CONFIG_MODIFIER_WIDGET_INVERTED
-  0x00, 0x00, 0x00, 0xff, /*Color of index 0*/
-  0xff, 0xff, 0xff, 0xff, /*Color of index 1*/
-#else
   0xff, 0xff, 0xff, 0xff, 	/*Color of index 0*/
   0x00, 0x00, 0x00, 0xff, 	/*Color of index 1*/
-#endif
 
   0x00, 0x00, 
   0x00, 0x00, 
