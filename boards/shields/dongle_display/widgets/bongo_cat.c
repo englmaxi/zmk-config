@@ -74,11 +74,11 @@ struct bongo_cat_wpm_status_state {
 };
 
 enum anim_state {
-	anim_state_none,
-	anim_state_idle,
-	anim_state_slow,
-	anim_state_mid,
-	anim_state_fast
+    anim_state_none,
+    anim_state_idle,
+    anim_state_slow,
+    anim_state_mid,
+    anim_state_fast
 } current_anim_state;
 
 static void set_animation(lv_obj_t *animing, struct bongo_cat_wpm_status_state state) {
@@ -88,7 +88,7 @@ static void set_animation(lv_obj_t *animing, struct bongo_cat_wpm_status_state s
             lv_animimg_set_duration(animing, ANIMATION_SPEED_IDLE);
             lv_animimg_set_repeat_count(animing, LV_ANIM_REPEAT_INFINITE);
             lv_animimg_start(animing);
-	        current_anim_state = anim_state_idle;
+            current_anim_state = anim_state_idle;
         }
     } else if (state.wpm < 30) {
         if (current_anim_state != anim_state_slow) {
@@ -96,7 +96,7 @@ static void set_animation(lv_obj_t *animing, struct bongo_cat_wpm_status_state s
             lv_animimg_set_duration(animing, ANIMATION_SPEED_SLOW);
             lv_animimg_set_repeat_count(animing, LV_ANIM_REPEAT_INFINITE);
             lv_animimg_start(animing);
-	        current_anim_state = anim_state_slow;
+            current_anim_state = anim_state_slow;
         }
     } else if (state.wpm < 70) {
         if (current_anim_state != anim_state_mid) {
@@ -104,7 +104,7 @@ static void set_animation(lv_obj_t *animing, struct bongo_cat_wpm_status_state s
             lv_animimg_set_duration(animing, ANIMATION_SPEED_MID);
             lv_animimg_set_repeat_count(animing, LV_ANIM_REPEAT_INFINITE);
             lv_animimg_start(animing);
-	        current_anim_state = anim_state_mid;
+            current_anim_state = anim_state_mid;
         }
     } else {
         if (current_anim_state != anim_state_fast) {
@@ -112,7 +112,7 @@ static void set_animation(lv_obj_t *animing, struct bongo_cat_wpm_status_state s
             lv_animimg_set_duration(animing, ANIMATION_SPEED_FAST);
             lv_animimg_set_repeat_count(animing, LV_ANIM_REPEAT_INFINITE);
             lv_animimg_start(animing);
-	        current_anim_state = anim_state_fast;
+            current_anim_state = anim_state_fast;
         }
     }
 }

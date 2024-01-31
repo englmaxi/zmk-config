@@ -66,8 +66,7 @@ struct modifier_symbol *modifier_symbols[] = {
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
-static void anim_y_cb(void *var, int32_t v)
-{
+static void anim_y_cb(void *var, int32_t v) {
     lv_obj_set_y(var, v);
 }
 

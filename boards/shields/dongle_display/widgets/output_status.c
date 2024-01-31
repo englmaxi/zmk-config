@@ -42,8 +42,8 @@ const lv_img_dsc_t *sym_num[] = {
 };
 
 enum output_symbol {
-	output_symbol_usb,
-	output_symbol_usb_hid_status,
+    output_symbol_usb,
+    output_symbol_usb_hid_status,
     output_symbol_bt,
     output_symbol_bt_number,
     output_symbol_bt_status,
