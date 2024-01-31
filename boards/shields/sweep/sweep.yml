@@ -1,0 +1,17 @@
+file_format: "1"
+id: sweep
+name: sweep
+type: shield
+url: https://github.com/englmaxy/zmk-config
+requires: 
+  - seeeduino_xiao_ble
+  - pro_micro
+exposes:
+  - i2c_oled
+features:
+  - keys
+siblings:
+  - sweep_dongle
+  - sweep_left_central
+  - sweep_left_peripheral
+  - sweep_right_peripheral
