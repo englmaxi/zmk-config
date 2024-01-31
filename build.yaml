@@ -4,10 +4,10 @@ include:
     # cradio
   - board: nice_nano_v2
     shield: cradio_left
-    artifact-name: sweep_left
+    artifact-name: cradio_left
   - board: nice_nano_v2
     shield: cradio_right
-    artifact-name: sweep_right
+    artifact-name: cradio_right
 
   - board: nice_nano_v2
     shield: cradio_left
