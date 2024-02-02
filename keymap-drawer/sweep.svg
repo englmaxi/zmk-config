@@ -1,4 +1,4 @@
-<svg width="747" height="2714" viewBox="0 0 747 2714" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="747" height="2721" viewBox="0 0 747 2721" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
 <svg id="mdi:apple-keyboard-control">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-control" viewBox="0 0 24 24"><path d="M19.78,11.78L18.36,13.19L12,6.83L5.64,13.19L4.22,11.78L12,4L19.78,11.78Z" /></svg>
@@ -1167,7 +1167,7 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(30, 1380)" class="layer-HW">
 <text x="0" y="28" class="label">HW</text>
-<g transform="translate(0, 56)">
+<g transform="translate(0, 63)">
 <g transform="translate(28, 90)" class="key bootloader keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key bootloader side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key bootloader"/>
@@ -1326,9 +1326,15 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
 </g>
+<g class="combo combopos-0">
+<path d="M336,-7 h-300 a8.0,8.0 0 0 0 -8.0,8.0 v70" class="combo"/>
+<path d="M336,-7 h300 a8.0,8.0 0 0 1 8.0,8.0 v70" class="combo"/>
+<rect rx="6" ry="6" x="322" y="-20" width="28" height="26" class="combo"/>
+<use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="329" y="-14" height="14" width="14.0" class="combo tap glyph mdi:progress-download"/>
 </g>
 </g>
-<g transform="translate(30, 1721)" class="layer-GER">
+</g>
+<g transform="translate(30, 1727)" class="layer-GER">
 <text x="0" y="28" class="label">GER</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 90)" class="key trans keypos-0">
@@ -1501,7 +1507,7 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2061)" class="layer-MSE">
+<g transform="translate(30, 2068)" class="layer-MSE">
 <text x="0" y="28" class="label">MSE</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 90)" class="key keypos-0">
@@ -1655,8 +1661,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<text x="30" y="2430" class="label">Combos</text>
-<g transform="translate(30, 2402)" class="layer-combopos-0">
+<text x="30" y="2437" class="label">Combos</text>
+<g transform="translate(30, 2409)" class="layer-combopos-0">
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key  combo-separate side"/>
@@ -1802,7 +1808,7 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(396, 2402)" class="layer-combopos-1">
+<g transform="translate(396, 2409)" class="layer-combopos-1">
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key  combo-separate side"/>

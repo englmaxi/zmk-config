@@ -340,3 +340,8 @@ combos:
 - p: [18, 28]
   k: '|'
   l: [DEF]
+- p: [0, 9]
+  k: {t: '$$mdi:progress-download$$', type: bootloader}
+  l: [HW]
+  a: top
+  o: 1.2

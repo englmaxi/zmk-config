@@ -92,5 +92,6 @@
         COMBO(qe,       &qexcl,         RM4 RB3, DEF,     COMBO_TERM_SLOW)
 #endif
 
+        COMBO(bl,       &bootloader,    LT4 RT4,  HW,     COMBO_TERM_SLOW)
     };
 };
