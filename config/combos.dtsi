@@ -86,7 +86,7 @@
         COMBO(pipe,     &kp DE_PIPE,    RM3 RB3, DEF,     COMBO_TERM_FAST)
 
 #ifdef KEYS_30
-        COMBO(z,        &kp Z,          LM4 LB3, DEF,     COMBO_TERM_SLOW)
+        COMBO(z,        &kp DE_Z,       LM4 LB3, DEF,     COMBO_TERM_SLOW)
         COMBO(v,        &kp V,          LT1 LT0, DEF,     COMBO_TERM_SLOW)
         COMBO(k,        &kp K,          RT1 RT0, DEF,     COMBO_TERM_SLOW)
         COMBO(qe,       &qexcl,         RM4 RB3, DEF,     COMBO_TERM_SLOW)
