@@ -57,7 +57,11 @@
         COMBO(bspc,     &kp BSPC,       RB1 RB2, DEF NUM, COMBO_TERM_SLOW)
         COMBO(del,      &kp DEL,        RB2 RB3, DEF NUM, COMBO_TERM_SLOW)
 
+#if defined(KEYS_30)
+        COMBO(prcnt,    &kp DE_PRCNT,   LT1 LT0, DEF,     COMBO_TERM_FAST)
+#elif defined(KEYS_34)
         COMBO(prcnt,    &kp DE_PRCNT,   LT0 LM0, DEF,     COMBO_TERM_FAST)
+#endif
         COMBO(dllr,     &kp DE_DLLR,    LT1 LM1, DEF,     COMBO_TERM_FAST)
         COMBO(hash,     &kp DE_HASH,    LT2 LM2, DEF,     COMBO_TERM_FAST)
         COMBO(at,       &kp DE_AT,      LT3 LM3, DEF,     COMBO_TERM_FAST)
@@ -71,7 +75,11 @@
         COMBO(bslh,     &kp DE_BSLH,    LM2 LB2, DEF,     COMBO_TERM_FAST)
         COMBO(euro,     &kp DE_EURO,    LM3 LB3, DEF,     COMBO_TERM_FAST)
 
+#if defined(KEYS_30)
+        COMBO(caret,    &kp DE_CARET,   RT1 RT0, DEF,     COMBO_TERM_FAST)
+#elif defined(KEYS_34)
         COMBO(caret,    &kp DE_CARET,   RT0 RM0, DEF,     COMBO_TERM_FAST)
+#endif
         COMBO(plus,     &kp DE_PLUS,    RT1 RM1, DEF,     COMBO_TERM_FAST)
         COMBO(star,     &kp DE_STAR,    RT2 RM2, DEF,     COMBO_TERM_FAST)
         COMBO(amps,     &kp DE_AMPS,    RT3 RM3, DEF,     COMBO_TERM_FAST)
@@ -86,10 +94,10 @@
         COMBO(pipe,     &kp DE_PIPE,    RM3 RB3, DEF,     COMBO_TERM_FAST)
 
 #ifdef KEYS_30
-        COMBO(z,        &kp DE_Z,       LM4 LB3, DEF,     COMBO_TERM_SLOW)
-        COMBO(v,        &kp V,          LT1 LT0, DEF,     COMBO_TERM_SLOW)
-        COMBO(k,        &kp K,          RT1 RT0, DEF,     COMBO_TERM_SLOW)
-        COMBO(qe,       &qexcl,         RM4 RB3, DEF,     COMBO_TERM_SLOW)
+        COMBO(z,        &kp DE_Z,       LT4 LM4, DEF,     COMBO_TERM_SLOW)
+        COMBO(v,        &kp V,          LT0 LM0, DEF,     COMBO_TERM_SLOW)
+        COMBO(k,        &kp K,          RT0 RM0, DEF,     COMBO_TERM_SLOW)
+        COMBO(qe,       &qexcl,         RT4 RM4, DEF,     COMBO_TERM_SLOW)
 #endif
 
         COMBO(bl,       &bootloader,    LT4 RT4,  HW,     COMBO_TERM_SLOW)
