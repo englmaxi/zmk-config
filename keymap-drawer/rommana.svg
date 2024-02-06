@@ -536,8 +536,8 @@ rect.held, rect.combo.held {
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="594" y="145" height="14" width="14.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
 </g>
 <g class="combo combopos-11">
-<rect rx="6" ry="6" x="269" y="87" width="28" height="26" class="combo"/>
-<text x="283" y="100" class="combo tap">%</text>
+<rect rx="6" ry="6" x="238" y="44" width="28" height="26" class="combo"/>
+<text x="252" y="57" class="combo tap">%</text>
 </g>
 <g class="combo combopos-12">
 <rect rx="6" ry="6" x="208" y="58" width="28" height="26" class="combo"/>
@@ -568,8 +568,8 @@ rect.held, rect.combo.held {
 <text x="99" y="132" class="combo tap">€</text>
 </g>
 <g class="combo combopos-19">
-<rect rx="6" ry="6" x="435" y="87" width="28" height="26" class="combo"/>
-<text x="449" y="100" class="combo tap">^</text>
+<rect rx="6" ry="6" x="465" y="44" width="28" height="26" class="combo"/>
+<text x="479" y="57" class="combo tap">^</text>
 </g>
 <g class="combo combopos-20">
 <rect rx="6" ry="6" x="496" y="58" width="28" height="26" class="combo"/>
@@ -600,21 +600,21 @@ rect.held, rect.combo.held {
 <text x="632" y="132" class="combo tap">|</text>
 </g>
 <g class="combo combopos-27">
-<rect rx="6" ry="6" x="55" y="143" width="28" height="26" class="combo"/>
-<text x="69" y="156" class="combo tap">Z</text>
+<rect rx="6" ry="6" x="20" y="109" width="28" height="26" class="combo"/>
+<text x="34" y="122" class="combo tap">Z</text>
 </g>
 <g class="combo combopos-28">
-<rect rx="6" ry="6" x="238" y="44" width="28" height="26" class="combo"/>
-<text x="252" y="57" class="combo tap">V</text>
+<rect rx="6" ry="6" x="269" y="87" width="28" height="26" class="combo"/>
+<text x="283" y="100" class="combo tap">V</text>
 </g>
 <g class="combo combopos-29">
-<rect rx="6" ry="6" x="465" y="44" width="28" height="26" class="combo"/>
-<text x="479" y="57" class="combo tap">K</text>
+<rect rx="6" ry="6" x="435" y="87" width="28" height="26" class="combo"/>
+<text x="449" y="100" class="combo tap">K</text>
 </g>
 <g class="combo combopos-30">
-<rect rx="6" ry="6" x="648" y="143" width="28" height="26" class="combo"/>
-<text x="662" y="156" class="combo tap">?</text>
-<text x="662" y="144" class="combo shifted">!</text>
+<rect rx="6" ry="6" x="684" y="109" width="28" height="26" class="combo"/>
+<text x="698" y="122" class="combo tap">?</text>
+<text x="698" y="110" class="combo shifted">!</text>
 </g>
 </g>
 </g>
