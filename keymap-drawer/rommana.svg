@@ -644,7 +644,6 @@ rect.held, rect.combo.held {
 <g transform="translate(283, 71)" class="key keypos-4">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">INS</text>
 </g>
 <g transform="translate(449, 71)" class="key keypos-5">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
@@ -732,7 +731,7 @@ rect.held, rect.combo.held {
 <g transform="translate(694, 150) rotate(8.0)" class="key keypos-19">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<use href="#mdi:monitor-screenshot" xlink:href="#mdi:monitor-screenshot" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:monitor-screenshot"/>
+<text x="0" y="-4" class="key tap">INS</text>
 </g>
 <g transform="translate(101, 161) rotate(-3.0)" class="key keypos-20">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
@@ -946,6 +945,7 @@ rect.held, rect.combo.held {
 <g transform="translate(30, 93) rotate(-8.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
+<use href="#mdi:monitor-screenshot" xlink:href="#mdi:monitor-screenshot" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:monitor-screenshot"/>
 </g>
 <g transform="translate(95, 46) rotate(-3.0)" class="key keypos-1">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
@@ -1516,9 +1516,10 @@ rect.held, rect.combo.held {
 <use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:cursor-default-click-outline"/>
 <text x="0" y="25" class="key text_with_symbol hold">5</text>
 </g>
-<g transform="translate(237, 230)" class="key keypos-26">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
+<g transform="translate(237, 230)" class="key trans keypos-26">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans side"/>
+<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key trans"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-11" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(298, 245)" class="key trans keypos-27">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans side"/>

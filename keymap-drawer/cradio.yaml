@@ -40,7 +40,7 @@ layers:
   - $$mdi:close-box-outline$$
   - $$mdi:text-search$$
   - $$mdi:backspace-outline$$
-  - INS
+  - ''
   - Page Up
   - {t: HOME, h: '$$mdi:format-vertical-align-top$$'}
   - $$mdi:arrow-up$$
@@ -55,7 +55,7 @@ layers:
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
-  - $$mdi:monitor-screenshot$$
+  - INS
   - $$mdi:undo$$
   - $$mdi:content-cut$$
   - $$mdi:content-copy$$
@@ -106,7 +106,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   FUN:
-  - ''
+  - $$mdi:monitor-screenshot$$
   - $$mdi:volume-minus$$
   - $$mdi:volume-mute$$
   - $$mdi:volume-plus$$
@@ -241,7 +241,7 @@ layers:
   - {t: '$$mdi:cursor-default-click-outline$$', h: '3', type: text_with_symbol}
   - {t: '$$mdi:cursor-default-click-outline$$', h: '5', type: text_with_symbol}
   - ''
-  - ''
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:cursor-default-click-outline$$
   - $$mdi:cursor-default-click$$
