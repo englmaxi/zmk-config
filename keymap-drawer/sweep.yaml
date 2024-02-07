@@ -35,11 +35,11 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - NUM
   NAV:
-  - ESC
   - $$mdi:close-box-outline$$
+  - $$mdi:arrow-left-bold-box$$
   - $$mdi:text-search$$
+  - $$mdi:arrow-right-bold-box$$
   - $$mdi:backspace-outline$$
-  - ''
   - Page Up
   - {t: HOME, h: '$$mdi:format-vertical-align-top$$'}
   - $$mdi:arrow-up$$
@@ -120,7 +120,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - $$tabler:brightness-down$$
-  - F11
+  - F10
   - F4
   - F5
   - F6
@@ -130,7 +130,7 @@ layers:
   - $$mdi:play-pause$$
   - $$mdi:skip-forward$$
   - ''
-  - ''
+  - F11
   - F1
   - F2
   - F3

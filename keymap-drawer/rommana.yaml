@@ -32,11 +32,11 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - NUM
   NAV:
-  - ESC
   - $$mdi:close-box-outline$$
+  - $$mdi:arrow-left-bold-box$$
   - $$mdi:text-search$$
+  - $$mdi:arrow-right-bold-box$$
   - $$mdi:backspace-outline$$
-  - ''
   - Page Up
   - {t: HOME, h: '$$mdi:format-vertical-align-top$$'}
   - $$mdi:arrow-up$$
@@ -109,7 +109,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - $$tabler:brightness-down$$
-  - F11
+  - F10
   - F4
   - F5
   - F6
@@ -265,7 +265,7 @@ combos:
 - p: [24, 25]
   k: $$mdi:backspace-reverse-outline$$
   l: [DEF, NUM]
-- p: [3, 4]
+- p: [4, 14]
   k: '%'
   l: [DEF]
 - p: [3, 13]
@@ -277,7 +277,7 @@ combos:
 - p: [1, 11]
   k: '@'
   l: [DEF]
-- p: [14, 22]
+- p: [3, 4]
   k: '~'
   l: [DEF]
 - p: [13, 22]
@@ -289,7 +289,7 @@ combos:
 - p: [11, 20]
   k: €
   l: [DEF]
-- p: [6, 5]
+- p: [5, 15]
   k: ^
   l: [DEF]
 - p: [6, 16]
@@ -301,7 +301,7 @@ combos:
 - p: [8, 18]
   k: '&'
   l: [DEF]
-- p: [15, 23]
+- p: [5, 6]
   k: _
   l: [DEF]
 - p: [16, 23]
@@ -316,15 +316,24 @@ combos:
 - p: [0, 10]
   k: Z
   l: [DEF]
-- p: [4, 14]
+- p: [22, 14]
   k: V
   l: [DEF]
-- p: [5, 15]
+- p: [23, 15]
   k: K
   l: [DEF]
 - p: [9, 19]
   k: {t: '?', s: '!'}
   l: [DEF]
+- p: [5, 15]
+  k: F11
+  l: [FUN]
+- p: [20, 21]
+  k: $$mdi:undo$$
+  l: [NAV]
+- p: [21, 22]
+  k: $$mdi:redo$$
+  l: [NAV]
 - p: [0, 9]
   k: {t: '$$mdi:progress-download$$', type: bootloader}
   l: [HW]

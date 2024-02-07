@@ -12,8 +12,14 @@
 <svg id="mdi:arrow-left">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-left" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
 </svg>
+<svg id="mdi:arrow-left-bold-box">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-left-bold-box" viewBox="0 0 24 24"><path d="M21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5M7,12L12,17V14H16V10H12V7L7,12Z" /></svg>
+</svg>
 <svg id="mdi:arrow-right">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-right" viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" /></svg>
+</svg>
+<svg id="mdi:arrow-right-bold-box">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-right-bold-box" viewBox="0 0 24 24"><path d="M3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19M17,12L12,7V10H8V14H12V17L17,12Z" /></svg>
 </svg>
 <svg id="mdi:arrow-up">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-up" viewBox="0 0 24 24"><path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z" /></svg>
@@ -641,12 +647,12 @@ rect.held, rect.combo.held {
 <g transform="translate(28, 90)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">ESC</text>
+<use href="#mdi:close-box-outline" xlink:href="#mdi:close-box-outline" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:close-box-outline"/>
 </g>
 <g transform="translate(84, 50)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:close-box-outline" xlink:href="#mdi:close-box-outline" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:close-box-outline"/>
+<use href="#mdi:arrow-left-bold-box" xlink:href="#mdi:arrow-left-bold-box" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:arrow-left-bold-box"/>
 </g>
 <g transform="translate(140, 28)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -656,11 +662,12 @@ rect.held, rect.combo.held {
 <g transform="translate(196, 45)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:backspace-outline"/>
+<use href="#mdi:arrow-right-bold-box" xlink:href="#mdi:arrow-right-bold-box" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:arrow-right-bold-box"/>
 </g>
 <g transform="translate(252, 56)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:backspace-outline"/>
 </g>
 <g transform="translate(420, 56)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1075,7 +1082,7 @@ rect.held, rect.combo.held {
 <g transform="translate(420, 112)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">F11</text>
+<text x="0" y="-4" class="key tap">F10</text>
 </g>
 <g transform="translate(476, 101)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1123,6 +1130,7 @@ rect.held, rect.combo.held {
 <g transform="translate(420, 168)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<text x="0" y="-4" class="key tap">F11</text>
 </g>
 <g transform="translate(476, 157)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
