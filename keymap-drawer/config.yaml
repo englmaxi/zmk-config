@@ -286,6 +286,9 @@ parse_config:
     TAB: $$mdi:keyboard-tab$$
     LS(TAB): $$mdi:keyboard-tab-reverse$$
     
+    LC(TAB): $$mdi:arrow-right-bold-box$$
+    LC(LS(TAB)): $$mdi:arrow-left-bold-box$$
+    
     RETURN: $$mdi:keyboard-return$$
     RET: $$mdi:keyboard-return$$
     
