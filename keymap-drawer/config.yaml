@@ -260,7 +260,7 @@ parse_config:
       key:
         tap: '[]'
         shifted: '<>'
-    combo_ger:
+    combo_int:
       align: top
       offset: 0.6
     combo_bl:

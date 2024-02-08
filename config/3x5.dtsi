@@ -15,7 +15,7 @@
 #define NUM 2
 #define FUN 3
 #define HW  4
-#define GER 5
+#define INT 5
 #define MSE 6
 
 #ifndef KEYMAP_DRAWER
@@ -245,8 +245,8 @@
             >;
         };
 
-        german_layer {
-            display-name = "GER";
+        international_layer {
+            display-name = "INT";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &trans        &trans        &trans        &trans        &trans            &trans        &trans        &kp DE_UE     &kp DE_ACUTE  &kp DE_GRAVE

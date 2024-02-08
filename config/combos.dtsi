@@ -41,7 +41,7 @@
 
         COMBO(esc,      &kp ESC,        LT3 LT2, DEF,     COMBO_TERM_SLOW)
         COMBO(enter,    &kp RET,        LT2 LT1, DEF,     COMBO_TERM_SLOW)
-        COMBO(ger,      &sl GER,        LT3 LT1, DEF,     COMBO_TERM_SLOW)
+        COMBO(int,      &sl INT,        LT3 LT1, DEF,     COMBO_TERM_SLOW)
 
         COMBO(tab,      HRC_TAB,        LM3 LM2, DEF,     COMBO_TERM_SLOW)
         COMBO(repeat,   HRC_REPEAT,     LM2 LM1, DEF,     COMBO_TERM_SLOW)
