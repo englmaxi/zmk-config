@@ -536,7 +536,7 @@ rect.held, rect.combo.held {
 <path d="M140,-18 h-48 a8.0,8.0 0 0 0 -8.0,8.0 v42" class="combo"/>
 <path d="M140,-18 h48 a8.0,8.0 0 0 1 8.0,8.0 v36" class="combo"/>
 <rect rx="6" ry="6" x="126" y="-31" width="28" height="26" class="combo"/>
-<text x="140" y="-18" class="combo tap">GER</text>
+<text x="140" y="-18" class="combo tap">INT</text>
 <use href="#mdi:circle-small" xlink:href="#mdi:circle-small" x="136" y="-14" height="8" width="8.0" class="combo hold glyph mdi:circle-small"/>
 </g>
 <g class="combo combopos-3">
@@ -1342,8 +1342,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1727)" class="layer-GER">
-<text x="0" y="28" class="label">GER</text>
+<g transform="translate(30, 1727)" class="layer-INT">
+<text x="0" y="28" class="label">INT</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 90)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
