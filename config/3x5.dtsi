@@ -4,17 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
-#ifndef KEYMAP_DRAWER
-#include "keys_de.h"
-#endif
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-
-#include "keypos.h"
 
 #define DEF 0
 #define NAV 1
@@ -24,21 +18,12 @@
 #define GER 5
 #define MSE 6
 
+#ifndef KEYMAP_DRAWER
+#include "keys_de.h"
+#endif
+
+#include "keypos.h"
 #include "combos.dtsi"
-
-&caps_word {
-    continue-list = <BACKSPACE DELETE DE_UNDER DE_MINUS N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
-};
-
-&sk {
-    quick-release;
-    release-after-ms = <900>;
-};
-
-&mt {
-    quick-tap-ms = <220>;
-    tapping-term-ms = <220>;
-};
 
 #define HM(NAME, TAP, HT_KEYPOS)                            \
     NAME: NAME {                                            \
@@ -69,7 +54,27 @@
         bindings = <TAP1>, <TAP2> __VA_OPT__(, <)__VA_ARGS__ __VA_OPT__(>); \
     };
 
+#if defined(KEYS_34)
+    #define _(BINDING) BINDING 
+#elif defined(KEYS_30)
+    #define _(BINDING)
+#endif
+
 #define CT(KEY) &mt LC(KEY) KEY
+
+&caps_word {
+    continue-list = <BACKSPACE DELETE DE_UNDER DE_MINUS N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
+};
+
+&sk {
+    quick-release;
+    release-after-ms = <900>;
+};
+
+&mt {
+    quick-tap-ms = <220>;
+    tapping-term-ms = <220>;
+};
 
 / {
     behaviors {
@@ -162,111 +167,51 @@
         };
     };
 
-#if defined(KEYS_30)
-    #define DEF_L_P
-    #define DEF_L_I
-    #define DEF_R_I
-    #define DEF_R_P
-    #define NAV_L_P
-    #define NAV_L_I
-    #define NAV_R_I
-    #define NAV_R_P
-    #define NUM_L_P
-    #define NUM_L_I
-    #define NUM_R_I
-    #define NUM_R_P
-    #define FUN_L_P
-    #define FUN_L_I
-    #define FUN_R_I
-    #define FUN_R_P
-    #define  HW_L_P
-    #define  HW_L_I
-    #define  HW_R_I
-    #define  HW_R_P
-    #define GER_L_P
-    #define GER_L_I
-    #define GER_R_I
-    #define GER_R_P
-    #define MSE_L_P
-    #define MSE_L_I
-    #define MSE_R_I
-    #define MSE_R_P
-#elif defined(KEYS_34)
-    #define DEF_L_P &lt NUM DE_Z
-    #define DEF_L_I &kp V
-    #define DEF_R_I &kp K
-    #define DEF_R_P &qexcl
-    #define NAV_L_P &kp LC(DE_Z)
-    #define NAV_L_I &kp LC(DE_Y)
-    #define NAV_R_I &kp RET
-    #define NAV_R_P &kp C_AL_CALC
-    #define NUM_L_P &none
-    #define NUM_L_I &none
-    #define NUM_R_I &kp DE_COMMA
-    #define NUM_R_P &none
-    #define FUN_L_P &none
-    #define FUN_L_I &none
-    #define FUN_R_I &kp F11
-    #define FUN_R_P &kp LC(N0)
-    #define  HW_L_P &none
-    #define  HW_L_I &none
-    #define  HW_R_I &none
-    #define  HW_R_P &none
-    #define GER_L_P &trans 
-    #define GER_L_I &trans 
-    #define GER_R_I &trans 
-    #define GER_R_P &trans 
-    #define MSE_L_P &none
-    #define MSE_L_I &none
-    #define MSE_R_I &none
-    #define MSE_R_P &none
-#endif
-
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "DEF";
             bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp DE_Y      &td_sqt_dqt
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHIFT T &kp G             &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I   &hmr LGUI O
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    DEF_L_P       &kp X         &kp C         &lt 6 D       DEF_L_I           DEF_R_I       &kp H         &kp DE_COMMA  &kp DE_DOT    DEF_R_P
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              &mo NAV       &rcw LSHFT 0      &lt FUN SPACE &mo NUM
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+// ╭───────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+    &kp Q           &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp DE_Y      &td_sqt_dqt
+// ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &hml LGUI A     &hml LALT R   &hml LCTRL S  &hml LSHIFT T &kp G             &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I   &hmr LGUI O
+// ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    _(&lt NUM DE_Z) &kp X         &kp C         &lt 6 D       _(&kp V)          _(&kp K)      &kp H         &kp DE_COMMA  &kp DE_DOT    _(&qexcl)
+// ╰───────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                                &mo NAV       &rcw LSHFT 0      &lt FUN SPACE &mo NUM
+//                                             ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
 
         navigation_layer {
             display-name = "NAV";
             bindings = <
-// ╭────────────────┬────────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬───────────────╮
-    &mt LA(F4) LC(W) &kp LC(LS(TAB))  &kp LC(F)     &kp LC(TAB)   &kp BSPC          &kp PG_UP     CT(HOME)      &kp UP        CT(END)       &kp PAUSE_BREAK
-// ├────────────────┼────────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼───────────────┤
-    &sk LGUI         &sk LALT         &sk LCTRL     &sk LSHFT     &sk RALT          &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT     &kp INS
-// ├────────────────┼────────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼───────────────┤
-    NAV_L_P          &kp LS(DEL)      &kp LC(INS)   &kp LS(INS)   NAV_L_I           NAV_R_I       CT(BSPC)      &kp TAB       CT(DEL)       NAV_R_P
-// ╰────────────────┴────────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴───────────────╯
-                                                    &trans        &trans            &trans        &trans
-//                                                 ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+// ╭────────────────┬────────────────┬─────────────┬─────────────┬───────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬────────────────╮
+    &mt LA(F4) LC(W) &kp LC(LS(TAB))  &kp LC(F)     &kp LC(TAB)   &kp BSPC            &kp PG_UP     CT(HOME)      &kp UP        CT(END)       &kp PAUSE_BREAK
+// ├────────────────┼────────────────┼─────────────┼─────────────┼───────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼────────────────┤
+    &sk LGUI         &sk LALT         &sk LCTRL     &sk LSHFT     &sk RALT            &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT     &kp INS
+// ├────────────────┼────────────────┼─────────────┼─────────────┼───────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼────────────────┤
+    _(&kp LC(DE_Z))  &kp LS(DEL)      &kp LC(INS)   &kp LS(INS)   _(&kp LC(DE_Y))     _(&kp RET)    CT(BSPC)      &kp TAB       CT(DEL)       _(&kp C_AL_CALC)
+// ╰────────────────┴────────────────┴─────────────┼─────────────┼───────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴────────────────╯
+                                                    &trans        &trans              &trans        &trans
+//                                                 ╰─────────────┴───────────────╯   ╰─────────────┴─────────────╯
             >;
         };
 
         number_layer {
             display-name = "NUM";
             bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &none         &none         &none         &none         &none             &kp DE_DOT    &kp N7        &kp N8        &kp N9        &none
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none             &kp N0        &kp N4        &kp N5        &kp N6        &kp RET
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    NUM_L_P         &none         &none         &none       NUM_L_I           NUM_R_I       &kp N1        &kp N2        &kp N3        NUM_R_P
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              &trans        &trans            &trans        &trans
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭───────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+    &none         &none         &none         &none         &none             &kp DE_DOT      &kp N7        &kp N8        &kp N9        &none
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none             &kp N0          &kp N4        &kp N5        &kp N6        &kp RET
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    _(&none)      &none         &none         &none         _(&none)          _(&kp DE_COMMA) &kp N1        &kp N2        &kp N3        _(&none)
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├───────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                              &trans        &trans            &trans          &trans
+//                                           ╰─────────────┴─────────────╯   ╰───────────────┴─────────────╯
             >;
         };
 
@@ -278,7 +223,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼────────────────┤
     &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &kp C_BRI_DN      &kp F10       &kp F4        &kp F5        &kp F6        &kp LC(DE_MINUS)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼────────────────┤
-    FUN_L_P       &kp C_PREV    &kp C_PP      &kp C_NEXT    FUN_L_I           FUN_R_I       &kp F1        &kp F2        &kp F3         FUN_R_P
+    _(&none)      &kp C_PREV    &kp C_PP      &kp C_NEXT    _(&none)          _(&kp F11)    &kp F1        &kp F2        &kp F3        _(&kp LC(N0))
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴────────────────╯
                                               &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -293,7 +238,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &sys_reset    &none         &none         &out OUT_TOG  &none             &out OUT_USB  &bts 0        &bts 1        &bts 2        &sys_reset
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    HW_L_P        &none         &none         &none         HW_L_I            HW_R_I        &none         &none         &none         HW_R_P
+    _(&none)      &none         &none         &none         _(&none)          _(&none)      &none         &none         &none         _(&none)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &none         &none             &none         &none
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -308,7 +253,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp DE_AE     &trans        &kp DE_SZ     &trans        &trans            &trans        &trans        &trans        &trans        &kp DE_OE
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    GER_L_P       &trans        &trans        &trans        GER_L_I           GER_R_I       &trans        &trans        &trans        GER_R_P
+    _(&trans)     &trans        &trans        &trans        _(&trans)         _(&trans)     &trans        &trans        &trans        _(&trans)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -323,7 +268,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none             &none         &none         &none         &none         &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    MSE_L_P        &none         &none         &none        MSE_L_I           MSE_R_I       &mkp MB4      &mkp MB3      &mkp MB5      MSE_R_P
+    _(&none)      &none         &none         &none         _(&none)          _(&none)      &mkp MB4      &mkp MB3      &mkp MB5      _(&none)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans        &trans            &mkp LCLK     &mkp RCLK
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
