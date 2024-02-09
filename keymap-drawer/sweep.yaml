@@ -30,16 +30,16 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - NAV
+  - {t: '$$mdi:backspace-outline$$', h: NAV}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
-  - NUM
+  - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
   NAV:
   - $$mdi:close-box-outline$$
   - $$mdi:arrow-left-bold-box$$
   - $$mdi:text-search$$
   - $$mdi:arrow-right-bold-box$$
-  - $$mdi:backspace-outline$$
+  - $$mdi:apple-keyboard-caps$$
   - Page Up
   - {t: HOME, h: '$$mdi:format-vertical-align-top$$'}
   - $$mdi:arrow-up$$
@@ -61,9 +61,9 @@ layers:
   - $$mdi:content-paste$$
   - $$mdi:redo$$
   - $$mdi:keyboard-return$$
-  - {t: '$$mdi:backspace-outline$$', h: '$$mdi:backspace$$'}
-  - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:backspace-reverse$$'}
+  - $$mdi:arrow-right-bold-box-outline$$
+  - $$mdi:swap-horizontal$$
+  - $$mdi:arrow-left-bold-box-outline$$
   - $$mdi:calculator$$
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
