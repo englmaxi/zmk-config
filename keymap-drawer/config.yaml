@@ -293,8 +293,8 @@ parse_config:
     LC(TAB): $$mdi:arrow-right-bold-box$$
     LC(LS(TAB)): $$mdi:arrow-left-bold-box$$
 
-    LC(LG(LEFT)): $$mdi:arrow-right-bold-box-outline$$
-    LC(LG(RIGHT)): $$mdi:arrow-left-bold-box-outline$$
+    LC(LG(LEFT)): $$mdi:arrow-left-bold-box-outline$$
+    LC(LG(RIGHT)): $$mdi:arrow-right-bold-box-outline$$
     
     RETURN: $$mdi:keyboard-return$$
     RET: $$mdi:keyboard-return$$
