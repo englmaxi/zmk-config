@@ -103,6 +103,14 @@
 
         // tap-dance
         TD(td_sqt_dqt,  270,    &sqt_dqt,   &sqt_dqt_macro)
+        
+        // sticky key to be used for alt-tab macro
+        sk_at: sk_alttabber {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <500>;
+        };
     };
 
     macros {
@@ -147,6 +155,16 @@
                 = <&out OUT_BLE>
                 , <&macro_param_1to2>
                 , <&bt BT_SEL MACRO_PLACEHOLDER>;
+        )        
+        
+        ZMK_MACRO(alt_tabber,  // adapted from @moutis on ZMK Discord, copied from @caksoylar
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_press &kp LALT>    // leave ALT down to keep menu up
+                     , <&macro_tap &kp TAB>       // open the menu
+                     , <&macro_pause_for_release> // wait until key release
+                     , <&macro_tap &sk_at RALT>   // start timer to release ALT after timeout
+                     , <&macro_release &kp LALT>; // now release the initial hold
         )
     };
 
@@ -172,7 +190,7 @@
 // ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     _(&lt NUM DE_Z) &kp X         &kp C         &lt 6 D       _(&kp V)          _(&kp K)      &kp H         &kp DE_COMMA  &kp DE_DOT    _(&qexcl)
 // ╰───────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                &mo NAV       &mt LSHFT RET     &lt FUN SPACE &mo NUM
+                                                &lt NAV BSPC  &mt LSHFT RET     &lt FUN SPACE &lt NUM DEL
 //                                             ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -180,15 +198,15 @@
         navigation_layer {
             display-name = "NAV";
             bindings = <
-// ╭────────────────┬────────────────┬─────────────┬─────────────┬───────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬────────────────╮
-    &mt LA(F4) LC(W) &kp LC(LS(TAB))  &kp LC(F)     &kp LC(TAB)   &kp BSPC            &kp PG_UP     CT(HOME)      &kp UP        CT(END)       &kp PAUSE_BREAK
-// ├────────────────┼────────────────┼─────────────┼─────────────┼───────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼────────────────┤
-    &sk LGUI         &sk LALT         &sk LCTRL     &sk LSHFT     &sk RALT            &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT     &kp INS
-// ├────────────────┼────────────────┼─────────────┼─────────────┼───────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼────────────────┤
-    _(&kp LC(DE_Z))  &kp LS(DEL)      &kp LC(INS)   &kp LS(INS)   _(&kp LC(DE_Y))     _(&kp RET)    CT(BSPC)      &kp TAB       CT(DEL)       _(&kp C_AL_CALC)
-// ╰────────────────┴────────────────┴─────────────┼─────────────┼───────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴────────────────╯
+// ╭────────────────┬────────────────┬─────────────┬─────────────┬───────────────╮   ╭─────────────┬────────────────┬─────────────┬─────────────────┬────────────────╮
+    &mt LA(F4) LC(W) &kp LC(LS(TAB))  &kp LC(F)     &kp LC(TAB)   &kp CLCK            &kp PG_UP     CT(HOME)         &kp UP        CT(END)           &kp PAUSE_BREAK
+// ├────────────────┼────────────────┼─────────────┼─────────────┼───────────────┤   ├─────────────┼────────────────┼─────────────┼─────────────────┼────────────────┤
+    &sk LGUI         &sk LALT         &sk LCTRL     &sk LSHFT     &sk RALT            &kp PG_DN     &kp LEFT         &kp DOWN      &kp RIGHT         &kp INS
+// ├────────────────┼────────────────┼─────────────┼─────────────┼───────────────┤   ├─────────────┼────────────────┼─────────────┼─────────────────┼────────────────┤
+    _(&kp LC(DE_Z))  &kp LS(DEL)      &kp LC(INS)   &kp LS(INS)   _(&kp LC(DE_Y))     _(&kp RET)    &kp LC(LG(LEFT)) &alt_tabber   &kp LC(LG(RIGHT)) _(&kp C_AL_CALC)
+// ╰────────────────┴────────────────┴─────────────┼─────────────┼───────────────┤   ├─────────────┼────────────────┼─────────────┴─────────────────┴────────────────╯
                                                     &trans        &trans              &trans        &trans
-//                                                 ╰─────────────┴───────────────╯   ╰─────────────┴─────────────╯
+//                                                 ╰─────────────┴───────────────╯   ╰─────────────┴────────────────╯
             >;
         };
 

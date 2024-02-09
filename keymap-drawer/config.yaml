@@ -104,6 +104,8 @@ parse_config:
     '&caps_word': $$mdi:caps-lock$$
 
     '&mt LA(F4) LC(W)': $$mdi:close-box-outline$$
+
+    '&alt_tabber': $$mdi:swap-horizontal$$
     
     '&hmr_lpar_lt LS(LCTRL) 0':
       tap: '('
@@ -290,6 +292,9 @@ parse_config:
     
     LC(TAB): $$mdi:arrow-right-bold-box$$
     LC(LS(TAB)): $$mdi:arrow-left-bold-box$$
+
+    LC(LG(LEFT)): $$mdi:arrow-right-bold-box-outline$$
+    LC(LG(RIGHT)): $$mdi:arrow-left-bold-box-outline$$
     
     RETURN: $$mdi:keyboard-return$$
     RET: $$mdi:keyboard-return$$
@@ -307,6 +312,10 @@ parse_config:
     RSHFT: $$mdi:apple-keyboard-shift$$
     RSHIFT: $$mdi:apple-keyboard-shift$$
     RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
+
+    CLCK: $$mdi:apple-keyboard-caps$$
+    CAPS: $$mdi:apple-keyboard-caps$$
+    CAPSLOCK: $$mdi:apple-keyboard-caps$$
 
     LGUI: $$mdi:microsoft-windows$$
     RGUI: $$mdi:microsoft-windows$$
