@@ -101,6 +101,8 @@ parse_config:
 
     '&key_repeat': $$mdi:repeat$$
 
+    '&caps_word': $$mdi:caps-lock$$
+
     '&mt LA(F4) LC(W)': $$mdi:close-box-outline$$
     
     '&hmr_lpar_lt LS(LCTRL) 0':
