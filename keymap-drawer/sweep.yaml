@@ -61,9 +61,9 @@ layers:
   - $$mdi:content-paste$$
   - $$mdi:redo$$
   - $$mdi:keyboard-return$$
-  - $$mdi:arrow-right-bold-box-outline$$
-  - $$mdi:swap-horizontal$$
   - $$mdi:arrow-left-bold-box-outline$$
+  - $$mdi:swap-horizontal$$
+  - $$mdi:arrow-right-bold-box-outline$$
   - $$mdi:calculator$$
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}

@@ -773,7 +773,7 @@ rect.held, rect.combo.held {
 <g transform="translate(510, 158)" class="key keypos-23">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<use href="#mdi:arrow-right-bold-box-outline" xlink:href="#mdi:arrow-right-bold-box-outline" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:arrow-right-bold-box-outline"/>
+<use href="#mdi:arrow-left-bold-box-outline" xlink:href="#mdi:arrow-left-bold-box-outline" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:arrow-left-bold-box-outline"/>
 </g>
 <g transform="translate(570, 143)" class="key keypos-24">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
@@ -783,7 +783,7 @@ rect.held, rect.combo.held {
 <g transform="translate(631, 161) rotate(3.0)" class="key keypos-25">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<use href="#mdi:arrow-left-bold-box-outline" xlink:href="#mdi:arrow-left-bold-box-outline" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:arrow-left-bold-box-outline"/>
+<use href="#mdi:arrow-right-bold-box-outline" xlink:href="#mdi:arrow-right-bold-box-outline" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:arrow-right-bold-box-outline"/>
 </g>
 <g transform="translate(237, 230)" class="key held keypos-26">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key held side"/>

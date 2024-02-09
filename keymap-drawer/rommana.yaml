@@ -55,9 +55,9 @@ layers:
   - $$mdi:content-cut$$
   - $$mdi:content-copy$$
   - $$mdi:content-paste$$
-  - $$mdi:arrow-right-bold-box-outline$$
-  - $$mdi:swap-horizontal$$
   - $$mdi:arrow-left-bold-box-outline$$
+  - $$mdi:swap-horizontal$$
+  - $$mdi:arrow-right-bold-box-outline$$
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
