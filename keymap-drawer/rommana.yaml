@@ -72,7 +72,7 @@ layers:
   - '7'
   - '8'
   - '9'
-  - ''
+  - $$mdi:backspace-outline$$
   - $$mdi:microsoft-windows$$
   - ALT
   - $$mdi:apple-keyboard-control$$
@@ -259,13 +259,7 @@ combos:
   a: bottom
   o: 1.05
   draw_separate: true
-- p: [23, 24]
-  k: $$mdi:backspace-outline$$
-  l: [DEF, NUM]
-- p: [24, 25]
-  k: $$mdi:backspace-reverse-outline$$
-  l: [DEF, NUM]
-- p: [4, 14]
+- p: [3, 4]
   k: '%'
   l: [DEF]
 - p: [3, 13]
@@ -277,7 +271,7 @@ combos:
 - p: [1, 11]
   k: '@'
   l: [DEF]
-- p: [3, 4]
+- p: [22, 14]
   k: '~'
   l: [DEF]
 - p: [13, 22]
@@ -289,7 +283,7 @@ combos:
 - p: [11, 20]
   k: €
   l: [DEF]
-- p: [5, 15]
+- p: [5, 6]
   k: ^
   l: [DEF]
 - p: [6, 16]
@@ -301,7 +295,7 @@ combos:
 - p: [8, 18]
   k: '&'
   l: [DEF]
-- p: [5, 6]
+- p: [23, 15]
   k: _
   l: [DEF]
 - p: [16, 23]
@@ -313,16 +307,16 @@ combos:
 - p: [18, 25]
   k: '|'
   l: [DEF]
-- p: [0, 10]
+- p: [20, 21]
   k: Z
   l: [DEF]
-- p: [22, 14]
+- p: [21, 22]
   k: V
   l: [DEF]
-- p: [23, 15]
+- p: [23, 24]
   k: K
   l: [DEF]
-- p: [9, 19]
+- p: [24, 25]
   k: {t: '?', s: '!'}
   l: [DEF]
 - p: [5, 15]
@@ -339,3 +333,6 @@ combos:
   l: [HW]
   a: top
   o: 1.2
+- p: [27, 28]
+  k: $$mdi:caps-lock$$
+  l: [DEF]

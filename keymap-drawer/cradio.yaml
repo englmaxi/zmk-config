@@ -80,7 +80,7 @@ layers:
   - '7'
   - '8'
   - '9'
-  - ''
+  - $$mdi:backspace-outline$$
   - $$mdi:microsoft-windows$$
   - ALT
   - $$mdi:apple-keyboard-control$$
@@ -287,12 +287,6 @@ combos:
   a: bottom
   o: 1.05
   draw_separate: true
-- p: [26, 27]
-  k: $$mdi:backspace-outline$$
-  l: [DEF, NUM]
-- p: [27, 28]
-  k: $$mdi:backspace-reverse-outline$$
-  l: [DEF, NUM]
 - p: [4, 14]
   k: '%'
   l: [DEF]
@@ -346,3 +340,6 @@ combos:
   l: [HW]
   a: top
   o: 1.2
+- p: [31, 32]
+  k: $$mdi:caps-lock$$
+  l: [DEF]
