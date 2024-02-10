@@ -17,7 +17,7 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #include "bongo_cat.h"
 
-#define SRC(array) (lv_img_dsc_t **)array, sizeof(array) / sizeof(lv_img_dsc_t *)
+#define SRC(array) (const void **)array, sizeof(array) / sizeof(lv_img_dsc_t *)
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
