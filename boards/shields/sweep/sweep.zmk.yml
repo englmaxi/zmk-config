@@ -12,6 +12,6 @@ features:
   - keys
 siblings:
   - sweep_dongle
-  - sweep_left_central
-  - sweep_left_peripheral
-  - sweep_right_peripheral
+  - sweep_central_left
+  - sweep_peripheral_left
+  - sweep_peripheral_right

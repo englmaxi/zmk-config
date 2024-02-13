@@ -16,20 +16,20 @@ include:
 
   # sweep
   - board: seeeduino_xiao_ble
-    shield: sweep_dongle dongle_display
+    shield: sweep_central_dongle dongle_display
     artifact-name: sweep_dongle
   - board: nice_nano_v2
-    shield: sweep_left_central
-    artifact-name: sweep_left_central
+    shield: sweep_central_left
+    artifact-name: sweep_central_left
   - board: nice_nano_v2
-    shield: sweep_left_peripheral
-    artifact-name: sweep_left_peripheral
+    shield: sweep_peripheral_left
+    artifact-name: sweep_peripheral_left
   - board: nice_nano_v2
-    shield: sweep_right_peripheral
-    artifact-name: sweep_right_peripheral
+    shield: sweep_peripheral_right
+    artifact-name: sweep_peripheral_right
     
   - board: seeeduino_xiao_ble
-    shield: sweep_dongle dongle_display
+    shield: sweep_central_dongle dongle_display
     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
     artifact-name: sweep_dongle_with_logging
 
