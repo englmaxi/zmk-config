@@ -1,20 +1,7 @@
 # This file generates the GitHub Actions matrix
 ---
 include:
-    # cradio
-  - board: nice_nano_v2
-    shield: cradio_left
-    artifact-name: cradio_left
-  - board: nice_nano_v2
-    shield: cradio_right
-    artifact-name: cradio_right
-
-  - board: nice_nano_v2
-    shield: cradio_left
-    cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
-    artifact-name: sweep_left_with_logging
-
-    # rommana
+  # rommana
   - board: seeeduino_xiao_ble
     shield: rommana_left
     artifact-name: rommana_left
@@ -27,7 +14,7 @@ include:
     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
     artifact-name: rommana_left_with_logging
 
-    # sweep
+  # sweep
   - board: seeeduino_xiao_ble
     shield: sweep_dongle dongle_display
     artifact-name: sweep_dongle
@@ -46,7 +33,7 @@ include:
     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
     artifact-name: sweep_dongle_with_logging
 
-    # reset
+  # reset
   - board: seeeduino_xiao_ble
     shield: settings_reset
   - board: nice_nano_v2
