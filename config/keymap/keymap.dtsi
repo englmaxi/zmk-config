@@ -102,7 +102,7 @@
         SM(bkt_lgt, &bkt_macro,     &lgt_macro)
 
         // tap-dance
-        TD(td_sqt_dqt,  270,    &sqt_dqt,   &sqt_dqt_macro)
+        TD(td_sqt_dqt, 270, &sqt_dqt, &sqt_dqt_macro)
         
         // sticky key to be used for alt-tab macro
         sk_at: sk_alttabber {

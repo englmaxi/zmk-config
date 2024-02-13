@@ -1,3 +1,3 @@
 #define KEYS_30
 
-#include "3x5.dtsi"
+#include "keymap/keymap.dtsi"
