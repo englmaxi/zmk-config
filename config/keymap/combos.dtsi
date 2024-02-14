@@ -15,14 +15,14 @@
               ╰────────╯ ╰────────╯                          ╰─────────╯ ╰─────────╯
 */
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TIMEOUT, ...) \
-    combo_##NAME { \
-        timeout-ms = <TIMEOUT>; \
-        bindings = <BINDINGS>; \
-        key-positions = <KEYPOS>; \
-        layers = <LAYERS>; \
-        require-prior-idle-ms = <150>; \
-		__VA_ARGS__ \
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TIMEOUT, ...)     \
+    combo_##NAME {                                              \
+        timeout-ms = <TIMEOUT>;                                 \
+        bindings = <BINDINGS>;                                  \
+        key-positions = <KEYPOS>;                               \
+        layers = <LAYERS>;                                      \
+        require-prior-idle-ms = <150>;                          \
+	__VA_ARGS__                                             \
     };
 
 #define COMBO_TERM_FAST 30
