@@ -132,6 +132,9 @@
 <svg id="mdi:skip-forward">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-forward" viewBox="0 0 24 24"><path d="M4,5V19L11,12M18,5V19H20V5M11,5V19L18,12" /></svg>
 </svg>
+<svg id="mdi:star-three-points-outline">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-star-three-points-outline" viewBox="0 0 24 24"><path d="M12,9.5L13.2,13.5L16,16.5L12,15.6L7.9,16.5L10.7,13.5L12,9.5M12,2.6L9,12.4L2,19.9L12,17.6L22,20L15,12.5L12,2.6Z" /></svg>
+</svg>
 <svg id="mdi:swap-horizontal">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-swap-horizontal" viewBox="0 0 24 24"><path d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" /></svg>
 </svg>
@@ -521,7 +524,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:keyboard-return"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-4" y="17" height="8" width="8.0" class="key hold glyph mdi:apple-keyboard-shift"/>
+<use href="#mdi:star-three-points-outline" xlink:href="#mdi:star-three-points-outline" x="-4" y="17" height="8" width="8.0" class="key hold glyph mdi:star-three-points-outline"/>
 </g>
 <g transform="translate(390, 246) rotate(-30.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
