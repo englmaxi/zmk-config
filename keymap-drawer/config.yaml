@@ -296,6 +296,9 @@ parse_config:
     LC(LG(LEFT)): $$mdi:arrow-left-bold-box-outline$$
     LC(LG(RIGHT)): $$mdi:arrow-right-bold-box-outline$$
     
+    LC(LS(LALT)): $$mdi:star-three-points-outline$$
+    LC(LS(LA(LGUI))): $$mdi:star-four-points-outline$$
+
     RETURN: $$mdi:keyboard-return$$
     RET: $$mdi:keyboard-return$$
     

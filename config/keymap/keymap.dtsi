@@ -62,6 +62,9 @@
 
 #define CT(KEY) &mt LC(KEY) KEY
 
+#define MEH     LC(LS(LALT))
+#define HYPER   LC(LS(LA(LGUI)))
+
 &caps_word {
     continue-list = <BACKSPACE DELETE DE_UNDER DE_MINUS N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
 };
@@ -191,7 +194,7 @@
 // ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     _(&lt NUM DE_Z) &kp X         &kp C         &lt 6 D       _(&kp V)          _(&kp K)      &kp H         &kp DE_COMMA  &kp DE_DOT    _(&qexcl)
 // ╰───────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                &lt NAV BSPC  &mt LSHFT RET     &lt FUN SPACE &lt NUM DEL
+                                                &lt NAV BSPC  &mt MEH RET       &lt FUN SPACE &lt NUM DEL
 //                                             ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
