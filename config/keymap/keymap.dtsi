@@ -19,10 +19,10 @@
 #define MSE 6
 
 #ifndef KEYMAP_DRAWER
-#include "keys_de.h"
+#include "include/keys_de.h"
 #endif
 
-#include "keypos.h"
+#include "include/keypos.h"
 #include "combos.dtsi"
 
 #define HM(NAME, TAP, HT_KEYPOS)                            \
