@@ -25,7 +25,7 @@
 #include "include/keypos.h"
 #include "combos.dtsi"
 
-#define HM(NAME, TAP, HT_KEYPOS)                            \
+#define HM(NAME, TAP, HT_KEYPOS, ...)                       \
     NAME: NAME {                                            \
         compatible = "zmk,behavior-hold-tap";               \
         #binding-cells = <2>;                               \
@@ -36,6 +36,7 @@
         bindings = <&kp>, <TAP>;                            \
         hold-trigger-key-positions = <HT_KEYPOS THUMBS>;    \
         hold-trigger-on-release;                            \
+        __VA_ARGS__                                         \
     };
 
 #define SM(NAME, TAP, SHIFTED)                  \
@@ -84,11 +85,13 @@
         // home row mods
         HM(hml,         &kp,            KEYS_R)
         HM(hml_repeat,  &key_repeat,    KEYS_R)
+        HM(hml_hwu,     &kp,            KEYS_R, hold-while-undecided;)
 
         HM(hmr,             &kp,        KEYS_L)
         HM(hmr_lpar_lbrc,   &lpar_lbrc, KEYS_L)
         HM(hmr_rpar_rbrc,   &rpar_rbrc, KEYS_L)
         HM(hmr_par_brc,     &par_brc,   KEYS_L)
+        HM(hmr_hwu,         &kp,        KEYS_L, hold-while-undecided;)
 
         // shift morphs
         SM(qexcl,           &kp DE_QMARK,   &kp DE_EXCL)
@@ -187,15 +190,15 @@
         default_layer {
             display-name = "DEF";
             bindings = <
-// ╭───────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp Q           &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp DE_Y      &td_sqt_dqt
-// ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hml LGUI A     &hml LALT R   &hml LCTRL S  &hml LSHIFT T &kp G             &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I   &hmr LGUI O
-// ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    _(&lt NUM DE_Z) &kp X         &kp C         &lt 6 D       _(&kp V)          _(&kp K)      &kp H         &kp DE_COMMA  &kp DE_DOT    _(&qexcl)
-// ╰───────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                &lt NAV BSPC  &mt MEH RET       &lt FUN SPACE &lt NUM DEL
-//                                             ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+// ╭───────────────┬─────────────┬────────────────┬─────────────────┬─────────────╮   ╭─────────────┬────────────────┬────────────────┬─────────────┬─────────────╮
+    &kp Q           &kp W         &kp F            &kp P             &kp B             &kp J         &kp L            &kp U            &kp DE_Y      &td_sqt_dqt
+// ├───────────────┼─────────────┼────────────────┼─────────────────┼─────────────┤   ├─────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
+    &hml LGUI A     &hml LALT R   &hml_hwu LCTRL S &hml_hwu LSHIFT T &kp G             &kp M         &hmr_hwu RSHFT N &hmr_hwu RCTRL E &hmr LALT I   &hmr LGUI O
+// ├───────────────┼─────────────┼────────────────┼─────────────────┼─────────────┤   ├─────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
+    _(&lt NUM DE_Z) &kp X         &kp C            &lt 6 D           _(&kp V)          _(&kp K)      &kp H            &kp DE_COMMA     &kp DE_DOT    _(&qexcl)
+// ╰───────────────┴─────────────┴────────────────┼─────────────────┼─────────────┤   ├─────────────┼────────────────┼────────────────┴─────────────┴─────────────╯
+                                                   &lt NAV BSPC      &mt MEH RET       &lt FUN SPACE &lt NUM DEL
+//                                                ╰─────────────────┴─────────────╯   ╰─────────────┴────────────────╯
             >;
         };
 
