@@ -4,9 +4,9 @@ on:
   push:
     paths:
       - ".github/workflows/draw-keymaps.yml"
-      - "config/*.dtsi"
-      - "config/*.keymap"
       - "keymap-drawer/config.yaml"
+      - "boards/shields/*/*.json"
+      - "config/**"
 
 jobs:
   draw:
@@ -14,11 +14,13 @@ jobs:
     permissions:
       contents: write
     with:
-      # commit_message: "[Draw] ${{ github.event.head_commit.message }}"
-      # amend_commit: true
+      commit_message: "[Draw] ${{ github.event.head_commit.message }}"
+      amend_commit: false
       install_branch: "main"
       keymap_patterns: "config/*.keymap"
       config_path: "keymap-drawer/config.yaml"
+      json_path: "boards/shields/${keyboard}"
       output_folder: "keymap-drawer"
+      destination: "both"
       parse_args: ""  # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
       draw_args: ""   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
