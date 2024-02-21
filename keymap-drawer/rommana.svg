@@ -1121,8 +1121,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1378)" class="layer-HW">
-<text x="0" y="28" class="label">HW</text>
+<g transform="translate(30, 1378)" class="layer-SYS">
+<text x="0" y="28" class="label">SYS</text>
 <g transform="translate(0, 59)">
 <g transform="translate(30, 93) rotate(-8.0)" class="key bootloader keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key bootloader side"/>

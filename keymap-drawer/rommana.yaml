@@ -124,7 +124,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  HW:
+  SYS:
   - {t: '$$mdi:progress-download$$', type: bootloader}
   - ''
   - ''
@@ -330,7 +330,7 @@ combos:
   l: [NAV]
 - p: [0, 9]
   k: {t: '$$mdi:progress-download$$', type: bootloader}
-  l: [HW]
+  l: [SYS]
   a: top
   o: 1.2
 - p: [27, 28]
