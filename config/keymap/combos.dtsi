@@ -101,7 +101,7 @@
         COMBO(redo,     &kp LC(DE_Y),   LB2 LB1, NAV,     COMBO_TERM_SLOW)
 #endif
 
-        COMBO(bl,       &bootloader,    LT4 RT4,  HW,     COMBO_TERM_SLOW)
+        COMBO(bl,       &bootloader,    LT4 RT4, SYS,     COMBO_TERM_SLOW)
         COMBO(cw,       &caps_word,     LH0 RH0, DEF,     COMBO_TERM_SLOW)
     };
 };

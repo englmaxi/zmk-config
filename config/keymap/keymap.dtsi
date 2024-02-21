@@ -14,7 +14,7 @@
 #define NAV 1
 #define NUM 2
 #define FUN 3
-#define HW  4
+#define SYS 4
 #define INT 5
 #define MSE 6
 
@@ -180,7 +180,7 @@
 
         tri_layer  {
             if-layers = <NAV NUM>;
-            then-layer = <HW>;
+            then-layer = <SYS>;
         };
     };
 
@@ -247,8 +247,8 @@
             >;
         };
 
-        hardware_layer {
-            display-name = "HW";
+        system_layer {
+            display-name = "SYS";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &bootloader   &none         &none         &none         &none             &bt BT_CLR    &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bootloader
