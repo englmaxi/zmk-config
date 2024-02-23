@@ -32,7 +32,7 @@
         flavor = "balanced";                                \
         tapping-term-ms = <280>;                            \
         quick-tap-ms = <175>;                               \
-        require-prior-idle-ms = <175>;                      \
+        require-prior-idle-ms = <150>;                      \
         bindings = <&kp>, <TAP>;                            \
         hold-trigger-key-positions = <HT_KEYPOS THUMBS>;    \
         hold-trigger-on-release;                            \
@@ -47,11 +47,11 @@
         mods = <(MOD_RSFT|MOD_LSFT)>;           \
     };
     
-#define TD(NAME, T_TERM, TAP1, TAP2, ...)                                   \
+#define TD(NAME, TAP1, TAP2, ...)                                           \
     NAME: NAME {                                                            \
         compatible = "zmk,behavior-tap-dance";                              \
         #binding-cells = <0>;                                               \
-        tapping-term-ms = <T_TERM>;                                         \
+        tapping-term-ms = <270>;                                            \
         bindings = <TAP1>, <TAP2> __VA_OPT__(, <)__VA_ARGS__ __VA_OPT__(>); \
     };
 
@@ -72,7 +72,7 @@
 
 &sk {
     quick-release;
-    release-after-ms = <900>;
+    release-after-ms = <1000>;
 };
 
 &mt {
@@ -80,42 +80,46 @@
     tapping-term-ms = <220>;
 };
 
+&lt {
+    quick-tap-ms = <220>;
+};
+
 / {
     behaviors {
         // home row mods
-        HM(hml,         &kp,            KEYS_R)
-        HM(hml_repeat,  &key_repeat,    KEYS_R)
-        HM(hml_hwu,     &kp,            KEYS_R, hold-while-undecided;)
+        HM(hml,        &kp,         KEYS_R)
+        HM(hml_repeat, &key_repeat, KEYS_R)
+        HM(hml_hwu,    &kp,         KEYS_R, hold-while-undecided;)
 
-        HM(hmr,             &kp,        KEYS_L)
-        HM(hmr_lpar_lbrc,   &lpar_lbrc, KEYS_L)
-        HM(hmr_rpar_rbrc,   &rpar_rbrc, KEYS_L)
-        HM(hmr_par_brc,     &par_brc,   KEYS_L)
-        HM(hmr_hwu,         &kp,        KEYS_L, hold-while-undecided;)
+        HM(hmr,           &kp,        KEYS_L)
+        HM(hmr_lpar_lbrc, &lpar_lbrc, KEYS_L)
+        HM(hmr_rpar_rbrc, &rpar_rbrc, KEYS_L)
+        HM(hmr_par_brc,   &par_brc,   KEYS_L)
+        HM(hmr_hwu,       &kp,        KEYS_L, hold-while-undecided;)
 
         // shift morphs
-        SM(qexcl,           &kp DE_QMARK,   &kp DE_EXCL)
+        SM(qexcl, &kp DE_QMARK,   &kp DE_EXCL)
 
-        SM(sqt_dqt,         &kp DE_SQT,     &kp DE_DQT)
-        SM(sqt_dqt_macro,   &sqt_macro,     &dqt_macro)
+        SM(sqt_dqt,       &kp DE_SQT, &kp DE_DQT)
+        SM(sqt_dqt_macro, &sqt_macro, &dqt_macro)
 
-        SM(lpar_lbrc,   &kp DE_LPAR,    &kp DE_LBRC)
-        SM(rpar_rbrc,   &kp DE_RPAR,    &kp DE_RBRC)
-        SM(par_brc,     &par_macro,     &brc_macro)
+        SM(lpar_lbrc, &kp DE_LPAR, &kp DE_LBRC)
+        SM(rpar_rbrc, &kp DE_RPAR, &kp DE_RBRC)
+        SM(par_brc,   &par_macro,  &brc_macro)
 
-        SM(lbkt_lt, &kp DE_LBKT,    &kp DE_LT)
-        SM(rbkt_gt, &kp DE_RBKT,    &kp DE_GT)
-        SM(bkt_lgt, &bkt_macro,     &lgt_macro)
+        SM(lbkt_lt, &kp DE_LBKT, &kp DE_LT)
+        SM(rbkt_gt, &kp DE_RBKT, &kp DE_GT)
+        SM(bkt_lgt, &bkt_macro,  &lgt_macro)
 
         // tap-dance
-        TD(td_sqt_dqt, 270, &sqt_dqt, &sqt_dqt_macro)
+        TD(td_sqt_dqt, &sqt_dqt, &sqt_dqt_macro)
         
         // sticky key to be used for alt-tab macro
         sk_at: sk_alttabber {
             compatible = "zmk,behavior-sticky-key";
             #binding-cells = <1>;
             bindings = <&kp>;
-            release-after-ms = <500>;
+            release-after-ms = <1000>;
         };
     };
 
