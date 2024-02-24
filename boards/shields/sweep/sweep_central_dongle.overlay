@@ -7,9 +7,9 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
-        zephyr,display = &oled;
+        zmk,kscan = &mock_kscan;
         zmk,matrix-transform = &default_transform;
+        zephyr,display = &oled;
     };
 
     default_transform: keymap_transform_0 {
@@ -23,20 +23,14 @@
                                    RC(0,15) RC(0,16)   RC(0,33) RC(0,32)
         >;
     };
-    
-    kscan0: kscan {
-        compatible = "zmk,kscan-gpio-direct";
 
-        input-gpios
-            = <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&xiao_d 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&xiao_d 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            ;
+    mock_kscan: kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <1>;
+        rows = <0>;
+        events = <>;
     };
-    
 };
-
 
 &xiao_i2c {
     status = "okay";
