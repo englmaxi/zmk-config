@@ -51,7 +51,7 @@
     NAME: NAME {                                                            \
         compatible = "zmk,behavior-tap-dance";                              \
         #binding-cells = <0>;                                               \
-        tapping-term-ms = <270>;                                            \
+        tapping-term-ms = <200>;                                            \
         bindings = <TAP1>, <TAP2> __VA_OPT__(, <)__VA_ARGS__ __VA_OPT__(>); \
     };
 
