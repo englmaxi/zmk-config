@@ -1514,13 +1514,17 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
 </g>
-<g transform="translate(101, 161) rotate(-3.0)" class="key keypos-20">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
+<g transform="translate(101, 161) rotate(-3.0)" class="key text_with_symbol keypos-20">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key text_with_symbol side"/>
+<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key text_with_symbol"/>
+<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:cursor-default-click-outline"/>
+<text x="0" y="25" class="key text_with_symbol hold">4</text>
 </g>
-<g transform="translate(161, 143)" class="key keypos-21">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
+<g transform="translate(161, 143)" class="key text_with_symbol keypos-21">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key text_with_symbol side"/>
+<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key text_with_symbol"/>
+<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:cursor-default-click-outline"/>
+<text x="0" y="25" class="key text_with_symbol hold">5</text>
 </g>
 <g transform="translate(222, 158)" class="key held keypos-22">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key held side"/>
@@ -1544,15 +1548,15 @@ rect.held, rect.combo.held {
 <use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:cursor-default-click-outline"/>
 <text x="0" y="25" class="key text_with_symbol hold">5</text>
 </g>
-<g transform="translate(235, 233) rotate(15.0)" class="key trans keypos-26">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key trans"/>
-<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-11" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
+<g transform="translate(235, 233) rotate(15.0)" class="key keypos-26">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
+<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:cursor-default-click-outline"/>
 </g>
-<g transform="translate(293, 249) rotate(15.0)" class="key trans keypos-27">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key trans"/>
-<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-11" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
+<g transform="translate(293, 249) rotate(15.0)" class="key keypos-27">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
+<use href="#mdi:cursor-default-click" xlink:href="#mdi:cursor-default-click" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:cursor-default-click"/>
 </g>
 <g transform="translate(438, 248) rotate(-15.0)" class="key keypos-28">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
@@ -1563,6 +1567,11 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
 <use href="#mdi:cursor-default-click" xlink:href="#mdi:cursor-default-click" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:cursor-default-click"/>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="250" y="228" width="28" height="26" class="combo"/>
+<use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="257" y="234" height="14" width="14.0" class="combo tap glyph mdi:cursor-default-click-outline"/>
+<text x="264" y="253" class="combo hold">3</text>
 </g>
 </g>
 </g>

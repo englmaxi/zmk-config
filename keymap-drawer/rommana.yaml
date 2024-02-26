@@ -207,14 +207,14 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - {t: '$$mdi:cursor-default-click-outline$$', h: '4', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', h: '5', type: text_with_symbol}
   - {type: held}
   - {t: '$$mdi:cursor-default-click-outline$$', h: '4', type: text_with_symbol}
   - {t: '$$mdi:cursor-default-click-outline$$', h: '3', type: text_with_symbol}
   - {t: '$$mdi:cursor-default-click-outline$$', h: '5', type: text_with_symbol}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - $$mdi:cursor-default-click-outline$$
+  - $$mdi:cursor-default-click$$
   - $$mdi:cursor-default-click-outline$$
   - $$mdi:cursor-default-click$$
 combos:
@@ -336,3 +336,6 @@ combos:
 - p: [27, 28]
   k: $$mdi:caps-lock$$
   l: [DEF]
+- p: [26, 27]
+  k: {t: '$$mdi:cursor-default-click-outline$$', h: '3', type: text_with_symbol}
+  l: [MSE]
