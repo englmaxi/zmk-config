@@ -53,9 +53,19 @@ draw_config:
     .text_with_symbol.tap {
       translate: -1px 1px;
     } 
-    .text_with_symbol.hold {
-      translate: 6px -31px;
+    .text_with_symbol.shifted {
+      translate: 6px 12px;
       font-size: 8px;
+      opacity: 1.0;
+    } 
+    
+    .combo.text_with_symbol.tap {
+      translate: -1px 1px;
+    } 
+    .combo.text_with_symbol.shifted {
+      translate: 6px 4px;
+      font-size: 8px;
+      opacity: 1.0;
     } 
     
   shrink_wide_legends: 7
@@ -155,75 +165,75 @@ parse_config:
     
     '&bt BT_CLR':
       tap: $$mdi:bluetooth$$
-      hold: $$mdi:close-thick$$
+      shifted: $$mdi:close-thick$$
       type: text_with_symbol
     '&bt BT_SEL 0':
       tap: $$mdi:bluetooth-connect$$
-      hold: '0'
+      shifted: '0'
       type: text_with_symbol
     '&bt BT_SEL 1':
       tap: $$mdi:bluetooth-connect$$
-      hold: '1'
+      shifted: '1'
       type: text_with_symbol
     '&bt BT_SEL 2':
       tap: $$mdi:bluetooth-connect$$
-      hold: '2'
+      shifted: '2'
       type: text_with_symbol
     '&bt BT_SEL 3':
       tap: $$mdi:bluetooth-connect$$
-      hold: '3'
+      shifted: '3'
       type: text_with_symbol
     '&bt BT_SEL 4':
       tap: $$mdi:bluetooth-connect$$
-      hold: '4'
+      shifted: '4'
       type: text_with_symbol
     '&bts 0':
       tap: $$mdi:bluetooth-connect$$
-      hold: '0'
+      shifted: '0'
       type: text_with_symbol
     '&bts 1':
       tap: $$mdi:bluetooth-connect$$
-      hold: '1'
+      shifted: '1'
       type: text_with_symbol
     '&bts 2':
       tap: $$mdi:bluetooth-connect$$
-      hold: '2'
+      shifted: '2'
       type: text_with_symbol
     '&bts 3':
       tap: $$mdi:bluetooth-connect$$
-      hold: '3'
+      shifted: '3'
       type: text_with_symbol
     '&bts 4':
       tap: $$mdi:bluetooth-connect$$
-      hold: '4'
+      shifted: '4'
       type: text_with_symbol
     '&bt BT_DISC 0':
       tap: $$mdi:bluetooth-off$$
-      hold: '0'
+      shifted: '0'
       type: text_with_symbol
     '&bt BT_DISC 1':
       tap: $$mdi:bluetooth-off$$
-      hold: '1'
+      shifted: '1'
       type: text_with_symbol
     '&bt BT_DISC 2':
       tap: $$mdi:bluetooth-off$$
-      hold: '2'
+      shifted: '2'
       type: text_with_symbol
     '&bt BT_DISC 3':
       tap: $$mdi:bluetooth-off$$
-      hold: '3'
+      shifted: '3'
       type: text_with_symbol
     '&bt BT_DISC 4':
       tap: $$mdi:bluetooth-off$$
-      hold: '4'
+      shifted: '4'
       type: text_with_symbol
     '&bt BT_PRV':
       tap: $$mdi:bluetooth$$
-      hold: $$mdi:skip-previous$$
+      shifted: $$mdi:skip-previous$$
       type: text_with_symbol
     '&bt BT_NXT':
       tap: $$mdi:bluetooth$$
-      hold: $$mdi:skip-next$$
+      shifted: $$mdi:skip-next$$
       type: text_with_symbol
     
     '&out OUT_BLE': $$mdi:bluetooth$$
@@ -238,15 +248,15 @@ parse_config:
     '&mkp RCLK': $$mdi:cursor-default-click$$
     '&mkp MB3':
       tap: $$mdi:cursor-default-click-outline$$
-      hold: 3
+      shifted: 3
       type: text_with_symbol
     '&mkp MB4':
       tap: $$mdi:cursor-default-click-outline$$
-      hold: 4
+      shifted: 4
       type: text_with_symbol
     '&mkp MB5':
       tap: $$mdi:cursor-default-click-outline$$
-      hold: 5
+      shifted: 5
       type: text_with_symbol
     
   zmk_combos:
