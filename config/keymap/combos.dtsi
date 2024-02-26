@@ -104,5 +104,6 @@
 
         COMBO(bl,       &bootloader,    LT4 RT4, SYS,     COMBO_TERM_SLOW)
         COMBO(cw,       &caps_word,     LH0 RH0, DEF,     COMBO_TERM_SLOW)
+        COMBO(mb3,      &mkp MB3,       LH1 LH0, MSE,     COMBO_TERM_SLOW)
     };
 };
