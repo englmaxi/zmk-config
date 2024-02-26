@@ -22,7 +22,7 @@ layers:
   - {t: I, h: ALT}
   - {t: O, h: '$$mdi:microsoft-windows$$'}
   - X
-  - C
+  - {t: C, h: '$$mdi:billiards$$'}
   - {t: D, h: MSE}
   - H
   - {t: ',', s: ;}
@@ -187,10 +187,10 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   MSE:
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:billiards$$', s: '$$mdi:speedometer$$', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', s: '4', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', s: '5', type: text_with_symbol}
+  - {t: '$$mdi:billiards$$', s: '$$mdi:progress-download$$', type: text_with_symbol}
   - ''
   - ''
   - ''
@@ -207,14 +207,14 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:cursor-default-click-outline$$', s: '4', type: text_with_symbol}
-  - {t: '$$mdi:cursor-default-click-outline$$', s: '5', type: text_with_symbol}
+  - {t: '$$mdi:billiards$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:arrow-up-down$$', type: text_with_symbol}
+  - {t: '$$mdi:billiards$$', s: '$$mdi:arrow-up-down$$', type: text_with_symbol}
   - {type: held}
   - {t: '$$mdi:cursor-default-click-outline$$', s: '4', type: text_with_symbol}
   - {t: '$$mdi:cursor-default-click-outline$$', s: '3', type: text_with_symbol}
   - {t: '$$mdi:cursor-default-click-outline$$', s: '5', type: text_with_symbol}
-  - $$mdi:cursor-default-click-outline$$
   - $$mdi:cursor-default-click$$
+  - $$mdi:cursor-default-click-outline$$
   - $$mdi:cursor-default-click-outline$$
   - $$mdi:cursor-default-click$$
 combos:
