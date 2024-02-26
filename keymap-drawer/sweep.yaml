@@ -145,10 +145,10 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:bluetooth$$', h: '$$mdi:close-thick$$', type: text_with_symbol}
-  - {t: '$$mdi:bluetooth-off$$', h: '0', type: text_with_symbol}
-  - {t: '$$mdi:bluetooth-off$$', h: '1', type: text_with_symbol}
-  - {t: '$$mdi:bluetooth-off$$', h: '2', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth$$', s: '$$mdi:close-thick$$', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-off$$', s: '0', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-off$$', s: '1', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-off$$', s: '2', type: text_with_symbol}
   - {t: '$$mdi:progress-download$$', type: bootloader}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - ''
@@ -156,9 +156,9 @@ layers:
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
   - ''
   - $$mdi:usb$$
-  - {t: '$$mdi:bluetooth-connect$$', h: '0', type: text_with_symbol}
-  - {t: '$$mdi:bluetooth-connect$$', h: '1', type: text_with_symbol}
-  - {t: '$$mdi:bluetooth-connect$$', h: '2', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-connect$$', s: '0', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-connect$$', s: '1', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-connect$$', s: '2', type: text_with_symbol}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {type: held}
   - ''
@@ -231,14 +231,14 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:cursor-default-click-outline$$', h: '4', type: text_with_symbol}
-  - {t: '$$mdi:cursor-default-click-outline$$', h: '5', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', s: '4', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', s: '5', type: text_with_symbol}
   - {type: held}
   - ''
   - ''
-  - {t: '$$mdi:cursor-default-click-outline$$', h: '4', type: text_with_symbol}
-  - {t: '$$mdi:cursor-default-click-outline$$', h: '3', type: text_with_symbol}
-  - {t: '$$mdi:cursor-default-click-outline$$', h: '5', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', s: '4', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', s: '3', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', s: '5', type: text_with_symbol}
   - ''
   - $$mdi:cursor-default-click-outline$$
   - $$mdi:cursor-default-click$$
@@ -343,5 +343,5 @@ combos:
   k: $$mdi:caps-lock$$
   l: [DEF]
 - p: [30, 31]
-  k: {t: '$$mdi:cursor-default-click-outline$$', h: '3', type: text_with_symbol}
+  k: {t: '$$mdi:cursor-default-click-outline$$', s: '3', type: text_with_symbol}
   l: [MSE]

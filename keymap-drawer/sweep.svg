@@ -342,9 +342,19 @@ rect.held, rect.combo.held {
 .text_with_symbol.tap {
   translate: -1px 1px;
 } 
-.text_with_symbol.hold {
-  translate: 6px -31px;
+.text_with_symbol.shifted {
+  translate: 6px 12px;
   font-size: 8px;
+  opacity: 1.0;
+} 
+
+.combo.text_with_symbol.tap {
+  translate: -1px 1px;
+} 
+.combo.text_with_symbol.shifted {
+  translate: 6px 4px;
+  font-size: 8px;
+  opacity: 1.0;
 } 
 </style>
 <g transform="translate(30, 0)" class="layer-DEF">
@@ -1202,25 +1212,25 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
 <use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:bluetooth"/>
-<use href="#mdi:close-thick" xlink:href="#mdi:close-thick" x="-4" y="17" height="8" width="8.0" class="key text_with_symbol hold glyph mdi:close-thick"/>
+<use href="#mdi:close-thick" xlink:href="#mdi:close-thick" x="-4" y="-25" height="8" width="8.0" class="key text_with_symbol shifted glyph mdi:close-thick"/>
 </g>
 <g transform="translate(476, 45)" class="key text_with_symbol keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
 <use href="#mdi:bluetooth-off" xlink:href="#mdi:bluetooth-off" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:bluetooth-off"/>
-<text x="0" y="25" class="key text_with_symbol hold">0</text>
+<text x="0" y="-25" class="key text_with_symbol shifted">0</text>
 </g>
 <g transform="translate(532, 28)" class="key text_with_symbol keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
 <use href="#mdi:bluetooth-off" xlink:href="#mdi:bluetooth-off" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:bluetooth-off"/>
-<text x="0" y="25" class="key text_with_symbol hold">1</text>
+<text x="0" y="-25" class="key text_with_symbol shifted">1</text>
 </g>
 <g transform="translate(588, 50)" class="key text_with_symbol keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
 <use href="#mdi:bluetooth-off" xlink:href="#mdi:bluetooth-off" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:bluetooth-off"/>
-<text x="0" y="25" class="key text_with_symbol hold">2</text>
+<text x="0" y="-25" class="key text_with_symbol shifted">2</text>
 </g>
 <g transform="translate(644, 90)" class="key bootloader keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key bootloader side"/>
@@ -1260,19 +1270,19 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
 <use href="#mdi:bluetooth-connect" xlink:href="#mdi:bluetooth-connect" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:bluetooth-connect"/>
-<text x="0" y="25" class="key text_with_symbol hold">0</text>
+<text x="0" y="-25" class="key text_with_symbol shifted">0</text>
 </g>
 <g transform="translate(532, 84)" class="key text_with_symbol keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
 <use href="#mdi:bluetooth-connect" xlink:href="#mdi:bluetooth-connect" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:bluetooth-connect"/>
-<text x="0" y="25" class="key text_with_symbol hold">1</text>
+<text x="0" y="-25" class="key text_with_symbol shifted">1</text>
 </g>
 <g transform="translate(588, 106)" class="key text_with_symbol keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
 <use href="#mdi:bluetooth-connect" xlink:href="#mdi:bluetooth-connect" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:bluetooth-connect"/>
-<text x="0" y="25" class="key text_with_symbol hold">2</text>
+<text x="0" y="-25" class="key text_with_symbol shifted">2</text>
 </g>
 <g transform="translate(644, 146)" class="key bootloader keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key bootloader side"/>
@@ -1611,13 +1621,13 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
 <use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:cursor-default-click-outline"/>
-<text x="0" y="25" class="key text_with_symbol hold">4</text>
+<text x="0" y="-25" class="key text_with_symbol shifted">4</text>
 </g>
 <g transform="translate(140, 140)" class="key text_with_symbol keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
 <use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:cursor-default-click-outline"/>
-<text x="0" y="25" class="key text_with_symbol hold">5</text>
+<text x="0" y="-25" class="key text_with_symbol shifted">5</text>
 </g>
 <g transform="translate(196, 157)" class="key held keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
@@ -1635,19 +1645,19 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
 <use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:cursor-default-click-outline"/>
-<text x="0" y="25" class="key text_with_symbol hold">4</text>
+<text x="0" y="-25" class="key text_with_symbol shifted">4</text>
 </g>
 <g transform="translate(532, 140)" class="key text_with_symbol keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
 <use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:cursor-default-click-outline"/>
-<text x="0" y="25" class="key text_with_symbol hold">3</text>
+<text x="0" y="-25" class="key text_with_symbol shifted">3</text>
 </g>
 <g transform="translate(588, 162)" class="key text_with_symbol keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
 <use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:cursor-default-click-outline"/>
-<text x="0" y="25" class="key text_with_symbol hold">5</text>
+<text x="0" y="-25" class="key text_with_symbol shifted">5</text>
 </g>
 <g transform="translate(644, 202)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1676,7 +1686,7 @@ rect.held, rect.combo.held {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="241" y="222" width="28" height="26" class="combo"/>
 <use href="#mdi:cursor-default-click-outline" xlink:href="#mdi:cursor-default-click-outline" x="248" y="228" height="14" width="14.0" class="combo tap glyph mdi:cursor-default-click-outline"/>
-<text x="255" y="247" class="combo hold">3</text>
+<text x="255" y="223" class="combo shifted">3</text>
 </g>
 </g>
 </g>
