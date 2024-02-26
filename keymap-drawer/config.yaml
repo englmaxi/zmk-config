@@ -11,13 +11,13 @@ draw_config:
       font-size: 10px;
       font-weight: bold;
     }
-        
+ 
     text.label {
       stroke: #dfdfde;
       stroke-width: 12;
       stroke-linejoin: round;
     }
-    
+
     rect.combo, rect.combo-separate {
       opacity: 0.95;
       stroke: #c9cccf;
@@ -27,47 +27,47 @@ draw_config:
     path.combo {
       stroke-dasharray: 4, 4;
       stroke-opacity: 0.3;
-    } 
-    
+    }
+
     rect.held, rect.combo.held {
       fill: #ebdada;
     }
-    
+
     .trans.tap, .ghost.tap {
       opacity: 0.5;
-    } 
-    
+    }
+
     .shifted {
       translate: -9px 3px;
       opacity: 0.3;
     }
-    
+
     .toggle.shifted {
       translate: -12px 17px;
       opacity: 1.0;
     }
     .toggle.hold {
       translate: 12px -25px;
-    } 
-    
+    }
+
     .text_with_symbol.tap {
       translate: -1px 1px;
-    } 
+    }
     .text_with_symbol.shifted {
-      translate: 6px 12px;
+      translate: 8px 13px;
       font-size: 8px;
       opacity: 1.0;
     } 
-    
+
     .combo.text_with_symbol.tap {
       translate: -1px 1px;
-    } 
+    }
     .combo.text_with_symbol.shifted {
-      translate: 6px 4px;
+      translate: 7px 5px;
       font-size: 8px;
       opacity: 1.0;
-    } 
-    
+    }
+
   shrink_wide_legends: 7
   
   glyph_tap_size: 14
@@ -257,6 +257,31 @@ parse_config:
     '&mkp MB5':
       tap: $$mdi:cursor-default-click-outline$$
       shifted: 5
+      type: text_with_symbol
+
+    '&tb_mo_scroll':
+      tap: $$mdi:billiards$$
+      shifted: $$mdi:arrow-up-down$$
+      type: text_with_symbol
+
+    '&tbs_t 0 C':
+      tap: C
+      hold: $$mdi:billiards$$
+
+    '&tb_tg_scroll':
+      tap: $$mdi:billiards$$
+      shifted: $$mdi:arrow-up-down$$
+      type: text_with_symbol
+      hold: $$mdi:toggle-switch$$
+
+    '&tb_bootloader':
+      tap: $$mdi:billiards$$
+      shifted: $$mdi:progress-download$$
+      type: text_with_symbol
+
+    '&tb_cyc_dpi':
+      tap: $$mdi:billiards$$
+      shifted: $$mdi:speedometer$$
       type: text_with_symbol
     
   zmk_combos:

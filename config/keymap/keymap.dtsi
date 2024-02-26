@@ -111,6 +111,15 @@
         SM(rbkt_gt, &kp DE_RBKT, &kp DE_GT)
         SM(bkt_lgt, &bkt_macro,  &lgt_macro)
 
+        tbs_t: tb_mo_scroll_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <220>;
+            bindings = <&tb_mo_scroll>, <&kp>;
+        };
+
         // tap-dance
         TD(td_sqt_dqt, &sqt_dqt, &sqt_dqt_macro)
         
@@ -177,6 +186,46 @@
                 , <&macro_tap &sk_at RALT>   // start timer to release ALT after timeout
                 , <&macro_release &kp LALT>; // now release the initial hold
         )
+
+        // commands for trackball (ploopy nano with lkbm keymap)
+        ZMK_MACRO(tb_tg_scroll,
+            tap-ms = <5>;
+            wait-ms = <5>;
+            bindings
+                = <&macro_tap &kp KP_NLCK>
+                , <&macro_tap &kp KP_NLCK>;
+        )
+
+        ZMK_MACRO(tb_mo_scroll,
+            tap-ms = <5>;
+            wait-ms = <5>;
+            bindings
+                = <&macro_tap &kp KP_NLCK>
+                , <&macro_tap &kp KP_NLCK>
+                , <&macro_pause_for_release>
+                , <&macro_tap &kp KP_NLCK>
+                , <&macro_tap &kp KP_NLCK>;
+        )
+
+        ZMK_MACRO(tb_cyc_dpi,
+            tap-ms = <5>;
+            wait-ms = <5>;
+            bindings
+                = <&macro_tap &kp CLCK>
+                , <&macro_tap &kp CLCK>;
+        )
+
+        ZMK_MACRO(tb_bootloader,
+            tap-ms = <5>;
+            wait-ms = <0>;
+            bindings
+                = <&macro_tap &kp CLCK>
+                , <&macro_wait_time 5>
+                , <&macro_tap &kp KP_NLCK>
+                , <&macro_wait_time 0>
+                , <&macro_tap &kp CLCK>
+                , <&macro_tap &kp KP_NLCK>;
+        )
     };
 
     conditional_layers {
@@ -199,7 +248,7 @@
 // ├───────────────┼─────────────┼────────────────┼─────────────────┼─────────────┤   ├─────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
     &hml LGUI A     &hml LALT R   &hml_hwu LCTRL S &hml_hwu LSHIFT T &kp G             &kp M         &hmr_hwu RSHFT N &hmr_hwu RCTRL E &hmr LALT I   &hmr LGUI O
 // ├───────────────┼─────────────┼────────────────┼─────────────────┼─────────────┤   ├─────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
-    _(&lt NUM DE_Z) &kp X         &kp C            &lt 6 D           _(&kp V)          _(&kp K)      &kp H            &kp DE_COMMA     &kp DE_DOT    _(&qexcl)
+    _(&lt NUM DE_Z) &kp X         &tbs_t 0 C       &lt 6 D           _(&kp V)          _(&kp K)      &kp H            &kp DE_COMMA     &kp DE_DOT    _(&qexcl)
 // ╰───────────────┴─────────────┴────────────────┼─────────────────┼─────────────┤   ├─────────────┼────────────────┼────────────────┴─────────────┴─────────────╯
                                                    &lt NAV BSPC      &mt MEH RET       &lt FUN SPACE &lt NUM DEL
 //                                                ╰─────────────────┴─────────────╯   ╰─────────────┴────────────────╯
@@ -284,15 +333,15 @@
         mouse_layer {
             display-name = "MSE";
             bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none             &none         &none         &none         &none         &none
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    _(&none)      &mkp MB4      &mkp MB5      &none         _(&none)          _(&none)      &mkp MB4      &mkp MB3      &mkp MB5      _(&none)
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              &mkp LCLK     &mkp RCLK         &mkp LCLK     &mkp RCLK
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+// ╭─────────────┬─────────────┬─────────────┬──────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+    &tb_cyc_dpi   &mkp MB4      &mkp MB5      &tb_bootloader &none             &none         &none         &none         &none         &none
+// ├─────────────┼─────────────┼─────────────┼──────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT      &none             &none         &none         &none         &none         &none
+// ├─────────────┼─────────────┼─────────────┼──────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    _(&none)      &tb_tg_scroll &tb_mo_scroll &none          _(&none)          _(&none)      &mkp MB4      &mkp MB3      &mkp MB5      _(&none)
+// ╰─────────────┴─────────────┴─────────────┼──────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                              &mkp RCLK      &mkp LCLK         &mkp LCLK     &mkp RCLK
+//                                           ╰──────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
     };
