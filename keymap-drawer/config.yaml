@@ -76,7 +76,7 @@ draw_config:
   
   glyphs: {}
   glyph_urls:
-    tabler: https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/{}.svg
+    tabler: https://unpkg.com/@tabler/icons/icons/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
