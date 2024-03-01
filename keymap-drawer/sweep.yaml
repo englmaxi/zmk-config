@@ -31,7 +31,7 @@ layers:
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - {t: '$$mdi:backspace-outline$$', h: NAV}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:star-three-points-outline$$'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
   NAV:
