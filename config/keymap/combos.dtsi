@@ -94,7 +94,7 @@
 #ifdef KEYS_30
         COMBO(z,        &kp DE_Z,       LB3 LB2, DEF,     COMBO_TERM_MID)
         COMBO(v,        &kp V,          LB2 LB1, DEF,     COMBO_TERM_MID)
-        COMBO(k,        &kp K,          RB1 RB2, DEF,     COMBO_TERM_MID)
+        COMBO(j,        &kp J,          RB1 RB2, DEF,     COMBO_TERM_MID)
         COMBO(qe,       &qexcl,         RB2 RB3, DEF,     COMBO_TERM_MID)
 
         COMBO(f11,      &kp F11,        RT0 RM0, FUN,     COMBO_TERM_MID)
