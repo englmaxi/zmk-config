@@ -6,7 +6,7 @@ layers:
   - F
   - P
   - B
-  - J
+  - K
   - L
   - U
   - Y
@@ -314,7 +314,7 @@ combos:
   k: V
   l: [DEF]
 - p: [23, 24]
-  k: K
+  k: J
   l: [DEF]
 - p: [24, 25]
   k: {t: '?', s: '!'}
