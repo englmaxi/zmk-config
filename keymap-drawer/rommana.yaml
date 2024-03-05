@@ -23,20 +23,51 @@ layers:
   - {t: O, h: '$$mdi:microsoft-windows$$'}
   - X
   - {t: C, h: '$$mdi:billiards$$'}
-  - {t: D, h: MSE}
+  - D
   - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - {t: '$$mdi:backspace-outline$$', h: NAV}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:backspace-outline$$', h: NAV, s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', h: NUM}
+  APT:
+  - V
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - {t: '''', s: '"'}
+  - {t: R, h: '$$mdi:microsoft-windows$$'}
+  - {t: S, h: ALT}
+  - {t: T, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: H, h: '$$mdi:apple-keyboard-shift$$'}
+  - K
+  - X
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: I, h: ALT}
+  - {t: O, h: '$$mdi:microsoft-windows$$'}
+  - C
+  - {t: G, h: '$$mdi:billiards$$'}
+  - D
+  - M
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '$$mdi:backspace-outline$$', h: NAV, s: '$$mdi:backspace-reverse-outline$$'}
+  - {t: '$$mdi:keyboard-space$$', h: FUN}
+  - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', h: NUM}
   NAV:
   - $$mdi:close-box-outline$$
   - $$mdi:arrow-left-bold-box$$
   - $$mdi:text-search$$
   - $$mdi:arrow-right-bold-box$$
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:lock-outline$$
   - Page Up
   - {t: HOME, h: '$$mdi:format-vertical-align-top$$'}
   - $$mdi:arrow-up$$
@@ -53,8 +84,8 @@ layers:
   - $$mdi:arrow-right$$
   - INS
   - $$mdi:content-cut$$
-  - $$mdi:content-copy$$
-  - $$mdi:content-paste$$
+  - LC(C)
+  - LC(V)
   - $$mdi:arrow-left-bold-box-outline$$
   - $$mdi:swap-horizontal$$
   - $$mdi:arrow-right-bold-box-outline$$
@@ -95,10 +126,10 @@ layers:
   - {type: held}
   FUN:
   - $$mdi:monitor-screenshot$$
-  - $$mdi:volume-minus$$
-  - $$mdi:volume-mute$$
-  - $$mdi:volume-plus$$
-  - $$tabler:brightness-up$$
+  - {t: '$$mdi:cursor-default-click-outline$$', s: '4', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', s: '3', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', s: '5', type: text_with_symbol}
+  - $$mdi:apple-keyboard-caps$$
   - F12
   - F7
   - F8
@@ -108,52 +139,52 @@ layers:
   - ALT
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
-  - $$tabler:brightness-down$$
+  - $$mdi:numeric-off$$
   - F10
   - F4
   - F5
   - F6
   - $$mdi:magnify-minus-outline$$
-  - $$mdi:skip-backward$$
-  - $$mdi:play-pause$$
-  - $$mdi:skip-forward$$
+  - $$mdi:cursor-default-click$$
+  - {t: '$$mdi:billiards$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:arrow-up-down$$', type: text_with_symbol}
+  - $$mdi:cursor-default-click-outline$$
   - F1
   - F2
   - F3
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   SYS:
-  - {t: '$$mdi:progress-download$$', type: bootloader}
+  - {t: '$$mdi:billiards$$', s: '$$mdi:progress-download$$', type: text_with_symbol}
+  - {t: DEF, h: '$$mdi:toggle-switch$$'}
+  - {t: APT, h: '$$mdi:toggle-switch$$'}
   - ''
-  - ''
-  - ''
-  - ''
+  - $$tabler:brightness-up$$
   - {t: '$$mdi:bluetooth$$', s: '$$mdi:close-thick$$', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-off$$', s: '0', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-off$$', s: '1', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-off$$', s: '2', type: text_with_symbol}
-  - {t: '$$mdi:progress-download$$', type: bootloader}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - ''
-  - ''
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
-  - ''
+  - {t: '$$mdi:billiards$$', s: '$$mdi:speedometer$$', type: text_with_symbol}
+  - $$mdi:volume-minus$$
+  - $$mdi:volume-mute$$
+  - $$mdi:volume-plus$$
+  - $$tabler:brightness-down$$
   - $$mdi:usb$$
   - {t: '$$mdi:bluetooth-connect$$', s: '0', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', s: '1', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', s: '2', type: text_with_symbol}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - ''
-  - ''
-  - ''
-  - ''
+  - $$mdi:skip-backward$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-forward$$
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
   - ''
   - ''
   - {type: held}
-  - ''
-  - ''
+  - {t: '$$mdi:progress-download$$', type: bootloader}
+  - {t: '$$mdi:progress-download$$', type: bootloader}
   - {type: held}
   INT:
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -186,127 +217,96 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  MSE:
-  - {t: '$$mdi:billiards$$', s: '$$mdi:speedometer$$', type: text_with_symbol}
-  - {t: '$$mdi:cursor-default-click-outline$$', s: '4', type: text_with_symbol}
-  - {t: '$$mdi:cursor-default-click-outline$$', s: '5', type: text_with_symbol}
-  - {t: '$$mdi:billiards$$', s: '$$mdi:progress-download$$', type: text_with_symbol}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - $$mdi:microsoft-windows$$
-  - ALT
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: '$$mdi:billiards$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:arrow-up-down$$', type: text_with_symbol}
-  - {t: '$$mdi:billiards$$', s: '$$mdi:arrow-up-down$$', type: text_with_symbol}
-  - {type: held}
-  - {t: '$$mdi:cursor-default-click-outline$$', s: '4', type: text_with_symbol}
-  - {t: '$$mdi:cursor-default-click-outline$$', s: '3', type: text_with_symbol}
-  - {t: '$$mdi:cursor-default-click-outline$$', s: '5', type: text_with_symbol}
-  - $$mdi:cursor-default-click$$
-  - $$mdi:cursor-default-click-outline$$
-  - $$mdi:cursor-default-click-outline$$
-  - $$mdi:cursor-default-click$$
 combos:
 - p: [1, 2]
   k: ESC
   l: [DEF]
 - p: [2, 3]
   k: $$mdi:keyboard-return$$
-  l: [DEF]
+  l: [DEF, APT]
 - p: [1, 3]
   k: {t: INT, h: '$$mdi:circle-small$$'}
-  l: [DEF]
+  l: [DEF, APT]
   a: top
   o: 0.6
 - p: [11, 12]
   k: $$mdi:keyboard-tab$$
-  l: [DEF]
+  l: [DEF, APT]
 - p: [12, 13]
   k: $$mdi:repeat$$
-  l: [DEF]
+  l: [DEF, APT]
 - p: [6, 7]
   k: {t: '[', s: <}
-  l: [DEF]
+  l: [DEF, APT]
 - p: [7, 8]
   k: {t: ']', s: '>'}
-  l: [DEF]
+  l: [DEF, APT]
 - p: [6, 8]
   k: {t: '[]', s: <>}
-  l: [DEF]
+  l: [DEF, APT]
   a: top
   o: 0.6
   draw_separate: true
 - p: [16, 17]
   k: {t: (, s: '{'}
-  l: [DEF]
+  l: [DEF, APT]
 - p: [17, 18]
   k: {t: ), s: '}'}
-  l: [DEF]
+  l: [DEF, APT]
 - p: [16, 18]
   k: {t: (), s: '{}'}
-  l: [DEF]
+  l: [DEF, APT]
   a: bottom
   o: 1.05
   draw_separate: true
 - p: [3, 4]
   k: '%'
-  l: [DEF]
+  l: [DEF, APT]
 - p: [3, 13]
   k: $
-  l: [DEF]
+  l: [DEF, APT]
 - p: [2, 12]
   k: '#'
-  l: [DEF]
+  l: [DEF, APT]
 - p: [1, 11]
   k: '@'
-  l: [DEF]
+  l: [DEF, APT]
 - p: [22, 14]
   k: '~'
-  l: [DEF]
+  l: [DEF, APT]
 - p: [13, 22]
   k: '='
-  l: [DEF]
+  l: [DEF, APT]
 - p: [12, 21]
   k: \
-  l: [DEF]
+  l: [DEF, APT]
 - p: [11, 20]
   k: €
-  l: [DEF]
+  l: [DEF, APT]
 - p: [5, 6]
   k: ^
-  l: [DEF]
+  l: [DEF, APT]
 - p: [6, 16]
   k: +
-  l: [DEF]
+  l: [DEF, APT]
 - p: [7, 17]
   k: '*'
-  l: [DEF]
+  l: [DEF, APT]
 - p: [8, 18]
   k: '&'
-  l: [DEF]
+  l: [DEF, APT]
 - p: [23, 15]
   k: _
   l: [DEF]
 - p: [16, 23]
   k: '-'
-  l: [DEF]
+  l: [DEF, APT]
 - p: [17, 24]
   k: /
-  l: [DEF]
+  l: [DEF, APT]
 - p: [18, 25]
   k: '|'
-  l: [DEF]
+  l: [DEF, APT]
 - p: [20, 21]
   k: Z
   l: [DEF]
@@ -335,7 +335,21 @@ combos:
   o: 1.2
 - p: [27, 28]
   k: $$mdi:caps-lock$$
-  l: [DEF]
-- p: [26, 27]
-  k: {t: '$$mdi:cursor-default-click-outline$$', s: '3', type: text_with_symbol}
-  l: [MSE]
+  l: [DEF, APT]
+  a: bottom
+  o: 0.35
+- p: [1, 2]
+  k: Q
+  l: [APT]
+- p: [20, 21]
+  k: Z
+  l: [APT]
+- p: [21, 22]
+  k: ESC
+  l: [APT]
+- p: [24, 25]
+  k: {t: '?', s: '!'}
+  l: [APT]
+- p: [23, 24]
+  k: _
+  l: [APT]

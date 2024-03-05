@@ -268,11 +268,21 @@ parse_config:
       tap: C
       hold: $$mdi:billiards$$
 
+    '&tbs_t 0 G':
+      tap: G
+      hold: $$mdi:billiards$$
+
     '&tb_tg_scroll':
       tap: $$mdi:billiards$$
       shifted: $$mdi:arrow-up-down$$
-      type: text_with_symbol
       hold: $$mdi:toggle-switch$$
+      type: text_with_symbol
+
+    '&tbs_mt 0 0':
+      tap: $$mdi:billiards$$
+      shifted: $$mdi:arrow-up-down$$
+      hold: $$mdi:toggle-switch$$
+      type: text_with_symbol
 
     '&tb_bootloader':
       tap: $$mdi:billiards$$
@@ -305,6 +315,9 @@ parse_config:
     combo_bl:
       align: top
       offset: 1.2
+    combo_cw:
+      align: bottom
+      offset: 0.35
       
   zmk_keycode_map:
     LALT: ALT
@@ -355,6 +368,8 @@ parse_config:
     CAPS: $$mdi:apple-keyboard-caps$$
     CAPSLOCK: $$mdi:apple-keyboard-caps$$
 
+    KP_NLCK: $$mdi:numeric-off$$
+
     LGUI: $$mdi:microsoft-windows$$
     RGUI: $$mdi:microsoft-windows$$
     
@@ -404,6 +419,8 @@ parse_config:
     LC(PLUS): $$mdi:magnify-plus-outline$$
     LC(MINUS): $$mdi:magnify-minus-outline$$
     LC(N0): $$mdi:magnify-remove-outline$$
+
+    LG(L): $$mdi:lock-outline$$
 
     SECT: '§'
     DEG: '°'
