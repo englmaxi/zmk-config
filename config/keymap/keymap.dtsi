@@ -157,12 +157,11 @@
             bindings = <&mo>, <&bspc_del>;
         };
         
-        // sticky key to be used for alt-tab macro
-        sk_at: sk_alttabber {
-            compatible = "zmk,behavior-sticky-key";
-            #binding-cells = <1>;
-            bindings = <&kp>;
-            release-after-ms = <1000>;
+        alt_tabber: swapper {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <RT2 RM1 RM2 RM3>; // arrow keys
         };
     };
 
@@ -208,17 +207,6 @@
                 = <&out OUT_BLE>
                 , <&macro_param_1to2>
                 , <&bt BT_SEL MACRO_PLACEHOLDER>;
-        )        
-        
-        ZMK_MACRO(alt_tabber,  // adapted from @moutis on ZMK Discord, copied from @caksoylar
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings
-                = <&macro_press &kp LALT>    // leave ALT down to keep menu up
-                , <&macro_tap &kp TAB>       // open the menu
-                , <&macro_pause_for_release> // wait until key release
-                , <&macro_tap &sk_at RALT>   // start timer to release ALT after timeout
-                , <&macro_release &kp LALT>; // now release the initial hold
         )
 
         // commands for trackball (ploopy nano with lkbm keymap)
