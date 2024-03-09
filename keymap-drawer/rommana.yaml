@@ -338,6 +338,9 @@ combos:
   l: [DEF, APT]
   a: bottom
   o: 0.35
+- p: [4, 14]
+  k: $$mdi:arrow-vertical-lock$$
+  l: [FUN]
 - p: [1, 2]
   k: Q
   l: [APT]
