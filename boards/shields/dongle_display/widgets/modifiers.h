@@ -8,7 +8,6 @@
 
 #include <lvgl.h>
 #include <zephyr/kernel.h>
-#include <dt-bindings/zmk/modifiers.h>
 
 #define SIZE_SYMBOLS 14 // 14 x 14 pixel
 
