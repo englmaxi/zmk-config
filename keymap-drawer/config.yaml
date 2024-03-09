@@ -368,6 +368,10 @@ parse_config:
     CAPS: $$mdi:apple-keyboard-caps$$
     CAPSLOCK: $$mdi:apple-keyboard-caps$$
 
+    SCROLLLOCK: $$mdi:arrow-vertical-lock$$
+    SLCK: $$mdi:arrow-vertical-lock$$
+    SCLK: $$mdi:arrow-vertical-lock$$
+
     KP_NLCK: $$mdi:numeric-off$$
 
     LGUI: $$mdi:microsoft-windows$$

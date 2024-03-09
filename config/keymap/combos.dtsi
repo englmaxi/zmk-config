@@ -104,6 +104,7 @@
 
         COMBO(bl,        &bootloader,    LT4 RT4, SYS,     COMBO_TERM_SLOW)
         COMBO(cw,        &caps_word,     LH0 RH0, DEF APT, COMBO_TERM_SLOW)
+        COMBO(slck,      &kp SLCK,       LT0 LM0, FUN,     COMBO_TERM_FAST)
 
         // Aptmak
         COMBO(q_apt,     &kp Q,          LT3 LT2, APT,     COMBO_TERM_MID)
