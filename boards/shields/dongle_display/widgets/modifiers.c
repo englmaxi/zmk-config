@@ -83,7 +83,7 @@ static void move_object_y(void *obj, int32_t from, int32_t to) {
 
 static void set_modifiers(lv_obj_t *widget, struct modifiers_state state) {
     for (int i = 0; i < NUM_SYMBOLS; i++) {
-        bool mod_is_active = (state.modifiers & modifier_symbols[i]->modifier) > 0;
+        bool mod_is_active = state.modifiers & modifier_symbols[i]->modifier;
 
         if (mod_is_active && !modifier_symbols[i]->is_active) {
             move_object_y(modifier_symbols[i]->symbol, 1, 0);
