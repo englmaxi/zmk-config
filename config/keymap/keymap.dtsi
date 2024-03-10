@@ -131,15 +131,6 @@
         TD(td_sqt_dqt, &sqt_dqt, &sqt_dqt_macro)
 
         // hold-tap
-        tbs_t: tb_mo_scroll_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <220>;
-            bindings = <&tb_mo_scroll>, <&kp>;
-        };
-
         tbs_mt: tb_scroll_mo_tog {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -270,7 +261,7 @@
 // ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├────────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
     &hml LGUI A     &hml LALT R   &hml_hwu LCTRL S &hml_hwu LSHIFT T &kp G              &kp M            &hmr_hwu RSHFT N &hmr_hwu RCTRL E &hmr LALT I   &hmr LGUI O
 // ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├────────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
-    _(&lt NUM DE_Z) &kp X         &tbs_t 0 C       &kp D             _(&kp V)           _(&kp K)         &kp H            &kp DE_COMMA     &kp DE_DOT    _(&qexcl)
+    _(&lt NUM DE_Z) &kp X         &kp C            &kp D             _(&kp V)           _(&kp K)         &kp H            &kp DE_COMMA     &kp DE_DOT    _(&qexcl)
 // ╰───────────────┴─────────────┴────────────────┼─────────────────┼──────────────┤   ├────────────────┼────────────────┼────────────────┴─────────────┴─────────────╯
                                                    &lt_del NAV 0     &lt FUN SPACE      &mt LSHIFT SPACE &lt NUM RET 
 //                                                ╰─────────────────┴──────────────╯   ╰────────────────┴────────────────╯
@@ -285,7 +276,7 @@
 // ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├─────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
     &hml LGUI R     &hml LALT S   &hml_hwu LCTRL T &hml_hwu LSHIFT H &kp K              &kp X         &hmr_hwu RSHFT N &hmr_hwu RCTRL A &hmr LALT I   &hmr LGUI O
 // ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├─────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
-    _(&none)        &kp C         &tbs_t 0 G       &kp D             _(&none)           _(&none)      &kp M            &kp DE_COMMA     &kp DE_DOT    _(&none)
+    _(&none)        &kp C         &kp G            &kp D             _(&none)           _(&none)      &kp M            &kp DE_COMMA     &kp DE_DOT    _(&none)
 // ╰───────────────┴─────────────┴────────────────┼─────────────────┼──────────────┤   ├─────────────┼────────────────┼────────────────┴─────────────┴─────────────╯
                                                    &lt_del NAV 0     &lt FUN SPACE      &mt LSHIFT E  &lt NUM RET
 //                                                ╰─────────────────┴──────────────╯   ╰─────────────┴────────────────╯

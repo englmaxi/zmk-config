@@ -264,14 +264,6 @@ parse_config:
       shifted: $$mdi:arrow-up-down$$
       type: text_with_symbol
 
-    '&tbs_t 0 C':
-      tap: C
-      hold: $$mdi:billiards$$
-
-    '&tbs_t 0 G':
-      tap: G
-      hold: $$mdi:billiards$$
-
     '&tb_tg_scroll':
       tap: $$mdi:billiards$$
       shifted: $$mdi:arrow-up-down$$
