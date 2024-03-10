@@ -22,7 +22,7 @@ layers:
   - {t: I, h: ALT}
   - {t: O, h: '$$mdi:microsoft-windows$$'}
   - X
-  - {t: C, h: '$$mdi:billiards$$'}
+  - C
   - D
   - H
   - {t: ',', s: ;}
@@ -53,7 +53,7 @@ layers:
   - {t: I, h: ALT}
   - {t: O, h: '$$mdi:microsoft-windows$$'}
   - C
-  - {t: G, h: '$$mdi:billiards$$'}
+  - G
   - D
   - M
   - {t: ',', s: ;}

@@ -478,7 +478,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">C</text>
-<use href="#mdi:billiards" xlink:href="#mdi:billiards" x="-4" y="17" height="8" width="8.0" class="key hold glyph mdi:billiards"/>
 </g>
 <g transform="translate(222, 158)" class="key keypos-22">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
@@ -780,7 +779,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">G</text>
-<use href="#mdi:billiards" xlink:href="#mdi:billiards" x="-4" y="17" height="8" width="8.0" class="key hold glyph mdi:billiards"/>
 </g>
 <g transform="translate(222, 158)" class="key keypos-22">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
