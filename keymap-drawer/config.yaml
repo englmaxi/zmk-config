@@ -76,7 +76,7 @@ draw_config:
   
   glyphs: {}
   glyph_urls:
-    tabler: https://unpkg.com/@tabler/icons/icons/{}.svg
+    tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
@@ -377,8 +377,10 @@ parse_config:
     C_VOL_UP: $$mdi:volume-plus$$
     C_VOL_DN: $$mdi:volume-minus$$
     
-    C_BRI_UP: $$tabler:brightness-up$$
-    C_BRI_DN: $$tabler:brightness-down$$
+    # C_BRI_UP: $$tabler:brightness-up$$
+    # C_BRI_DN: $$tabler:brightness-down$$
+    C_BRI_UP: $$mdi:brightness-5$$
+    C_BRI_DN: $$mdi:brightness-4$$
     
     C_POWER: $$mdi:power$$
     C_SLEEP: $$mdi:power-sleep$$

@@ -84,8 +84,8 @@ layers:
   - $$mdi:arrow-right$$
   - INS
   - $$mdi:content-cut$$
-  - LC(C)
-  - LC(V)
+  - $$mdi:content-copy$$
+  - $$mdi:content-paste$$
   - $$mdi:arrow-left-bold-box-outline$$
   - $$mdi:swap-horizontal$$
   - $$mdi:arrow-right-bold-box-outline$$
@@ -160,7 +160,7 @@ layers:
   - {t: DEF, h: '$$mdi:toggle-switch$$'}
   - {t: APT, h: '$$mdi:toggle-switch$$'}
   - ''
-  - $$tabler:brightness-up$$
+  - $$mdi:brightness-5$$
   - {t: '$$mdi:bluetooth$$', s: '$$mdi:close-thick$$', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-off$$', s: '0', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-off$$', s: '1', type: text_with_symbol}
@@ -170,7 +170,7 @@ layers:
   - $$mdi:volume-minus$$
   - $$mdi:volume-mute$$
   - $$mdi:volume-plus$$
-  - $$tabler:brightness-down$$
+  - $$mdi:brightness-4$$
   - $$mdi:usb$$
   - {t: '$$mdi:bluetooth-connect$$', s: '0', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', s: '1', type: text_with_symbol}
