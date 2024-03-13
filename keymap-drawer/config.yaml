@@ -399,7 +399,9 @@ parse_config:
     PG_DN: Page Down
 
     LC(INS): $$mdi:content-copy$$
+    LC(C): $$mdi:content-copy$$
     LS(INS): $$mdi:content-paste$$
+    LC(V): $$mdi:content-paste$$
     LS(DEL): $$mdi:content-cut$$
     LC(X): $$mdi:content-cut$$
     LC(Z): $$mdi:undo$$
