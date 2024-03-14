@@ -16,6 +16,7 @@ jobs:
     with:
       commit_message: "[Draw] ${{ github.event.head_commit.message }}"
       amend_commit: false
+      fail_on_error: true
       install_branch: "main"
       keymap_patterns: "config/*.keymap"
       config_path: "keymap-drawer/config.yaml"
