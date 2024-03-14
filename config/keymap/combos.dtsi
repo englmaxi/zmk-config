@@ -40,62 +40,61 @@
     combos {
         compatible = "zmk,combos";
 
-        COMBO(esc,       &kp ESC,        LT3 LT2, DEF,     COMBO_TERM_MID)
-        COMBO(enter,     &kp RET,        LT2 LT1, DEF APT, COMBO_TERM_MID)
-        COMBO(int,       &sl INT,        LT3 LT1, DEF APT, COMBO_TERM_SLOW)
+        COMBO(esc,       &kp ESC,        LB2 LB1, DEF,     COMBO_TERM_MID)
+        COMBO(enter,     &kp RET,        LT2 LT1, DEF,     COMBO_TERM_MID)
+        COMBO(int,       &sl INT,        LT3 LT1, DEF,     COMBO_TERM_SLOW)
 
-        COMBO(tab,       HRC_TAB,        LM3 LM2, DEF APT, COMBO_TERM_MID)
-        COMBO(repeat,    HRC_REPEAT,     LM2 LM1, DEF APT, COMBO_TERM_MID)
+        COMBO(tab,       HRC_TAB,        LM3 LM2, DEF,     COMBO_TERM_MID)
+        COMBO(repeat,    HRC_REPEAT,     LM2 LM1, DEF,     COMBO_TERM_MID)
 
-        COMBO(lbkt,      &lbkt_lt,       RT1 RT2, DEF APT, COMBO_TERM_MID)
-        COMBO(rbkt,      &rbkt_gt,       RT2 RT3, DEF APT, COMBO_TERM_MID)
-        COMBO(bkt,       &bkt_lgt,       RT1 RT3, DEF APT, COMBO_TERM_SLOW)
+        COMBO(lbkt,      &lbkt_lt,       RT1 RT2, DEF,     COMBO_TERM_MID)
+        COMBO(rbkt,      &rbkt_gt,       RT2 RT3, DEF,     COMBO_TERM_MID)
+        COMBO(bkt,       &bkt_lgt,       RT1 RT3, DEF,     COMBO_TERM_SLOW)
 
-        COMBO(lpar,      HRC_LPAR,       RM1 RM2, DEF APT, COMBO_TERM_MID)
-        COMBO(rpar,      HRC_RPAR,       RM2 RM3, DEF APT, COMBO_TERM_MID)
-        COMBO(par,       HRC_PAR,        RM1 RM3, DEF APT, COMBO_TERM_SLOW)
+        COMBO(lpar,      HRC_LPAR,       RM1 RM2, DEF,     COMBO_TERM_MID)
+        COMBO(rpar,      HRC_RPAR,       RM2 RM3, DEF,     COMBO_TERM_MID)
+        COMBO(par,       HRC_PAR,        RM1 RM3, DEF,     COMBO_TERM_SLOW)
 
 #if defined(KEYS_30)
-        COMBO(prcnt,     &kp DE_PRCNT,   LT1 LT0, DEF APT, COMBO_TERM_MID)
+        COMBO(prcnt,     &kp DE_PRCNT,   LT1 LT0, DEF,     COMBO_TERM_MID)
 #elif defined(KEYS_34)
-        COMBO(prcnt,     &kp DE_PRCNT,   LT0 LM0, DEF APT, COMBO_TERM_FAST)
+        COMBO(prcnt,     &kp DE_PRCNT,   LT0 LM0, DEF,     COMBO_TERM_FAST)
 #endif
-        COMBO(dllr,      &kp DE_DLLR,    LT1 LM1, DEF APT, COMBO_TERM_FAST)
-        COMBO(hash,      &kp DE_HASH,    LT2 LM2, DEF APT, COMBO_TERM_FAST)
-        COMBO(at,        &kp DE_AT,      LT3 LM3, DEF APT, COMBO_TERM_FAST)
+        COMBO(dllr,      &kp DE_DLLR,    LT1 LM1, DEF,     COMBO_TERM_FAST)
+        COMBO(hash,      &kp DE_HASH,    LT2 LM2, DEF,     COMBO_TERM_FAST)
+        COMBO(at,        &kp DE_AT,      LT3 LM3, DEF,     COMBO_TERM_FAST)
 
 #if defined(KEYS_30)
-        COMBO(tilde,     &kp DE_TILDE,   LB1 LM0, DEF APT, COMBO_TERM_MID)
+        COMBO(tilde,     &kp DE_TILDE,   LB1 LM0, DEF,     COMBO_TERM_MID)
 #elif defined(KEYS_34)
-        COMBO(tilde,     &kp DE_TILDE,   LM0 LB0, DEF APT, COMBO_TERM_FAST)
+        COMBO(tilde,     &kp DE_TILDE,   LM0 LB0, DEF,     COMBO_TERM_FAST)
 #endif
-        COMBO(equal,     &kp DE_EQUAL,   LM1 LB1, DEF APT, COMBO_TERM_FAST)
-        COMBO(bslh,      &kp DE_BSLH,    LM2 LB2, DEF APT, COMBO_TERM_FAST)
-        COMBO(euro,      &kp DE_EURO,    LM3 LB3, DEF APT, COMBO_TERM_FAST)
+        COMBO(equal,     &kp DE_EQUAL,   LM1 LB1, DEF,     COMBO_TERM_FAST)
+        COMBO(bslh,      &kp DE_BSLH,    LM2 LB2, DEF,     COMBO_TERM_FAST)
+        COMBO(euro,      &kp DE_EURO,    LM3 LB3, DEF,     COMBO_TERM_FAST)
 
 #if defined(KEYS_30)
-        COMBO(caret,     &kp DE_CARET,   RT0 RT1, DEF APT, COMBO_TERM_MID)
+        COMBO(caret,     &kp DE_CARET,   RT0 RT1, DEF,     COMBO_TERM_MID)
 #elif defined(KEYS_34)
-        COMBO(caret,     &kp DE_CARET,   RT0 RM0, DEF APT, COMBO_TERM_FAST)
+        COMBO(caret,     &kp DE_CARET,   RT0 RM0, DEF,     COMBO_TERM_FAST)
 #endif
-        COMBO(plus,      &kp DE_PLUS,    RT1 RM1, DEF APT, COMBO_TERM_FAST)
-        COMBO(star,      &kp DE_STAR,    RT2 RM2, DEF APT, COMBO_TERM_FAST)
-        COMBO(amps,      &kp DE_AMPS,    RT3 RM3, DEF APT, COMBO_TERM_FAST)
+        COMBO(plus,      &kp DE_PLUS,    RT1 RM1, DEF,     COMBO_TERM_FAST)
+        COMBO(star,      &kp DE_STAR,    RT2 RM2, DEF,     COMBO_TERM_FAST)
+        COMBO(amps,      &kp DE_AMPS,    RT3 RM3, DEF,     COMBO_TERM_FAST)
 
 #if defined(KEYS_30)
-        COMBO(under,     &kp DE_UNDER,   RB1 RM0, DEF,     COMBO_TERM_MID)
+        COMBO(under,     &kp DE_UNDER,   RB1 RB2, DEF,     COMBO_TERM_MID)
 #elif defined(KEYS_34)
         COMBO(under,     &kp DE_UNDER,   RM0 RB0, DEF,     COMBO_TERM_FAST)
 #endif
-        COMBO(minus,     &kp DE_MINUS,   RM1 RB1, DEF APT, COMBO_TERM_FAST)
-        COMBO(fslh,      &kp DE_FSLH,    RM2 RB2, DEF APT, COMBO_TERM_FAST)
-        COMBO(pipe,      &kp DE_PIPE,    RM3 RB3, DEF APT, COMBO_TERM_FAST)
+        COMBO(minus,     &kp DE_MINUS,   RM1 RB1, DEF,     COMBO_TERM_FAST)
+        COMBO(fslh,      &kp DE_FSLH,    RM2 RB2, DEF,     COMBO_TERM_FAST)
+        COMBO(pipe,      &kp DE_PIPE,    RM3 RB3, DEF,     COMBO_TERM_FAST)
 
 #ifdef KEYS_30
         COMBO(z,         &kp DE_Z,       LB3 LB2, DEF,     COMBO_TERM_MID)
-        COMBO(v,         &kp V,          LB2 LB1, DEF,     COMBO_TERM_MID)
-        COMBO(j,         &kp J,          RB1 RB2, DEF,     COMBO_TERM_MID)
         COMBO(qe,        &qexcl,         RB2 RB3, DEF,     COMBO_TERM_MID)
+        COMBO(q,         &kp Q,          LT3 LT2, DEF,     COMBO_TERM_MID)
 
         COMBO(f11,       &kp F11,        RT0 RM0, FUN,     COMBO_TERM_MID)
         COMBO(undo,      &kp U_UND,      LB3 LB2, NAV,     COMBO_TERM_MID)
@@ -103,14 +102,7 @@
 #endif
 
         COMBO(bl,        &bootloader,    LT4 RT4, SYS,     COMBO_TERM_SLOW)
-        COMBO(cw,        &caps_word,     LH0 RH0, DEF APT, COMBO_TERM_SLOW)
+        COMBO(cw,        &caps_word,     LH0 RH0, DEF,     COMBO_TERM_SLOW)
         COMBO(slck,      &kp SLCK,       LT0 LM0, FUN,     COMBO_TERM_FAST)
-
-        // Aptmak
-        COMBO(q_apt,     &kp Q,          LT3 LT2, APT,     COMBO_TERM_MID)
-        COMBO(z_apt,     &kp DE_Z,       LB3 LB2, APT,     COMBO_TERM_MID)
-        COMBO(esc_apt,   &kp ESC,        LB2 LB1, APT,     COMBO_TERM_MID)
-        COMBO(qe_apt,    &qexcl,         RB2 RB3, APT,     COMBO_TERM_MID)
-        COMBO(under_apt, &kp DE_UNDER,   RB1 RB2, APT,     COMBO_TERM_MID)
     };
 };
