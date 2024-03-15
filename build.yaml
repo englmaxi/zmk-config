@@ -6,13 +6,13 @@ include:
     shield: rommana_central_dongle dongle_display
     artifact-name: rommana_central_dongle
   - board: seeeduino_xiao_ble
-    shield: rommana_central_left
+    shield: rommana_central_left rgbled_adapter
     artifact-name: rommana_central_left
   - board: seeeduino_xiao_ble
-    shield: rommana_peripheral_left
+    shield: rommana_peripheral_left rgbled_adapter
     artifact-name: rommana_peripheral_left
   - board: seeeduino_xiao_ble
-    shield: rommana_peripheral_right
+    shield: rommana_peripheral_right rgbled_adapter
     artifact-name: rommana_peripheral_right
     
   - board: seeeduino_xiao_ble

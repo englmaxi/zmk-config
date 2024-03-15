@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
   projects:
@@ -9,6 +11,11 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+      
+    # modules
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
     - name: zmk-tri-state
       remote: dhruvinsh
       revision: main
