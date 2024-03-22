@@ -29,7 +29,7 @@ layers:
   - {t: ., s: ':'}
   - {t: '$$mdi:backspace-outline$$', h: NAV, s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
-  - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
+  - E
   - {t: '$$mdi:keyboard-return$$', h: NUM}
   NAV:
   - $$mdi:close-box-outline$$
