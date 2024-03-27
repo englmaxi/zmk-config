@@ -18,7 +18,7 @@ jobs:
       contents: write
     with:
       commit_message: "[Draw] ${{ github.event.head_commit.message }}"
-      amend_commit: false
+      amend_commit: true
       fail_on_error: true
       install_branch: "main"
       keymap_patterns: "config/*.keymap"
