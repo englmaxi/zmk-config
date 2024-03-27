@@ -1,8 +1,5 @@
 draw_config:
-  line_spacing: 1.0
-  arc_radius: 8.0
   append_colon_to_layer_header: false
-  small_pad: 1.0
   draw_key_sides: true
 
   svg_extra_style: |
@@ -67,95 +64,48 @@ draw_config:
       font-size: 8px;
       opacity: 1.0;
     }
-
-  shrink_wide_legends: 7
   
   glyph_tap_size: 14
   glyph_hold_size: 8
   glyph_shifted_size: 8
   
-  glyphs: {}
-  glyph_urls:
-    tabler: "https://unpkg.com/@tabler/icons/icons/outline/{}.svg"
-    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
-    mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
-    material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
-    
-  use_local_cache: true
-  
 parse_config:
-  preprocess: true
-  skip_binding_parsing: false
-  mark_alternate_layer_activators: true
   zmk_remove_keycode_prefix: ["DE_"]
     
   sticky_label: $$mdi:circle-small$$
   toggle_label: $$mdi:toggle-switch$$
-  
   trans_legend:
     tap: $$mdi:chevron-down$$
     type: trans
   
   raw_binding_map: 
-      
-    '&sys_reset': 
-      tap: $$mdi:backup-restore$$
-      type: bootloader
-      
-    '&bootloader': 
-      tap: $$mdi:progress-download$$
-      type: bootloader
-      
+    '&sys_reset': $$mdi:backup-restore$$
+    '&bootloader': $$mdi:progress-download$$
     '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
     '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$
-
     '&key_repeat': $$mdi:repeat$$
-
     '&caps_word': $$mdi:caps-lock$$
-
     '&mt LA(F4) LC(W)': $$mdi:close-box-outline$$
-
     '&alt_tabber': $$mdi:swap-horizontal$$
-
     '&dgrv_macro': '``'
-    
-    '&hmr_lpar_lt LS(LCTRL) 0':
-      tap: '('
-      shifted: '<'
-    '&hmr_rpar_gt LA(LCTRL) 0':
-      tap: ')'
-      shifted: '>'
-    
-    '&lbkt_lbrc':
-      tap: '['
-      shifted: '{'
-    '&rbkt_rbrc':
-      tap: ']'
-      shifted: '}'
-    
+    '&brc_macro': '[]'
+    '&par_macro': '()'
+    '&bkt_macro': '{}'
+    '&lgt_macro': '<>'
+
     '&hmr_lpar_lbrc LS(LCTRL) 0':
       tap: '('
       shifted: '{'
     '&hmr_rpar_rbrc LA(LCTRL) 0':
       tap: ')'
       shifted: '}'
-    
-    '&lbkt_lt':
-      tap: '['
-      shifted: '<'
-    '&rbkt_gt':
-      tap: ']'
-      shifted: '>'
-    
+    '&hmr_par_brc LS(LALT) 0':
+      tap: '()'
+      shifted: '{}'
+      
     '&td_sqt_dqt':
       tap: "'"
       shifted: '"'
-      
-    '&rcw LSHFT 0':
-      tap: $$mdi:keyboard-return$$
-      hold: $$mdi:apple-keyboard-shift$$
-
-    '&scw LSHFT 0': $$mdi:apple-keyboard-shift$$
 
     '&kp DE_COMMA':
       tap: ','
@@ -165,29 +115,17 @@ parse_config:
       tap: '.'
       shifted: ':'
     
+    '&out OUT_BLE': $$mdi:bluetooth$$
+    '&out OUT_USB': $$mdi:usb$$
+    '&out OUT_TOG':
+      tap: $$mdi:toggle-switch$$
+      hold: $$mdi:bluetooth$$
+      shifted: $$mdi:usb$$
+      type: toggle
+    
     '&bt BT_CLR':
       tap: $$mdi:bluetooth$$
       shifted: $$mdi:close-thick$$
-      type: text_with_symbol
-    '&bt BT_SEL 0':
-      tap: $$mdi:bluetooth-connect$$
-      shifted: '0'
-      type: text_with_symbol
-    '&bt BT_SEL 1':
-      tap: $$mdi:bluetooth-connect$$
-      shifted: '1'
-      type: text_with_symbol
-    '&bt BT_SEL 2':
-      tap: $$mdi:bluetooth-connect$$
-      shifted: '2'
-      type: text_with_symbol
-    '&bt BT_SEL 3':
-      tap: $$mdi:bluetooth-connect$$
-      shifted: '3'
-      type: text_with_symbol
-    '&bt BT_SEL 4':
-      tap: $$mdi:bluetooth-connect$$
-      shifted: '4'
       type: text_with_symbol
     '&bts 0':
       tap: $$mdi:bluetooth-connect$$
@@ -229,22 +167,6 @@ parse_config:
       tap: $$mdi:bluetooth-off$$
       shifted: '4'
       type: text_with_symbol
-    '&bt BT_PRV':
-      tap: $$mdi:bluetooth$$
-      shifted: $$mdi:skip-previous$$
-      type: text_with_symbol
-    '&bt BT_NXT':
-      tap: $$mdi:bluetooth$$
-      shifted: $$mdi:skip-next$$
-      type: text_with_symbol
-    
-    '&out OUT_BLE': $$mdi:bluetooth$$
-    '&out OUT_USB': $$mdi:usb$$
-    '&out OUT_TOG':
-      tap: $$mdi:toggle-switch$$
-      hold: $$mdi:bluetooth$$
-      shifted: $$mdi:usb$$
-      type: toggle
     
     '&mkp LCLK': $$mdi:cursor-default-click-outline$$
     '&mkp RCLK': $$mdi:cursor-default-click$$
@@ -289,35 +211,26 @@ parse_config:
       type: text_with_symbol
     
   zmk_combos:
-    combo_par:
-      align: bottom
-      offset: 1.05
-      draw_separate: true
-      key:
-        tap: '()'
-        shifted: '{}'
-    combo_bkt:
-      align: top
-      offset: 0.6
-      draw_separate: true
-      key:
-        tap: '[]'
-        shifted: '<>'
-    combo_int:
-      align: top
-      offset: 0.6
     combo_bl:
       align: top
       offset: 1.2
-    # combo_cw:
-    #   align: bottom
-    #   offset: 0.35
+    combo_par:
+      draw_separate: true
+    combo_bkt:
+      draw_separate: true
+    combo_int:
+      draw_separate: true
+    combo_cw:
+      draw_separate: true
       
   zmk_keycode_map:
     LALT: ALT
     
     SPACE: $$mdi:keyboard-space$$
     # ESC: $$mdi:keyboard-esc$$
+
+    RETURN: $$mdi:keyboard-return$$
+    RET: $$mdi:keyboard-return$$
     
     BACKSPACE: $$mdi:backspace-outline$$
     BSPC: $$mdi:backspace-outline$$
@@ -326,23 +239,6 @@ parse_config:
     DELETE: $$mdi:backspace-reverse-outline$$
     DEL: $$mdi:backspace-reverse-outline$$
     LC(DEL): $$mdi:backspace-reverse$$
-
-    PSCRN: $$mdi:monitor-screenshot$$
-    
-    TAB: $$mdi:keyboard-tab$$
-    LS(TAB): $$mdi:keyboard-tab-reverse$$
-    
-    LC(TAB): $$mdi:arrow-right-bold-box$$
-    LC(LS(TAB)): $$mdi:arrow-left-bold-box$$
-
-    LC(LG(LEFT)): $$mdi:arrow-left-bold-box-outline$$
-    LC(LG(RIGHT)): $$mdi:arrow-right-bold-box-outline$$
-    
-    LC(LS(LALT)): $$mdi:star-three-points-outline$$
-    LC(LS(LA(LGUI))): $$mdi:star-four-points-outline$$
-
-    RETURN: $$mdi:keyboard-return$$
-    RET: $$mdi:keyboard-return$$
     
     LCTRL: $$mdi:apple-keyboard-control$$
     LEFT_CONTROL: $$mdi:apple-keyboard-control$$
@@ -358,6 +254,21 @@ parse_config:
     RSHIFT: $$mdi:apple-keyboard-shift$$
     RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
 
+    LGUI: $$mdi:microsoft-windows$$
+    RGUI: $$mdi:microsoft-windows$$
+    
+    TAB: $$mdi:keyboard-tab$$
+    LS(TAB): $$mdi:keyboard-tab-reverse$$
+    
+    LC(TAB): $$mdi:arrow-right-bold-box$$
+    LC(LS(TAB)): $$mdi:arrow-left-bold-box$$
+
+    LC(LG(LEFT)): $$mdi:arrow-left-bold-box-outline$$
+    LC(LG(RIGHT)): $$mdi:arrow-right-bold-box-outline$$
+    
+    LC(LS(LALT)): $$mdi:star-three-points-outline$$
+    LC(LS(LA(LGUI))): $$mdi:star-four-points-outline$$
+
     CLCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
     CAPSLOCK: $$mdi:apple-keyboard-caps$$
@@ -368,8 +279,8 @@ parse_config:
 
     KP_NLCK: $$mdi:numeric-off$$
 
-    LGUI: $$mdi:microsoft-windows$$
-    RGUI: $$mdi:microsoft-windows$$
+    PSCRN: $$mdi:monitor-screenshot$$
+    PAUSE_BREAK: Pause Break
     
     C_PP: $$mdi:play-pause$$
     C_NEXT: $$mdi:skip-forward$$
@@ -386,21 +297,20 @@ parse_config:
     
     C_POWER: $$mdi:power$$
     C_SLEEP: $$mdi:power-sleep$$
-
     C_AL_CALC: $$mdi:calculator$$
     
     UP: $$mdi:arrow-up$$
     DOWN: $$mdi:arrow-down$$
     LEFT: $$mdi:arrow-left$$
     RIGHT: $$mdi:arrow-right$$
+    
+    PG_UP: Page Up
+    PG_DN: Page Down
 
     # HOME: $$mdi:format-horizontal-align-left$$
     # END: $$mdi:format-horizontal-align-right$$
     LC(HOME): $$mdi:format-vertical-align-top$$
     LC(END): $$mdi:format-vertical-align-bottom$$
-    
-    PG_UP: Page Up
-    PG_DN: Page Down
 
     LC(INS): $$mdi:content-copy$$
     LC(C): $$mdi:content-copy$$
@@ -415,8 +325,6 @@ parse_config:
     LC(F): $$mdi:text-search$$
     LC(W): $$mdi:close-box-outline$$
     LA(F4): $$mdi:close-box-outline$$
-
-    PAUSE_BREAK: Pause Break
 
     LC(PLUS): $$mdi:magnify-plus-outline$$
     LC(MINUS): $$mdi:magnify-minus-outline$$

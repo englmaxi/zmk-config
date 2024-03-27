@@ -171,8 +171,8 @@ layers:
   - ''
   - ''
   - {type: held}
-  - {t: '$$mdi:progress-download$$', type: bootloader}
-  - {t: '$$mdi:progress-download$$', type: bootloader}
+  - $$mdi:progress-download$$
+  - $$mdi:progress-download$$
   - {type: held}
   INT:
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -219,8 +219,7 @@ combos:
 - p: [1, 3]
   k: {t: INT, h: '$$mdi:circle-small$$'}
   l: [DEF]
-  a: top
-  o: 0.6
+  draw_separate: true
 - p: [11, 12]
   k: $$mdi:keyboard-tab$$
   l: [DEF]
@@ -234,10 +233,8 @@ combos:
   k: {t: ']', s: '>'}
   l: [DEF]
 - p: [6, 8]
-  k: {t: '[]', s: <>}
+  k: {t: '{}', s: <>}
   l: [DEF]
-  a: top
-  o: 0.6
   draw_separate: true
 - p: [16, 17]
   k: {t: (, s: '{'}
@@ -248,8 +245,6 @@ combos:
 - p: [16, 18]
   k: {t: (), s: '{}'}
   l: [DEF]
-  a: bottom
-  o: 1.05
   draw_separate: true
 - p: [4, 14]
   k: '%'
@@ -300,13 +295,14 @@ combos:
   k: '|'
   l: [DEF]
 - p: [0, 9]
-  k: {t: '$$mdi:progress-download$$', type: bootloader}
+  k: $$mdi:progress-download$$
   l: [SYS]
   a: top
   o: 1.2
 - p: [13, 16]
   k: $$mdi:caps-lock$$
   l: [DEF]
+  draw_separate: true
 - p: [4, 14]
   k: $$mdi:arrow-vertical-lock$$
   l: [FUN]
