@@ -129,7 +129,7 @@ layers:
   - ''
   - ''
   - ''
-  - $$mdi:brightness-5$$
+  - $$tabler:brightness-up$$
   - {t: '$$mdi:bluetooth$$', s: '$$mdi:close-thick$$', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-off$$', s: '0', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-off$$', s: '1', type: text_with_symbol}
@@ -139,7 +139,7 @@ layers:
   - $$mdi:volume-minus$$
   - $$mdi:volume-mute$$
   - $$mdi:volume-plus$$
-  - $$mdi:brightness-4$$
+  - $$tabler:brightness-down$$
   - $$mdi:usb$$
   - {t: '$$mdi:bluetooth-connect$$', s: '0', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', s: '1', type: text_with_symbol}
@@ -299,11 +299,9 @@ combos:
   l: [SYS]
   a: top
   o: 1.2
-- p: [27, 28]
+- p: [13, 16]
   k: $$mdi:caps-lock$$
   l: [DEF]
-  a: bottom
-  o: 0.35
 - p: [4, 14]
   k: $$mdi:arrow-vertical-lock$$
   l: [FUN]
