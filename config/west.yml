@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -18,6 +20,9 @@ manifest:
       revision: main
     - name: zmk-tri-state
       remote: dhruvinsh
+      revision: main
+    - name: zmk-hid-trackball-interface
+      remote: englmaxi
       revision: main
   self:
     path: config
