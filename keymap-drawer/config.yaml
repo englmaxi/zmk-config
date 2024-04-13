@@ -92,6 +92,41 @@ parse_config:
     '&par_macro': '()'
     '&bkt_macro': '{}'
     '&lgt_macro': '<>'
+    
+    '&kp LC(BSPC)': $$mdi:backspace$$
+    '&kp LC(DEL)': $$mdi:backspace-reverse$$
+    '&kp LS(TAB)': $$mdi:keyboard-tab-reverse$$
+    
+    '&kp LC(TAB)': $$mdi:arrow-right-bold-box$$
+    '&kp LC(LS(TAB))': $$mdi:arrow-left-bold-box$$
+
+    '&kp LC(LG(LEFT))': $$mdi:arrow-left-bold-box-outline$$
+    '&kp LC(LG(RIGHT))': $$mdi:arrow-right-bold-box-outline$$
+    
+    '&kp LC(LS(LALT))': $$mdi:star-three-points-outline$$
+    '&kp LC(LS(LA(LGUI)))': $$mdi:star-four-points-outline$$
+    '&kp LC(HOME)': $$mdi:format-vertical-align-top$$
+    '&kp LC(END)': $$mdi:format-vertical-align-bottom$$
+
+    '&kp LC(INS)': $$mdi:content-copy$$
+    '&kp LC(C)': $$mdi:content-copy$$
+    '&kp LS(INS)': $$mdi:content-paste$$
+    '&kp LC(V)': $$mdi:content-paste$$
+    '&kp LS(DEL)': $$mdi:content-cut$$
+    '&kp LC(X)': $$mdi:content-cut$$
+    '&kp LC(DE_Z)': $$mdi:undo$$
+    '&kp LC(DE_Y)': $$mdi:redo$$
+    '&kp LC(LS(DE_Z))': $$mdi:redo$$
+
+    '&kp LC(F)': $$mdi:text-search$$
+    '&kp LC(W)': $$mdi:close-box-outline$$
+    '&kp LA(F4)': $$mdi:close-box-outline$$
+
+    '&kp LC(DE_PLUS)': $$mdi:magnify-plus-outline$$
+    '&kp LC(DE_MINUS)': $$mdi:magnify-minus-outline$$
+    '&kp LC(N0)': $$mdi:magnify-remove-outline$$
+
+    '&kp LG(L)': $$mdi:lock-outline$$
 
     '&hmr_lpar_lbrc LS(LCTRL) 0':
       tap: '('
@@ -234,11 +269,9 @@ parse_config:
     
     BACKSPACE: $$mdi:backspace-outline$$
     BSPC: $$mdi:backspace-outline$$
-    LC(BSPC): $$mdi:backspace$$
     
     DELETE: $$mdi:backspace-reverse-outline$$
     DEL: $$mdi:backspace-reverse-outline$$
-    LC(DEL): $$mdi:backspace-reverse$$
     
     LCTRL: $$mdi:apple-keyboard-control$$
     LEFT_CONTROL: $$mdi:apple-keyboard-control$$
@@ -258,16 +291,6 @@ parse_config:
     RGUI: $$mdi:microsoft-windows$$
     
     TAB: $$mdi:keyboard-tab$$
-    LS(TAB): $$mdi:keyboard-tab-reverse$$
-    
-    LC(TAB): $$mdi:arrow-right-bold-box$$
-    LC(LS(TAB)): $$mdi:arrow-left-bold-box$$
-
-    LC(LG(LEFT)): $$mdi:arrow-left-bold-box-outline$$
-    LC(LG(RIGHT)): $$mdi:arrow-right-bold-box-outline$$
-    
-    LC(LS(LALT)): $$mdi:star-three-points-outline$$
-    LC(LS(LA(LGUI))): $$mdi:star-four-points-outline$$
 
     CLCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
@@ -309,28 +332,6 @@ parse_config:
 
     # HOME: $$mdi:format-horizontal-align-left$$
     # END: $$mdi:format-horizontal-align-right$$
-    LC(HOME): $$mdi:format-vertical-align-top$$
-    LC(END): $$mdi:format-vertical-align-bottom$$
-
-    LC(INS): $$mdi:content-copy$$
-    LC(C): $$mdi:content-copy$$
-    LS(INS): $$mdi:content-paste$$
-    LC(V): $$mdi:content-paste$$
-    LS(DEL): $$mdi:content-cut$$
-    LC(X): $$mdi:content-cut$$
-    LC(Z): $$mdi:undo$$
-    LC(Y): $$mdi:redo$$
-    LC(LS(Z)): $$mdi:redo$$
-
-    LC(F): $$mdi:text-search$$
-    LC(W): $$mdi:close-box-outline$$
-    LA(F4): $$mdi:close-box-outline$$
-
-    LC(PLUS): $$mdi:magnify-plus-outline$$
-    LC(MINUS): $$mdi:magnify-minus-outline$$
-    LC(N0): $$mdi:magnify-remove-outline$$
-
-    LG(L): $$mdi:lock-outline$$
 
     SECT: '§'
     DEG: '°'
