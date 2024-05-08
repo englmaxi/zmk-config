@@ -21,6 +21,9 @@ manifest:
     - name: zmk-tri-state
       remote: dhruvinsh
       revision: main
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: win
     - name: zmk-hid-trackball-interface
       remote: englmaxi
       revision: main

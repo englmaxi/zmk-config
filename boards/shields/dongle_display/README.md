@@ -1,16 +1,11 @@
 # Dongle Display
 
+> [!NOTE]
+>
+> This has been moved to its own [repository](https://github.com/englmaxi/zmk-dongle-display)
+
 This ZMK shield, when added, replaces the built-in status screen with a custom one designed for use with 128x64-pixel OLED displays.
 As it shows only the peripheral battery levels, it is recommended to be used on dongles only.
-
-## Usage
-
-```yaml build.yaml
----
-include:
-  - board: seeeduino_xiao_ble
-    shield: sweep_central_dongle dongle_display
-```
 
 ## Widgets
 - active hid indicators (CLCK, NLCK, SLCK)
