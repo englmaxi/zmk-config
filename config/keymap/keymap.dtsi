@@ -101,8 +101,6 @@
 
 &hid_trackball_interface {
     automouse-layer = <FUN>;
-    scroll-layers = <NUM>;
-    snipe-layers = <NAV>;
 };
 
 / {
