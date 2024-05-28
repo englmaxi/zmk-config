@@ -30,13 +30,13 @@ layers:
   - {t: '$$mdi:backspace-outline$$', h: NAV, s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - E
-  - {t: '&td_sqt_dqt', h: NUM}
+  - {t: '''', h: NUM, s: '"'}
   NAV:
-  - $$mdi:close-box-outline$$
+  - $$mdi:lock-outline$$
   - $$mdi:arrow-left-bold-box$$
   - $$mdi:text-search$$
   - $$mdi:arrow-right-bold-box$$
-  - $$mdi:lock-outline$$
+  - $$mdi:close-box-outline$$
   - Page Up
   - {t: HOME, h: '$$mdi:format-vertical-align-top$$'}
   - $$mdi:arrow-up$$
@@ -92,7 +92,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   FUN:
   - $$mdi:monitor-screenshot$$
   - {t: '$$mdi:cursor-default-click-outline$$', s: '4', type: text_with_symbol}
@@ -154,7 +154,7 @@ layers:
   - {type: held}
   - $$mdi:progress-download$$
   - $$mdi:progress-download$$
-  - {type: held}
+  - ''
   INT:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
@@ -164,8 +164,8 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - Ü
-  - ´
-  - {t: '`', s: '``'}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - ß
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -184,8 +184,8 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ´
+  - {t: '`', s: '``'}
 combos:
 - p: [21, 22]
   k: ESC
@@ -289,11 +289,9 @@ combos:
 - p: [23, 24]
   k: _
   l: [DEF]
-- p: [0, 9]
+- p: [27, 28]
   k: $$mdi:progress-download$$
   l: [SYS]
-  a: top
-  o: 1.2
 - p: [13, 16]
   k: $$mdi:caps-lock$$
   l: [DEF]

@@ -95,7 +95,7 @@
         COMBO(redo,      &kp U_RDO,      LB2 LB1, NAV,     COMBO_TERM_MID)
         COMBO(under,     &kp DE_UNDER,   RB1 RB2, DEF,     COMBO_TERM_MID)
 
-        COMBO(bl,        &bootloader,    LT4 RT4, SYS,     COMBO_TERM_SLOW)
+        COMBO(bl,        &bootloader,    LH0 RH0, SYS,     COMBO_TERM_SLOW)
         COMBO(cw,        &caps_word,     LM1 RM1, DEF,     COMBO_TERM_SLOW)
         COMBO(slck,      &kp SLCK,       LT0 LM0, FUN,     COMBO_TERM_FAST)
     };

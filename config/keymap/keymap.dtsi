@@ -72,6 +72,15 @@
         mods = <(MOD_RSFT|MOD_LSFT)>;           \
         keep-mods = <(MOD_RSFT)>;               \
     };
+
+#define CM(NAME, TAP, CONTROLED)                \
+    NAME: NAME {                                \
+        compatible = "zmk,behavior-mod-morph";  \
+        #binding-cells = <0>;                   \
+        bindings = <TAP>, <CONTROLED>;          \
+        mods = <(MOD_RCTL|MOD_LCTL)>;           \
+        keep-mods = <(MOD_RSFT)>;               \
+    };
     
 #define TD(NAME, TAP1, TAP2, ...)                                           \
     NAME: NAME {                                                            \
@@ -119,8 +128,10 @@
         SM(qexcl,    &kp DE_QMARK,  &kp DE_EXCL)
         SM(bspc_del, &kp BSPC,      &kp DEL)
 
-        SM(sqt_dqt,       &kp DE_SQT, &kp DE_DQT)
-        SM(sqt_dqt_macro, &sqt_macro, &dqt_macro)
+        SM(sqt_dqt,       &kp DE_SQT,   &kp DE_DQT)
+        SM(act_grv,       &kp DE_ACUTE, &kp DE_GRAVE)
+        CM(qt_grv,        &sqt_dqt,     &act_grv)
+        SM(sqt_dqt_macro, &sqt_macro,   &dqt_macro)
         SM(grv_dgrv,      &kp DE_GRAVE, &dgrv_macro)
 
         SM(lpar_lbrc, &kp DE_LPAR, &kp DE_LBRC)
@@ -150,7 +161,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <220>;
-            bindings = <&mo>, <&td_sqt_dqt>;
+            bindings = <&mo>, <&qt_grv>;
         };
         
         alt_tabber: swapper {
@@ -244,7 +255,7 @@
             display-name = "NAV";
             bindings = <
 // ╭───────────────┬─────────────┬─────────────┬─────────────┬───────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬────────────────╮
-    CLOSE            &kp P_TAB     &kp SEARCH    &kp N_TAB     &kp LOCK           &kp PG_UP     CT(HOME)      &kp UP        CT(END)       &kp PAUSE_BREAK
+    &kp LOCK        &kp P_TAB     &kp SEARCH    &kp N_TAB     CLOSE               &kp PG_UP     CT(HOME)      &kp UP        CT(END)       &kp PAUSE_BREAK
 // ├───────────────┼─────────────┼─────────────┼─────────────┼───────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼────────────────┤
     &sk LGUI        &sk LALT      &sk LCTRL     &sk LSHFT     &sk RALT            &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT     &kp INS
 // ├───────────────┼─────────────┼─────────────┼─────────────┼───────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼────────────────┤
@@ -304,13 +315,13 @@
             display-name = "INT";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &trans        &trans        &trans        &trans        &trans            &trans        &trans        &kp DE_UE     &kp DE_ACUTE  &grv_dgrv
+    &trans        &trans        &trans        &trans        &trans            &trans        &trans        &kp DE_UE     &trans        &trans
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &trans        &kp DE_SZ     &trans        &trans        &trans            &trans        &trans        &kp DE_AE     &trans        &kp DE_OE
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     _(&trans)     &trans        &trans        &trans        _(&trans)         _(&trans)     &trans        &trans        &trans        _(&trans)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              &trans        &trans            &trans        &trans
+                                              &trans        &trans            &kp DE_ACUTE  &grv_dgrv
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };

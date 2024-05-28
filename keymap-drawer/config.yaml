@@ -143,6 +143,11 @@ parse_config:
       tap: "'"
       shifted: '"'
 
+    '&lt_qt NUM 0':
+      tap: "'"
+      shifted: '"'
+      hold: 'NUM'
+
     '&kp DE_COMMA':
       tap: ','
       shifted: ';'
@@ -247,9 +252,6 @@ parse_config:
       type: text_with_symbol
     
   zmk_combos:
-    combo_bl:
-      align: top
-      offset: 1.2
     combo_par:
       draw_separate: true
     combo_bkt:
