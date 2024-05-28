@@ -30,7 +30,7 @@ layers:
   - {t: '$$mdi:backspace-outline$$', h: NAV, s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - E
-  - {t: '$$mdi:keyboard-return$$', h: NUM}
+  - {t: '&td_sqt_dqt', h: NUM}
   NAV:
   - $$mdi:close-box-outline$$
   - $$mdi:arrow-left-bold-box$$
@@ -190,9 +190,6 @@ combos:
 - p: [21, 22]
   k: ESC
   l: [DEF]
-- p: [2, 3]
-  k: $$mdi:keyboard-return$$
-  l: [DEF]
 - p: [1, 3]
   k: {t: INT, h: '$$mdi:circle-small$$'}
   l: [DEF]
@@ -201,7 +198,7 @@ combos:
   k: $$mdi:keyboard-tab$$
   l: [DEF]
 - p: [12, 13]
-  k: $$mdi:repeat$$
+  k: $$mdi:keyboard-return$$
   l: [DEF]
 - p: [6, 7]
   k: {t: '[', s: <}
@@ -259,9 +256,6 @@ combos:
 - p: [8, 18]
   k: '&'
   l: [DEF]
-- p: [23, 24]
-  k: _
-  l: [DEF]
 - p: [16, 23]
   k: '-'
   l: [DEF]
@@ -277,8 +271,11 @@ combos:
 - p: [24, 25]
   k: {t: '?', s: '!'}
   l: [DEF]
-- p: [1, 2]
+- p: [2, 3]
   k: Q
+  l: [DEF]
+- p: [1, 2]
+  k: V
   l: [DEF]
 - p: [5, 15]
   k: F11
@@ -289,6 +286,9 @@ combos:
 - p: [21, 22]
   k: $$mdi:redo$$
   l: [NAV]
+- p: [23, 24]
+  k: _
+  l: [DEF]
 - p: [0, 9]
   k: $$mdi:progress-download$$
   l: [SYS]
