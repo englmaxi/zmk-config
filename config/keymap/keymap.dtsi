@@ -79,7 +79,6 @@
         #binding-cells = <0>;                   \
         bindings = <TAP>, <CONTROLED>;          \
         mods = <(MOD_RCTL|MOD_LCTL)>;           \
-        keep-mods = <(MOD_RSFT)>;               \
     };
     
 #define TD(NAME, TAP1, TAP2, ...)                                           \
