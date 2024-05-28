@@ -107,7 +107,6 @@
     behaviors {
         // home row mods
         HM(hml,        &kp,         KEYS_R)
-        HM(hml_repeat, &key_repeat, KEYS_R)
         HM(hml_hwu,    &kp,         KEYS_R, hold-while-undecided;)
 
         HM(hmr,           &kp,        KEYS_L)
@@ -143,6 +142,15 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <220>;
             bindings = <&mo>, <&bspc_del>;
+        };
+        
+        lt_qt: layer_tap_qt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <220>;
+            bindings = <&mo>, <&td_sqt_dqt>;
         };
         
         alt_tabber: swapper {
@@ -227,7 +235,7 @@
 // ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
     _(&kp DE_Z)     &kp C         &kp G            &kp D             _(&kp Q)           _(&key_repeat) &kp M            &kp DE_COMMA     &kp DE_DOT    _(&qexcl)
 // ╰───────────────┴─────────────┴────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┴─────────────┴─────────────╯
-                                                   &lt_del NAV 0     &lt FUN SPACE      &kp E          &lt NUM RET
+                                                   &lt_qt NAV 0      &lt FUN SPACE      &kp E          &lt NUM RET
 //                                                ╰─────────────────┴──────────────╯   ╰──────────────┴────────────────╯
             >;
         };

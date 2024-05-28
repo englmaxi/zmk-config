@@ -31,7 +31,7 @@
 
 // fixes #544
 #define HRC_TAB     &hml            LA(LCTRL)   TAB
-#define HRC_REPEAT  &hml_repeat     LS(LCTRL)   0
+#define HRC_ENTER   &hml            LS(LCTRL)   RET
 #define HRC_LPAR    &hmr_lpar_lbrc  LS(LCTRL)   0
 #define HRC_RPAR    &hmr_rpar_rbrc  LA(LCTRL)   0
 #define HRC_PAR     &hmr_par_brc    LS(LALT)    0
@@ -41,11 +41,10 @@
         compatible = "zmk,combos";
 
         COMBO(esc,       &kp ESC,        LB2 LB1, DEF,     COMBO_TERM_MID)
-        COMBO(enter,     &kp RET,        LT2 LT1, DEF,     COMBO_TERM_MID)
         COMBO(int,       &sl INT,        LT3 LT1, DEF,     COMBO_TERM_SLOW)
 
         COMBO(tab,       HRC_TAB,        LM3 LM2, DEF,     COMBO_TERM_MID)
-        COMBO(repeat,    HRC_REPEAT,     LM2 LM1, DEF,     COMBO_TERM_MID)
+        COMBO(enter,     HRC_ENTER,      LM2 LM1, DEF,     COMBO_TERM_MID)
 
         COMBO(lbkt,      &lbkt_lt,       RT1 RT2, DEF,     COMBO_TERM_MID)
         COMBO(rbkt,      &rbkt_gt,       RT2 RT3, DEF,     COMBO_TERM_MID)
@@ -82,24 +81,19 @@
         COMBO(star,      &kp DE_STAR,    RT2 RM2, DEF,     COMBO_TERM_FAST)
         COMBO(amps,      &kp DE_AMPS,    RT3 RM3, DEF,     COMBO_TERM_FAST)
 
-#if defined(KEYS_30)
-        COMBO(under,     &kp DE_UNDER,   RB1 RB2, DEF,     COMBO_TERM_MID)
-#elif defined(KEYS_34)
-        COMBO(under,     &kp DE_UNDER,   RM0 RB0, DEF,     COMBO_TERM_FAST)
-#endif
         COMBO(minus,     &kp DE_MINUS,   RM1 RB1, DEF,     COMBO_TERM_FAST)
         COMBO(fslh,      &kp DE_FSLH,    RM2 RB2, DEF,     COMBO_TERM_FAST)
         COMBO(pipe,      &kp DE_PIPE,    RM3 RB3, DEF,     COMBO_TERM_FAST)
 
-#ifdef KEYS_30
         COMBO(z,         &kp DE_Z,       LB3 LB2, DEF,     COMBO_TERM_MID)
         COMBO(qe,        &qexcl,         RB2 RB3, DEF,     COMBO_TERM_MID)
-        COMBO(q,         &kp Q,          LT3 LT2, DEF,     COMBO_TERM_MID)
+        COMBO(q,         &kp Q,          LT2 LT1, DEF,     COMBO_TERM_MID)
+        COMBO(v,         &kp V,          LT3 LT2, DEF,     COMBO_TERM_MID)
 
         COMBO(f11,       &kp F11,        RT0 RM0, FUN,     COMBO_TERM_MID)
         COMBO(undo,      &kp U_UND,      LB3 LB2, NAV,     COMBO_TERM_MID)
         COMBO(redo,      &kp U_RDO,      LB2 LB1, NAV,     COMBO_TERM_MID)
-#endif
+        COMBO(under,     &kp DE_UNDER,   RB1 RB2, DEF,     COMBO_TERM_MID)
 
         COMBO(bl,        &bootloader,    LT4 RT4, SYS,     COMBO_TERM_SLOW)
         COMBO(cw,        &caps_word,     LM1 RM1, DEF,     COMBO_TERM_SLOW)

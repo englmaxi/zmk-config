@@ -83,6 +83,7 @@ parse_config:
     '&bootloader': $$mdi:progress-download$$
     '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
     '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$
+    '&hml LS(LCTRL) RET': $$mdi:keyboard-return$$
     '&key_repeat': $$mdi:repeat$$
     '&caps_word': $$mdi:caps-lock$$
     '&mt LA(F4) LC(W)': $$mdi:close-box-outline$$
