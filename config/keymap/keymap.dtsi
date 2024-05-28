@@ -128,8 +128,7 @@
         SM(bspc_del, &kp BSPC,      &kp DEL)
 
         SM(sqt_dqt,       &kp DE_SQT,   &kp DE_DQT)
-        SM(act_grv,       &kp DE_ACUTE, &kp DE_GRAVE)
-        CM(qt_grv,        &sqt_dqt,     &act_grv)
+        CM(qt_grv,        &sqt_dqt,     &kp DE_ACUTE)
         SM(sqt_dqt_macro, &sqt_macro,   &dqt_macro)
         SM(grv_dgrv,      &kp DE_GRAVE, &dgrv_macro)
 
