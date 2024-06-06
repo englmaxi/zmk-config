@@ -60,7 +60,7 @@ layers:
   - $$mdi:arrow-right-bold-box-outline$$
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - $$mdi:keyboard-return$$
   - {t: '$$mdi:chevron-down$$', type: trans}
   NUM:
   - ''
@@ -198,7 +198,7 @@ combos:
   k: $$mdi:keyboard-tab$$
   l: [DEF]
 - p: [12, 13]
-  k: $$mdi:keyboard-return$$
+  k: $$mdi:repeat$$
   l: [DEF]
 - p: [6, 7]
   k: {t: '[', s: <}
