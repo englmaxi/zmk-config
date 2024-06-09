@@ -46,9 +46,9 @@
         COMBO(tab,       HRC_TAB,        LM3 LM2, DEF,     COMBO_TERM_MID)
         COMBO(repeat,    HRC_REPEAT,     LM2 LM1, DEF,     COMBO_TERM_MID)
 
-        COMBO(lbkt,      &lbkt_lt,       RT1 RT2, DEF,     COMBO_TERM_MID)
-        COMBO(rbkt,      &rbkt_gt,       RT2 RT3, DEF,     COMBO_TERM_MID)
-        COMBO(bkt,       &bkt_lgt,       RT1 RT3, DEF,     COMBO_TERM_SLOW)
+        COMBO(lbrc,      &lbrc_lt,       RT1 RT2, DEF,     COMBO_TERM_MID)
+        COMBO(rbrc,      &rbrc_gt,       RT2 RT3, DEF,     COMBO_TERM_MID)
+        COMBO(brc,       &brc_lgt,       RT1 RT3, DEF,     COMBO_TERM_SLOW)
 
         COMBO(lpar,      HRC_LPAR,       RM1 RM2, DEF,     COMBO_TERM_MID)
         COMBO(rpar,      HRC_RPAR,       RM2 RM3, DEF,     COMBO_TERM_MID)

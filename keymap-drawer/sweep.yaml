@@ -207,8 +207,8 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - ´
-  - {t: '`', s: '``'}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
 combos:
 - p: [22, 23]
   k: ESC
@@ -224,23 +224,22 @@ combos:
   k: $$mdi:repeat$$
   l: [DEF]
 - p: [6, 7]
-  k: {t: '[', s: <}
+  k: {t: '{', s: <}
   l: [DEF]
 - p: [7, 8]
-  k: {t: ']', s: '>'}
+  k: {t: '}', s: '>'}
   l: [DEF]
 - p: [6, 8]
-  k: {t: '{}', s: <>}
+  k: {t: '[]', s: <>}
   l: [DEF]
-  draw_separate: true
 - p: [16, 17]
-  k: {t: (, s: '{'}
+  k: {t: (, s: '['}
   l: [DEF]
 - p: [17, 18]
-  k: {t: ), s: '}'}
+  k: {t: ), s: ']'}
   l: [DEF]
 - p: [16, 18]
-  k: {t: (), s: '{}'}
+  k: {t: (), s: '[]'}
   l: [DEF]
   draw_separate: true
 - p: [4, 14]
