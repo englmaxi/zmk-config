@@ -32,9 +32,9 @@
 // fixes #544
 #define HRC_TAB     &hml            LA(LCTRL)   TAB
 #define HRC_REPEAT  &hml_repeat     LS(LCTRL)   0
-#define HRC_LPAR    &hmr_lpar_lbrc  LS(LCTRL)   0
-#define HRC_RPAR    &hmr_rpar_rbrc  LA(LCTRL)   0
-#define HRC_PAR     &hmr_par_brc    LS(LALT)    0
+#define HRC_LPAR    &hmr_lpar_lbkt  LS(LCTRL)   0
+#define HRC_RPAR    &hmr_rpar_rbkt  LA(LCTRL)   0
+#define HRC_PAR     &hmr_par_bkt    LS(LALT)    0
 
 / {
     combos {

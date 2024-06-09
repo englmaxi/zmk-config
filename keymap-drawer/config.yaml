@@ -129,15 +129,15 @@ parse_config:
 
     '&kp LG(L)': $$mdi:lock-outline$$
 
-    '&hmr_lpar_lbrc LS(LCTRL) 0':
+    '&hmr_lpar_lbkt LS(LCTRL) 0':
       tap: '('
-      shifted: '{'
-    '&hmr_rpar_rbrc LA(LCTRL) 0':
+      shifted: '['
+    '&hmr_rpar_rbkt LA(LCTRL) 0':
       tap: ')'
-      shifted: '}'
-    '&hmr_par_brc LS(LALT) 0':
+      shifted: ']'
+    '&hmr_par_bkt LS(LALT) 0':
       tap: '()'
-      shifted: '{}'
+      shifted: '[]'
       
     '&td_sqt_dqt':
       tap: "'"
