@@ -232,6 +232,7 @@ combos:
 - p: [6, 8]
   k: {t: '[]', s: <>}
   l: [DEF]
+  draw_separate: true
 - p: [16, 17]
   k: {t: (, s: '['}
   l: [DEF]

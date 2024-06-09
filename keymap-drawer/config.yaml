@@ -256,6 +256,8 @@ parse_config:
       draw_separate: true
     combo_bkt:
       draw_separate: true
+    combo_brc:
+      draw_separate: true
     combo_int:
       draw_separate: true
     combo_cw:
