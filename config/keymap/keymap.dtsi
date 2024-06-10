@@ -89,6 +89,25 @@
         bindings = <TAP1>, <TAP2> __VA_OPT__(, <)__VA_ARGS__ __VA_OPT__(>); \
     };
 
+#define MASKED(NAME, MODS, BINDING)             \
+    NAME: NAME {                                \
+        compatible = "zmk,behavior-mod-morph";  \
+        #binding-cells = <0>;                   \
+        bindings = <BINDING>, <BINDING>;        \
+        mods = <MODS>;                          \
+    };
+
+#define AP(NAME, SYM1, SYM2)                                    \
+    MASKED(NAME ## _sym1_masked, (MOD_RSFT|MOD_LSFT), SYM1)     \
+    MASKED(NAME ## _sym2_masked, (MOD_RSFT|MOD_LSFT), SYM2)     \
+    MASKED(NAME ## _left_masked, (MOD_RSFT|MOD_LSFT), &kp LEFT) \
+    ZMK_MACRO(NAME,                                             \
+        bindings                                                \
+            = <& ## NAME ## _sym1_masked>                       \
+            , <& ## NAME ## _sym2_masked>                       \
+            , <& ## NAME ## _left_masked>;                      \
+    )
+
 &caps_word {
     continue-list = <BACKSPACE DELETE DE_UNDER DE_MINUS N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
 };
@@ -172,48 +191,13 @@
     };
 
     macros {
-        // ( ) <-
-        ZMK_MACRO(par_macro,
-            bindings = <&kp DE_LPAR &kp DE_RPAR &kp LEFT>;
-        )
-        
-        // [ ] <-
-        ZMK_MACRO(bkt_macro,
-            bindings = <&kp DE_LBKT &kp DE_RBKT &kp LEFT>;
-        )
-
-        // ' ' <-
-        ZMK_MACRO(sqt_macro,
-            bindings = <&kp DE_SQT &kp DE_SQT &kp LEFT>;
-        )
-
-        // " " <-
-        ZMK_MACRO(dqt_macro,
-            bindings
-                = <&macro_release &kp LSHFT>
-                , <&macro_tap     &kp DE_DQT &kp DE_DQT &kp LEFT>;
-        )
-
-        // ` ` <-
-        ZMK_MACRO(dgrv_macro,
-            bindings
-                = <&macro_release &kp LSHFT>
-                , <&macro_tap     &kp DE_GRAVE &kp DE_GRAVE &kp LEFT>;
-        )
-
-        // { } <-
-        ZMK_MACRO(brc_macro,
-            bindings
-                = <&macro_release &kp LSHFT>
-                , <&macro_tap     &kp DE_LBRC &kp DE_RBRC &kp LEFT>;
-        )
-
-        // < > <-
-        ZMK_MACRO(lgt_macro,
-            bindings
-                = <&macro_release &kp LSHFT>
-                , <&macro_tap     &kp DE_LT &kp DE_GT &kp LEFT>;
-        )
+        AP(par_macro,  &kp DE_LPAR,  &kp DE_RPAR)   // ( ) <-
+        AP(bkt_macro,  &kp DE_LBKT,  &kp DE_RBKT)   // [ ] <-
+        AP(sqt_macro,  &kp DE_SQT,   &kp DE_SQT)    // ' ' <-
+        AP(dqt_macro,  &kp DE_DQT,   &kp DE_DQT)    // " " <-
+        AP(dgrv_macro, &kp DE_GRAVE, &kp DE_GRAVE)  // ` ` <-
+        AP(brc_macro,  &kp DE_LBRC,  &kp DE_RBRC)   // { } <-
+        AP(lgt_macro,  &kp DE_LT,    &kp DE_GT)     // < > <-
 
         ZMK_MACRO1(bts,
             bindings
