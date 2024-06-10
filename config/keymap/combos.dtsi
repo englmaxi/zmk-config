@@ -31,7 +31,7 @@
 
 // fixes #544
 #define HRC_TAB     &hml            LA(LCTRL)   TAB
-#define HRC_REPEAT  &hml_repeat     LS(LCTRL)   0
+#define HRC_RET     &hml            LS(LCTRL)   RET
 #define HRC_LPAR    &hmr_lpar_lbkt  LS(LCTRL)   0
 #define HRC_RPAR    &hmr_rpar_rbkt  LA(LCTRL)   0
 #define HRC_PAR     &hmr_par_bkt    LS(LALT)    0
@@ -44,7 +44,7 @@
         COMBO(int,       &sl INT,        LT3 LT1, DEF,     COMBO_TERM_SLOW)
 
         COMBO(tab,       HRC_TAB,        LM3 LM2, DEF,     COMBO_TERM_MID)
-        COMBO(repeat,    HRC_REPEAT,     LM2 LM1, DEF,     COMBO_TERM_MID)
+        COMBO(repeat,    HRC_RET,        LM2 LM1, DEF,     COMBO_TERM_MID)
 
         COMBO(lbrc,      &lbrc_lt,       RT1 RT2, DEF,     COMBO_TERM_MID)
         COMBO(rbrc,      &rbrc_gt,       RT2 RT3, DEF,     COMBO_TERM_MID)

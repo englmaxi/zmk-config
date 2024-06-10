@@ -134,7 +134,6 @@
     behaviors {
         // home row mods
         HM(hml,        &kp,         KEYS_R)
-        HM(hml_repeat, &key_repeat, KEYS_R)
         HM(hml_hwu,    &kp,         KEYS_R, hold-while-undecided;)
 
         HM(hmr,           &kp,        KEYS_L)

@@ -221,7 +221,7 @@ combos:
   k: $$mdi:keyboard-tab$$
   l: [DEF]
 - p: [12, 13]
-  k: $$mdi:repeat$$
+  k: $$mdi:keyboard-return$$
   l: [DEF]
 - p: [6, 7]
   k: {t: '{', s: <}
