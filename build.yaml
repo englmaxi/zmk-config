@@ -17,7 +17,7 @@ include:
     
   - board: seeeduino_xiao_ble
     shield: rommana_central_dongle dongle_display
-    cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
+    snippet: zmk-usb-logging
     artifact-name: rommana_central_dongle_with_logging
 
   # sweep
@@ -36,7 +36,7 @@ include:
     
   - board: nice_nano_v2
     shield: sweep_central_left led_indicator
-    cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
+    snippet: zmk-usb-logging
     artifact-name: sweep_central_left_with_logging
 
   # reset
