@@ -9,7 +9,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <interfaces/hid-trackball.dtsi>
 
 #ifndef KEYMAP_DRAWER
 #include "include/keys_de.h"
