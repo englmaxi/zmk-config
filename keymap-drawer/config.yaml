@@ -87,6 +87,7 @@ parse_config:
     '&caps_word': $$mdi:caps-lock$$
     '&mt LA(F4) LC(W)': $$mdi:close-box-outline$$
     '&alt_tabber': $$mdi:swap-horizontal$$
+    '&kns_lock': $$mdi:apple-keyboard-caps$$
     '&dgrv_macro': '``'
     '&brc_macro': '[]'
     '&par_macro': '()'
@@ -127,16 +128,6 @@ parse_config:
     '&kp LC(N0)': $$mdi:magnify-remove-outline$$
 
     '&kp LG(L)': $$mdi:lock-outline$$
-
-    '&hmr_lpar_lbrc LS(LCTRL) 0':
-      tap: '('
-      shifted: '{'
-    '&hmr_rpar_rbrc LA(LCTRL) 0':
-      tap: ')'
-      shifted: '}'
-    '&hmr_par_brc LS(LALT) 0':
-      tap: '()'
-      shifted: '{}'
       
     '&td_sqt_dqt':
       tap: "'"
@@ -179,6 +170,26 @@ parse_config:
       shifted: '3'
       type: text_with_symbol
     '&bts 4':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '4'
+      type: text_with_symbol
+    '&bts_0':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '0'
+      type: text_with_symbol
+    '&bts_1':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '1'
+      type: text_with_symbol
+    '&bts_2':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '2'
+      type: text_with_symbol
+    '&bts_3':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '3'
+      type: text_with_symbol
+    '&bts_4':
       tap: $$mdi:bluetooth-connect$$
       shifted: '4'
       type: text_with_symbol
@@ -248,7 +259,7 @@ parse_config:
   zmk_combos:
     combo_bl:
       align: top
-      offset: 1.2
+      offset: 2.4
     combo_par:
       draw_separate: true
     combo_bkt:
@@ -256,6 +267,8 @@ parse_config:
     combo_int:
       draw_separate: true
     combo_cw:
+      draw_separate: true
+    combo_brc:
       draw_separate: true
       
   zmk_keycode_map:

@@ -1,0 +1,30 @@
+
+#define AP(NAME, SYM1, SYM2)                                    \
+    MASKED(NAME ## _sym1_masked, (MOD_RSFT|MOD_LSFT), SYM1)     \
+    MASKED(NAME ## _sym2_masked, (MOD_RSFT|MOD_LSFT), SYM2)     \
+    MASKED(NAME ## _left_masked, (MOD_RSFT|MOD_LSFT), &kp LEFT) \
+    ZMK_MACRO(NAME,                                             \
+        bindings                                                \
+            = <& ## NAME ## _sym1_masked>                       \
+            , <& ## NAME ## _sym2_masked>                       \
+            , <& ## NAME ## _left_masked>;                      \
+    )
+
+/ {
+    macros {
+        AP(par_macro,   &kp DE_LPAR,    &kp DE_RPAR)    // ( ) <-
+        AP(bkt_macro,   &kp DE_LBKT,    &kp DE_RBKT)    // [ ] <-
+        AP(sqt_macro,   &kp DE_SQT,     &kp DE_SQT)     // ' ' <-
+        AP(dqt_macro,   &kp DE_DQT,     &kp DE_DQT)     // " " <-
+        AP(dgrv_macro,  &kp DE_GRAVE,   &kp DE_GRAVE)   // ` ` <-
+        AP(brc_macro,   &kp DE_LBRC,    &kp DE_RBRC)    // { } <-
+        AP(lgt_macro,   &kp DE_LT,      &kp DE_GT)      // < > <-
+
+        ZMK_MACRO1(bts,
+            bindings
+                = <&out OUT_BLE>
+                , <&macro_param_1to2>
+                , <&bt BT_SEL MACRO_PLACEHOLDER>;
+        )
+    };
+};

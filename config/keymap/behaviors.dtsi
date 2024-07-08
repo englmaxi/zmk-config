@@ -1,0 +1,162 @@
+// overwrites
+&caps_word {
+    continue-list = <BACKSPACE DELETE DE_UNDER DE_MINUS>;
+};
+
+&sk {
+    quick-release;
+    release-after-ms = <1000>;
+};
+
+&mt {
+    quick-tap-ms = <220>;
+    tapping-term-ms = <220>;
+};
+
+&lt {
+    flavor = "balanced";
+    quick-tap-ms = <220>;
+}; 
+
+
+// hold-tap
+/ {
+    behaviors {
+        lt_del: layer_tap_del {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <220>;
+            bindings = <&mo>, <&bspc_del>;
+        };
+        
+        lt_qt: layer_tap_qt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <220>;
+            bindings = <&mo>, <&qt_grv>;
+        };
+    };
+};
+
+
+// home row mod
+#define HM(NAME, TAP, HT_KEYPOS, ...)                       \
+    NAME: NAME {                                            \
+        compatible = "zmk,behavior-hold-tap";               \
+        #binding-cells = <2>;                               \
+        flavor = "balanced";                                \
+        tapping-term-ms = <280>;                            \
+        quick-tap-ms = <175>;                               \
+        require-prior-idle-ms = <150>;                      \
+        bindings = <&kp>, <TAP>;                            \
+        hold-trigger-key-positions = <HT_KEYPOS THUMBS>;    \
+        hold-trigger-on-release;                            \
+        __VA_ARGS__                                         \
+    };
+
+/ {
+    behaviors {
+        HM(hml,     &kp,    KEYS_R)
+        HM(hml_hwu, &kp,    KEYS_R, hold-while-undecided;)
+        HM(hmr,     &kp,    KEYS_L)
+        HM(hmr_hwu, &kp,    KEYS_L, hold-while-undecided;)
+    };
+};
+
+
+// mod morph
+#define SM(NAME, TAP, SHIFTED)                  \
+    NAME: NAME {                                \
+        compatible = "zmk,behavior-mod-morph";  \
+        #binding-cells = <0>;                   \
+        bindings = <TAP>, <SHIFTED>;            \
+        mods = <(MOD_RSFT|MOD_LSFT)>;           \
+        keep-mods = <(MOD_RSFT)>;               \
+    };
+
+#define CM(NAME, TAP, CONTROLED)                \
+    NAME: NAME {                                \
+        compatible = "zmk,behavior-mod-morph";  \
+        #binding-cells = <0>;                   \
+        bindings = <TAP>, <CONTROLED>;          \
+        mods = <(MOD_RCTL|MOD_LCTL)>;           \
+    };
+
+#define GM(NAME, TAP, GUIED)                    \
+    NAME: NAME {                                \
+        compatible = "zmk,behavior-mod-morph";  \
+        #binding-cells = <0>;                   \
+        bindings = <TAP>, <GUIED>;              \
+        mods = <(MOD_RGUI|MOD_LGUI)>;           \
+    };
+
+#define MASKED(NAME, MODS, BINDING)             \
+    NAME: NAME {                                \
+        compatible = "zmk,behavior-mod-morph";  \
+        #binding-cells = <0>;                   \
+        bindings = <BINDING>, <BINDING>;        \
+        mods = <MODS>;                          \
+    };
+    
+/ {
+    behaviors {
+        SM(qexcl,    &kp DE_QMARK,  &kp DE_EXCL)
+        SM(bspc_del, &kp BSPC,      &kp DEL)
+
+        SM(sqt_dqt,       &kp DE_SQT,   &kp DE_DQT)
+        CM(qt_grv,        &sqt_dqt,     &kp DE_ACUTE)
+        SM(sqt_dqt_macro, &sqt_macro,   &dqt_macro)
+        SM(grv_dgrv,      &kp DE_GRAVE, &dgrv_macro)
+
+        SM(lpar_lbkt, &kp DE_LPAR, &kp DE_LBKT)
+        SM(rpar_rbkt, &kp DE_RPAR, &kp DE_RBKT)
+        SM(par_bkt,   &par_macro,  &bkt_macro)
+
+        SM(lbrc_lt, &kp DE_LBRC, &kp DE_LT)
+        SM(rbrc_gt, &kp DE_RBRC, &kp DE_GT)
+        SM(brc_lgt, &brc_macro,  &lgt_macro) 
+
+        GM(p_tab_desk, &kp LC(LS(TAB)), &kp LC(LG(LEFT)))
+        GM(n_tab_desk, &kp LC(TAB), &kp LC(LG(RIGHT)))
+    };
+};
+
+
+// tap-dance
+#define TD(NAME, TAP1, TAP2, ...)                                           \
+    NAME: NAME {                                                            \
+        compatible = "zmk,behavior-tap-dance";                              \
+        #binding-cells = <0>;                                               \
+        tapping-term-ms = <200>;                                            \
+        bindings = <TAP1>, <TAP2> __VA_OPT__(, <)__VA_ARGS__ __VA_OPT__(>); \
+    };
+
+/ {
+    behaviors {
+        TD(td_sqt_dqt, &sqt_dqt, &sqt_dqt_macro)
+
+        TD(bts_0, &bts 0, &bt BT_DISC 0)
+        TD(bts_1, &bts 1, &bt BT_DISC 1)
+        TD(bts_2, &bts 2, &bt BT_DISC 2)
+
+        TD(kns_lock, &kp CLCK, &kp KP_NLCK, &kp SLCK)
+        
+    };
+};
+
+
+// swapper
+/ {
+    behaviors {
+        alt_tabber: swapper {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <RT2 RM1 RM2 RM3>; // arrow keys
+        };
+    };
+};

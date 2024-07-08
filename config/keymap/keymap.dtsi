@@ -24,22 +24,14 @@
 #define DEF 0
 #define NAV 1
 #define NUM 2
-#define FUN 3
-#define SYS 4
-#define INT 5
+#define FUN 3 
+#define INT 4
 
 #define CT(KEY) &mt LC(KEY) KEY
 #define CLOSE   &mt LA(F4) LC(W)
 
 #define MEH     LC(LS(LALT))
 #define HYPER   LC(LS(LA(LGUI)))
-
-#define N_TAB   LC(TAB)
-#define P_TAB   LC(LS(TAB))
-#define N_DESK  LC(LG(RIGHT))
-#define P_DESK  LC(LG(LEFT))
-#define SEARCH  LC(F)
-#define LOCK    LG(L)
 
 #define U_RDO   LC(DE_Y)
 #define U_PST   LC(V)
@@ -48,169 +40,17 @@
 #define U_UND   LC(DE_Z)
 
 #include "include/keypos.h"
+#include "behaviors.dtsi"
 #include "combos.dtsi"
-
-#define HM(NAME, TAP, HT_KEYPOS, ...)                       \
-    NAME: NAME {                                            \
-        compatible = "zmk,behavior-hold-tap";               \
-        #binding-cells = <2>;                               \
-        flavor = "balanced";                                \
-        tapping-term-ms = <280>;                            \
-        quick-tap-ms = <175>;                               \
-        require-prior-idle-ms = <150>;                      \
-        bindings = <&kp>, <TAP>;                            \
-        hold-trigger-key-positions = <HT_KEYPOS THUMBS>;    \
-        hold-trigger-on-release;                            \
-        __VA_ARGS__                                         \
-    };
-
-#define SM(NAME, TAP, SHIFTED)                  \
-    NAME: NAME {                                \
-        compatible = "zmk,behavior-mod-morph";  \
-        #binding-cells = <0>;                   \
-        bindings = <TAP>, <SHIFTED>;            \
-        mods = <(MOD_RSFT|MOD_LSFT)>;           \
-        keep-mods = <(MOD_RSFT)>;               \
-    };
-    
-#define TD(NAME, TAP1, TAP2, ...)                                           \
-    NAME: NAME {                                                            \
-        compatible = "zmk,behavior-tap-dance";                              \
-        #binding-cells = <0>;                                               \
-        tapping-term-ms = <200>;                                            \
-        bindings = <TAP1>, <TAP2> __VA_OPT__(, <)__VA_ARGS__ __VA_OPT__(>); \
-    };
-
-&caps_word {
-    continue-list = <BACKSPACE DELETE DE_UNDER DE_MINUS N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
-};
-
-&sk {
-    quick-release;
-    release-after-ms = <1000>;
-};
-
-&mt {
-    quick-tap-ms = <220>;
-    tapping-term-ms = <220>;
-};
-
-&lt {
-    quick-tap-ms = <220>;
-};
-
-&hid_trackball_interface {
-    automouse-layer = <FUN>;
-};
+#include "macros.dtsi"
 
 / {
-    behaviors {
-        // home row mods
-        HM(hml,        &kp,         KEYS_R)
-        HM(hml_repeat, &key_repeat, KEYS_R)
-        HM(hml_hwu,    &kp,         KEYS_R, hold-while-undecided;)
-
-        HM(hmr,           &kp,        KEYS_L)
-        HM(hmr_lpar_lbrc, &lpar_lbrc, KEYS_L)
-        HM(hmr_rpar_rbrc, &rpar_rbrc, KEYS_L)
-        HM(hmr_par_brc,   &par_brc,   KEYS_L)
-        HM(hmr_hwu,       &kp,        KEYS_L, hold-while-undecided;)
-
-        // shift morphs
-        SM(qexcl,    &kp DE_QMARK,  &kp DE_EXCL)
-        SM(bspc_del, &kp BSPC,      &kp DEL)
-
-        SM(sqt_dqt,       &kp DE_SQT, &kp DE_DQT)
-        SM(sqt_dqt_macro, &sqt_macro, &dqt_macro)
-        SM(grv_dgrv,      &kp DE_GRAVE, &dgrv_macro)
-
-        SM(lpar_lbrc, &kp DE_LPAR, &kp DE_LBRC)
-        SM(rpar_rbrc, &kp DE_RPAR, &kp DE_RBRC)
-        SM(par_brc,   &par_macro,  &brc_macro)
-
-        SM(lbkt_lt, &kp DE_LBKT, &kp DE_LT)
-        SM(rbkt_gt, &kp DE_RBKT, &kp DE_GT)
-        SM(bkt_lgt, &bkt_macro,  &lgt_macro)
-
-        // tap-dance
-        TD(td_sqt_dqt, &sqt_dqt, &sqt_dqt_macro)
-
-        // hold-tap
-        lt_del: layer_tap_del {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <220>;
-            bindings = <&mo>, <&bspc_del>;
-        };
-        
-        alt_tabber: swapper {
-            compatible = "zmk,behavior-tri-state";
-            #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            ignored-key-positions = <RT2 RM1 RM2 RM3>; // arrow keys
-        };
-    };
-
-    macros {
-        // ( ) <-
-        ZMK_MACRO(par_macro,
-            bindings = <&kp DE_LPAR &kp DE_RPAR &kp LEFT>;
-        )
-        
-        // [ ] <-
-        ZMK_MACRO(bkt_macro,
-            bindings = <&kp DE_LBKT &kp DE_RBKT &kp LEFT>;
-        )
-
-        // ' ' <-
-        ZMK_MACRO(sqt_macro,
-            bindings = <&kp DE_SQT &kp DE_SQT &kp LEFT>;
-        )
-
-        // " " <-
-        ZMK_MACRO(dqt_macro,
-            bindings
-                = <&macro_release &kp LSHFT>
-                , <&macro_tap     &kp DE_DQT &kp DE_DQT &kp LEFT>;
-        )
-
-        // ` ` <-
-        ZMK_MACRO(dgrv_macro,
-            bindings
-                = <&macro_release &kp LSHFT>
-                , <&macro_tap     &kp DE_GRAVE &kp DE_GRAVE &kp LEFT>;
-        )
-
-        // { } <-
-        ZMK_MACRO(brc_macro,
-            bindings
-                = <&macro_release &kp LSHFT>
-                , <&macro_tap     &kp DE_LBRC &kp DE_RBRC &kp LEFT>;
-        )
-
-        // < > <-
-        ZMK_MACRO(lgt_macro,
-            bindings
-                = <&macro_release &kp LSHFT>
-                , <&macro_tap     &kp DE_LT &kp DE_GT &kp LEFT>;
-        )
-
-        ZMK_MACRO1(bts,
-            bindings
-                = <&out OUT_BLE>
-                , <&macro_param_1to2>
-                , <&bt BT_SEL MACRO_PLACEHOLDER>;
-        )
-    };
-
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
         tri_layer  {
             if-layers = <NAV NUM>;
-            then-layer = <SYS>;
+            then-layer = <FUN>;
         };
     };
 
@@ -227,7 +67,7 @@
 // ├───────────────┼─────────────┼────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┼─────────────┼─────────────┤
     _(&kp DE_Z)     &kp C         &kp G            &kp D             _(&kp Q)           _(&key_repeat) &kp M            &kp DE_COMMA     &kp DE_DOT    _(&qexcl)
 // ╰───────────────┴─────────────┴────────────────┼─────────────────┼──────────────┤   ├──────────────┼────────────────┼────────────────┴─────────────┴─────────────╯
-                                                   &lt_del NAV 0     &lt FUN SPACE      &kp E          &lt NUM RET
+                                                   &bspc_del         &lt NAV SPACE      &lt NUM E      &qt_grv
 //                                                ╰─────────────────┴──────────────╯   ╰──────────────┴────────────────╯
             >;
         };
@@ -236,13 +76,13 @@
             display-name = "NAV";
             bindings = <
 // ╭───────────────┬─────────────┬─────────────┬─────────────┬───────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬────────────────╮
-    CLOSE            &kp P_TAB     &kp SEARCH    &kp N_TAB     &kp LOCK           &kp PG_UP     CT(HOME)      &kp UP        CT(END)       &kp PAUSE_BREAK
+    &none           &p_tab_desk   &alt_tabber   &n_tab_desk   CLOSE               &kp PG_UP     CT(HOME)      &kp UP        CT(END)       &none
 // ├───────────────┼─────────────┼─────────────┼─────────────┼───────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼────────────────┤
     &sk LGUI        &sk LALT      &sk LCTRL     &sk LSHFT     &sk RALT            &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT     &kp INS
 // ├───────────────┼─────────────┼─────────────┼─────────────┼───────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼────────────────┤
-    _(&kp U_UND)    &kp U_CUT     &kp U_CPY     &kp U_PST     _(&kp U_RDO)        _(&kp RET)    &kp P_DESK    &alt_tabber   &kp N_DESK    _(&kp C_AL_CALC)
+    _(&kp U_UND)    &kp U_CUT     &kp U_CPY     &kp U_PST     _(&kp U_RDO)        _(&none)      &kp BSPC      &kp TAB       &kp DEL       _(&none)
 // ╰───────────────┴─────────────┴─────────────┼─────────────┼───────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴────────────────╯
-                                                &trans        &trans              &trans        &trans
+                                                &trans        &trans              &lt NUM RET   &trans
 //                                             ╰─────────────┴───────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -251,11 +91,11 @@
             display-name = "NUM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭───────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &none         &none         &none         &none         &none             &kp DE_DOT      &kp N7        &kp N8        &kp N9        &kp BSPC
+    &none         &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &kp C_BRI_UP      &kp DE_DOT      &kp N7        &kp N8        &kp N9        &kp BSPC
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none             &kp N0          &kp N4        &kp N5        &kp N6        &kp RET
+    &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &kp C_BRI_DN      &kp N0          &kp N4        &kp N5        &kp N6        &kp RET
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    _(&none)      &none         &none         &none         _(&none)          _(&kp DE_COMMA) &kp N1        &kp N2        &kp N3        _(&none)
+    _(&none)      &kp C_PREV    &kp C_PP      &kp C_NEXT    _(&none)          _(&kp DE_COMMA) &kp N1        &kp N2        &kp N3        _(&none)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├───────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans        &trans            &trans          &trans
 //                                           ╰─────────────┴─────────────╯   ╰───────────────┴─────────────╯
@@ -265,38 +105,23 @@
         function_layer {
             display-name = "FUN";
             bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬────────────────╮
-    &kp PSCRN     &mkp MB4      &mkp MB3      &mkp MB5      &kp CLCK          &kp F12       &kp F7        &kp F8        &kp F9        &kp LC(DE_PLUS)
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼────────────────┤
-    &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &kp KP_NLCK       &kp F10       &kp F4        &kp F5        &kp F6        &kp LC(DE_MINUS)
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼────────────────┤
-    _(&none)      &mkp RCLK     &tbs_mt 0 0   &mkp LCLK     _(&none)          _(&kp F11)    &kp F1        &kp F2        &kp F3        _(&kp LC(N0))
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴────────────────╯
-                                              &trans        &trans            &trans        &trans
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
-
-        system_layer {
-            display-name = "SYS";
-            bindings = <
 // ╭──────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &tb_bootloader &none         &none         &none         &kp C_BRI_UP      &bt BT_CLR    &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &none
+    &none          &kp F7        &kp F8        &kp F9        &kp F12           &bt BT_CLR    &out OUT_TOG  &none         &none         &none
 // ├──────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &tb_cyc_dpi    &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &kp C_BRI_DN      &out OUT_USB  &bts 0        &bts 1        &bts 2        &none
+    &bootloader    &kp F4        &kp F5        &kp F6        &kp F10           &out OUT_USB  &bts_0        &bts_1        &bts_2        &bootloader
 // ├──────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    _(&none)       &kp C_PREV    &kp C_PP      &kp C_NEXT    _(&none)          _(&none)      &out OUT_TOG  &none         &none         _(&none)
+    _(&none)       &kp F1        &kp F2        &kp F3        _(&none)          _(&none)      &kns_lock     &kp PSCRN     &kp PAUSE_BREAK  _(&none)
 // ╰──────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &none         &bootloader       &bootloader   &none
+                                               &none         &none             &none         &none
 //                                            ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
-        };
+        }; 
 
         international_layer {
             display-name = "INT";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &trans        &trans        &trans        &trans        &trans            &trans        &trans        &kp DE_UE     &kp DE_ACUTE  &grv_dgrv
+    &trans        &trans        &trans        &trans        &trans            &trans        &trans        &kp DE_UE     &trans        &trans
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &trans        &kp DE_SZ     &trans        &trans        &trans            &trans        &trans        &kp DE_AE     &trans        &kp DE_OE
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -305,6 +130,6 @@
                                               &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
-        };
+        }; 
     };
 };
