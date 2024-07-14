@@ -1218,8 +1218,8 @@ rect.held, rect.combo.held {
 <use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="329" y="-25" height="14" width="14.0" class="combo tap glyph mdi:progress-download"/>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="406" y="71" width="28" height="26" class="combo"/>
-<text x="420" y="84" class="combo tap">F11</text>
+<rect rx="6" ry="6" x="238" y="71" width="28" height="26" class="combo"/>
+<text x="252" y="84" class="combo tap">F11</text>
 </g>
 </g>
 </g>
