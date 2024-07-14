@@ -270,6 +270,8 @@ parse_config:
       draw_separate: true
     combo_brc:
       draw_separate: true
+    combo_tab:
+      draw_separate: true
       
   zmk_keycode_map:
     LALT: ALT

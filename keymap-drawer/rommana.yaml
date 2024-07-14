@@ -226,6 +226,10 @@ combos:
   k: {t: INT, h: '$$mdi:circle-small$$'}
   l: [DEF]
   draw_separate: true
+- p: [11, 13]
+  k: $$mdi:keyboard-tab$$
+  l: [DEF]
+  draw_separate: true
 - p: [24, 25]
   k: {t: '?', s: '!'}
   l: [DEF]

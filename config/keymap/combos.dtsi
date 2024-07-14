@@ -68,6 +68,7 @@
         COMBO(ret,       &kp RET,        LM2 LM1, DEF,     COMBO_TERM_MID)
         COMBO(bspc,      &bspc_del,      LB2 LB1, DEF,     COMBO_TERM_MID)
         COMBO(int,       &sl INT,        LT3 LT1, DEF,     COMBO_TERM_SLOW)
+        COMBO(tab,       &kp TAB,        LM3 LM1, DEF,     COMBO_TERM_SLOW)
 
         COMBO(qe,        &qexcl,         RB2 RB3, DEF,     COMBO_TERM_MID)
         COMBO(under,     &kp DE_UNDER,   RB1 RB2, DEF,     COMBO_TERM_MID)
