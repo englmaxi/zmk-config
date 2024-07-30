@@ -177,20 +177,7 @@
 </svg>
 </svg>
 </defs>/* end glyphs */
-<style>:root {
-    --fg-color: #24292e;
-    --key-color: #f6f8fa;
-    --outline-color: #c9cccf;
-    --combo-color: #ccddff;
-    --held-color: #ffdddd;
-    --font-size: 14px;
-    --small-font-size: 11px;
-    --tiny-font-size: 8px;
-    --dendron-color: #808080;
-    --trans-fg-color: #7b7e81;
-}
-
-/* inherit to force styles through use tags */
+<style>/* inherit to force styles through use tags */
 svg path {
     fill: inherit;
 }
@@ -198,19 +185,19 @@ svg path {
 /* font and background color specifications */
 svg.keymap {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-    font-size: var(--font-size);
+    font-size: 14px;
     font-kerning: normal;
     text-rendering: optimizeLegibility;
-    fill: var(--fg-color);
+    fill: #24292e;
 }
 
 /* default key styling */
 rect.key {
-    fill: var(--key-color);
+    fill: #f6f8fa;
 }
 
 rect.key, rect.combo {
-    stroke: var(--outline-color);
+    stroke: #c9cccf;
     stroke-width: 1;
 }
 
@@ -221,15 +208,15 @@ rect.side {
 
 /* color accent for combo boxes */
 rect.combo, rect.combo-separate {
-    fill: var(--combo-color);
+    fill: #cdf;
 }
 
 /* color accent for held keys */
 rect.held, rect.combo.held {
-    fill: var(--held-color);
+    fill: #fdd;
 }
 
-/* styling for ghost (optional) keys */
+/* color accent for ghost (optional) keys */
 rect.ghost, rect.combo.ghost {
     stroke-dasharray: 4, 4;
     stroke-width: 2;
@@ -260,7 +247,7 @@ text.footer {
 
 /* styling for combo tap, and key hold/shifted label text */
 text.combo, text.hold, text.shifted {
-    font-size: var(--small-font-size);
+    font-size: 11px;
 }
 
 text.hold {
@@ -273,20 +260,24 @@ text.shifted {
     dominant-baseline: hanging;
 }
 
+text.layer-activator {
+    text-decoration: underline;
+}
+
 /* styling for hold/shifted label text in combo box */
 text.combo.hold, text.combo.shifted {
-    font-size: var(--tiny-font-size);
+    font-size: 8px;
 }
 
 /* lighter symbol for transparent keys */
 text.trans {
-    fill: var(--trans-fg-color);
+    fill: #7b7e81;
 }
 
 /* styling for combo dendrons */
 path.combo {
     stroke-width: 1;
-    stroke: var(--dendron-color);
+    stroke: gray;
     fill: none;
 }
 
@@ -366,7 +357,7 @@ rect.held, rect.combo.held {
 }
 </style>
 <g transform="translate(30, 0)" class="layer-DEF">
-<text x="0" y="28" class="label">DEF</text>
+<text x="0" y="28" class="label" id="DEF">DEF</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 93) rotate(-8.0)" class="key ghost keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key ghost side"/>
@@ -519,14 +510,16 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:keyboard-space"/>
-<text x="0" y="24" class="key hold">NAV</text>
-</g>
+<a href="#NAV">
+<text x="0" y="24" class="key hold layer-activator">NAV</text>
+</a></g>
 <g transform="translate(438, 248) rotate(-15.0)" class="key keypos-28">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">E</text>
-<text x="0" y="24" class="key hold">NUM</text>
-</g>
+<a href="#NUM">
+<text x="0" y="24" class="key hold layer-activator">NUM</text>
+</a></g>
 <g transform="translate(497, 231) rotate(-15.0)" class="key ghost keypos-29">
 <rect rx="6" ry="6" x="-28" y="-35" width="55" height="70" class="key ghost side"/>
 <rect rx="4" ry="4" x="-22" y="-33" width="43" height="58" class="key ghost"/>
@@ -655,7 +648,7 @@ rect.held, rect.combo.held {
 </g>
 </g>
 <g transform="translate(30, 339)" class="layer-NAV">
-<text x="0" y="28" class="label">NAV</text>
+<text x="0" y="28" class="label" id="NAV">NAV</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 93) rotate(-8.0)" class="key ghost keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key ghost side"/>
@@ -811,8 +804,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:keyboard-return"/>
-<text x="0" y="24" class="key hold">NUM</text>
-</g>
+<a href="#NUM">
+<text x="0" y="24" class="key hold layer-activator">NUM</text>
+</a></g>
 <g transform="translate(497, 231) rotate(-15.0)" class="key ghost keypos-29">
 <rect rx="6" ry="6" x="-28" y="-35" width="55" height="70" class="key ghost side"/>
 <rect rx="4" ry="4" x="-22" y="-33" width="43" height="58" class="key ghost"/>
@@ -829,7 +823,7 @@ rect.held, rect.combo.held {
 </g>
 </g>
 <g transform="translate(30, 679)" class="layer-NUM">
-<text x="0" y="28" class="label">NUM</text>
+<text x="0" y="28" class="label" id="NUM">NUM</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 93) rotate(-8.0)" class="key ghost keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key ghost side"/>
@@ -983,7 +977,7 @@ rect.held, rect.combo.held {
 </g>
 </g>
 <g transform="translate(30, 1018)" class="layer-FUN">
-<text x="0" y="28" class="label">FUN</text>
+<text x="0" y="28" class="label" id="FUN">FUN</text>
 <g transform="translate(0, 82)">
 <g transform="translate(30, 93) rotate(-8.0)" class="key ghost keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key ghost side"/>
@@ -1148,7 +1142,7 @@ rect.held, rect.combo.held {
 </g>
 </g>
 <g transform="translate(30, 1384)" class="layer-INT">
-<text x="0" y="28" class="label">INT</text>
+<text x="0" y="28" class="label" id="INT">INT</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 93) rotate(-8.0)" class="key ghost keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key ghost side"/>
@@ -1159,10 +1153,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key held side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key held"/>
 </g>
-<g transform="translate(161, 28)" class="key trans keypos-2">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key trans"/>
-<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-11" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
+<g transform="translate(161, 28)" class="key held keypos-2">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key held"/>
 </g>
 <g transform="translate(222, 42)" class="key held keypos-3">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key held side"/>
@@ -1300,14 +1293,15 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<text x="30" y="1751" class="label">Combos</text>
+<text x="30" y="1751" class="label" id="Combos">Combos</text>
 <g transform="translate(30, 1723)" class="layer-combopos-0">
 <g transform="translate(0, 56)">
 <g transform="translate(30, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key  combo-separate side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key  combo-separate"/>
-<text x="0" y="-4" class="key  combo-separate tap">INT</text>
-<use href="#mdi:circle-small" xlink:href="#mdi:circle-small" x="-4" y="16" height="8" width="8.0" class="key  combo-separate hold glyph mdi:circle-small"/>
+<a href="#INT">
+<text x="0" y="-4" class="key  combo-separate tap layer-activator">INT</text>
+</a><use href="#mdi:circle-small" xlink:href="#mdi:circle-small" x="-4" y="16" height="8" width="8.0" class="key  combo-separate hold glyph mdi:circle-small"/>
 </g>
 <g transform="translate(15, 105) rotate(-8.0)" class="key ghost keypos-1">
 <rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key ghost side"/>
@@ -1317,9 +1311,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key held side"/>
 <rect rx="4" ry="4" x="-7" y="-10" width="14" height="12" class="key held"/>
 </g>
-<g transform="translate(80, 72)" class="key keypos-3">
-<rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key side"/>
-<rect rx="4" ry="4" x="-7" y="-10" width="14" height="12" class="key"/>
+<g transform="translate(80, 72)" class="key held keypos-3">
+<rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key held side"/>
+<rect rx="4" ry="4" x="-7" y="-10" width="14" height="12" class="key held"/>
 </g>
 <g transform="translate(111, 79)" class="key held keypos-4">
 <rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key held side"/>
@@ -1486,9 +1480,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key held side"/>
 <rect rx="4" ry="4" x="-7" y="-10" width="14" height="12" class="key held"/>
 </g>
-<g transform="translate(80, 101)" class="key keypos-13">
-<rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key side"/>
-<rect rx="4" ry="4" x="-7" y="-10" width="14" height="12" class="key"/>
+<g transform="translate(80, 101)" class="key held keypos-13">
+<rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key held side"/>
+<rect rx="4" ry="4" x="-7" y="-10" width="14" height="12" class="key held"/>
 </g>
 <g transform="translate(111, 108)" class="key held keypos-14">
 <rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key held side"/>
@@ -1636,9 +1630,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key held side"/>
 <rect rx="4" ry="4" x="-7" y="-10" width="14" height="12" class="key held"/>
 </g>
-<g transform="translate(285, 101)" class="key keypos-18">
-<rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key side"/>
-<rect rx="4" ry="4" x="-7" y="-10" width="14" height="12" class="key"/>
+<g transform="translate(285, 101)" class="key held keypos-18">
+<rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key held side"/>
+<rect rx="4" ry="4" x="-7" y="-10" width="14" height="12" class="key held"/>
 </g>
 <g transform="translate(317, 110) rotate(3.0)" class="key held keypos-19">
 <rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key held side"/>
@@ -1726,9 +1720,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key held side"/>
 <rect rx="4" ry="4" x="-7" y="-10" width="14" height="12" class="key held"/>
 </g>
-<g transform="translate(285, 72)" class="key keypos-8">
-<rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key side"/>
-<rect rx="4" ry="4" x="-7" y="-10" width="14" height="12" class="key"/>
+<g transform="translate(285, 72)" class="key held keypos-8">
+<rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key held side"/>
+<rect rx="4" ry="4" x="-7" y="-10" width="14" height="12" class="key held"/>
 </g>
 <g transform="translate(318, 81) rotate(3.0)" class="key held keypos-9">
 <rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key held side"/>
