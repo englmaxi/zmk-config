@@ -37,11 +37,4 @@
             , <&xiao_d 7 GPIO_ACTIVE_HIGH>
             ;
     };
-
-    mock_kscan: kscan_1 {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <0>;
-    };
 };
