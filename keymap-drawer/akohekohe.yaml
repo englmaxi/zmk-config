@@ -135,6 +135,18 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
 combos:
+- p: [2, 3]
+  k: '%'
+  l: [DEF]
+- p: [20, 12]
+  k: '~'
+  l: [DEF]
+- p: [4, 5]
+  k: ^
+  l: [DEF]
+- p: [21, 13]
+  k: {t: '''', s: ´}
+  l: [DEF]
 - p: [2, 11]
   k: $
   l: [DEF]
