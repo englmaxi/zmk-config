@@ -122,6 +122,8 @@
 
         GM(p_tab_desk, &kp LC(LS(TAB)), &kp LC(LG(LEFT)))
         GM(n_tab_desk, &kp LC(TAB), &kp LC(LG(RIGHT)))
+
+        MASKED(left_masked, (MOD_RSFT|MOD_LSFT), &kp LEFT)
     };
 };
 

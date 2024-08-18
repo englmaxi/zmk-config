@@ -2,12 +2,11 @@
 #define AP(NAME, SYM1, SYM2)                                    \
     MASKED(NAME ## _sym1_masked, (MOD_RSFT|MOD_LSFT), SYM1)     \
     MASKED(NAME ## _sym2_masked, (MOD_RSFT|MOD_LSFT), SYM2)     \
-    MASKED(NAME ## _left_masked, (MOD_RSFT|MOD_LSFT), &kp LEFT) \
     ZMK_MACRO(NAME,                                             \
         bindings                                                \
             = <& ## NAME ## _sym1_masked>                       \
             , <& ## NAME ## _sym2_masked>                       \
-            , <& ## NAME ## _left_masked>;                      \
+            , <&left_masked>;                                   \
     )
 
 / {
