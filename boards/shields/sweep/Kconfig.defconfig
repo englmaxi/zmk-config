@@ -1,15 +1,34 @@
-# Copyright (c) 2020 The ZMK Contributors
-# SPDX-License-Identifier: MIT
+if SHIELD_SWEEP_DONGLE || SHIELD_SWEEP_LEFT || SHIELD_SWEEP_RIGHT
 
-if SHIELD_SWEEP_CENTRAL_DONGLE || SHIELD_SWEEP_CENTRAL_LEFT
+config ZMK_SPLIT
+    default y
 
-config ZMK_KEYBOARD_NAME
-    default "Sweep"
+choice BT_CTLR_TX_PWR
+    default BT_CTLR_TX_PWR_PLUS_8
+endchoice
+
+endif # SHIELD_SWEEP_DONGLE || SHIELD_SWEEP_LEFT || SHIELD_SWEEP_RIGHT
+
+
+if SHIELD_SWEEP_DONGLE || SHIELD_SWEEP_LEFT
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-endif
+if ZMK_SPLIT_ROLE_CENTRAL
+
+config ZMK_KEYBOARD_NAME
+    default "Sweep"
+
+endif # ZMK_SPLIT_ROLE_CENTRAL
+
+endif # SHIELD_SWEEP_DONGLE || SHIELD_SWEEP_LEFT
+
+
+if SHIELD_SWEEP_DONGLE
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
 
 if ZMK_DISPLAY
 
@@ -22,8 +41,6 @@ config SSD1306
 choice ZMK_DISPLAY_WORK_QUEUE
     default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
 endchoice
-
-endif
 
 if LVGL
 
@@ -40,11 +57,8 @@ choice LV_COLOR_DEPTH
     default LV_COLOR_DEPTH_1
 endchoice
 
-endif
+endif # LVGL
 
-if SHIELD_SWEEP_CENTRAL_DONGLE || SHIELD_SWEEP_CENTRAL_LEFT || SHIELD_SWEEP_PERIPHERAL_LEFT || SHIELD_SWEEP_PERIPHERAL_RIGHT
+endif # ZMK_DISPLAY
 
-config ZMK_SPLIT
-    default y
-
-endif
+endif # SHIELD_SWEEP_DONGLE
