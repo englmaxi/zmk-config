@@ -1,0 +1,8 @@
+file_format: "1"
+id: "akohekohe"
+name: "akohekohe"
+type: shield
+url: https://github.com/grassfedreeve/akohekohe
+requires: [seeed_xiao]
+features:
+  - keys

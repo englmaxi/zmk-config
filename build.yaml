@@ -1,6 +1,16 @@
 # This file generates the GitHub Actions matrix
 ---
 include:
+  # akohekohe
+  - board: seeeduino_xiao_ble
+    shield: akohekohe rgbled_adapter
+    
+  - board: seeeduino_xiao_ble
+    shield: akohekohe rgbled_adapter
+    snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
+    artifact-name: akohekohe_with_logging
+
   # rommana
   - board: seeeduino_xiao_ble
     shield: rommana_dongle dongle_display
