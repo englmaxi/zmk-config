@@ -33,18 +33,18 @@
     combos {
         compatible = "zmk,combos";
 
-#if defined(KEYS_30)
-        COMBO(prcnt,     &kp DE_PRCNT,   LT1 LT0    , DEF,     COMBO_TERM_MID)
-        COMBO(tilde,     &kp DE_TILDE,   LB1 LM0    , DEF,     COMBO_TERM_MID)
-
-        COMBO(caret,     &kp DE_CARET,   RT0 RT1    , DEF,     COMBO_TERM_MID)
-        COMBO(qt_grv,    &qt_grv,        RB1 RM0    , DEF,     COMBO_TERM_MID)
-#elif defined(KEYS_34)
+#if defined(KEYS_34)
         COMBO(prcnt,     &kp DE_PRCNT,   LT0 LM0    , DEF,     COMBO_TERM_FAST)
         COMBO(tilde,     &kp DE_TILDE,   LM0 LB0    , DEF,     COMBO_TERM_FAST)
 
         COMBO(caret,     &kp DE_CARET,   RT0 RM0    , DEF,     COMBO_TERM_FAST)
         COMBO(qt_grv,    &qt_grv,        RM0 RB0    , DEF,     COMBO_TERM_FAST)
+#else
+        COMBO(prcnt,     &kp DE_PRCNT,   LT1 LT0    , DEF,     COMBO_TERM_MID)
+        COMBO(tilde,     &kp DE_TILDE,   LB1 LM0    , DEF,     COMBO_TERM_MID)
+
+        COMBO(caret,     &kp DE_CARET,   RT0 RT1    , DEF,     COMBO_TERM_MID)
+        COMBO(qt_grv,    &qt_grv,        RB1 RM0    , DEF,     COMBO_TERM_MID)
 #endif
 
         COMBO(dllr,      &kp DE_DLLR,    LT1 LM1    , DEF,     COMBO_TERM_FAST)
