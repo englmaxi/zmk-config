@@ -87,8 +87,8 @@ layers:
   - F12
   - {t: '$$mdi:bluetooth$$', s: '$$mdi:close-thick$$', type: text_with_symbol}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
-  - ''
-  - ''
+  - {t: '$$mdi:bluetooth$$', s: '$$mdi:help-circle-outline$$', type: text_with_symbol}
+  - $$mdi:battery-heart-outline$$
   - $$mdi:progress-download$$
   - F4
   - F5

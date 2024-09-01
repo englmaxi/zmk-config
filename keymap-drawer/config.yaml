@@ -255,6 +255,13 @@ parse_config:
       tap: $$mdi:billiards$$
       shifted: $$mdi:speedometer$$
       type: text_with_symbol
+
+    '&ind_con':
+      tap: $$mdi:bluetooth$$
+      shifted: $$mdi:help-circle-outline$$
+      type: text_with_symbol
+
+    '&ind_bat': $$mdi:battery-heart-outline$$
     
   zmk_combos:
     combo_bl:

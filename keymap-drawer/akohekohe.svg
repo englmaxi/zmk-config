@@ -39,6 +39,9 @@
 <svg id="mdi:backspace-reverse-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-backspace-reverse-outline" viewBox="0 0 24 24"><path d="M5,15.59L6.41,17L10,13.41L13.59,17L15,15.59L11.41,12L15,8.41L13.59,7L10,10.59L6.41,7L5,8.41L8.59,12L5,15.59M2,3A2,2 0 0,0 0,5V19A2,2 0 0,0 2,21H17C17.69,21 18.23,20.64 18.59,20.11L24,12L18.59,3.88C18.23,3.35 17.69,3 17,3H2M2,5H17L21.72,12L17,19H2V5Z" /></svg>
 </svg>
+<svg id="mdi:battery-heart-outline">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-battery-heart-outline" viewBox="0 0 24 24"><path d="M19 16.2L18.4 15.7C16.4 13.8 15 12.5 15 11C15 9.8 16 8.8 17.2 8.8C17.9 8.8 18.5 9.1 19 9.6C19.5 9.1 20.1 8.8 20.8 8.8C22 8.8 23 9.8 23 11C23 12.5 21.6 13.7 19.6 15.6L19 16.2M12.7 4H11V2H5V4H3.3C2.6 4 2 4.6 2 5.3V20.6C2 21.4 2.6 22 3.3 22H12.6C13.3 22 13.9 21.4 13.9 20.7V5.3C14 4.6 13.4 4 12.7 4M12 20H4V6H12V20Z" /></svg>
+</svg>
 <svg id="mdi:bluetooth">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-bluetooth" viewBox="0 0 24 24"><path d="M14.88,16.29L13,18.17V14.41M13,5.83L14.88,7.71L13,9.58M17.71,7.71L12,2H11V9.58L6.41,5L5,6.41L10.59,12L5,17.58L6.41,19L11,14.41V22H12L17.71,16.29L13.41,12L17.71,7.71Z" /></svg>
 </svg>
@@ -74,6 +77,9 @@
 </svg>
 <svg id="mdi:format-vertical-align-top">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-format-vertical-align-top" viewBox="0 0 24 24"><path d="M8,11H11V21H13V11H16L12,7L8,11M4,3V5H20V3H4Z" /></svg>
+</svg>
+<svg id="mdi:help-circle-outline">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-help-circle-outline" viewBox="0 0 24 24"><path d="M11,18H13V16H11V18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6Z" /></svg>
 </svg>
 <svg id="mdi:keyboard-return">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-return" viewBox="0 0 24 24"><path d="M19,7V11H5.83L9.41,7.41L8,6L2,12L8,18L9.41,16.58L5.83,13H21V7H19Z" /></svg>
@@ -952,13 +958,16 @@ rect.held, rect.combo.held {
 <use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-4" y="16" height="8" width="8.0" class="key toggle hold glyph mdi:bluetooth"/>
 <use href="#mdi:usb" xlink:href="#mdi:usb" x="-4" y="-24" height="8" width="8.0" class="key toggle shifted glyph mdi:usb"/>
 </g>
-<g transform="translate(475, 37) rotate(-22.0)" class="key keypos-6">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<g transform="translate(475, 37) rotate(-22.0)" class="key text_with_symbol keypos-6">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key text_with_symbol side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key text_with_symbol"/>
+<use href="#mdi:bluetooth" xlink:href="#mdi:bluetooth" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:bluetooth"/>
+<use href="#mdi:help-circle-outline" xlink:href="#mdi:help-circle-outline" x="-4" y="-24" height="8" width="8.0" class="key text_with_symbol shifted glyph mdi:help-circle-outline"/>
 </g>
 <g transform="translate(540, 28) rotate(-19.0)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<use href="#mdi:battery-heart-outline" xlink:href="#mdi:battery-heart-outline" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:battery-heart-outline"/>
 </g>
 <g transform="translate(28, 119) rotate(14.0)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>

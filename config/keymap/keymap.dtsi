@@ -5,9 +5,11 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/mouse.h>
+#include <behaviors/rgbled_widget.dtsi>
+
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
 #ifndef KEYMAP_DRAWER
@@ -99,7 +101,7 @@
             display-name = "FUN";
             bindings = <LAYER_FROM34( \
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬────────────────┬─────────────╮
-    &none,        &kp F7,       &kp F8,       &kp F9,       &kp F12,          &bt BT_CLR,   &out OUT_TOG, &none,        &none,           &none,       \
+    &none,        &kp F7,       &kp F8,       &kp F9,       &kp F12,          &bt BT_CLR,   &out OUT_TOG, &ind_con,     &ind_bat,        &none,       \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼────────────────┼─────────────┤
     &bootloader,  &kp F4,       &kp F5,       &kp F6,       &kp F10,          &out OUT_USB, &bts_0,       &bts_1,       &bts_2,          &bootloader, \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼────────────────┼─────────────┤
