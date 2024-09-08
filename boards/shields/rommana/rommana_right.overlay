@@ -1,5 +1,17 @@
 #include "rommana.dtsi"
 
-&default_transform {
+&thirty_transform {
+    col-offset = <5>;
+};
+
+&twentyeight_a_transform {
+    col-offset = <5>;
+};
+
+&twentyeight_b_transform {
+    col-offset = <5>;
+};
+
+&twentysix_transform {
     col-offset = <5>;
 };

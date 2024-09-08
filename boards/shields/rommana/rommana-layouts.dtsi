@@ -1,0 +1,147 @@
+#include <physical_layouts.dtsi>
+
+/ {
+    rommana_30_layout: layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "30 keys";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 105 100    0  112  (-800)    52   166>
+            , <&key_physical_attrs 105 100  112   31  (-300)   169    81>
+            , <&key_physical_attrs 105 100  234    0       0     0     0>
+            , <&key_physical_attrs 105 100  343   25       0     0     0>
+            , <&key_physical_attrs 105 100  451   77       0     0     0>
+            , <&key_physical_attrs 105 100  748   77       0     0     0>
+            , <&key_physical_attrs 105 100  857   25       0     0     0>
+            , <&key_physical_attrs 105 100  965    0       0     0     0>
+            , <&key_physical_attrs 105 100 1083   31     300  1136    81>
+            , <&key_physical_attrs 105 100 1200  112     800  1253   166>
+            , <&key_physical_attrs 105 100   14  218  (-800)    67   268>
+            , <&key_physical_attrs 105 100  121  134  (-300)   174   184>
+            , <&key_physical_attrs 105 100  234  102       0     0     0>
+            , <&key_physical_attrs 105 100  343  128       0     0     0>
+            , <&key_physical_attrs 105 100  451  180       0     0     0>
+            , <&key_physical_attrs 105 100  748  180       0     0     0>
+            , <&key_physical_attrs 105 100  857  128       0     0     0>
+            , <&key_physical_attrs 105 100  965  102       0     0     0>
+            , <&key_physical_attrs 105 100 1078  134     300  1131   184>
+            , <&key_physical_attrs 105 100 1185  218     800  1238   268>
+            , <&key_physical_attrs 105 100  126  237  (-300)   179   287>
+            , <&key_physical_attrs 105 100  234  204       0     0     0>
+            , <&key_physical_attrs 105 100  343  231       0     0     0>
+            , <&key_physical_attrs 105 100  857  231       0     0     0>
+            , <&key_physical_attrs 105 100  965  204       0     0     0>
+            , <&key_physical_attrs 105 100 1073  237     300  1126   287>
+            , <&key_physical_attrs 105 132  370  361    1500   470   400>
+            , <&key_physical_attrs 105 100  479  386    1500   500   409>
+            , <&key_physical_attrs 105 100  721  386 (-1500)   800   409>
+            , <&key_physical_attrs 105 132  827  361 (-1500)   830   400>
+            ;
+    };
+
+    rommana_28_a_layout: layout_1 {
+        compatible = "zmk,physical-layout";
+        display-name = "28 keys, dual thumb";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 105 100  112   31  (-300)   169    81>
+            , <&key_physical_attrs 105 100  234    0       0     0     0>
+            , <&key_physical_attrs 105 100  343   25       0     0     0>
+            , <&key_physical_attrs 105 100  451   77       0     0     0>
+            , <&key_physical_attrs 105 100  748   77       0     0     0>
+            , <&key_physical_attrs 105 100  857   25       0     0     0>
+            , <&key_physical_attrs 105 100  965    0       0     0     0>
+            , <&key_physical_attrs 105 100 1083   31     300  1136    81>
+            , <&key_physical_attrs 105 100   14  218  (-800)    67   268>
+            , <&key_physical_attrs 105 100  121  134  (-300)   174   184>
+            , <&key_physical_attrs 105 100  234  102       0     0     0>
+            , <&key_physical_attrs 105 100  343  128       0     0     0>
+            , <&key_physical_attrs 105 100  451  180       0     0     0>
+            , <&key_physical_attrs 105 100  748  180       0     0     0>
+            , <&key_physical_attrs 105 100  857  128       0     0     0>
+            , <&key_physical_attrs 105 100  965  102       0     0     0>
+            , <&key_physical_attrs 105 100 1078  134     300  1131   184>
+            , <&key_physical_attrs 105 100 1185  218     800  1238   268>
+            , <&key_physical_attrs 105 100  126  237  (-300)   179   287>
+            , <&key_physical_attrs 105 100  234  204       0     0     0>
+            , <&key_physical_attrs 105 100  343  231       0     0     0>
+            , <&key_physical_attrs 105 100  857  231       0     0     0>
+            , <&key_physical_attrs 105 100  965  204       0     0     0>
+            , <&key_physical_attrs 105 100 1073  237     300  1126   287>
+            , <&key_physical_attrs 105 132  370  361    1500   470   400>
+            , <&key_physical_attrs 105 100  479  386    1500   500   409>
+            , <&key_physical_attrs 105 100  721  386 (-1500)   800   409>
+            , <&key_physical_attrs 105 132  827  361 (-1500)   830   400>
+            ;
+    };
+
+    rommana_28_b_layout: layout_2 {
+        compatible = "zmk,physical-layout";
+        display-name = "28 keys, single thumb";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 105 100    0  112  (-800)    52   166>
+            , <&key_physical_attrs 105 100  112   31  (-300)   169    81>
+            , <&key_physical_attrs 105 100  234    0       0     0     0>
+            , <&key_physical_attrs 105 100  343   25       0     0     0>
+            , <&key_physical_attrs 105 100  451   77       0     0     0>
+            , <&key_physical_attrs 105 100  748   77       0     0     0>
+            , <&key_physical_attrs 105 100  857   25       0     0     0>
+            , <&key_physical_attrs 105 100  965    0       0     0     0>
+            , <&key_physical_attrs 105 100 1083   31     300  1136    81>
+            , <&key_physical_attrs 105 100 1200  112     800  1253   166>
+            , <&key_physical_attrs 105 100   14  218  (-800)    67   268>
+            , <&key_physical_attrs 105 100  121  134  (-300)   174   184>
+            , <&key_physical_attrs 105 100  234  102       0     0     0>
+            , <&key_physical_attrs 105 100  343  128       0     0     0>
+            , <&key_physical_attrs 105 100  451  180       0     0     0>
+            , <&key_physical_attrs 105 100  748  180       0     0     0>
+            , <&key_physical_attrs 105 100  857  128       0     0     0>
+            , <&key_physical_attrs 105 100  965  102       0     0     0>
+            , <&key_physical_attrs 105 100 1078  134     300  1131   184>
+            , <&key_physical_attrs 105 100 1185  218     800  1238   268>
+            , <&key_physical_attrs 105 100  126  237  (-300)   179   287>
+            , <&key_physical_attrs 105 100  234  204       0     0     0>
+            , <&key_physical_attrs 105 100  343  231       0     0     0>
+            , <&key_physical_attrs 105 100  857  231       0     0     0>
+            , <&key_physical_attrs 105 100  965  204       0     0     0>
+            , <&key_physical_attrs 105 100 1073  237     300  1126   287>
+            , <&key_physical_attrs 105 100  479  386    1500   500   409>
+            , <&key_physical_attrs 105 100  721  386 (-1500)   800   409>
+            ;
+    };
+
+    rommana_26_layout: layout_3 {
+        compatible = "zmk,physical-layout";
+        display-name = "26 keys";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 105 100  112   31  (-300)   169    81>
+            , <&key_physical_attrs 105 100  234    0       0     0     0>
+            , <&key_physical_attrs 105 100  343   25       0     0     0>
+            , <&key_physical_attrs 105 100  451   77       0     0     0>
+            , <&key_physical_attrs 105 100  748   77       0     0     0>
+            , <&key_physical_attrs 105 100  857   25       0     0     0>
+            , <&key_physical_attrs 105 100  965    0       0     0     0>
+            , <&key_physical_attrs 105 100 1083   31     300  1136    81>
+            , <&key_physical_attrs 105 100   14  218  (-800)    67   268>
+            , <&key_physical_attrs 105 100  121  134  (-300)   174   184>
+            , <&key_physical_attrs 105 100  234  102       0     0     0>
+            , <&key_physical_attrs 105 100  343  128       0     0     0>
+            , <&key_physical_attrs 105 100  451  180       0     0     0>
+            , <&key_physical_attrs 105 100  748  180       0     0     0>
+            , <&key_physical_attrs 105 100  857  128       0     0     0>
+            , <&key_physical_attrs 105 100  965  102       0     0     0>
+            , <&key_physical_attrs 105 100 1078  134     300  1131   184>
+            , <&key_physical_attrs 105 100 1185  218     800  1238   268>
+            , <&key_physical_attrs 105 100  126  237  (-300)   179   287>
+            , <&key_physical_attrs 105 100  234  204       0     0     0>
+            , <&key_physical_attrs 105 100  343  231       0     0     0>
+            , <&key_physical_attrs 105 100  857  231       0     0     0>
+            , <&key_physical_attrs 105 100  965  204       0     0     0>
+            , <&key_physical_attrs 105 100 1073  237     300  1126   287>
+            , <&key_physical_attrs 105 100  479  386    1500   500   409>
+            , <&key_physical_attrs 105 100  721  386 (-1500)   800   409>
+            ;
+    };
+};
