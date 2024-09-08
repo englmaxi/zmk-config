@@ -8,13 +8,6 @@
 #include <physical_layouts.dtsi>
 
 / {
-    chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
-        /delete-property/ zephyr,console;
-        /delete-property/ zephyr,shell-uart;
-    };
-
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <7>;
@@ -27,7 +20,7 @@
         >;
     };
 
-    kscan0: kscan_0 {
+    default_kscan: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "row2col";
         wakeup-source;
@@ -50,6 +43,42 @@
             ;
     };
 
+    default_layout: layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+
+        transform = <&default_transform>;
+        kscan = <&default_kscan>;
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100  166    0    1900   216    50>
+            , <&key_physical_attrs 100 100  283   15    2200   333    65>
+            , <&key_physical_attrs 100 100  369   80    2200   419   130>
+            , <&key_physical_attrs 100 100  446  168    2200   496   218>
+            , <&key_physical_attrs 100 100  634  168 (-2200)   684   218>
+            , <&key_physical_attrs 100 100  711   80 (-2200)   761   130>
+            , <&key_physical_attrs 100 100  797   15 (-2200)   847    65>
+            , <&key_physical_attrs 100 100  914    0 (-1900)   964    50>
+            , <&key_physical_attrs 100 100    0  162    1400    50   212>
+            , <&key_physical_attrs 100 100  135   97    1900   185   147>
+            , <&key_physical_attrs 100 100  247  111    2200   297   161>
+            , <&key_physical_attrs 100 100  333  175    2200   383   225>
+            , <&key_physical_attrs 100 100  410  264    2200   460   314>
+            , <&key_physical_attrs 100 100  671  264 (-2200)   721   314>
+            , <&key_physical_attrs 100 100  748  175 (-2200)   798   225>
+            , <&key_physical_attrs 100 100  834  111 (-2200)   884   161>
+            , <&key_physical_attrs 100 100  946   97 (-1900)   996   147>
+            , <&key_physical_attrs 100 100 1082  162 (-1400)  1132   212>
+            , <&key_physical_attrs 100 100  103  194    1900   153   244>
+            , <&key_physical_attrs 100 100  210  206    2200   260   256>
+            , <&key_physical_attrs 100 100  296  271    2200   346   321>
+            , <&key_physical_attrs 100 100  784  271 (-2200)   834   321>
+            , <&key_physical_attrs 100 100  870  206 (-2200)   920   256>
+            , <&key_physical_attrs 100 100  977  194 (-1900)  1028   244>
+            , <&key_physical_attrs 150 100  356  404    3700   406   454>
+            , <&key_physical_attrs 150 100  674  404 (-3700)   774   454>
+            ;
+    };
 };
 
 &xiao_spi { status = "disabled"; };
