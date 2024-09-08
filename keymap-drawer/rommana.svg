@@ -90,6 +90,9 @@
 <svg id="mdi:keyboard-tab">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab" viewBox="0 0 24 24"><path d="M20,18H22V6H20M11.59,7.41L15.17,11H1V13H15.17L11.59,16.58L13,18L19,12L13,6L11.59,7.41Z" /></svg>
 </svg>
+<svg id="mdi:lock-open-outline">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-lock-open-outline" viewBox="0 0 24 24"><path d="M18,20V10H6V20H18M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V10A2,2 0 0,1 6,8H15V6A3,3 0 0,0 12,3A3,3 0 0,0 9,6H7A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,17A2,2 0 0,1 10,15A2,2 0 0,1 12,13A2,2 0 0,1 14,15A2,2 0 0,1 12,17Z" /></svg>
+</svg>
 <svg id="mdi:microsoft-windows">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-microsoft-windows" viewBox="0 0 24 24"><path d="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z" /></svg>
 </svg>
@@ -1145,6 +1148,12 @@ rect.held, rect.combo.held {
 <use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="359" y="-20" height="14" width="14.0" class="combo tap glyph mdi:progress-download"/>
 </g>
 <g class="combo combopos-1">
+<path d="M366,71 l-63,0" class="combo"/>
+<path d="M366,71 l63,0" class="combo"/>
+<rect rx="6" ry="6" x="352" y="58" width="28" height="26" class="combo"/>
+<use href="#mdi:lock-open-outline" xlink:href="#mdi:lock-open-outline" x="359" y="64" height="14" width="14.0" class="combo tap glyph mdi:lock-open-outline"/>
+</g>
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="269" y="87" width="28" height="26" class="combo"/>
 <text x="283" y="100" class="combo tap">F11</text>
 </g>

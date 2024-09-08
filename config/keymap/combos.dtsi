@@ -88,6 +88,7 @@
         
         COMBO(cw,        &caps_word,     LM1 RM1    , DEF,     COMBO_TERM_SLOW)
         COMBO(bl,        &bootloader,    LM4 RM4    , FUN,     COMBO_TERM_SLOW)
+        COMBO(su,        &studio_unlock, LT0 RT0    , FUN,     COMBO_TERM_SLOW)
         COMBO(f11,       &kp F11,        LT0 LM0    , FUN,     COMBO_TERM_MID)
 
         COMBO(undo,      &kp U_UND,      LB3 LB2    , NAV,     COMBO_TERM_MID)

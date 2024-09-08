@@ -284,6 +284,9 @@ combos:
   l: [FUN]
   a: top
   o: 2.4
+- p: [4, 5]
+  k: $$mdi:lock-open-outline$$
+  l: [FUN]
 - p: [4, 14]
   k: F11
   l: [FUN]

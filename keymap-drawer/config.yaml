@@ -81,6 +81,7 @@ parse_config:
   raw_binding_map: 
     '&sys_reset': $$mdi:backup-restore$$
     '&bootloader': $$mdi:progress-download$$
+    '&studio_unlock': $$mdi:lock-open-outline$$
     '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
     '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$
     '&key_repeat': $$mdi:repeat$$
