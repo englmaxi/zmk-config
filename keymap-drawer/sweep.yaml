@@ -227,7 +227,7 @@ combos:
   k: Z
   l: [DEF]
 - p: [2, 3]
-  k: Q
+  k: {t: QU, h: Q}
   l: [DEF]
 - p: [1, 2]
   k: V
@@ -239,7 +239,7 @@ combos:
   k: $$mdi:keyboard-return$$
   l: [DEF]
 - p: [22, 23]
-  k: {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
+  k: $$mdi:backspace-outline$$
   l: [DEF]
 - p: [1, 2, 3]
   k: {t: INT, h: '$$mdi:circle-small$$'}

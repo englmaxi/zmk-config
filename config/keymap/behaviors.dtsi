@@ -39,6 +39,14 @@
             quick-tap-ms = <220>;
             bindings = <&mo>, <&qt_grv>;
         };
+
+        ht_qu: hold_tap_qu {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <220>;
+            bindings = <&kp>, <&qu>;
+        };
     };
 };
 
@@ -124,6 +132,7 @@
         GM(n_tab_desk, &kp LC(TAB), &kp LC(LG(RIGHT)))
 
         MASKED(left_masked, (MOD_RSFT|MOD_LSFT), &kp LEFT)
+        MASKED(u_masked,    (MOD_RSFT|MOD_LSFT), &kp U)
     };
 };
 

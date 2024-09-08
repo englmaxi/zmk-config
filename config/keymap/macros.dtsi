@@ -19,6 +19,12 @@
         AP(brc_macro,   &kp DE_LBRC,    &kp DE_RBRC)    // { } <-
         AP(lgt_macro,   &kp DE_LT,      &kp DE_GT)      // < > <-
 
+        ZMK_MACRO(qu,
+            bindings
+                = <&kp Q>
+                , <&u_masked>;
+        )
+
         ZMK_MACRO1(bts,
             bindings
                 = <&out OUT_BLE>

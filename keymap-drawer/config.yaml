@@ -141,6 +141,10 @@ parse_config:
     '&kp DE_DOT':
       tap: '.'
       shifted: ':'
+
+    '&ht_qu Q 0':
+      tap: 'QU'
+      hold: 'Q'
     
     '&out OUT_BLE': $$mdi:bluetooth$$
     '&out OUT_USB': $$mdi:usb$$
