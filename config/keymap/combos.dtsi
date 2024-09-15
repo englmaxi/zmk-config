@@ -28,8 +28,8 @@
         bindings = <BINDINGS>;                                  \
         key-positions = <KEYPOS>;                               \
         layers = <LAYERS>;                                      \
-        require-prior-idle-ms = <150>;                          \
-	    __VA_ARGS__                                             \
+        require-prior-idle-ms = <150>;                          \        
+        __VA_ARGS__                                             \
     };
 
 #define COMBO_TERM_FAST 30
@@ -61,11 +61,11 @@
         COMBO(bslh,      &kp DE_BSLH,    LM2 LB2    , DEF,     COMBO_TERM_FAST)
         COMBO(euro,      &kp DE_EURO,    LM3 LB3    , DEF,     COMBO_TERM_FAST)
 
-        COMBO(plus,      &kp DE_PLUS,    RT1 RM1    , DEF,     COMBO_TERM_FAST)
-        COMBO(star,      &kp DE_STAR,    RT2 RM2    , DEF,     COMBO_TERM_FAST)
+        COMBO(plus,      &kp DE_PLUS,    RT1 RM1    , DEF NUM, COMBO_TERM_FAST)
+        COMBO(star,      &kp DE_STAR,    RT2 RM2    , DEF NUM, COMBO_TERM_FAST)
         COMBO(amps,      &kp DE_AMPS,    RT3 RM3    , DEF,     COMBO_TERM_FAST)
-        COMBO(minus,     &kp DE_MINUS,   RM1 RB1    , DEF,     COMBO_TERM_FAST)
-        COMBO(fslh,      &kp DE_FSLH,    RM2 RB2    , DEF,     COMBO_TERM_FAST)
+        COMBO(minus,     &kp DE_MINUS,   RM1 RB1    , DEF NUM, COMBO_TERM_FAST)
+        COMBO(fslh,      &kp DE_FSLH,    RM2 RB2    , DEF NUM, COMBO_TERM_FAST)
         COMBO(pipe,      &kp DE_PIPE,    RM3 RB3    , DEF,     COMBO_TERM_FAST)
 
         COMBO(z,         &kp DE_Z,       LB3 LB2    , DEF,     COMBO_TERM_MID)
@@ -93,5 +93,7 @@
 
         COMBO(undo,      &kp U_UND,      LB3 LB2    , NAV,     COMBO_TERM_MID)
         COMBO(redo,      &kp U_RDO,      LB2 LB1    , NAV,     COMBO_TERM_MID)
+
+        COMBO(mute,      &kp C_MUTE,     LT3 LT2    , NUM,     COMBO_TERM_MID)
     };
 };

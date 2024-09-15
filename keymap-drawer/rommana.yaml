@@ -21,12 +21,12 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: ALT}
   - {t: O, h: '$$mdi:microsoft-windows$$'}
-  - C
+  - {t: C, h: RALT}
   - G
   - D
   - M
   - {t: ',', s: ;}
-  - {t: ., s: ':'}
+  - {t: ., h: RALT, s: ':'}
   - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: E, h: NUM}
@@ -34,24 +34,24 @@ layers:
   NAV:
   - ''
   - {t: '$$mdi:arrow-left-bold-box$$', s: '$$mdi:arrow-left-bold-box-outline$$'}
-  - $$mdi:swap-horizontal$$
   - {t: '$$mdi:arrow-right-bold-box$$', s: '$$mdi:arrow-right-bold-box-outline$$'}
-  - $$mdi:close-box-outline$$
+  - $$mdi:swap-horizontal$$
+  - {t: '$$mdi:close-box-outline$$', s: '$$mdi:open-in-new$$'}
   - Page Up
   - {t: HOME, h: '$$mdi:format-vertical-align-top$$'}
   - $$mdi:arrow-up$$
   - {t: END, h: '$$mdi:format-vertical-align-bottom$$'}
   - ''
-  - {t: '$$mdi:microsoft-windows$$', h: '$$mdi:circle-small$$'}
-  - {t: ALT, h: '$$mdi:circle-small$$'}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
-  - {t: RALT, h: '$$mdi:circle-small$$'}
+  - $$mdi:microsoft-windows$$
+  - {t: '$$mdi:cursor-default-click-outline$$', h: ALT, s: '4', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', h: '$$mdi:apple-keyboard-control$$', s: '5', type: text_with_symbol}
+  - {t: '$$mdi:text-search$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:select-all$$
   - Page Down
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
-  - INS
+  - {t: '$$mdi:select-compare$$', s: '$$mdi:arrow-right-thin$$', type: text_with_symbol}
   - $$mdi:content-cut$$
   - $$mdi:content-copy$$
   - $$mdi:content-paste$$
@@ -65,8 +65,8 @@ layers:
   NUM:
   - ''
   - $$mdi:volume-minus$$
-  - $$mdi:volume-mute$$
   - $$mdi:volume-plus$$
+  - {t: '$$mdi:play-pause$$', s: '$$mdi:skip-forward$$'}
   - $$tabler:brightness-up$$
   - {t: ., s: ':'}
   - '7'
@@ -83,9 +83,9 @@ layers:
   - '5'
   - '6'
   - $$mdi:keyboard-return$$
-  - $$mdi:skip-backward$$
-  - $$mdi:play-pause$$
-  - $$mdi:skip-forward$$
+  - INS
+  - Pause Break
+  - $$mdi:monitor-screenshot$$
   - '1'
   - '2'
   - '3'
@@ -118,8 +118,8 @@ layers:
   - F2
   - F3
   - $$mdi:apple-keyboard-caps$$
-  - $$mdi:monitor-screenshot$$
-  - Pause Break
+  - {t: '$$mdi:keyboard-variant$$', s: '$$mdi:arrow-up-bold$$', type: text_with_symbol}
+  - $$mdi:power$$
   - ''
   - {type: held}
   - {type: held}
@@ -188,19 +188,19 @@ combos:
   l: [DEF]
 - p: [6, 16]
   k: +
-  l: [DEF]
+  l: [DEF, NUM]
 - p: [7, 17]
   k: '*'
-  l: [DEF]
+  l: [DEF, NUM]
 - p: [8, 18]
   k: '&'
   l: [DEF]
 - p: [16, 23]
   k: '-'
-  l: [DEF]
+  l: [DEF, NUM]
 - p: [17, 24]
   k: /
-  l: [DEF]
+  l: [DEF, NUM]
 - p: [18, 25]
   k: '|'
   l: [DEF]
@@ -277,3 +277,6 @@ combos:
 - p: [21, 22]
   k: $$mdi:redo$$
   l: [NAV]
+- p: [1, 2]
+  k: $$mdi:volume-mute$$
+  l: [NUM]

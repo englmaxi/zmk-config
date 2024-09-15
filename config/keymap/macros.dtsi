@@ -25,6 +25,45 @@
                 , <&u_masked>;
         )
 
+        ZMK_MACRO(r_mods,
+            bindings
+                = <&macro_release>
+                , <&kp LGUI   &kp RGUI>
+                , <&kp LALT   &kp RALT>
+                , <&kp LCTRL  &kp RCTRL>
+                , <&kp LSHIFT &kp RSHIFT>;
+        )
+
+        ZMK_MACRO(sel_word_base,
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&kp LC(RIGHT)>
+                , <&kp LC(LEFT)>;
+        )
+
+        ZMK_MACRO(sel_line_base,
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&kp HOME>
+                , <&kp LS(END)>;
+        )
+
+        ZMK_MACRO(sel_line_next,
+            wait-ms = <1>;
+            tap-ms = <1>;
+            bindings
+                = <&kp LS(DOWN)>
+                , <&kp LS(HOME)>;
+        )
+
+        ZMK_MACRO(include_macro,
+            wait-ms = <2>;
+            bindings
+                = <&kp I &kp N &kp C &kp L &kp U &kp D &kp E>;
+        )
+
         ZMK_MACRO1(bts,
             bindings
                 = <&out OUT_BLE>

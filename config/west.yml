@@ -4,10 +4,12 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: caksoylar
       url-base: https://github.com/caksoylar
-    - name: dhruvinsh
-      url-base: https://github.com/dhruvinsh
+    - name: urob
+      url-base: https://github.com/urob
     - name: englmaxi
       url-base: https://github.com/englmaxi
+    - name: ssbb
+      url-base: https://github.com/ssbb
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -19,10 +21,13 @@ manifest:
       remote: caksoylar
       revision: main
     - name: zmk-tri-state
-      remote: dhruvinsh
+      remote: urob
       revision: main
     - name: zmk-dongle-display
       remote: englmaxi
+      revision: main
+    - name: zmk-antecedent-morph
+      remote: ssbb
       revision: main
   self:
     path: config
