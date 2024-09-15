@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/englmaxi
     - name: ssbb
       url-base: https://github.com/ssbb
+    - name: joelspadin
+      url-base: https://github.com/joelspadin
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -28,6 +30,9 @@ manifest:
       revision: main
     - name: zmk-antecedent-morph
       remote: ssbb
+      revision: main
+    - name: zmk-locales
+      remote: joelspadin
       revision: main
   self:
     path: config
