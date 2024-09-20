@@ -5,7 +5,7 @@
 / {
     chosen {
         zmk,kscan = &default_kscan;
-		zmk,physical-layout = &rommana_30_layout;
+        zmk,physical-layout = &rommana_30_layout;
     };
 
     default_kscan: kscan_0 {
