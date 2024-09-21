@@ -535,9 +535,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-34" y="-24" width="68" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">E</text>
-<a href="#NUM">
-<text x="0" y="24" class="key hold layer-activator">NUM</text>
-</a></g>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 64%">&amp;num_word 2</tspan></text>
+</g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="243" y="85" width="28" height="26" class="combo"/>
 <text x="257" y="98" class="combo tap">%</text>
@@ -945,10 +944,9 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">3</text>
 </g>
-<g transform="translate(239, 263) rotate(37.0)" class="key trans keypos-24">
-<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-34" y="-24" width="68" height="40" class="key trans"/>
-<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-11" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
+<g transform="translate(239, 263) rotate(37.0)" class="key held keypos-24">
+<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-34" y="-24" width="68" height="40" class="key held"/>
 </g>
 <g transform="translate(423, 263) rotate(-37.0)" class="key held keypos-25">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held side"/>

@@ -32,7 +32,7 @@ layers:
   - {t: '?', s: '!'}
   - {t: '$$mdi:backspace-outline$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
-  - {t: E, h: NUM}
+  - {t: E, h: '&num_word 2'}
   - {t: '''', s: ´}
   NAV:
   - ''
@@ -101,7 +101,7 @@ layers:
   - '3'
   - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   FUN:

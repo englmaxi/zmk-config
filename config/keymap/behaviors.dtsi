@@ -1,4 +1,5 @@
 #include <behaviors.dtsi>
+#include <behaviors/num_word.dtsi>
 #include <behaviors/rgbled_widget.dtsi>
 
 // overwrites
@@ -18,7 +19,11 @@
 
 &lt {
     flavor = "balanced";
-}; 
+};
+
+&num_word {
+  continue-list = <BSPC DEL DE_DOT DE_COMMA DE_PLUS, DE_MINUS, DE_STAR, DE_FSLH, DE_EQUAL>;
+};
 
 
 // hold-tap
@@ -47,7 +52,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <220>;
-            bindings = <&mo>, <&ad_e>;
+            bindings = <&num_word>, <&ad_e>;
         };
 
         ht_qu: hold_tap_qu {

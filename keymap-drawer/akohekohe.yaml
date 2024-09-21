@@ -25,7 +25,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., h: RALT, s: ':'}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
-  - {t: E, h: NUM}
+  - {t: E, h: '&num_word 2'}
   NAV:
   - {t: '$$mdi:arrow-left-bold-box$$', s: '$$mdi:arrow-left-bold-box-outline$$'}
   - {t: '$$mdi:arrow-right-bold-box$$', s: '$$mdi:arrow-right-bold-box-outline$$'}
@@ -78,7 +78,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
   - {type: held}
   FUN:
   - F7
