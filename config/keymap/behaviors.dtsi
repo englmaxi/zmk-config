@@ -22,7 +22,7 @@
 };
 
 &num_word {
-  continue-list = <BSPC DEL DE_DOT DE_COMMA DE_PLUS, DE_MINUS, DE_STAR, DE_FSLH, DE_EQUAL>;
+  continue-list = <BSPC DEL DE_DOT DE_COMMA DE_PLUS DE_MINUS DE_STAR DE_FSLH DE_EQUAL>;
 };
 
 
