@@ -62,14 +62,14 @@
 
 
 // home row mod
-#define HM(NAME, TAP, HT_KEYPOS, ...)                       \
+#define HM(NAME, TAP, HT_KEYPOS, RPI, ...)                  \
     NAME: NAME {                                            \
         compatible = "zmk,behavior-hold-tap";               \
         #binding-cells = <2>;                               \
         flavor = "balanced";                                \
         tapping-term-ms = <280>;                            \
         quick-tap-ms = <175>;                               \
-        require-prior-idle-ms = <150>;                      \
+        require-prior-idle-ms = <RPI>;                      \
         bindings = <&kp>, <TAP>;                            \
         hold-trigger-key-positions = <HT_KEYPOS THUMBS>;    \
         hold-trigger-on-release;                            \
@@ -78,11 +78,13 @@
 
 / {
     behaviors {
-        HM(hml,     &kp,    KEYS_R)
-        HM(hml_hwu, &kp,    KEYS_R, hold-while-undecided;)
-        HM(hml_m,   &mkp,   KEYS_R)
-        HM(hmr,     &kp,    KEYS_L)
-        HM(hmr_hwu, &kp,    KEYS_L, hold-while-undecided;)
+        HM(hsl,   &kp,  KEYS_R,   0, hold-while-undecided;)
+        HM(hcl,   &kp,  KEYS_R, 200, hold-while-undecided;)
+        HM(hml,   &kp,  KEYS_R, 200)
+        HM(hml_m, &mkp, KEYS_R, 200)
+        HM(hsr,   &kp,  KEYS_L,   0, hold-while-undecided;)
+        HM(hcr,   &kp,  KEYS_L, 200, hold-while-undecided;)
+        HM(hmr,   &kp,  KEYS_L, 200)
     };
 };
 
