@@ -67,8 +67,8 @@
         ZMK_MACRO(include_macro,
             wait-ms = <2>;
             bindings
-                = <&kp I &kp N &kp C &kp L &kp U &kp D &kp E>;
-            display-name = "Macro 'include'";
+                = <&kp I &kp N &kp C &kp L &kp U &kp D &kp E &kp SPACE>;
+            display-name = "Macro 'include '";
         )
 
         ZMK_MACRO1(bts,
