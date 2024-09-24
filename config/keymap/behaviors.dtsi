@@ -31,6 +31,7 @@
             tapping-term-ms = <220>;
             quick-tap-ms = <220>;
             bindings = <&mo>, <&bspc_del>;
+            display-name = "Layer-BSp";
         };
         
         lt_qt: layer_tap_qt {
@@ -40,6 +41,7 @@
             tapping-term-ms = <220>;
             quick-tap-ms = <220>;
             bindings = <&mo>, <&qt_grv>;
+            display-name = "Layer-Qt";
         };
 
         lt_e: layer_tap_ad_e {
@@ -48,6 +50,7 @@
             flavor = "balanced";
             tapping-term-ms = <220>;
             bindings = <&mo>, <&ad_e>;
+            display-name = "Layer-AdE";
         };
 
         ht_qu: hold_tap_qu {
@@ -56,13 +59,14 @@
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
             bindings = <&kp>, <&qu>;
+            display-name = "Hold-Qu";
         };
     };
 };
 
 
 // home row mod
-#define HM(NAME, TAP, HT_KEYPOS, RPI, ...)                  \
+#define HM(NAME, DISPLAY_NAME, TAP, HT_KEYPOS, RPI, ...)    \
     NAME: NAME {                                            \
         compatible = "zmk,behavior-hold-tap";               \
         #binding-cells = <2>;                               \
@@ -73,106 +77,111 @@
         bindings = <&kp>, <TAP>;                            \
         hold-trigger-key-positions = <HT_KEYPOS THUMBS>;    \
         hold-trigger-on-release;                            \
+        display-name = #DISPLAY_NAME;                       \
         __VA_ARGS__                                         \
     };
 
 / {
     behaviors {
-        HM(hsl,   &kp,  KEYS_R,   0, hold-while-undecided;)
-        HM(hcl,   &kp,  KEYS_R, 200, hold-while-undecided;)
-        HM(hml,   &kp,  KEYS_R, 200)
-        HM(hml_m, &mkp, KEYS_R, 200)
-        HM(hsr,   &kp,  KEYS_L,   0, hold-while-undecided;)
-        HM(hcr,   &kp,  KEYS_L, 200, hold-while-undecided;)
-        HM(hmr,   &kp,  KEYS_L, 200)
+        HM(hsl,   HRM Shift Left,      &kp,  KEYS_R,   0, hold-while-undecided;)
+        HM(hcl,   HRM Ctrl Left,       &kp,  KEYS_R, 200, hold-while-undecided;)
+        HM(hml,   HRM Mods Left,       &kp,  KEYS_R, 200)
+        HM(hml_m, HRM Mods-Mouse Left, &mkp, KEYS_R, 200)
+        HM(hsr,   HRM Shift Right,     &kp,  KEYS_L,   0, hold-while-undecided;)
+        HM(hcr,   HRM Ctrl Right,      &kp,  KEYS_L, 200, hold-while-undecided;)
+        HM(hmr,   HRM Mods Left,       &kp,  KEYS_L, 200)
     };
 };
 
 
 // mod morph
-#define SM(NAME, TAP, SHIFTED)                  \
+#define SM(NAME, DISPLAY_NAME, TAP, SHIFTED)    \
     NAME: NAME {                                \
         compatible = "zmk,behavior-mod-morph";  \
         #binding-cells = <0>;                   \
         bindings = <TAP>, <SHIFTED>;            \
         mods = <(MOD_RSFT|MOD_LSFT)>;           \
         keep-mods = <(MOD_RSFT)>;               \
+        display-name = #DISPLAY_NAME;           \
     };
 
-#define CM(NAME, TAP, CONTROLED)                \
+#define CM(NAME, DISPLAY_NAME, TAP, CONTROLED)  \
     NAME: NAME {                                \
         compatible = "zmk,behavior-mod-morph";  \
         #binding-cells = <0>;                   \
         bindings = <TAP>, <CONTROLED>;          \
         mods = <(MOD_RCTL|MOD_LCTL)>;           \
+        display-name = #DISPLAY_NAME;           \
     };
 
-#define GM(NAME, TAP, GUIED)                    \
+#define GM(NAME, DISPLAY_NAME, TAP, GUIED)      \
     NAME: NAME {                                \
         compatible = "zmk,behavior-mod-morph";  \
         #binding-cells = <0>;                   \
         bindings = <TAP>, <GUIED>;              \
         mods = <(MOD_RGUI|MOD_LGUI)>;           \
+        display-name = #DISPLAY_NAME;           \
     };
 
-#define MASKED(NAME, MODS, BINDING)             \
-    NAME: NAME {                                \
-        compatible = "zmk,behavior-mod-morph";  \
-        #binding-cells = <0>;                   \
-        bindings = <BINDING>, <BINDING>;        \
-        mods = <MODS>;                          \
+#define MASKED(NAME, DISPLAY_NAME, MODS, BINDING)   \
+    NAME: NAME {                                    \
+        compatible = "zmk,behavior-mod-morph";      \
+        #binding-cells = <0>;                       \
+        bindings = <BINDING>, <BINDING>;            \
+        mods = <MODS>;                              \
+        display-name = #DISPLAY_NAME;               \
     };
     
 / {
     behaviors {
-        SM(qexcl,    &kp DE_QMARK,  &kp DE_EXCL)
-        SM(bspc_del, &kp BSPC,      &kp DEL)
+        SM(qexcl,    SM Qmark-Excl, &kp DE_QMARK,  &kp DE_EXCL)
+        SM(bspc_del, SM BSp-Del,    &kp BSPC,      &kp DEL)
 
-        SM(sqt_dqt,       &kp DE_SQT,   &kp DE_DQT)
-        CM(qt_grv,        &sqt_dqt,     &kp DE_ACUTE)
-        SM(sqt_dqt_macro, &sqt_macro,   &dqt_macro)
-        SM(grv_dgrv,      &kp DE_GRAVE, &dgrv_macro)
+        SM(sqt_dqt,       SM Sqt-Dqt,       &kp DE_SQT,   &kp DE_DQT)
+        CM(qt_grv,        CM Qt-Grv,        &sqt_dqt,     &kp DE_ACUTE)
+        SM(sqt_dqt_macro, SM Macro Sqt-Dqt, &sqt_macro,   &dqt_macro)
+        SM(grv_dgrv,      SM Grv-DGrqu,     &kp DE_GRAVE, &dgrv_macro)
 
-        SM(lpar_lbkt, &kp DE_LPAR, &kp DE_LBKT)
-        SM(rpar_rbkt, &kp DE_RPAR, &kp DE_RBKT)
-        SM(par_bkt,   &par_macro,  &bkt_macro)
+        SM(lpar_lbkt, SM LPar-LBkt,     &kp DE_LPAR, &kp DE_LBKT)
+        SM(rpar_rbkt, SM RPar-RBkt,     &kp DE_RPAR, &kp DE_RBKT)
+        SM(par_bkt,   SM Macro Par-Bkt, &par_macro,  &bkt_macro)
 
-        SM(lbrc_lt, &kp DE_LBRC, &kp DE_LT)
-        SM(rbrc_gt, &kp DE_RBRC, &kp DE_GT)
-        SM(brc_lgt, &brc_macro,  &lgt_macro) 
+        SM(lbrc_lt, SM LBrc-LT,       &kp DE_LBRC, &kp DE_LT)
+        SM(rbrc_gt, SM RBrc-GT,       &kp DE_RBRC, &kp DE_GT)
+        SM(brc_lgt, SM Macro Brc-LGT, &brc_macro,  &lgt_macro)
 
-        SM(p_tab_desk, &kp LC(LS(TAB)), &kp LC(LG(LEFT)))
-        SM(n_tab_desk, &kp LC(TAB), &kp LC(LG(RIGHT)))
+        SM(p_tab_desk, SM Prev Tab-Desk, &kp LC(LS(TAB)), &kp LC(LG(LEFT)))
+        SM(n_tab_desk, SM Next Tab-Desk, &kp LC(TAB), &kp LC(LG(RIGHT)))
 
-        MASKED(left_masked, (MOD_RSFT|MOD_LSFT), &kp LEFT)
-        MASKED(u_masked,    (MOD_RSFT|MOD_LSFT), &kp U)
+        MASKED(left_masked, Masked Left, (MOD_RSFT|MOD_LSFT), &kp LEFT)
+        MASKED(u_masked,    Masked U,    (MOD_RSFT|MOD_LSFT), &kp U)
     };
 };
 
 
 // tap-dance
-#define TD(NAME, TAP1, TAP2, ...)                                           \
+#define TD(NAME, DISPLAY_NAME, TAP1, TAP2, ...)                             \
     NAME: NAME {                                                            \
         compatible = "zmk,behavior-tap-dance";                              \
         #binding-cells = <0>;                                               \
         tapping-term-ms = <200>;                                            \
         bindings = <TAP1>, <TAP2> __VA_OPT__(, <)__VA_ARGS__ __VA_OPT__(>); \
+        display-name = #DISPLAY_NAME;                                       \
     };
 
 / {
     behaviors {
-        TD(td_sqt_dqt, &sqt_dqt, &sqt_dqt_macro)
+        TD(td_sqt_dqt, Sqt-Dqt, &sqt_dqt, &sqt_dqt_macro)
 
-        TD(bts_0, &bts 0, &bt BT_DISC 0)
-        TD(bts_1, &bts 1, &bt BT_DISC 1)
-        TD(bts_2, &bts 2, &bt BT_DISC 2)
+        TD(bts_0, TD BT0 Sel-Disc, &bts 0, &bt BT_DISC 0)
+        TD(bts_1, TD BT1 Sel-Disc, &bts 1, &bt BT_DISC 1)
+        TD(bts_2, TD BT2 Sel-Disc, &bts 2, &bt BT_DISC 2)
 
-        TD(kns_lock, &kp CLCK, &kp KP_NLCK, &kp SLCK)
+        TD(kns_lock, TD CLCK-NLCK-SLCK, &kp CLCK, &kp KP_NLCK, &kp SLCK)
 
-        TD(pp_n, &kp C_PP, &kp C_NEXT)
+        TD(pp_n, TD PlayPause-Next, &kp C_PP, &kp C_NEXT)
 
-        TD(close_reopen, &mt LA(F4) LC(W), &kp LC(LS(T)))
-        
+        TD(close_reopen, TD Tab Close-Reopen, &mt LA(F4) LC(W), &kp LC(LS(T)))
     };
 };
 
@@ -186,6 +195,7 @@
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <RT2 RM1 RM2 RM3>; // arrow keys
             timeout-ms = <5000>;
+            display-name = "Swapper";
         };
     };
 
@@ -195,6 +205,7 @@
             #binding-cells = <0>;
             bindings = <&sel_word_base>, <&kp LS(LC(RIGHT))>, <&none>;
             tap-ms = <0>;
+            display-name = "Select Word";
         };
     };
 
@@ -204,6 +215,7 @@
             #binding-cells = <0>;
             bindings = <&sel_line_base>, <&sel_line_next>, <&none>;
             tap-ms = <0>;
+            display-name = "Select Line";
         };
     };
 };
@@ -218,6 +230,7 @@
             bindings =   <&kp DE_EQUAL>, <&kp DE_EQUAL>;
             antecedents = <DE_LT           DE_GT>;
             max-delay-ms = <1000>;
+            display-name = "Adaptive U";
         };
 
         ad_comma: adaptive_comma {
@@ -227,6 +240,7 @@
             bindings =   <&kp DE_EQUAL>, <&include_macro>, <&kp DE_FSLH>;
             antecedents = <DE_EXCL         DE_HASH           DE_DOT>;
             max-delay-ms = <1000>;
+            display-name = "Adaptive Comma";
         };
 
         ad_e: adaptive_e {
@@ -236,6 +250,7 @@
             bindings =   <&kp DE_GT>, <&kp DE_GT>, <&kp DE_GT>;
             antecedents = <DE_MINUS     DE_EQUAL     DE_PIPE>;
             max-delay-ms = <1000>;
+            display-name = "Adaptive E";
         };
     };
 };
