@@ -86,7 +86,7 @@
         COMBO(par,       &par_bkt,       RM1 RM2 RM3, DEF,     COMBO_TERM_SLOW)
         COMBO(brc,       &brc_lgt,       RT1 RT2 RT3, DEF,     COMBO_TERM_SLOW)
 
-        COMBO(excl,      &kp DE_EXCL     RB2 RB3    , NAV,     COMBO_TERM_MID)
+        COMBO(excl,      &kp DE_EXCL,    RB2 RB3    , NAV,     COMBO_TERM_MID)
         COMBO(lt,        &kp DE_LT,      RT1 RT2    , NAV,     COMBO_TERM_MID)
         COMBO(gt,        &kp DE_GT,      RT2 RT3    , NAV,     COMBO_TERM_MID)
         COMBO(lbkt,      &kp DE_LBKT,    RM1 RM2    , NAV,     COMBO_TERM_MID)

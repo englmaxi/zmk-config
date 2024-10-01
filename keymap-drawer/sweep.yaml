@@ -275,6 +275,27 @@ combos:
   k: {t: '[]', s: <>}
   l: [DEF]
   draw_separate: true
+- p: [27, 28]
+  k: '!'
+  l: [NAV]
+- p: [6, 7]
+  k: <
+  l: [NAV]
+- p: [7, 8]
+  k: '>'
+  l: [NAV]
+- p: [16, 17]
+  k: '['
+  l: [NAV]
+- p: [17, 18]
+  k: ']'
+  l: [NAV]
+- p: [16, 17, 18]
+  k: '{}'
+  l: [NAV]
+- p: [6, 7, 8]
+  k: <>
+  l: [NAV]
 - p: [13, 16]
   k: $$mdi:caps-lock$$
   l: [DEF]

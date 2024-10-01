@@ -850,10 +850,42 @@ rect.held, rect.combo.held {
 <use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-11" height="14" width="14.0" class="key ghost tap glyph mdi:chevron-down"/>
 </g>
 <g class="combo combopos-0">
+<rect rx="6" ry="6" x="587" y="139" width="28" height="26" class="combo"/>
+<text x="601" y="152" class="combo tap">!</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="526" y="22" width="28" height="26" class="combo"/>
+<text x="540" y="35" class="combo tap">&lt;</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="590" y="24" width="28" height="26" class="combo"/>
+<text x="604" y="37" class="combo tap">&gt;</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="526" y="80" width="28" height="26" class="combo"/>
+<text x="540" y="93" class="combo tap">[</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="588" y="81" width="28" height="26" class="combo"/>
+<text x="602" y="94" class="combo tap">]</text>
+</g>
+<g class="combo combopos-5">
+<path d="M571,96 l-42,3" class="combo"/>
+<path d="M571,96 l43,5" class="combo"/>
+<rect rx="6" ry="6" x="557" y="83" width="28" height="26" class="combo"/>
+<text x="571" y="96" class="combo tap">{}</text>
+</g>
+<g class="combo combopos-6">
+<path d="M572,39 l-43,3" class="combo"/>
+<path d="M572,39 l45,5" class="combo"/>
+<rect rx="6" ry="6" x="558" y="26" width="28" height="26" class="combo"/>
+<text x="572" y="39" class="combo tap">&lt;&gt;</text>
+</g>
+<g class="combo combopos-7">
 <rect rx="6" ry="6" x="117" y="139" width="28" height="26" class="combo"/>
 <use href="#mdi:undo" xlink:href="#mdi:undo" x="124" y="145" height="14" width="14.0" class="combo tap glyph mdi:undo"/>
 </g>
-<g class="combo combopos-1">
+<g class="combo combopos-8">
 <rect rx="6" ry="6" x="177" y="138" width="28" height="26" class="combo"/>
 <use href="#mdi:redo" xlink:href="#mdi:redo" x="184" y="144" height="14" width="14.0" class="combo tap glyph mdi:redo"/>
 </g>
