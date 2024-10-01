@@ -85,6 +85,14 @@
         COMBO(rpar,      &rpar_rbkt,     RM2 RM3    , DEF,     COMBO_TERM_MID)
         COMBO(par,       &par_bkt,       RM1 RM2 RM3, DEF,     COMBO_TERM_SLOW)
         COMBO(brc,       &brc_lgt,       RT1 RT2 RT3, DEF,     COMBO_TERM_SLOW)
+
+        COMBO(excl,      &kp DE_EXCL     RB2 RB3    , NAV,     COMBO_TERM_MID)
+        COMBO(lt,        &kp DE_LT,      RT1 RT2    , NAV,     COMBO_TERM_MID)
+        COMBO(gt,        &kp DE_GT,      RT2 RT3    , NAV,     COMBO_TERM_MID)
+        COMBO(lbkt,      &kp DE_LBKT,    RM1 RM2    , NAV,     COMBO_TERM_MID)
+        COMBO(rbkt,      &kp DE_RBKT,    RM2 RM3    , NAV,     COMBO_TERM_MID)
+        COMBO(bkt,       &bkt_macro,     RM1 RM2 RM3, NAV,     COMBO_TERM_SLOW)
+        COMBO(lgt,       &lgt_macro,     RT1 RT2 RT3, NAV,     COMBO_TERM_SLOW)
         
         COMBO(cw,        &caps_word,     LM1 RM1    , DEF,     COMBO_TERM_SLOW)
         COMBO(bl,        &bootloader,    LM4 RM4    , FUN,     COMBO_TERM_SLOW)

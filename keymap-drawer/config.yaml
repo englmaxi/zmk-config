@@ -248,6 +248,20 @@ parse_config:
       draw_separate: true
     combo_tab:
       draw_separate: true
+    combo_excl:
+      hidden: false
+    combo_lt:
+      hidden: false
+    combo_gt:
+      hidden: false
+    combo_lbkt:
+      hidden: false
+    combo_rbkt:
+      hidden: false
+    combo_bkt:
+      hidden: false
+    combo_lgt:
+      hidden: false
       
   zmk_keycode_map:
     LC(BSPC): $$mdi:backspace$$
