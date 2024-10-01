@@ -259,9 +259,9 @@ parse_config:
     combo_rbkt:
       hidden: false
     combo_bkt:
-      hidden: false
+      hidden: true
     combo_lgt:
-      hidden: false
+      hidden: true
       
   zmk_keycode_map:
     LC(BSPC): $$mdi:backspace$$

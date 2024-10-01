@@ -253,9 +253,11 @@ combos:
 - p: [14, 15, 16]
   k: '{}'
   l: [NAV]
+  hidden: true
 - p: [5, 6, 7]
   k: <>
   l: [NAV]
+  hidden: true
 - p: [11, 14]
   k: $$mdi:caps-lock$$
   l: [DEF]

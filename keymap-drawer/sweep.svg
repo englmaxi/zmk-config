@@ -911,18 +911,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="546" y="82" width="28" height="26" class="combo"/>
 <text x="560" y="95" class="combo tap">]</text>
 </g>
-<g class="combo combopos-5">
-<path d="M532,97 l-37,2" class="combo"/>
-<path d="M532,97 l38,6" class="combo"/>
-<rect rx="6" ry="6" x="518" y="84" width="28" height="26" class="combo"/>
-<text x="532" y="97" class="combo tap">{}</text>
-</g>
-<g class="combo combopos-6">
-<path d="M532,41 l-37,2" class="combo"/>
-<path d="M532,41 l38,6" class="combo"/>
-<rect rx="6" ry="6" x="518" y="28" width="28" height="26" class="combo"/>
-<text x="532" y="41" class="combo tap">&lt;&gt;</text>
-</g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="98" y="138" width="28" height="26" class="combo"/>
 <use href="#mdi:undo" xlink:href="#mdi:undo" x="105" y="144" height="14" width="14.0" class="combo tap glyph mdi:undo"/>
