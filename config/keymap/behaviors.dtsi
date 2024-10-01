@@ -60,6 +60,7 @@
             display-name = "Hold-Qu";
         };
     };
+};
 
 
 #define HM(NAME, DISPLAY_NAME, TAP, HT_KEYPOS, RPI, ...)    \
