@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <behaviors/rgbled_widget.dtsi>
 
-// overwrites
 &caps_word {
     continue-list = <BACKSPACE DELETE DE_UNDER DE_MINUS>;
 };
@@ -21,9 +20,8 @@
 }; 
 
 
-// hold-tap
 / {
-    behaviors {
+    hold-tap {
         lt_del: layer_tap_del {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -33,7 +31,7 @@
             bindings = <&mo>, <&bspc_del>;
             display-name = "Layer-BSp";
         };
-        
+
         lt_qt: layer_tap_qt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -65,7 +63,6 @@
 };
 
 
-// home row mod
 #define HM(NAME, DISPLAY_NAME, TAP, HT_KEYPOS, RPI, ...)    \
     NAME: NAME {                                            \
         compatible = "zmk,behavior-hold-tap";               \
@@ -82,7 +79,7 @@
     };
 
 / {
-    behaviors {
+    home-row-mod {
         HM(hsl,   HRM Shift Left,      &kp,  KEYS_R,   0, hold-while-undecided;)
         HM(hcl,   HRM Ctrl Left,       &kp,  KEYS_R, 200, hold-while-undecided;)
         HM(hml,   HRM Mods Left,       &kp,  KEYS_R, 200)
@@ -94,7 +91,6 @@
 };
 
 
-// mod morph
 #define SM(NAME, DISPLAY_NAME, TAP, SHIFTED)    \
     NAME: NAME {                                \
         compatible = "zmk,behavior-mod-morph";  \
@@ -131,9 +127,9 @@
         mods = <MODS>;                              \
         display-name = #DISPLAY_NAME;               \
     };
-    
+
 / {
-    behaviors {
+    mod-morph {
         SM(qexcl,    SM Qmark-Excl, &kp DE_QMARK,  &kp DE_EXCL)
         SM(bspc_del, SM BSp-Del,    &kp BSPC,      &kp DEL)
 
@@ -159,7 +155,6 @@
 };
 
 
-// tap-dance
 #define TD(NAME, DISPLAY_NAME, TAP1, TAP2, ...)                             \
     NAME: NAME {                                                            \
         compatible = "zmk,behavior-tap-dance";                              \
@@ -170,7 +165,7 @@
     };
 
 / {
-    behaviors {
+    tap-dance {
         TD(td_sqt_dqt, Sqt-Dqt, &sqt_dqt, &sqt_dqt_macro)
 
         TD(bts_0, TD BT0 Sel-Disc, &bts 0, &bt BT_DISC 0)
@@ -186,9 +181,8 @@
 };
 
 
-// tri-state
 / {
-    behaviors {
+    tri-state {
         alt_tabber: swapper {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
@@ -197,9 +191,7 @@
             timeout-ms = <5000>;
             display-name = "Swapper";
         };
-    };
 
-    behaviors {
         sel_word: sel_word {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
@@ -207,9 +199,7 @@
             tap-ms = <0>;
             display-name = "Select Word";
         };
-    };
 
-    behaviors {
         sel_line: sel_line {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
@@ -218,11 +208,9 @@
             display-name = "Select Line";
         };
     };
-};
 
-// antecedent-morph
-/ {
-    behaviors {
+
+    antecedent-morph {
         ad_u: adaptive_u {
             compatible = "zmk,behavior-antecedent-morph";
             #binding-cells = <0>;
