@@ -41,9 +41,9 @@ layers:
   - $$mdi:swap-horizontal$$
   - {t: '$$mdi:close-box-outline$$', s: '$$mdi:open-in-new$$'}
   - Page Up
-  - {t: HOME, h: '$$mdi:format-vertical-align-top$$'}
+  - HOME
   - $$mdi:arrow-up$$
-  - {t: END, h: '$$mdi:format-vertical-align-bottom$$'}
+  - END
   - ''
   - $$mdi:microsoft-windows$$
   - {t: '$$mdi:cursor-default-click-outline$$', h: ALT, s: '4', type: text_with_symbol}
@@ -74,7 +74,7 @@ layers:
   - $$mdi:volume-minus$$
   - $$mdi:volume-plus$$
   - {t: '$$mdi:play-pause$$', s: '$$mdi:skip-forward$$'}
-  - $$tabler:brightness-up$$
+  - $$phosphor:bold/sun$$
   - {t: ., s: ':'}
   - '7'
   - '8'
@@ -84,7 +84,7 @@ layers:
   - ALT
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
-  - $$tabler:brightness-down$$
+  - $$phosphor:bold/sun-dim$$
   - '0'
   - '4'
   - '5'

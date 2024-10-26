@@ -340,8 +340,8 @@ parse_config:
     C_VOL_UP: $$mdi:volume-plus$$
     C_VOL_DN: $$mdi:volume-minus$$
     
-    C_BRI_UP: $$tabler:brightness-up$$
-    C_BRI_DN: $$tabler:brightness-down$$
+    C_BRI_UP: $$phosphor:bold/sun$$
+    C_BRI_DN: $$phosphor:bold/sun-dim$$
     
     C_POWER: $$mdi:power$$
     C_SLEEP: $$mdi:power-sleep$$
