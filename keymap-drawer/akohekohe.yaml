@@ -187,7 +187,7 @@ combos:
   k: Z
   l: [DEF]
 - p: [1, 2]
-  k: {t: QU, h: Q}
+  k: Q
   l: [DEF]
 - p: [0, 1]
   k: V

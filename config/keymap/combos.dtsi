@@ -69,7 +69,7 @@
         COMBO(pipe,      &kp DE_PIPE,    RM3 RB3    , DEF,     COMBO_TERM_FAST)
 
         COMBO(z,         &kp DE_Z,       LB3 LB2    , DEF,     COMBO_TERM_MID)
-        COMBO(qu,        &ht_qu Q 0,     LT2 LT1    , DEF,     COMBO_TERM_MID)
+        COMBO(q,         &kp Q,          LT2 LT1    , DEF,     COMBO_TERM_MID)
         COMBO(v,         &kp V,          LT3 LT2    , DEF,     COMBO_TERM_MID)
         COMBO(esc,       &kp ESC,        LM3 LM2    , DEF,     COMBO_TERM_MID)
         COMBO(ret,       &kp RET,        LM2 LM1    , DEF,     COMBO_TERM_MID)
