@@ -168,6 +168,32 @@ parse_config:
       shifted: 5
       type: text_with_symbol
 
+    '&mmv MOVE_UP':
+      tap: $$mdi:mouse-outline$$
+      shifted: $$mdi:arrow-up$$
+      type: text_with_symbol
+    '&mmv MOVE_DOWN':
+      tap: $$mdi:mouse-outline$$
+      shifted: $$mdi:arrow-down$$
+      type: text_with_symbol
+    '&mmv MOVE_LEFT':
+      tap: $$mdi:mouse-outline$$
+      shifted: $$mdi:arrow-left$$
+      type: text_with_symbol
+    '&mmv MOVE_RIGHT':
+      tap: $$mdi:mouse-outline$$
+      shifted: $$mdi:arrow-right$$
+      type: text_with_symbol
+
+    '&msc SCRL_UP':
+      tap: $$mdi:mouse-scroll-wheel$$
+      shifted: $$mdi:arrow-up-thin$$
+      type: text_with_symbol
+    '&msc SCRL_DOWN':
+      tap: $$mdi:mouse-scroll-wheel$$
+      shifted: $$mdi:arrow-down-thin$$
+      type: text_with_symbol
+
     '&hml_m LALT MB4':
       tap: $$mdi:cursor-default-click-outline$$
       shifted: 4

@@ -90,7 +90,7 @@ layers:
   - '2'
   - '3'
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: MSE, h: NAV}
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   FUN:
@@ -155,6 +155,37 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
+  MSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:mouse-scroll-wheel$$', s: '$$mdi:arrow-up-thin$$', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', s: '4', type: text_with_symbol}
+  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-up$$', type: text_with_symbol}
+  - {t: '$$mdi:cursor-default-click-outline$$', s: '5', type: text_with_symbol}
+  - ''
+  - $$mdi:microsoft-windows$$
+  - ALT
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - ''
+  - {t: '$$mdi:mouse-scroll-wheel$$', s: '$$mdi:arrow-down-thin$$', type: text_with_symbol}
+  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-left$$', type: text_with_symbol}
+  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-down$$', type: text_with_symbol}
+  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-right$$', type: text_with_symbol}
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:cursor-default-click$$
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {t: '$$mdi:cursor-default-click-outline$$', type: held}
+  - $$mdi:cursor-default-click$$
 combos:
 - p: [3, 4]
   k: '%'

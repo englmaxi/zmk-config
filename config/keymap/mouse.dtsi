@@ -1,0 +1,8 @@
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
+
+#include <dt-bindings/zmk/pointing.h>
+
+&mmv {
+    time-to-max-speed-ms = <1200>;
+};

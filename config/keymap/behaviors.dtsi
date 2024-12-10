@@ -17,6 +17,7 @@
 
 &lt {
     flavor = "balanced";
+    quick-tap-ms = <220>;
 }; 
 
 
@@ -47,8 +48,19 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <220>;
+            quick-tap-ms = <220>;
             bindings = <&mo>, <&ad_e>;
             display-name = "Layer-AdE";
+        };
+
+        ll: layer_layer {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <220>;
+            quick-tap-ms = <220>;
+            bindings = <&mo>, <&mo>;
+            display-name = "Layer-Layer";
         };
 
         ht_qu: hold_tap_qu {
