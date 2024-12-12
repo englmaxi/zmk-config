@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: berylline}
+layout: {zmk_keyboard: rommana}
 layers:
   DEF:
   - V
@@ -180,8 +180,8 @@ layers:
   - ''
   - ''
   - $$mdi:cursor-default-click$$
-  - ''
-  - ''
+  - {t: '$$mdi:mouse-scroll-wheel$$', s: '$$mdi:arrow-left-thin$$', type: text_with_symbol}
+  - {t: '$$mdi:mouse-scroll-wheel$$', s: '$$mdi:arrow-right-thin$$', type: text_with_symbol}
   - ''
   - {type: held}
   - {t: '$$mdi:cursor-default-click-outline$$', type: held}

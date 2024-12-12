@@ -193,6 +193,14 @@ parse_config:
       tap: $$mdi:mouse-scroll-wheel$$
       shifted: $$mdi:arrow-down-thin$$
       type: text_with_symbol
+    '&msc SCRL_LEFT':
+      tap: $$mdi:mouse-scroll-wheel$$
+      shifted: $$mdi:arrow-left-thin$$
+      type: text_with_symbol
+    '&msc SCRL_RIGHT':
+      tap: $$mdi:mouse-scroll-wheel$$
+      shifted: $$mdi:arrow-right-thin$$
+      type: text_with_symbol
 
     '&hml_m LALT MB4':
       tap: $$mdi:cursor-default-click-outline$$
