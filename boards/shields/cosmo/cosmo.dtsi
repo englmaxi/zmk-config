@@ -4,7 +4,6 @@
 
 / {
     chosen {
-        zmk,kscan = &default_kscan;
         zmk,physical-layout = &cosmo_layout;
     };
 
@@ -43,4 +42,5 @@
 
 &cosmo_layout {
     transform = <&default_transform>;
+    kscan = <&default_kscan>;
 };
