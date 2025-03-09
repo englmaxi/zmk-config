@@ -13,6 +13,36 @@ include:
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
     artifact-name: akohekohe_with_logging
 
+  # cosmo
+  - board: seeeduino_xiao_ble
+    shield: cosmo_dongle dongle_display
+    snippet: common-config studio-rpc-usb-uart
+    artifact-name: cosmo_dongle
+  - board: nice_nano_v2
+    shield: cosmo_left led_indicator
+    snippet: common-config studio-rpc-usb-uart
+    artifact-name: cosmo_central_left
+  - board: nice_nano_v2
+    shield: cosmo_left led_indicator
+    snippet: common-config
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: cosmo_peripheral_left
+  - board: nice_nano_v2
+    shield: cosmo_right led_indicator
+    snippet: common-config
+    artifact-name: cosmo_peripheral_right
+
+  - board: seeeduino_xiao_ble
+    shield: cosmo_dongle dongle_display
+    snippet: common-config zmk-usb-logging studio-rpc-usb-uart
+    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
+    artifact-name: cosmo_dongle_with_logging
+  - board: nice_nano_v2
+    shield: cosmo_left led_indicator
+    snippet: common-config zmk-usb-logging studio-rpc-usb-uart
+    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
+    artifact-name: cosmo_central_left_with_logging
+
   # rommana
   - board: seeeduino_xiao_ble
     shield: rommana_dongle dongle_display
