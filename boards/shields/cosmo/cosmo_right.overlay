@@ -20,7 +20,7 @@
             gpios = <&pro_micro 4 GPIO_ACTIVE_LOW>;
         };
     };
-}
+};
 
 &default_transform {
     col-offset = <5>;
