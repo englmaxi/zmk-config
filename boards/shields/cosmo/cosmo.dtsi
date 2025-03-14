@@ -14,7 +14,7 @@
         led-blue = &led2;
     };
 
-    leds {
+    rgb_leds: leds {
         compatible = "gpio-leds";
         status = "okay";
         led0: led_0 {
