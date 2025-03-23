@@ -28,7 +28,7 @@
         bindings = <BINDINGS>;                                  \
         key-positions = <KEYPOS>;                               \
         layers = <LAYERS>;                                      \
-        require-prior-idle-ms = <150>;                          \
+        require-prior-idle-ms = <200>;                          \
         __VA_ARGS__                                             \
     };
 
