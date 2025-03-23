@@ -64,6 +64,67 @@
          k21  k22  k23            k26  k27  k28       \
                         k31  k32
 
+#elif defined(KEYS_28)
+
+/*                KEY POSITIONS
+      ╭────────────────╮ ╭────────────────╮          ╭─────────────────╮ ╭────────────────╮    
+  ╭───╯  0   1   2   3 │ │  4   5   6   7 ╰───╮  ╭───╯ LT3 LT2 LT1 LT0 │ │ RT0 RT1 RT2 RT3╰────╮
+  │  8   9  10  11  12 │ │ 13  14  15  16  17 │  │ LM4 LM3 LM2 LM1 LM0 │ │ RM0 RM1 RM2 RM3 RM4 │
+  ╰───╮ 18  19  20     │ │     21  22  23 ╭───╯  ╰───╮ LB3 LB2 LB1     │ │     RB1 RB2 RB3 ╭───╯
+      ╰───────╮ 24  25 │ │ 26  27 ╭───────╯          ╰───────╮ LH1 LH0 │ │ RH0 RH1 ╭───────╯
+              ╰────────╯ ╰────────╯                          ╰─────────╯ ╰─────────╯
+*/
+#define KEYS_L  0  1  2  3  8  9 10 11 12 18 19 20  // left hand
+#define KEYS_R  4  5  6  7 13 14 15 16 17 21 22 23  // right hand
+#define THUMBS 24 25 26 27                          // thumbs
+
+#define LT0  3  // left-top row
+#define LT1  2
+#define LT2  1
+#define LT3  0
+
+#define RT0  4  // right-top row
+#define RT1  5
+#define RT2  6
+#define RT3  7
+
+#define LM0 12  // left-middle row
+#define LM1 11
+#define LM2 10
+#define LM3  9
+#define LM4  8
+
+#define RM0 13  // right-middle row
+#define RM1 14
+#define RM2 15
+#define RM3 16
+#define RM4 17
+
+#define LB1 20  // left-bottom row
+#define LB2 19
+#define LB3 18
+
+#define RB1 21  // right-bottom row
+#define RB2 22
+#define RB3 23
+
+#define LH0 25  // left thumb keys
+#define LH1 24
+
+#define RH0 26  // right thumb keys
+#define RH1 27
+
+#define LAYER_FROM34( \
+    k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, \
+    k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, \
+    k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, \
+                   k30, k31, k32, k33                 \
+) \
+         k01  k02  k03  k04  k05  k06  k07  k08       \
+    k10  k11  k12  k13  k14  k15  k16  k17  k18  k19  \
+         k21  k22  k23            k26  k27  k28       \
+                   k30  k31  k32  k33
+
 #elif defined(KEYS_30)
 
 /*                KEY POSITIONS
