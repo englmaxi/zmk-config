@@ -22,14 +22,14 @@
               ╰────────╯ ╰────────╯                          ╰─────────╯ ╰─────────╯
 */
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TIMEOUT, ...)     \
-    combo_##NAME {                                              \
-        timeout-ms = <TIMEOUT>;                                 \
-        bindings = <BINDINGS>;                                  \
-        key-positions = <KEYPOS>;                               \
-        layers = <LAYERS>;                                      \
-        require-prior-idle-ms = <200>;                          \
-        __VA_ARGS__                                             \
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TIMEOUT, RPI, ...) \
+    combo_##NAME {                                               \
+        timeout-ms = <TIMEOUT>;                                  \
+        bindings = <BINDINGS>;                                   \
+        key-positions = <KEYPOS>;                                \
+        layers = <LAYERS>;                                       \
+        require-prior-idle-ms = <RPI>;                           \
+        __VA_ARGS__                                              \
     };
 
 #define COMBO_TERM_FAST 30
@@ -41,59 +41,59 @@
         compatible = "zmk,combos";
 
 #if defined(KEYS_34)
-        COMBO(prcnt,     &kp DE_PRCNT,   LT0 LM0    , DEF,     COMBO_TERM_FAST)
-        COMBO(tilde,     &kp DE_TILDE,   LM0 LB0    , DEF,     COMBO_TERM_FAST)
+        COMBO(prcnt,     &kp DE_PRCNT,   LT0 LM0,     DEF,     COMBO_TERM_FAST, 200)
+        COMBO(tilde,     &kp DE_TILDE,   LM0 LB0,     DEF,     COMBO_TERM_FAST, 200)
 
-        COMBO(caret,     &kp DE_CARET,   RT0 RM0    , DEF,     COMBO_TERM_FAST)
-        COMBO(qt_grv,    &qt_grv,        RM0 RB0    , DEF,     COMBO_TERM_FAST)
+        COMBO(caret,     &kp DE_CARET,   RT0 RM0,     DEF,     COMBO_TERM_FAST, 200)
+        COMBO(qt_grv,    &qt_grv,        RM0 RB0,     DEF,     COMBO_TERM_FAST, 200)
 #else
-        COMBO(prcnt,     &kp DE_PRCNT,   LT1 LT0    , DEF,     COMBO_TERM_MID)
-        COMBO(tilde,     &kp DE_TILDE,   LB1 LM0    , DEF,     COMBO_TERM_MID)
+        COMBO(prcnt,     &kp DE_PRCNT,   LT1 LT0,     DEF,     COMBO_TERM_MID,  200)
+        COMBO(tilde,     &kp DE_TILDE,   LB1 LM0,     DEF,     COMBO_TERM_MID,  200)
 
-        COMBO(caret,     &kp DE_CARET,   RT0 RT1    , DEF,     COMBO_TERM_MID)
-        COMBO(qt_grv,    &qt_grv,        RB1 RM0    , DEF,     COMBO_TERM_MID)
+        COMBO(caret,     &kp DE_CARET,   RT0 RT1,     DEF,     COMBO_TERM_MID,  200)
+        COMBO(qt_grv,    &qt_grv,        RB1 RM0,     DEF,     COMBO_TERM_MID,  200)
 #endif
 
-        COMBO(dllr,      &kp DE_DLLR,    LT1 LM1    , DEF,     COMBO_TERM_FAST)
-        COMBO(hash,      &kp DE_HASH,    LT2 LM2    , DEF,     COMBO_TERM_FAST)
-        COMBO(at,        &kp DE_AT,      LT3 LM3    , DEF,     COMBO_TERM_FAST)
-        COMBO(equal,     &kp DE_EQUAL,   LM1 LB1    , DEF,     COMBO_TERM_FAST)
-        COMBO(bslh,      &kp DE_BSLH,    LM2 LB2    , DEF,     COMBO_TERM_FAST)
-        COMBO(euro,      &kp DE_EURO,    LM3 LB3    , DEF,     COMBO_TERM_FAST)
+        COMBO(dllr,      &kp DE_DLLR,    LT1 LM1,     DEF,     COMBO_TERM_FAST, 200)
+        COMBO(hash,      &kp DE_HASH,    LT2 LM2,     DEF,     COMBO_TERM_FAST, 200)
+        COMBO(at,        &kp DE_AT,      LT3 LM3,     DEF,     COMBO_TERM_FAST, 200)
+        COMBO(equal,     &kp DE_EQUAL,   LM1 LB1,     DEF,     COMBO_TERM_FAST, 200)
+        COMBO(bslh,      &kp DE_BSLH,    LM2 LB2,     DEF,     COMBO_TERM_FAST, 200)
+        COMBO(euro,      &kp DE_EURO,    LM3 LB3,     DEF,     COMBO_TERM_FAST, 200)
 
-        COMBO(plus,      &kp DE_PLUS,    RT1 RM1    , DEF NUM, COMBO_TERM_FAST)
-        COMBO(star,      &kp DE_STAR,    RT2 RM2    , DEF NUM, COMBO_TERM_FAST)
-        COMBO(amps,      &kp DE_AMPS,    RT3 RM3    , DEF,     COMBO_TERM_FAST)
-        COMBO(minus,     &kp DE_MINUS,   RM1 RB1    , DEF NUM, COMBO_TERM_FAST)
-        COMBO(fslh,      &kp DE_FSLH,    RM2 RB2    , DEF NUM, COMBO_TERM_FAST)
-        COMBO(pipe,      &kp DE_PIPE,    RM3 RB3    , DEF,     COMBO_TERM_FAST)
+        COMBO(plus,      &kp DE_PLUS,    RT1 RM1,     DEF NUM, COMBO_TERM_FAST, 200)
+        COMBO(star,      &kp DE_STAR,    RT2 RM2,     DEF NUM, COMBO_TERM_FAST, 200)
+        COMBO(amps,      &kp DE_AMPS,    RT3 RM3,     DEF,     COMBO_TERM_FAST, 200)
+        COMBO(minus,     &kp DE_MINUS,   RM1 RB1,     DEF NUM, COMBO_TERM_FAST, 200)
+        COMBO(fslh,      &kp DE_FSLH,    RM2 RB2,     DEF NUM, COMBO_TERM_FAST, 200)
+        COMBO(pipe,      &kp DE_PIPE,    RM3 RB3,     DEF,     COMBO_TERM_FAST, 200)
 
-        COMBO(z,         &kp DE_Z,       LB3 LB2    , DEF,     COMBO_TERM_MID)
-        COMBO(q,         &kp Q,          LT2 LT1    , DEF,     COMBO_TERM_MID)
-        COMBO(v,         &kp V,          LT3 LT2    , DEF,     COMBO_TERM_MID)
-        COMBO(esc,       &kp ESC,        LM3 LM2    , DEF,     COMBO_TERM_MID)
-        COMBO(ret,       &kp RET,        LM2 LM1    , DEF,     COMBO_TERM_MID)
-        COMBO(bspc,      &kp BSPC,       LB2 LB1    , DEF,     COMBO_TERM_MID)
-        COMBO(int,       &sl INT,        LT3 LT2 LT1, DEF,     COMBO_TERM_SLOW)
-        COMBO(tab,       &kp TAB,        LM3 LM2 LM1, DEF,     COMBO_TERM_SLOW)
+        COMBO(z,         &kp DE_Z,       LB3 LB2,     DEF,     COMBO_TERM_MID,  50)
+        COMBO(q,         &kp Q,          LT2 LT1,     DEF,     COMBO_TERM_MID,  50)
+        COMBO(v,         &kp V,          LT3 LT2,     DEF,     COMBO_TERM_MID,  50)
+        COMBO(esc,       &kp ESC,        LM3 LM2,     DEF,     COMBO_TERM_MID,  200)
+        COMBO(ret,       &kp RET,        LM2 LM1,     DEF,     COMBO_TERM_MID,  200)
+        COMBO(bspc,      &kp BSPC,       LB2 LB1,     DEF,     COMBO_TERM_MID,  200)
+        COMBO(int,       &sl INT,        LT3 LT2 LT1, DEF,     COMBO_TERM_SLOW, 100)
+        COMBO(tab,       &kp TAB,        LM3 LM2 LM1, DEF,     COMBO_TERM_SLOW, 100)
 
-        COMBO(qe,        &qexcl,         RB2 RB3    , DEF,     COMBO_TERM_MID)
-        COMBO(under,     &kp DE_UNDER,   RB1 RB2    , DEF,     COMBO_TERM_MID)
-        COMBO(lbrc,      &lbrc_lt,       RT1 RT2    , DEF,     COMBO_TERM_MID)
-        COMBO(rbrc,      &rbrc_gt,       RT2 RT3    , DEF,     COMBO_TERM_MID)
-        COMBO(lpar,      &lpar_lbkt,     RM1 RM2    , DEF,     COMBO_TERM_MID)
-        COMBO(rpar,      &rpar_rbkt,     RM2 RM3    , DEF,     COMBO_TERM_MID)
-        COMBO(par,       &par_bkt,       RM1 RM2 RM3, DEF,     COMBO_TERM_SLOW)
-        COMBO(brc,       &brc_lgt,       RT1 RT2 RT3, DEF,     COMBO_TERM_SLOW)
-        
-        COMBO(cw,        &caps_word,     LM1 RM1    , DEF,     COMBO_TERM_SLOW)
-        COMBO(bl,        &bootloader,    LM4 RM4    , FUN,     COMBO_TERM_SLOW)
-        COMBO(su,        &studio_unlock, LT0 RT0    , FUN,     COMBO_TERM_SLOW)
-        COMBO(f11,       &kp F11,        LT0 LM0    , FUN,     COMBO_TERM_MID)
+        COMBO(qe,        &qexcl,         RB2 RB3,     DEF,     COMBO_TERM_MID,  50)
+        COMBO(under,     &kp DE_UNDER,   RB1 RB2,     DEF,     COMBO_TERM_MID,  50)
+        COMBO(lbrc,      &lbrc_lt,       RT1 RT2,     DEF,     COMBO_TERM_MID,  200)
+        COMBO(rbrc,      &rbrc_gt,       RT2 RT3,     DEF,     COMBO_TERM_MID,  200)
+        COMBO(lpar,      &lpar_lbkt,     RM1 RM2,     DEF,     COMBO_TERM_MID,  200)
+        COMBO(rpar,      &rpar_rbkt,     RM2 RM3,     DEF,     COMBO_TERM_MID,  200)
+        COMBO(par,       &par_bkt,       RM1 RM2 RM3, DEF,     COMBO_TERM_SLOW, 200)
+        COMBO(brc,       &brc_lgt,       RT1 RT2 RT3, DEF,     COMBO_TERM_SLOW, 200)
 
-        COMBO(undo,      &kp U_UND,      LB3 LB2    , NAV,     COMBO_TERM_MID)
-        COMBO(redo,      &kp U_RDO,      LB2 LB1    , NAV,     COMBO_TERM_MID)
+        COMBO(cw,        &caps_word,     LM1 RM1,     DEF,     COMBO_TERM_SLOW, 200)
+        COMBO(bl,        &bootloader,    LM4 RM4,     FUN,     COMBO_TERM_SLOW, 200)
+        COMBO(su,        &studio_unlock, LT0 RT0,     FUN,     COMBO_TERM_SLOW, 200)
+        COMBO(f11,       &kp F11,        LT0 LM0,     FUN,     COMBO_TERM_MID,  200)
 
-        COMBO(mute,      &kp C_MUTE,     LT3 LT2    , NUM,     COMBO_TERM_MID)
+        COMBO(undo,      &kp U_UND,      LB3 LB2,     NAV,     COMBO_TERM_MID,  100)
+        COMBO(redo,      &kp U_RDO,      LB2 LB1,     NAV,     COMBO_TERM_MID,  100)
+
+        COMBO(mute,      &kp C_MUTE,     LT3 LT2,     NUM,     COMBO_TERM_MID,  200)
     };
 };
