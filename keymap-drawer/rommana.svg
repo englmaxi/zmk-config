@@ -534,8 +534,7 @@ rect.held, rect.combo.held {
 <g transform="translate(501, 231) rotate(-15.0)" class="key ghost keypos-29">
 <rect rx="6" ry="6" x="-28" y="-35" width="55" height="70" class="key ghost side"/>
 <rect rx="4" ry="4" x="-22" y="-33" width="43" height="58" class="key ghost"/>
-<text x="0" y="-4" class="key ghost tap">&#x27;</text>
-<text x="0" y="-33" class="key ghost shifted">´</text>
+<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-7" y="-11" height="14" width="14.0" class="key ghost tap glyph mdi:keyboard-return"/>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="242" y="44" width="28" height="26" class="combo"/>
