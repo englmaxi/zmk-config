@@ -38,6 +38,13 @@ Additional features are provided by the following [modules](https://zmk.dev/docs
   _(keymap image created with [caksoylar/keymap-drawer](https://github.com/caksoylar/keymap-drawer))_
 </details>
 
+<details>
+  <summary><a href="https://ryanis.cool/cosmos/beta#cm:CnsKGBIFEJBBIBMSADgxQJmCh9ADSNWJ6NTQBQoPEgUQkE0gExIAEgA4HUAAChUSBRCQWSATEgASAxCwLzgJQIDwvAIKEhIFEJBlIBMSABIDELA7OApAAAoUEgUQoHMgACIDEJsBOB5AgIaKgAUYAEDohaCu8FVI3Iyr0AEKVQoXEhMQwIACQICAmAJIwpmglZC8AVBDOAgKFRIQEEBAgIAgSNCVgN2Q9QNQC1CeAgoCUH8KA1CCAhgCIgoIyAEQyAEYACAAQMuL/J/QMUjFlYDg2AIQAxiGICIGCMMBELkBOAOCAQECWEhgA2gAcggoMjAYOAFACnjIg7SdAQ==">Cosmo</a> (28 keys)</summary>
+  <img src="keymap-drawer/cosmo.svg" >
+
+  _(keymap image created with [caksoylar/keymap-drawer](https://github.com/caksoylar/keymap-drawer))_
+</details>
+
 <br />
 
 ![boards](https://github.com/user-attachments/assets/ab8fa305-c3e2-4e06-ba2b-baa3f459877b)
