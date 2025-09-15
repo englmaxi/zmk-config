@@ -14,7 +14,7 @@ include:
     artifact-name: akohekohe_with_logging
 
   # cosmo
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2
     shield: cosmo_dongle dongle_display
     snippet: common-config studio-rpc-usb-uart
     artifact-name: cosmo_dongle
@@ -32,7 +32,7 @@ include:
     snippet: common-config
     artifact-name: cosmo_peripheral_right
 
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2
     shield: cosmo_dongle dongle_display
     snippet: common-config zmk-usb-logging studio-rpc-usb-uart
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
