@@ -2,109 +2,109 @@
 ---
 include:
   # akohekohe
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: akohekohe rgbled_adapter
     snippet: common-config studio-rpc-usb-uart
     artifact-name: akohekohe
 
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: akohekohe rgbled_adapter
     snippet: common-config zmk-usb-logging studio-rpc-usb-uart
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
     artifact-name: akohekohe_with_logging
 
   # cosmo
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: cosmo_dongle dongle_display
     snippet: common-config studio-rpc-usb-uart
     artifact-name: cosmo_dongle
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: cosmo_left rgbled_adapter
     snippet: common-config studio-rpc-usb-uart
     artifact-name: cosmo_central_left
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: cosmo_left rgbled_adapter
     snippet: common-config
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: cosmo_peripheral_left
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: cosmo_right rgbled_adapter
     snippet: common-config
     artifact-name: cosmo_peripheral_right
 
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: cosmo_dongle dongle_display
     snippet: common-config zmk-usb-logging studio-rpc-usb-uart
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
     artifact-name: cosmo_dongle_with_logging
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: cosmo_left rgbled_adapter
     snippet: common-config zmk-usb-logging studio-rpc-usb-uart
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
     artifact-name: cosmo_central_left_with_logging
 
   # rommana
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: rommana_dongle dongle_display
     snippet: common-config studio-rpc-usb-uart
     artifact-name: rommana_dongle
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: rommana_left rgbled_adapter
     snippet: common-config studio-rpc-usb-uart
     artifact-name: rommana_central_left
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: rommana_left rgbled_adapter
     snippet: common-config
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: rommana_peripheral_left
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: rommana_right rgbled_adapter
     snippet: common-config
     artifact-name: rommana_peripheral_right
 
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: rommana_dongle dongle_display
     snippet: common-config zmk-usb-logging studio-rpc-usb-uart
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
     artifact-name: rommana_dongle_with_logging
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: rommana_left rgbled_adapter
     snippet: common-config zmk-usb-logging studio-rpc-usb-uart
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
     artifact-name: rommana_central_left_with_logging
 
   # sweep
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: sweep_dongle dongle_display
     snippet: common-config studio-rpc-usb-uart
     artifact-name: sweep_dongle
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: sweep_left led_indicator
     snippet: common-config studio-rpc-usb-uart
     artifact-name: sweep_central_left
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: sweep_left led_indicator
     snippet: common-config
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: sweep_peripheral_left
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: sweep_right led_indicator
     snippet: common-config
     artifact-name: sweep_peripheral_right
 
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: sweep_dongle dongle_display
     snippet: common-config zmk-usb-logging studio-rpc-usb-uart
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
     artifact-name: sweep_dongle_with_logging
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: sweep_left led_indicator
     snippet: common-config zmk-usb-logging studio-rpc-usb-uart
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
     artifact-name: sweep_central_left_with_logging
 
   # reset
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: settings_reset
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: settings_reset
