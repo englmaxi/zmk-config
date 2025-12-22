@@ -27,7 +27,7 @@ manifest:
       revision: main
     - name: zmk-dongle-display
       remote: englmaxi
-      revision: main
+      revision: zephyr-4.1
     - name: zmk-antecedent-morph
       remote: ssbb
       revision: main
