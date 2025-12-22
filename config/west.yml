@@ -12,6 +12,8 @@ manifest:
       url-base: https://github.com/ssbb
     - name: joelspadin
       url-base: https://github.com/joelspadin
+    - name: LukasStu
+      url-base: https://github.com/LukasStu
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -26,8 +28,8 @@ manifest:
       remote: urob
       revision: main
     - name: zmk-dongle-display
-      remote: englmaxi
-      revision: zephyr-4.1
+      remote: LukasStu
+      revision: main
     - name: zmk-antecedent-morph
       remote: ssbb
       revision: main
