@@ -99,6 +99,7 @@ parse_config:
     '&ad_u': 'U'
 
     '&mt LS(LC(V)) LC(V)': $$mdi:content-paste$$
+    '&mt LS(LC(C)) LC(C)': $$mdi:content-copy$$
       
     '&td_sqt_dqt':
       tap: "'"
