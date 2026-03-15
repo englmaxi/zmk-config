@@ -63,6 +63,9 @@
 <svg id="mdi:bluetooth-connect">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-bluetooth-connect" viewBox="0 0 24 24"><path d="M19,10L17,12L19,14L21,12M14.88,16.29L13,18.17V14.41M13,5.83L14.88,7.71L13,9.58M17.71,7.71L12,2H11V9.58L6.41,5L5,6.41L10.59,12L5,17.58L6.41,19L11,14.41V22H12L17.71,16.29L13.41,12M7,12L5,10L3,12L5,14L7,12Z" /></svg>
 </svg>
+<svg id="mdi:calculator">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-calculator" viewBox="0 0 24 24"><path d="M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V4A2,2 0 0,1 7,2M7,4V8H17V4H7M7,10V12H9V10H7M11,10V12H13V10H11M15,10V12H17V10H15M7,14V16H9V14H7M11,14V16H13V14H11M15,14V16H17V14H15M7,18V20H9V18H7M11,18V20H13V18H11M15,18V20H17V18H15Z" /></svg>
+</svg>
 <svg id="mdi:caps-lock">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-caps-lock" viewBox="0 0 24 24"><path d="M9.96,13.71L12,8.29L14.03,13.72M11.14,6L6.43,18H8.36L9.32,15.43H14.68L15.64,18H17.57L12.86,6H11.14M20,2H4C2.89,2 2,2.89 2,4V20C2,21.11 2.9,22 4,22H20C21.11,22 22,21.11 22,20V4C22,2.89 21.1,2 20,2M20,20H4V4H20V20Z" /></svg>
 </svg>
@@ -636,23 +639,23 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-24">
 <rect rx="6" ry="6" x="530" y="22" width="28" height="26" class="combo"/>
-<text x="544" y="35" class="combo tap">{</text>
-<text x="544" y="24" class="combo shifted">&lt;</text>
+<text x="544" y="35" class="combo tap">[</text>
+<text x="544" y="24" class="combo shifted">{</text>
 </g>
 <g class="combo combopos-25">
 <rect rx="6" ry="6" x="593" y="24" width="28" height="26" class="combo"/>
-<text x="607" y="37" class="combo tap">}</text>
-<text x="607" y="26" class="combo shifted">&gt;</text>
+<text x="607" y="37" class="combo tap">]</text>
+<text x="607" y="26" class="combo shifted">}</text>
 </g>
 <g class="combo combopos-26">
 <rect rx="6" ry="6" x="530" y="80" width="28" height="26" class="combo"/>
 <text x="544" y="93" class="combo tap">(</text>
-<text x="544" y="82" class="combo shifted">[</text>
+<text x="544" y="82" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-27">
 <rect rx="6" ry="6" x="592" y="81" width="28" height="26" class="combo"/>
 <text x="606" y="94" class="combo tap">)</text>
-<text x="606" y="83" class="combo shifted">]</text>
+<text x="606" y="83" class="combo shifted">&gt;</text>
 </g>
 </g>
 </g>
@@ -862,8 +865,7 @@ rect.held, rect.combo.held {
 <g transform="translate(452, 71)" class="key keypos-5">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">.</text>
-<text x="0" y="-24" class="key shifted">:</text>
+<use href="#mdi:calculator" xlink:href="#mdi:calculator" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:calculator"/>
 </g>
 <g transform="translate(513, 42)" class="key keypos-6">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
@@ -1755,7 +1757,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key  combo-separate side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key  combo-separate"/>
 <text x="0" y="-4" class="key  combo-separate tap">()</text>
-<text x="0" y="-24" class="key  combo-separate shifted">{}</text>
+<text x="0" y="-24" class="key  combo-separate shifted">&lt;&gt;</text>
 </g>
 <g transform="translate(17, 105) rotate(-8.0)" class="key ghost keypos-1">
 <rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key ghost side"/>
@@ -1884,8 +1886,8 @@ rect.held, rect.combo.held {
 <g transform="translate(30, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key  combo-separate side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key  combo-separate"/>
-<text x="0" y="-4" class="key  combo-separate tap">[]</text>
-<text x="0" y="-24" class="key  combo-separate shifted">&lt;&gt;</text>
+<text x="0" y="-4" class="key  combo-separate tap">{}</text>
+<text x="0" y="-24" class="key  combo-separate shifted">[]</text>
 </g>
 <g transform="translate(17, 105) rotate(-8.0)" class="key ghost keypos-1">
 <rect rx="6" ry="6" x="-13" y="-12" width="26" height="24" class="key ghost side"/>

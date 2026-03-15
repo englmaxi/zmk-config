@@ -99,6 +99,8 @@
         HM(hsr,   HRM Shift Right,     &kp,  KEYS_L,   0, hold-while-undecided;)
         HM(hcr,   HRM Ctrl Right,      &kp,  KEYS_L, 200, hold-while-undecided;)
         HM(hmr,   HRM Mods Left,       &kp,  KEYS_L, 200)
+
+        HM(hcr_a, HRM Ctrl Right, &ad_a, KEYS_L, 200, hold-while-undecided;)
     };
 };
 
@@ -157,6 +159,14 @@
         SM(lbrc_lt, SM LBrc-LT,       &kp DE_LBRC, &kp DE_LT)
         SM(rbrc_gt, SM RBrc-GT,       &kp DE_RBRC, &kp DE_GT)
         SM(brc_lgt, SM Macro Brc-LGT, &brc_macro,  &lgt_macro)
+
+        SM(lpar_lt, SM LPar-LT,       &kp DE_LPAR, &kp DE_LT)
+        SM(rpar_gt, SM RPar-GT,       &kp DE_RPAR, &kp DE_GT)
+        SM(par_lgt, SM Macro Par-LGT, &par_macro,  &lgt_macro)
+
+        SM(lbkt_lbrc, SM LBkt-LBrc,     &kp DE_LBKT, &kp DE_LBRC)
+        SM(rbkt_rbrc, SM RBkt-RBrc,     &kp DE_RBKT, &kp DE_RBRC)
+        SM(bkt_brc,   SM Macro Bkt-Brc, &bkt_macro,  &brc_macro)
 
         SM(p_tab_desk, SM Prev Tab-Desk, &kp LC(LS(TAB)), &kp LC(LG(LEFT)))
         SM(n_tab_desk, SM Next Tab-Desk, &kp LC(TAB), &kp LC(LG(RIGHT)))
@@ -223,14 +233,14 @@
 
 
     antecedent-morph {
-        ad_u: adaptive_u {
+        ad_a: adaptive_a {
             compatible = "zmk,behavior-antecedent-morph";
             #binding-cells = <0>;
-            defaults = <&kp U>;
+            defaults = <&kp A>;
             bindings =   <&kp DE_EQUAL>, <&kp DE_EQUAL>;
             antecedents = <DE_LT           DE_GT>;
             max-delay-ms = <1000>;
-            display-name = "Adaptive U";
+            display-name = "Adaptive A";
         };
 
         ad_comma: adaptive_comma {

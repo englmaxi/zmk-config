@@ -76,7 +76,7 @@ layers:
   - $$mdi:volume-plus$$
   - {t: '$$mdi:play-pause$$', s: '$$mdi:skip-forward$$'}
   - $$phosphor:bold/sun$$
-  - {t: ., s: ':'}
+  - $$mdi:calculator$$
   - '7'
   - '8'
   - '9'
@@ -96,7 +96,7 @@ layers:
   - Pause Break
   - $$mdi:monitor-screenshot$$
   - ''
-  - {t: ',', s: ;}
+  - {t: ., s: ':'}
   - '1'
   - '2'
   - '3'
@@ -292,23 +292,23 @@ combos:
   k: _
   l: [DEF]
 - p: [6, 7]
-  k: {t: '{', s: <}
+  k: {t: '[', s: '{'}
   l: [DEF]
 - p: [7, 8]
-  k: {t: '}', s: '>'}
+  k: {t: ']', s: '}'}
   l: [DEF]
 - p: [16, 17]
-  k: {t: (, s: '['}
+  k: {t: (, s: <}
   l: [DEF]
 - p: [17, 18]
-  k: {t: ), s: ']'}
+  k: {t: ), s: '>'}
   l: [DEF]
 - p: [16, 17, 18]
-  k: {t: (), s: '{}'}
+  k: {t: (), s: <>}
   l: [DEF]
   draw_separate: true
 - p: [6, 7, 8]
-  k: {t: '[]', s: <>}
+  k: {t: '{}', s: '[]'}
   l: [DEF]
   draw_separate: true
 - p: [13, 16]

@@ -97,6 +97,7 @@ parse_config:
     '&lgt_macro': '<>'
 
     '&ad_u': 'U'
+    '&ad_a': 'A'
 
     '&mt LS(LC(V)) LC(V)': $$mdi:content-paste$$
     '&mt LS(LC(C)) LC(C)': $$mdi:content-copy$$
