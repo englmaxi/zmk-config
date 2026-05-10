@@ -171,6 +171,8 @@
         SM(p_tab_desk, SM Prev Tab-Desk, &kp LC(LS(TAB)), &kp LC(LG(LEFT)))
         SM(n_tab_desk, SM Next Tab-Desk, &kp LC(TAB), &kp LC(LG(RIGHT)))
 
+        SM(caret_nd, CARET (no dead-key), &caret_nd_base, &kp DE_DEGREE)
+
         MASKED(left_masked, Masked Left, (MOD_RSFT|MOD_LSFT), &kp LEFT)
         MASKED(u_masked,    Masked U,    (MOD_RSFT|MOD_LSFT), &kp U)
     };
@@ -181,7 +183,7 @@
     NAME: NAME {                                                            \
         compatible = "zmk,behavior-tap-dance";                              \
         #binding-cells = <0>;                                               \
-        tapping-term-ms = <200>;                                            \
+        tapping-term-ms = <250>;                                            \
         bindings = <TAP1>, <TAP2> __VA_OPT__(, <)__VA_ARGS__ __VA_OPT__(>); \
         display-name = #DISPLAY_NAME;                                       \
     };
@@ -247,8 +249,8 @@
             compatible = "zmk,behavior-antecedent-morph";
             #binding-cells = <0>;
             defaults = <&kp DE_COMMA>;
-            bindings =   <&kp DE_EQUAL>, <&include_macro>, <&kp DE_FSLH>;
-            antecedents = <DE_EXCL         DE_HASH           DE_DOT>;
+            bindings =   <&kp DE_EQUAL>, <&include_macro>, <&kp DE_FSLH>, <&kp DE_GT>, <&kp DE_GT>, <&kp DE_GT>;
+            antecedents = <DE_EXCL         DE_HASH           DE_DOT         DE_MINUS     DE_EQUAL     DE_PIPE>;
             max-delay-ms = <1000>;
             display-name = "Adaptive Comma";
         };

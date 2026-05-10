@@ -121,6 +121,11 @@ parse_config:
     '&qu 0': 'QU'
 
     '&ad_e 0': 'E'
+
+    '&grave_nd': '`'
+    '&caret_nd':
+      tap: '^'
+      shifted: '°'
     
     '&out OUT_BLE': $$mdi:bluetooth$$
     '&out OUT_USB': $$mdi:usb$$

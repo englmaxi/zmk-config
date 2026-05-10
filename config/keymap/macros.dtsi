@@ -78,5 +78,21 @@
                 , <&bt BT_SEL MACRO_PLACEHOLDER>;
             display-name = "BT Select";
         )
+
+        ZMK_MACRO(grave_nd,
+            wait-ms = <1>;
+            tap-ms = <1>;
+            bindings
+                = <&kp DE_GRAVE &kp SPACE>;
+            display-name = "GRAVE (no dead-key)";
+        )
+
+        ZMK_MACRO(caret_nd_base,
+            wait-ms = <1>;
+            tap-ms = <1>;
+            bindings
+                = <&kp DE_CARET &kp SPACE>;
+            display-name = "CARET (base)";
+        )
     };
 };

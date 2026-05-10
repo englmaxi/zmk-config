@@ -528,6 +528,7 @@ rect.held, rect.combo.held {
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="397" y="92" width="28" height="26" class="combo"/>
 <text x="411" y="105" class="combo tap">^</text>
+<text x="411" y="94" class="combo shifted">°</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="428" y="173" width="28" height="26" class="combo"/>
@@ -556,7 +557,7 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="87" y="104" width="28" height="26" class="combo"/>
-<text x="101" y="117" class="combo tap">€</text>
+<text x="101" y="117" class="combo tap">`</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="429" y="94" width="28" height="26" class="combo"/>
@@ -1234,10 +1235,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-34" y="-24" width="68" height="40" class="key trans"/>
 <use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-11" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
 </g>
-<g transform="translate(429, 271) rotate(-37.0)" class="key trans keypos-25">
-<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-34" y="-24" width="68" height="40" class="key trans"/>
-<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-7" y="-11" height="14" width="14.0" class="key trans tap glyph mdi:chevron-down"/>
+<g transform="translate(429, 271) rotate(-37.0)" class="key keypos-25">
+<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-34" y="-24" width="68" height="40" class="key"/>
+<text x="0" y="-4" class="key tap">€</text>
 </g>
 </g>
 </g>

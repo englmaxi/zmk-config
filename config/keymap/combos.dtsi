@@ -32,7 +32,7 @@
         __VA_ARGS__                                              \
     };
 
-#define COMBO_TERM_FAST 30
+#define COMBO_TERM_FAST 40
 #define COMBO_TERM_MID  45
 #define COMBO_TERM_SLOW 65
 
@@ -44,13 +44,13 @@
         COMBO(prcnt,     &kp DE_PRCNT,   LT0 LM0,     DEF,     COMBO_TERM_FAST, 200)
         COMBO(tilde,     &kp DE_TILDE,   LM0 LB0,     DEF,     COMBO_TERM_FAST, 200)
 
-        COMBO(caret,     &kp DE_CARET,   RT0 RM0,     DEF,     COMBO_TERM_FAST, 200)
+        COMBO(caret,     &caret_nd,      RT0 RM0,     DEF,     COMBO_TERM_FAST, 0)
         COMBO(qt_grv,    &qt_grv,        RM0 RB0,     DEF,     COMBO_TERM_FAST, 200)
 #else
         COMBO(prcnt,     &kp DE_PRCNT,   LT1 LT0,     DEF,     COMBO_TERM_MID,  200)
         COMBO(tilde,     &kp DE_TILDE,   LB1 LM0,     DEF,     COMBO_TERM_MID,  200)
 
-        COMBO(caret,     &kp DE_CARET,   RT0 RT1,     DEF,     COMBO_TERM_MID,  200)
+        COMBO(caret,     &caret_nd,      RT0 RT1,     DEF,     COMBO_TERM_MID,  0)
         COMBO(qt_grv,    &qt_grv,        RB1 RM0,     DEF,     COMBO_TERM_MID,  200)
 #endif
 
@@ -59,7 +59,7 @@
         COMBO(at,        &kp DE_AT,      LT3 LM3,     DEF,     COMBO_TERM_FAST, 200)
         COMBO(equal,     &kp DE_EQUAL,   LM1 LB1,     DEF,     COMBO_TERM_FAST, 200)
         COMBO(bslh,      &kp DE_BSLH,    LM2 LB2,     DEF,     COMBO_TERM_FAST, 200)
-        COMBO(euro,      &kp DE_EURO,    LM3 LB3,     DEF,     COMBO_TERM_FAST, 200)
+        COMBO(grave,     &grave_nd,      LM3 LB3,     DEF,     COMBO_TERM_FAST, 0)
 
         COMBO(plus,      &kp DE_PLUS,    RT1 RM1,     DEF NUM, COMBO_TERM_FAST, 200)
         COMBO(star,      &kp DE_STAR,    RT2 RM2,     DEF NUM, COMBO_TERM_FAST, 200)

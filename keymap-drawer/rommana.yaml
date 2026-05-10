@@ -153,7 +153,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - €
   - {t: '$$mdi:chevron-down$$', type: trans}
   MSE:
   - ''
@@ -194,7 +194,7 @@ combos:
   k: '~'
   l: [DEF]
 - p: [5, 6]
-  k: ^
+  k: {t: ^, s: °}
   l: [DEF]
 - p: [23, 15]
   k: {t: '''', s: ´}
@@ -215,7 +215,7 @@ combos:
   k: \
   l: [DEF]
 - p: [11, 20]
-  k: €
+  k: '`'
   l: [DEF]
 - p: [6, 16]
   k: +
