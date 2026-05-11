@@ -172,6 +172,7 @@
         SM(n_tab_desk, SM Next Tab-Desk, &kp LC(TAB), &kp LC(LG(RIGHT)))
 
         SM(caret_nd, CARET (no dead-key), &caret_nd_base, &kp DE_DEGREE)
+        CM(caret, CARET (CM dead-key), &caret_nd, &kp DE_CARET)
 
         MASKED(left_masked, Masked Left, (MOD_RSFT|MOD_LSFT), &kp LEFT)
         MASKED(u_masked,    Masked U,    (MOD_RSFT|MOD_LSFT), &kp U)

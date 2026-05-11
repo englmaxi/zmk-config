@@ -44,13 +44,13 @@
         COMBO(prcnt,     &kp DE_PRCNT,   LT0 LM0,     DEF,     COMBO_TERM_FAST, 200)
         COMBO(tilde,     &kp DE_TILDE,   LM0 LB0,     DEF,     COMBO_TERM_FAST, 200)
 
-        COMBO(caret,     &caret_nd,      RT0 RM0,     DEF,     COMBO_TERM_FAST, 0)
+        COMBO(caret,     &caret,         RT0 RM0,     DEF,     COMBO_TERM_FAST, 0)
         COMBO(qt_grv,    &qt_grv,        RM0 RB0,     DEF,     COMBO_TERM_FAST, 200)
 #else
         COMBO(prcnt,     &kp DE_PRCNT,   LT1 LT0,     DEF,     COMBO_TERM_MID,  200)
         COMBO(tilde,     &kp DE_TILDE,   LB1 LM0,     DEF,     COMBO_TERM_MID,  200)
 
-        COMBO(caret,     &caret_nd,      RT0 RT1,     DEF,     COMBO_TERM_MID,  0)
+        COMBO(caret,     &caret,         RT0 RT1,     DEF,     COMBO_TERM_MID,  0)
         COMBO(qt_grv,    &qt_grv,        RB1 RM0,     DEF,     COMBO_TERM_MID,  200)
 #endif
 
