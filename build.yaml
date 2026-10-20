@@ -61,23 +61,6 @@ include:
     shield: rommana_right rgbled_adapter
     snippet: common-config
     artifact-name: rommana_peripheral_right
-
-  - board: xiao_ble//zmk
-    shield: rommana_dongle dongle_display
-    snippet: common-config zmk-usb-logging studio-rpc-usb-uart
-    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
-    artifact-name: rommana_dongle_with_logging
-  - board: xiao_ble//zmk
-    shield: rommana_left rgbled_adapter
-    snippet: common-config zmk-usb-logging studio-rpc-usb-uart
-    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
-    artifact-name: rommana_central_left_with_logging
-
-  # rommana (ffc)
-  - board: xiao_ble//zmk
-    shield: rommana_ffc_dongle dongle_display
-    snippet: common-config studio-rpc-usb-uart
-    artifact-name: rommana_ffc_dongle
   - board: xiao_ble//zmk
     shield: rommana_ffc_left rgbled_adapter
     snippet: common-config studio-rpc-usb-uart
@@ -93,10 +76,15 @@ include:
     artifact-name: rommana_ffc_peripheral_right
 
   - board: xiao_ble//zmk
-    shield: rommana_ffc_dongle dongle_display
+    shield: rommana_dongle dongle_display
     snippet: common-config zmk-usb-logging studio-rpc-usb-uart
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
-    artifact-name: rommana_ffc_dongle_with_logging
+    artifact-name: rommana_dongle_with_logging
+  - board: xiao_ble//zmk
+    shield: rommana_left rgbled_adapter
+    snippet: common-config zmk-usb-logging studio-rpc-usb-uart
+    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
+    artifact-name: rommana_central_left_with_logging
   - board: xiao_ble//zmk
     shield: rommana_ffc_left rgbled_adapter
     snippet: common-config zmk-usb-logging studio-rpc-usb-uart

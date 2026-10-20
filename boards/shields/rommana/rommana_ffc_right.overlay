@@ -1,4 +1,4 @@
-#include "rommana_ffc.dtsi"
+#include "rommana_right.overlay"
 
 &default_kscan {
     row-gpios
@@ -14,8 +14,4 @@
         , <&xiao_d 3  GPIO_ACTIVE_HIGH>
         , <&xiao_d 10 GPIO_ACTIVE_HIGH>
         ;
-};
-
-&thirty_transform {
-    col-offset = <5>;
 };
