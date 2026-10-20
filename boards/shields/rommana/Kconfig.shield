@@ -6,3 +6,9 @@ config SHIELD_ROMMANA_LEFT
 
 config SHIELD_ROMMANA_RIGHT
     def_bool $(shields_list_contains,rommana_right)
+
+config SHIELD_ROMMANA_FFC_LEFT
+    def_bool $(shields_list_contains,rommana_ffc_left)
+
+config SHIELD_ROMMANA_FFC_RIGHT
+    def_bool $(shields_list_contains,rommana_ffc_right)

@@ -61,6 +61,19 @@ include:
     shield: rommana_right rgbled_adapter
     snippet: common-config
     artifact-name: rommana_peripheral_right
+  - board: xiao_ble//zmk
+    shield: rommana_ffc_left rgbled_adapter
+    snippet: common-config studio-rpc-usb-uart
+    artifact-name: rommana_ffc_central_left
+  - board: xiao_ble//zmk
+    shield: rommana_ffc_left rgbled_adapter
+    snippet: common-config
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: rommana_ffc_peripheral_left
+  - board: xiao_ble//zmk
+    shield: rommana_ffc_right rgbled_adapter
+    snippet: common-config
+    artifact-name: rommana_ffc_peripheral_right
 
   - board: xiao_ble//zmk
     shield: rommana_dongle dongle_display
@@ -72,6 +85,11 @@ include:
     snippet: common-config zmk-usb-logging studio-rpc-usb-uart
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
     artifact-name: rommana_central_left_with_logging
+  - board: xiao_ble//zmk
+    shield: rommana_ffc_left rgbled_adapter
+    snippet: common-config zmk-usb-logging studio-rpc-usb-uart
+    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
+    artifact-name: rommana_ffc_central_left_with_logging
 
   # sweep
   - board: xiao_ble//zmk
